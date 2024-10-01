@@ -11,7 +11,45 @@
 @elseif(request()->routeIs('institucional'))
     
 @elseif(request()->routeIs('pregrado'))
+    <x-side-button icon="fa-solid fa-house" title="Educación Inicial" route="/pregrado/CDLC" />
+    <x-side-button icon="fa-solid fa-house" title="Educación Primaria" route="/pregrado/CDLC" />
+    <x-side-button icon="fa-solid fa-house" title="Educación Secundaria" route="/pregrado/CDLC" />
+    <div>
 
+
+    <x-drop-down-button 
+    title="Ciencias de la Comunicación" 
+    :list="[
+        ['name' => 'Institucional', 'url' => '/institucional'],
+        ['name' => 'Menu', 'url' => '/menu'],
+        ['name' => 'Footer', 'url' => '/footer']
+    ]" 
+/>
+
+<x-drop-down-button 
+    title="Ciencias de la Comunicación" 
+    :list="[
+        ['name' => 'Institucional', 'url' => '/institucional'],
+        ['name' => 'Menu', 'url' => '/menu'],
+        ['name' => 'Footer', 'url' => '/footer']
+    ]" 
+/>
+<x-drop-down-button 
+    title="Ciencias de la Comunicación" 
+    :list="[
+        ['name' => 'Institucional', 'url' => '/institucional'],
+        ['name' => 'Menu', 'url' => '/menu'],
+        ['name' => 'Footer', 'url' => '/footer']
+    ]" 
+/>
+<x-drop-down-button 
+    title="Ciencias de la Comunicación" 
+    :list="[
+        ['name' => 'Institucional', 'url' => '/institucional'],
+        ['name' => 'Menu', 'url' => '/menu'],
+        ['name' => 'Footer', 'url' => '/footer']
+    ]" 
+/>
 @elseif(request()->routeIs('posgrado'))
 
 @elseif(request()->routeIs('unidades'))
