@@ -11,7 +11,8 @@
 @elseif(request()->routeIs('institucional'))
     
 @elseif(request()->routeIs('pregrado'))
-
+    <x-side-button icon="fa-solid fa-house" title="Educación Secundaria" route="/educacion_secundaria" />
+ 
 @elseif(request()->routeIs('posgrado'))
 
 @elseif(request()->routeIs('unidades'))
