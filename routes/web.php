@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('index');
+    return view('welcome');
 })->name('home');
 
 Route::get('/institucional', function () {
@@ -14,6 +14,10 @@ Route::get('/pregrado', function () {
     return view('pregrado.index');
 })->name('pregrado');
 
+Route::get('/pregrado/CDLC', function () {
+    return view('pregrado.cienciasDeLaComunicacion.index');
+})->name('pregrado');
+   
 Route::get('/posgrado', function () {
     return view('posgrado.index');
 })->name('posgrado');
