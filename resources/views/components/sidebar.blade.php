@@ -1,4 +1,4 @@
-<nav class="w-[400px] text-center bg-[#D5D6E7] h-full fixed right-0 py-10">
+<nav class="w-full md:w-[400px] text-center bg-[#D5D6E7] h-full fixed right-0 py-10 flex flex-col">
     <a href="/">
         <div class="flex justify-center items-center">
             <img class="w-32"
@@ -6,8 +6,8 @@
                 alt="Logo unt">
             <h1 class="text-xl font-bold">FACEDU</h1>
         </div>
-        <P class="flex w-80 mx-auto justify-center text-lg text-center">Facultad de educación y ciencias de la
-            comunicación</P>
+        <p class="flex w-80 mx-auto justify-center text-lg text-center">Facultad de educación y ciencias de la
+            comunicación</p>
     </a>
     <section class="mt-10">
         <div class="idiomas">
@@ -15,7 +15,7 @@
         </div>
         <input type="text" placeholder="Buscar" class="p-1 rounded-md border border-black w-4/5 my-2">
     </section>
-    <section class="mt-10">
-      @include('components.side-menu')
+    <section class="mt-10 flex-1 min-h-0 overflow-y-auto">
+        @include('components.side-menu')
     </section>
 </nav>
