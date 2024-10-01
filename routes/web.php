@@ -54,7 +54,9 @@ Route::get('/rnc', function () {
 
 
 // Rutas Unidades
-
+Route::get('/unidades', function () {
+    return view('unidad_calidad.index');
+})->name('rnc');
 
 // Rutas Departamentos Academicos
 
