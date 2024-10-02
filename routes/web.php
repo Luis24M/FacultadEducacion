@@ -48,9 +48,10 @@ Route::get('/rnc', function () {
 
 
 // Rutas Pregrado
-Route::get('/educacion_secundaria', function () {
-    return view('pregrado.educacion_secundaria.index');
-})->name('educacion_secundaria');
+
+Route::get('/educacion_primaria', function () {
+    return view('pregrado.educacion_primaria.index');
+})->name('educacion_primaria');
 
 // Rutas Posgrado
 
