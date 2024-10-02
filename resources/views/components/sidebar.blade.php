@@ -19,3 +19,55 @@
         @include('components.side-menu')
     </section>
 </nav>
+
+<script>
+    document.querySelectorAll('[data-dropdown]').forEach(button => {
+    const dropdown = button.closest('.dropdown').querySelector('[data-dropdown-menu]');
+
+    button.addEventListener('click', (event) => {
+        event.stopPropagation();
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', !isExpanded);
+
+        // Cerrar otros dropdowns
+        document.querySelectorAll('.dropdown-menu').forEach(otherDropdown => {
+            if (otherDropdown !== dropdown) {
+                otherDropdown.classList.add('max-h-0');
+                otherDropdown.classList.remove('max-h-60');
+                otherDropdown.previousElementSibling.querySelector('[data-dropdown]').setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Alternar el dropdown actual
+        dropdown.classList.toggle('max-h-0');
+        dropdown.classList.toggle('max-h-60');
+    });
+});
+
+// Permitir que los submenús no se cierren al hacer clic en ellos
+document.querySelectorAll('.dropdown-menu li').forEach(submenu => {
+    submenu.addEventListener('click', (event) => {
+        event.stopPropagation(); // Permitir submenú
+        const subDropdown = submenu.querySelector('ul');
+        if (subDropdown) {
+            const isExpanded = submenu.getAttribute('aria-expanded') === 'true';
+            submenu.setAttribute('aria-expanded', !isExpanded);
+            subDropdown.classList.toggle('max-h-0');
+            subDropdown.classList.toggle('max-h-full');
+        }
+    });
+});
+
+// Cerrar el menú al hacer clic fuera
+window.addEventListener('click', () => {
+    document.querySelectorAll('.dropdown-menu').forEach(dropdown => {
+        dropdown.classList.add('max-h-0');
+        dropdown.classList.remove('max-h-60');
+    });
+    document.querySelectorAll('[data-dropdown]').forEach(button => {
+        button.setAttribute('aria-expanded', 'false');
+    });
+});
+
+
+</script>
