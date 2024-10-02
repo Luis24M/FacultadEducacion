@@ -8,11 +8,13 @@ use Illuminate\View\Component;
 class dropDownButton extends Component
 {
     public $title;
+    public $url;
     public $list;
 
-    public function __construct($title, $list = [])
+    public function __construct($title, $url, $list = [])
     {
         $this->title = $title;
+        $this->url = $url;
         $this->list = $list;
     }
 

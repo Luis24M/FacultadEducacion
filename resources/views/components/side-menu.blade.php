@@ -81,6 +81,7 @@
 
 
 @endif
+<<<<<<< HEAD
 <script>
     document.querySelectorAll('[data-dropdown]').forEach(button => {
     const dropdown = button.closest('.dropdown').querySelector('[data-dropdown-menu]');
