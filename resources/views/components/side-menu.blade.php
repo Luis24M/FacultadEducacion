@@ -10,7 +10,6 @@
     <x-side-button icon="fa-solid fa-house" title="R.N.C" route="/rnc" />
 @elseif(request()->routeIs('institucional'))
     
-<<<<<<< HEAD
 @elseif(request()->routeIs('pregrado'))
     <x-side-button icon="fa-solid fa-house" title="Educación Secundaria" route="/educacion_secundaria" />
  
@@ -20,6 +19,7 @@
     <x-drop-down-button 
 
     title="Ciencias de la Comunicación" 
+    url="/pregrado/CDLC"
     :list="[
         ['name' => 'Institucional', 'url' => '/institucional'],
         ['name' => 'Menu', 'url' => '/menu'],
@@ -29,7 +29,6 @@
 
 
 
-=======
 @elseif(request()->routeIs('pregrado') || request()->routeIs('pregrado.*'))
     <x-side-button icon="fa-solid fa-house" title="Educación Inicial" route="/pregrado/CDLC" />
     <x-side-button icon="fa-solid fa-house" title="Educación Primaria" route="/pregrado/CDLC" />
@@ -48,7 +47,6 @@
         ]]
     ]" 
 />
->>>>>>> 6fad4f6 (prueba)
 @elseif(request()->routeIs('posgrado'))
 
 @elseif(request()->routeIs('unidades'))
@@ -62,7 +60,6 @@
 @elseif(request()->routeIs('rnc'))
 
 @endif
-<<<<<<< HEAD
 <script>
     document.querySelectorAll('[data-dropdown]').forEach(button => {
         const dropdown = button.closest('.dropdown').querySelector('[data-dropdown-menu]');
@@ -97,7 +94,5 @@
         });
     });
 </script>
-=======
 
 
->>>>>>> 6fad4f6 (prueba)
