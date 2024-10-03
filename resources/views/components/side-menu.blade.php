@@ -94,7 +94,6 @@
     });
 });
 
-<<<<<<< HEAD
     window.addEventListener('click', () => {
         document.querySelectorAll('[data-dropdown-menu]').forEach(dropdown => {
             dropdown.classList.add('max-h-0');
@@ -107,6 +106,3 @@
 </script>
 
 
-=======
-</script>
->>>>>>> 8f9dcef (avance_practica_preprofesional)
