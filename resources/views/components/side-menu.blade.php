@@ -33,7 +33,6 @@
     />
 @elseif(request()->routeIs('posgrado'))
 
-<<<<<<< HEAD
 
 @elseif(request()->routeIs('unidades') || request()->routeIs('unidades.*'))
 
@@ -47,9 +46,6 @@
     ]" 
 />
 
-=======
-@elseif(request()->routeIs('unidades') || request()->routeIs('unidades.*'))
->>>>>>> 4fc3b76 (add index)
 
 @elseif(request()->routeIs('departamentos-academicos'))
 
