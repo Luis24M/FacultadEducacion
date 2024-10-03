@@ -10,45 +10,30 @@
     <x-side-button icon="fa-solid fa-house" title="R.N.C" route="/rnc" />
 @elseif(request()->routeIs('institucional'))
     
-@elseif(request()->routeIs('pregrado'))
-    <x-side-button icon="fa-solid fa-house" title="Educación Secundaria" route="/educacion_secundaria" />
- 
-    <x-side-button icon="fa-solid fa-house" title="Educación Inicial" route="/pregrado/CDLC" />
 
-    <x-side-button icon="fa-solid fa-house" title="Educacion Primaria" route="/educacion_primaria" />
-    <x-drop-down-button 
-
-    title="Ciencias de la Comunicación" 
-    url="/pregrado/CDLC"
-    :list="[
-        ['name' => 'Institucional', 'url' => '/institucional'],
-        ['name' => 'Menu', 'url' => '/menu'],
-        ['name' => 'Footer', 'url' => '/footer']
-    ]" 
-/>
 
 
 
 @elseif(request()->routeIs('pregrado') || request()->routeIs('pregrado.*'))
     <x-side-button icon="fa-solid fa-house" title="Educación Inicial" route="/pregrado/CDLC" />
-    <x-side-button icon="fa-solid fa-house" title="Educación Primaria" route="/pregrado/CDLC" />
+    <x-side-button icon="fa-solid fa-house" title="Educación Primaria" route="/pregrado/educacion_primaria" />
     <x-side-button icon="fa-solid fa-house" title="Educación Secundaria" route="/pregrado/CDLC" />
     <div>
-
-<x-drop-down-button 
-    title="Ciencias de la Comunicación" 
-    url="/pregrado/CDLC"
-    :list="[
-        ['name' => 'Sub Item 1', 'url' => '/subitem1'],
-        ['name' => 'Sub Item 2', 'url' => '/subitem2'],
-        ['name' => 'Sub Menu', 'url' => '#', 'children' => [
-            ['name' => 'Child Item 1', 'url' => '/childitem1'],
-            ['name' => 'Child Item 2', 'url' => '/childitem2']
-        ]]
-    ]" 
-/>
+    <x-drop-down-button 
+        title="Ciencias de la Comunicación" 
+        url="/pregrado/CDLC"
+        :list="[
+            ['name' => 'Sub Item 1', 'url' => '/subitem1'],
+            ['name' => 'Sub Item 2', 'url' => '/subitem2'],
+            ['name' => 'Sub Menu', 'url' => '#', 'children' => [
+                ['name' => 'Child Item 1', 'url' => '/childitem1'],
+                ['name' => 'Child Item 2', 'url' => '/childitem2']
+            ]]
+        ]" 
+    />
 @elseif(request()->routeIs('posgrado'))
 
+<<<<<<< HEAD
 
 @elseif(request()->routeIs('unidades') || request()->routeIs('unidades.*'))
 
@@ -62,6 +47,9 @@
     ]" 
 />
 
+=======
+@elseif(request()->routeIs('unidades') || request()->routeIs('unidades.*'))
+>>>>>>> 4fc3b76 (add index)
 
 @elseif(request()->routeIs('departamentos-academicos'))
 

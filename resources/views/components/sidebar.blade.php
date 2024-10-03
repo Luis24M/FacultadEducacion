@@ -25,7 +25,7 @@
     const dropdown = button.closest('.dropdown').querySelector('[data-dropdown-menu]');
 
     button.addEventListener('click', (event) => {
-        event.stopPropagation();
+        event.stopPropagation(); // Evitar que el clic se propague
         const isExpanded = button.getAttribute('aria-expanded') === 'true';
         button.setAttribute('aria-expanded', !isExpanded);
 
@@ -44,21 +44,7 @@
     });
 });
 
-// Permitir que los submenús no se cierren al hacer clic en ellos
-document.querySelectorAll('.dropdown-menu li').forEach(submenu => {
-    submenu.addEventListener('click', (event) => {
-        event.stopPropagation(); // Permitir submenú
-        const subDropdown = submenu.querySelector('ul');
-        if (subDropdown) {
-            const isExpanded = submenu.getAttribute('aria-expanded') === 'true';
-            submenu.setAttribute('aria-expanded', !isExpanded);
-            subDropdown.classList.toggle('max-h-0');
-            subDropdown.classList.toggle('max-h-full');
-        }
-    });
-});
-
-// Cerrar el menú al hacer clic fuera
+// Manejar clics en submenús (cerrar dropdowns al hacer clic fuera)
 window.addEventListener('click', () => {
     document.querySelectorAll('.dropdown-menu').forEach(dropdown => {
         dropdown.classList.add('max-h-0');
@@ -69,5 +55,11 @@ window.addEventListener('click', () => {
     });
 });
 
+// Permitir que los submenús no se cierren al hacer clic en ellos
+document.querySelectorAll('.group').forEach(submenu => {
+    submenu.addEventListener('click', (event) => {
+        event.stopPropagation();
+    });
+});
 
 </script>

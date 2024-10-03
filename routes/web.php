@@ -49,7 +49,7 @@ Route::get('/rnc', function () {
 
 // Rutas Pregrado
 
-Route::get('/educacion_primaria', function () {
+Route::get('/pregrado/educacion_primaria', function () {
     return view('pregrado.educacion_primaria.index');
 })->name('educacion_primaria');
 
