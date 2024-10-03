@@ -55,7 +55,6 @@ Route::get('/rnc', function () {
 
 
 // Rutas Unidades
-<<<<<<< HEAD
 Route::get('/unidades/unidad_calidad', function () {
     return view('unidades.unidad_calidad.index');
 })->name('unidades.unidad_calidad');
@@ -63,11 +62,9 @@ Route::get('/unidades/unidad_calidad', function () {
 Route::get('/unidades/unidad_calidad/iso_9001', function () {
     return view('unidades.unidad_calidad.iso_9001.index');
 })->name('unidades.iso_9001');
-=======
 Route::get('/practica_preprofesional', function (){
     return view('unidades.practica_preprofesional.index');
 })->name('practica_preprofesional');
->>>>>>> 8f9dcef (avance_practica_preprofesional)
 
 Route::get('/unidades/unidad_calidad/acreditacion', function () {
     return view('unidades.unidad_calidad.acreditacion.index');
