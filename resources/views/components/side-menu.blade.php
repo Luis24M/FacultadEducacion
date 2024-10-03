@@ -11,14 +11,15 @@
 @elseif(request()->routeIs('institucional'))
     
 @elseif(request()->routeIs('pregrado'))
-<<<<<<< HEAD
-    <x-side-button icon="fa-solid fa-house" title="Educación Secundaria" route="/educacion_secundaria" />
- 
-=======
+
+
     <x-side-button icon="fa-solid fa-house" title="Educación Inicial" route="/pregrado/CDLC" />
     <x-side-button icon="fa-solid fa-house" title="Educación Primaria" route="/pregrado/CDLC" />
-    <x-side-button icon="fa-solid fa-house" title="Educación Secundaria" route="/pregrado/CDLC" />
+    <x-side-button icon="fa-solid fa-house" title="Educación Secundaria" route="/educacion_secundaria" />   
+
+
     <div>
+ 
 
 
     <x-drop-down-button 
@@ -54,7 +55,7 @@
         ['name' => 'Footer', 'url' => '/footer']
     ]" 
 />
->>>>>>> 33f7276af56fa6703f150523d187315720d47a47
+
 @elseif(request()->routeIs('posgrado'))
 
 @elseif(request()->routeIs('unidades'))
