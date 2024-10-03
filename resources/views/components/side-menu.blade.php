@@ -11,16 +11,22 @@
 
 @elseif(request()->routeIs('institucional'))
     
+<<<<<<< HEAD
 
 
 
 
 @elseif(request()->routeIs('pregrado') || request()->routeIs('pregrado.*'))
+=======
+@elseif(request()->routeIs('pregrado'))
+    <x-side-button icon="fa-solid fa-house" title="Educación Secundaria" route="/educacion_secundaria" />
+>>>>>>> 8f9dcef (avance_practica_preprofesional)
     <x-side-button icon="fa-solid fa-house" title="Educación Inicial" route="/pregrado/CDLC" />
     <x-side-button icon="fa-solid fa-house" title="Educación Primaria" route="/pregrado/primaria" />
     <x-side-button icon="fa-solid fa-house" title="Educación Secundaria" route="/pregrado/CDLC" />
     <div>
     <x-drop-down-button 
+<<<<<<< HEAD
         title="Ciencias de la Comunicación" 
         :list="[
             ['name' => 'Sub Item 1', 'url' => '/subitem1'],
@@ -45,6 +51,53 @@
     ]" 
 />
 
+=======
+    title="Ciencias de la Comunicación" 
+    :list="[
+        ['name' => 'Institucional', 'url' => '/institucional'],
+        ['name' => 'Menu', 'url' => '/menu'],
+        ['name' => 'Footer', 'url' => '/footer']
+    ]" 
+/>
+
+<x-drop-down-button 
+    title="Ciencias de la Comunicación" 
+    :list="[
+        ['name' => 'Institucional', 'url' => '/institucional'],
+        ['name' => 'Menu', 'url' => '/menu'],
+        ['name' => 'Footer', 'url' => '/footer']
+    ]" 
+/>
+<x-drop-down-button 
+    title="Ciencias de la Comunicación" 
+    :list="[
+        ['name' => 'Institucional', 'url' => '/institucional'],
+        ['name' => 'Menu', 'url' => '/menu'],
+        ['name' => 'Footer', 'url' => '/footer']
+    ]" 
+/>
+<x-drop-down-button 
+    title="Ciencias de la Comunicación" 
+    :list="[
+        ['name' => 'Institucional', 'url' => '/practica_preprofesional'],
+        ['name' => 'Menu', 'url' => '/menu'],
+        ['name' => 'Footer', 'url' => '/footer']
+    ]" 
+/>
+@elseif(request()->routeIs('posgrado'))
+
+@elseif(request()->routeIs('unidades'))
+    <x-drop-down-button 
+        class="fa-solid fa-folder-open"
+        title="Practica Preprofesional" 
+        :list="[
+            ['name' => 'Directivas', 'url' => '/practica_preprofesional'],
+            ['name' => 'Comité', 'url' => '/menu'],
+            ['name' => 'Docentes', 'url' => '/footer']
+        ]" 
+        
+    />
+>>>>>>> 8f9dcef (avance_practica_preprofesional)
 
 @elseif(request()->routeIs('departamentos-academicos'))
 
@@ -58,28 +111,29 @@
 @endif
 <script>
     document.querySelectorAll('[data-dropdown]').forEach(button => {
-        const dropdown = button.closest('.dropdown').querySelector('[data-dropdown-menu]');
+    const dropdown = button.closest('.dropdown').querySelector('[data-dropdown-menu]');
 
-        button.addEventListener('click', (event) => {
-            event.stopPropagation(); // Evitar que el clic se propague
-            const isExpanded = button.getAttribute('aria-expanded') === 'true';
-            button.setAttribute('aria-expanded', !isExpanded);
+    button.addEventListener('click', (event) => {
+        event.stopPropagation(); // Evitar que el clic se propague
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', !isExpanded);
 
-            // Cerrar otros dropdowns
-            document.querySelectorAll('.dropdown-menu').forEach(otherDropdown => {
-                if (otherDropdown !== dropdown) {
-                    otherDropdown.classList.add('max-h-0');
-                    otherDropdown.classList.remove('max-h-60');
-                    otherDropdown.previousElementSibling.querySelector('[data-dropdown]').setAttribute('aria-expanded', 'false');
-                }
-            });
-
-            // Alternar el dropdown actual
-            dropdown.classList.toggle('max-h-0');
-            dropdown.classList.toggle('max-h-60');
+        // Cerrar otros dropdowns
+        document.querySelectorAll('.dropdown-menu').forEach(otherDropdown => {
+            if (otherDropdown !== dropdown) {
+                otherDropdown.classList.add('max-h-0');
+                otherDropdown.classList.remove('max-h-60');
+                otherDropdown.previousElementSibling.querySelector('[data-dropdown]').setAttribute('aria-expanded', 'false');
+            }
         });
-    });
 
+        // Alternar el dropdown actual
+        dropdown.classList.toggle('max-h-0');
+        dropdown.classList.toggle('max-h-60');
+    });
+});
+
+<<<<<<< HEAD
     window.addEventListener('click', () => {
         document.querySelectorAll('[data-dropdown-menu]').forEach(dropdown => {
             dropdown.classList.add('max-h-0');
@@ -92,3 +146,6 @@
 </script>
 
 
+=======
+</script>
+>>>>>>> 8f9dcef (avance_practica_preprofesional)
