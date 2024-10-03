@@ -47,21 +47,9 @@
     :list="[ 
         ['name' => 'Auditoria Interna', 'url' => '/unidades/unidad_calidad/auditoria_interna'], 
         ['name' => 'Acreditación', 'url' => '/unidades/unidad_calidad/acreditacion'], 
-        ['name' => 'Licenciamiento', 'url' => '/unidades/unidad_calidad/licenciamiento'] 
+        ['name' => 'Colaboradores', 'url' => '/unidades/unidad_calidad/colaboradores'] 
     ]" 
 />
-
-    <x-drop-down-button 
-        class="fa-solid fa-folder-open"
-        title="Practica Preprofesional" 
-        :list="[
-            ['name' => 'Directivas', 'url' => '/unidades/practica_preprofesional'],
-            ['name' => 'Comité', 'url' => '/menu'],
-            ['name' => 'Docentes', 'url' => '/footer']
-        ]" 
-        
-    />
-
 
 
 @elseif(request()->routeIs('departamentos_academicos'))
