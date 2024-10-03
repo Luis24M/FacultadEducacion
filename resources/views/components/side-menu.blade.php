@@ -8,6 +8,7 @@
     <x-side-button icon="fa-solid fa-house" title="Segunda especialidad" route="/segunda-especialidad" />
     <x-side-button icon="fa-solid fa-house" title="Cidunt" route="/cidunt" />
     <x-side-button icon="fa-solid fa-house" title="R.N.C" route="/rnc" />
+
 @elseif(request()->routeIs('institucional'))
     
 
@@ -16,12 +17,11 @@
 
 @elseif(request()->routeIs('pregrado') || request()->routeIs('pregrado.*'))
     <x-side-button icon="fa-solid fa-house" title="Educación Inicial" route="/pregrado/CDLC" />
-    <x-side-button icon="fa-solid fa-house" title="Educación Primaria" route="/pregrado/educacion_primaria" />
+    <x-side-button icon="fa-solid fa-house" title="Educación Primaria" route="/pregrado/primaria" />
     <x-side-button icon="fa-solid fa-house" title="Educación Secundaria" route="/pregrado/CDLC" />
     <div>
     <x-drop-down-button 
         title="Ciencias de la Comunicación" 
-        url="/pregrado/CDLC"
         :list="[
             ['name' => 'Sub Item 1', 'url' => '/subitem1'],
             ['name' => 'Sub Item 2', 'url' => '/subitem2'],
@@ -38,7 +38,6 @@
 
 <x-drop-down-button 
     title="Unidad de Calidad" 
-    icon="fa-solid fa-people-roof" 
     :list="[ 
         ['name' => 'ISO 9001', 'url' => '/unidades/unidad_calidad/iso_9001'], 
         ['name' => 'Acreditación', 'url' => '/unidades/unidad_calidad/acreditacion'], 
@@ -54,6 +53,7 @@
 @elseif(request()->routeIs('cidunt'))
 
 @elseif(request()->routeIs('rnc'))
+
 
 @endif
 <script>

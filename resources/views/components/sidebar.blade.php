@@ -19,7 +19,7 @@
         @include('components.side-menu')
     </section>
 </nav>
-
+{{-- 
 <script>
     document.querySelectorAll('[data-dropdown]').forEach(button => {
     const dropdown = button.closest('.dropdown').querySelector('[data-dropdown-menu]');
@@ -62,4 +62,4 @@ document.querySelectorAll('.group').forEach(submenu => {
     });
 });
 
-</script>
+</script> --}}

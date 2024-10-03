@@ -16,8 +16,8 @@ Route::get('/pregrado', function () {
 
 Route::get('/pregrado/CDLC', function () {
     return view('pregrado.cienciasDeLaComunicacion.index');
-})->name('pregrado');
-   
+})->name('pregrado.cdlc');
+
 Route::get('/posgrado', function () {
     return view('posgrado.index');
 })->name('posgrado');
@@ -49,9 +49,7 @@ Route::get('/rnc', function () {
 
 // Rutas Pregrado
 
-Route::get('/pregrado/educacion_primaria', function () {
-    return view('pregrado.educacion_primaria.index');
-})->name('educacion_primaria');
+
 
 // Rutas Posgrado
 
@@ -59,19 +57,19 @@ Route::get('/pregrado/educacion_primaria', function () {
 // Rutas Unidades
 Route::get('/unidades/unidad_calidad', function () {
     return view('unidades.unidad_calidad.index');
-})->name('unidad_calidad');
+})->name('unidades.unidad_calidad');
 
 Route::get('/unidades/unidad_calidad/iso_9001', function () {
     return view('unidades.unidad_calidad.iso_9001.index');
-})->name('iso_9001');
+})->name('unidades.iso_9001');
 
 Route::get('/unidades/unidad_calidad/acreditacion', function () {
     return view('unidades.unidad_calidad.acreditacion.index');
-})->name('acreditacion');
+})->name('unidades.acreditacion');
 
 Route::get('/unidades/unidad_calidad/colaboradores', function () {
     return view('unidades.unidad_calidad.colaboradores.index');
-})->name('colaboradores');
+})->name('unidades.colaboradores');
 // Rutas Departamentos Academicos
 
 
