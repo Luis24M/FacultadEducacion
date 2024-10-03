@@ -54,10 +54,21 @@ Route::get('/rnc', function () {
 
 
 // Rutas Unidades
-Route::get('/unidades', function () {
-    return view('unidad_calidad.index');
-})->name('rnc');
+Route::get('/unidades/unidad_calidad', function () {
+    return view('unidades.unidad_calidad.index');
+})->name('unidad_calidad');
 
+Route::get('/unidades/unidad_calidad/iso_9001', function () {
+    return view('unidades.unidad_calidad.iso_9001.index');
+})->name('iso_9001');
+
+Route::get('/unidades/unidad_calidad/acreditacion', function () {
+    return view('unidades.unidad_calidad.acreditacion.index');
+})->name('acreditacion');
+
+Route::get('/unidades/unidad_calidad/colaboradores', function () {
+    return view('unidades.unidad_calidad.colaboradores.index');
+})->name('colaboradores');
 // Rutas Departamentos Academicos
 
 
