@@ -5,7 +5,6 @@
 <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
     <div class="container mx-auto text-center">
         <h1 class="text-5xl font-extrabold mb-4">Unidad de Calidad ISO 9001</h1>
-        <p class="text-lg mb-8">Acreditación 2023 / 2022 / 2021 / 2020</p>
         <a href="#master-list" class="bg-white text-blue-600 py-3 px-8 rounded-lg shadow-lg hover:bg-gray-200 transition">Ver Lista Maestra</a>
     </div>
 </section>
@@ -29,11 +28,5 @@
     </div>
 </section>
 
-<section class="py-16 bg-gray-100">
-    <div class="container mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-8">Colaboradores</h2>
-        <p class="text-lg">Instituto Tecnológico Estatal Trujillo</p>
-        <p class="text-lg">Laredo Nueva Esperanza</p>
-    </div>
-</section>
+
 @endsection
