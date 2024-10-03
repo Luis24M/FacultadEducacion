@@ -49,7 +49,19 @@
 />
 @elseif(request()->routeIs('posgrado'))
 
-@elseif(request()->routeIs('unidades'))
+
+@elseif(request()->routeIs('unidades') || request()->routeIs('unidades.*'))
+
+<x-drop-down-button 
+    title="Unidad de Calidad" 
+    icon="fa-solid fa-people-roof" 
+    :list="[ 
+        ['name' => 'ISO 9001', 'url' => '/unidades/unidad_calidad/iso_9001'], 
+        ['name' => 'Acreditación', 'url' => '/unidades/unidad_calidad/acreditacion'], 
+        ['name' => 'Colaboradores', 'url' => '/unidades/unidad_calidad/colaboradores'] 
+    ]" 
+/>
+
 
 @elseif(request()->routeIs('departamentos-academicos'))
 
