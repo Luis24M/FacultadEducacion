@@ -1,38 +1,29 @@
 @extends('layouts.app')
 
 @section('content')
-<section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
-    <div class="container mx-auto text-center">
-        <h1 class="text-5xl font-extrabold mb-4">Unidad de Calidad ISO 9001</h1>
-
-        <a href="#master-list" class="bg-white text-blue-600 py-3 px-8 rounded-lg shadow-lg hover:bg-gray-200 transition">Ver Lista Maestra</a>
-    </div>
+<section class="bg-gradient-to-r from-[#000080] to-[#000080] text-white py-8 flex items-center justify-center">
+  <div class="text-center">
+    <h1 class="text-4xl font-extrabold">Unidad de Calidad</h1>
+  </div>
 </section>
 
-<section id="master-list" class="py-16 bg-gray-100">
-    <div class="container mx-auto">
-        <h2 class="text-4xl font-bold mb-8 text-center">Lista Maestra de Estándares</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            @for ($i = 1; $i <= 34; $i++)
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-semibold mb-4">Estándar {{ sprintf('%02d', $i) }}</h3>
-                    <p class="text-gray-600 mb-2"><strong>Contextualización:</strong> Breve descripción del estándar {{ $i }}.</p>
-                    <p class="text-gray-600 mb-4"><strong>Evidencias:</strong> Documentos y archivos relevantes.</p>
-                    <div class="flex justify-between">
-                        <a href="#self-evaluation-{{ $i }}" class="text-blue-600 hover:underline">Informe de Autoevaluación</a>
-                        <a href="#improvement-plans-{{ $i }}" class="text-blue-600 hover:underline">Planes de Mejora</a>
-                    </div>
-                </div>
-            @endfor
+  <section id="master-list" class="bg-gray-100">
+    <br>
+  <p class="text-lg leading-relaxed text-justify mx-auto max-w-7xl">
+    La Facultad de Educación de la Universidad Nacional de Trujillo busca asegurar que sus programas académicos cumplan con altos estándares de calidad y respondan a las necesidades del contexto educativo. A través del proceso de estandarización que abarca una autoevaluación y mejora continua, se logrará un entorno que impulse el desarrollo integral de sus estudiantes.
+    </p>
+    <br>
+  <div class="container mx-auto max-w-screen-xl">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+      @for ($i = 1; $i <= 34; $i++)
+        <div class="bg-gray-200 p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold mb-4"></h3>
+          <h4 class="text-2xl font-semibold mb-4">
+            <a href="estándar/{{ $i }}" class="text-blue-600 hover:underline text-3xl">Estándar {{ sprintf('%02d', $i) }}</a>
+          </h4>
         </div>
+      @endfor
     </div>
-</section>
-
-<section class="py-16 bg-gray-100">
-    <div class="container mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-8">Colaboradores</h2>
-        <p class="text-lg">Instituto Tecnológico Estatal Trujillo</p>
-        <p class="text-lg">Laredo Nueva Esperanza</p>
-    </div>
+  </div>
 </section>
 @endsection

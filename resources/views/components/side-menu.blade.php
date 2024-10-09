@@ -11,10 +11,6 @@
 
 @elseif(request()->routeIs('institucional'))
     
-
-
-
-
 @elseif(request()->routeIs('pregrado') || request()->routeIs('pregrado.*'))
     <x-side-button icon="fa-solid fa-house" title="Educación Inicial" route="/pregrado/CDLC" />
     <x-side-button icon="fa-solid fa-house" title="Educación Primaria" route="/pregrado/primaria" />
