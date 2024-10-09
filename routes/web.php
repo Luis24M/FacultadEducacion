@@ -14,6 +14,8 @@ Route::get('/pregrado', function () {
     return view('pregrado.index');
 })->name('pregrado');
 
+
+
 Route::get('/pregrado/CDLC', function () {
     return view('pregrado.cienciasDeLaComunicacion.index');
 })->name('pregrado.cdlc');
@@ -48,7 +50,9 @@ Route::get('/rnc', function () {
 
 
 // Rutas Pregrado
-
+Route::get('/idiomas', function () {
+    return view('pregrado.idiomas.index');
+})->name('pregrado');
 
 
 // Rutas Posgrado

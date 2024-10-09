@@ -21,16 +21,22 @@
     <x-side-button icon="fa-solid fa-house" title="Educación Secundaria" route="/pregrado/CDLC" />
     <div>
     <x-drop-down-button 
-        title="Ciencias de la Comunicación" 
-        :list="[
-            ['name' => 'Sub Item 1', 'url' => '/subitem1'],
-            ['name' => 'Sub Item 2', 'url' => '/subitem2'],
-            ['name' => 'Sub Menu', 'url' => '#', 'children' => [
-                ['name' => 'Child Item 1', 'url' => '/childitem1'],
-                ['name' => 'Child Item 2', 'url' => '/childitem2']
-            ]]
-        ]" 
-    />
+    title="Ciencias de la Comunicación" 
+    :list="[
+        ['name' => 'Institucional', 'url' => '/institucional'],
+        ['name' => 'Menu', 'url' => '/menu'],
+        ['name' => 'Footer', 'url' => '/footer']
+    ]" 
+/>
+
+<x-drop-down-button 
+    title="Idiomas : Inglés - Francés" 
+    :list="[
+        ['name' => 'Home', 'url' => '/idiomas']
+    ]" 
+/>
+
+
 @elseif(request()->routeIs('posgrado'))
 
 
