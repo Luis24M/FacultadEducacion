@@ -6,6 +6,10 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
+Route::get('/noticias', function () {
+    return view('noticias');
+})->name('noticias');
+
 Route::get('/institucional', function () {
     return view('institucional.index');
 })->name('institucional');
@@ -14,9 +18,7 @@ Route::get('/pregrado', function () {
     return view('pregrado.index');
 })->name('pregrado');
 
-
-
-Route::get('/pregrado/CDLC', function () {
+Route::get('/pregrado/cdlc', function () {
     return view('pregrado.cienciasDeLaComunicacion.index');
 })->name('pregrado.cdlc');
 
