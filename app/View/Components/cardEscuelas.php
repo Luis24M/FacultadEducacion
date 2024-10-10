@@ -13,9 +13,11 @@ class cardEscuelas extends Component
      */
     public $name;
     public $img;
+    public $url;
 
-    public function __construct($name, $img)
+    public function __construct($name, $img, $url)
     {
+        $this->url = $url;
         $this->name = $name;
         $this->img = $img;
     }

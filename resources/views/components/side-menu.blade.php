@@ -11,22 +11,29 @@
 
 @elseif(request()->routeIs('institucional'))
     
+
 @elseif(request()->routeIs('pregrado') || request()->routeIs('pregrado.*'))
     <x-side-button icon="fa-solid fa-house" title="Educación Inicial" route="/pregrado/CDLC" />
     <x-side-button icon="fa-solid fa-house" title="Educación Primaria" route="/pregrado/primaria" />
     <x-side-button icon="fa-solid fa-house" title="Educación Secundaria" route="/pregrado/CDLC" />
     <div>
     <x-drop-down-button 
-        title="Ciencias de la Comunicación" 
-        :list="[
-            ['name' => 'Sub Item 1', 'url' => '/subitem1'],
-            ['name' => 'Sub Item 2', 'url' => '/subitem2'],
-            ['name' => 'Sub Menu', 'url' => '#', 'children' => [
-                ['name' => 'Child Item 1', 'url' => '/childitem1'],
-                ['name' => 'Child Item 2', 'url' => '/childitem2']
-            ]]
-        ]" 
-    />
+    title="Ciencias de la Comunicación" 
+    :list="[
+        ['name' => 'Institucional', 'url' => '/institucional'],
+        ['name' => 'Menu', 'url' => '/menu'],
+        ['name' => 'Footer', 'url' => '/footer']
+    ]" 
+/>
+
+<x-drop-down-button 
+    title="Idiomas : Inglés - Francés" 
+    :list="[
+        ['name' => 'Home', 'url' => '/idiomas']
+    ]" 
+/>
+
+
 @elseif(request()->routeIs('posgrado'))
 
 
@@ -41,6 +48,18 @@
     ]" 
 />
 
+    <x-drop-down-button 
+        class="fa-solid fa-folder-open"
+        title="Practica Preprofesional" 
+        :list="[
+            ['name' => 'Directivas', 'url' => '/practica_preprofesional'],
+            ['name' => 'Comité', 'url' => '/menu'],
+            ['name' => 'Docentes', 'url' => '/footer']
+        ]" 
+        
+    />
+
+
 
 @elseif(request()->routeIs('departamentos-academicos'))
 
@@ -54,27 +73,27 @@
 @endif
 <script>
     document.querySelectorAll('[data-dropdown]').forEach(button => {
-        const dropdown = button.closest('.dropdown').querySelector('[data-dropdown-menu]');
+    const dropdown = button.closest('.dropdown').querySelector('[data-dropdown-menu]');
 
-        button.addEventListener('click', (event) => {
-            event.stopPropagation(); // Evitar que el clic se propague
-            const isExpanded = button.getAttribute('aria-expanded') === 'true';
-            button.setAttribute('aria-expanded', !isExpanded);
+    button.addEventListener('click', (event) => {
+        event.stopPropagation(); // Evitar que el clic se propague
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', !isExpanded);
 
-            // Cerrar otros dropdowns
-            document.querySelectorAll('.dropdown-menu').forEach(otherDropdown => {
-                if (otherDropdown !== dropdown) {
-                    otherDropdown.classList.add('max-h-0');
-                    otherDropdown.classList.remove('max-h-60');
-                    otherDropdown.previousElementSibling.querySelector('[data-dropdown]').setAttribute('aria-expanded', 'false');
-                }
-            });
-
-            // Alternar el dropdown actual
-            dropdown.classList.toggle('max-h-0');
-            dropdown.classList.toggle('max-h-60');
+        // Cerrar otros dropdowns
+        document.querySelectorAll('.dropdown-menu').forEach(otherDropdown => {
+            if (otherDropdown !== dropdown) {
+                otherDropdown.classList.add('max-h-0');
+                otherDropdown.classList.remove('max-h-60');
+                otherDropdown.previousElementSibling.querySelector('[data-dropdown]').setAttribute('aria-expanded', 'false');
+            }
         });
+
+        // Alternar el dropdown actual
+        dropdown.classList.toggle('max-h-0');
+        dropdown.classList.toggle('max-h-60');
     });
+});
 
     window.addEventListener('click', () => {
         document.querySelectorAll('[data-dropdown-menu]').forEach(dropdown => {

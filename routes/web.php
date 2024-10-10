@@ -6,6 +6,10 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
+Route::get('/noticias', function () {
+    return view('noticias');
+})->name('noticias');
+
 Route::get('/institucional', function () {
     return view('institucional.index');
 })->name('institucional');
@@ -14,7 +18,7 @@ Route::get('/pregrado', function () {
     return view('pregrado.index');
 })->name('pregrado');
 
-Route::get('/pregrado/CDLC', function () {
+Route::get('/pregrado/cdlc', function () {
     return view('pregrado.cienciasDeLaComunicacion.index');
 })->name('pregrado.cdlc');
 
@@ -48,7 +52,9 @@ Route::get('/rnc', function () {
 
 
 // Rutas Pregrado
-
+Route::get('/idiomas', function () {
+    return view('pregrado.idiomas.index');
+})->name('pregrado');
 
 
 // Rutas Posgrado
@@ -62,6 +68,9 @@ Route::get('/unidades/unidad_calidad', function () {
 Route::get('/unidades/unidad_calidad/iso_9001', function () {
     return view('unidades.unidad_calidad.iso_9001.index');
 })->name('unidades.iso_9001');
+Route::get('/practica_preprofesional', function (){
+    return view('unidades.practica_preprofesional.index');
+})->name('practica_preprofesional');
 
 Route::get('/unidades/unidad_calidad/acreditacion', function () {
     return view('unidades.unidad_calidad.acreditacion.index');
