@@ -11,6 +11,7 @@
 
 @elseif(request()->routeIs('institucional'))
     
+<<<<<<< HEAD
 
 @elseif(request()->routeIs('pregrado') || request()->routeIs('pregrado.*'))
     <x-side-button icon="fa-solid fa-house" title="Educación Inicial" route="/pregrado/CDLC" />
@@ -33,6 +34,13 @@
     ]" 
 />
 
+=======
+@elseif(request()->routeIs('pregrado'))
+    <x-side-button icon="fa-solid fa-house" title="Educación Inicial" route="#" />
+    <x-side-button icon="fa-solid fa-house" title="Educación Primaria" route="#" />
+    <x-side-button icon="fa-solid fa-house" title="Ciencia de la comunicación" route="pregrado/CDLC" />
+    
+>>>>>>> 75cf832 (institucional y reseña de ciencias de la comunicacion)
 
 @elseif(request()->routeIs('posgrado'))
 
