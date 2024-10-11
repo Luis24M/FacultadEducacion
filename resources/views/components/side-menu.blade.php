@@ -11,21 +11,13 @@
 
 @elseif(request()->routeIs('institucional'))
     
-<<<<<<< HEAD
 
 @elseif(request()->routeIs('pregrado') || request()->routeIs('pregrado.*'))
     <x-side-button icon="fa-solid fa-house" title="Educación Inicial" route="/pregrado/CDLC" />
     <x-side-button icon="fa-solid fa-house" title="Educación Primaria" route="/pregrado/primaria" />
     <x-side-button icon="fa-solid fa-house" title="Educación Secundaria" route="/pregrado/CDLC" />
-    <div>
-    <x-drop-down-button 
-    title="Ciencias de la Comunicación" 
-    :list="[
-        ['name' => 'Institucional', 'url' => '/institucional'],
-        ['name' => 'Menu', 'url' => '/menu'],
-        ['name' => 'Footer', 'url' => '/footer']
-    ]" 
-/>
+
+    <x-side-button icon="fa-solid fa-house" title="Ciencias de la comunicación" route="/pregrado/CDLC" />
 
 <x-drop-down-button 
     title="Idiomas : Inglés - Francés" 
@@ -33,14 +25,10 @@
         ['name' => 'Home', 'url' => '/idiomas']
     ]" 
 />
-
-=======
 @elseif(request()->routeIs('pregrado'))
     <x-side-button icon="fa-solid fa-house" title="Educación Inicial" route="#" />
     <x-side-button icon="fa-solid fa-house" title="Educación Primaria" route="#" />
     <x-side-button icon="fa-solid fa-house" title="Ciencia de la comunicación" route="pregrado/CDLC" />
-    
->>>>>>> 75cf832 (institucional y reseña de ciencias de la comunicacion)
 
 @elseif(request()->routeIs('posgrado'))
 
