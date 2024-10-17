@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --Primario-Dos: #A54332;
+    --Primario: #252850;
+    --Secundario: #3e4bb7;
+    --Terciario: #F0F0F2;
+    --Hover: #E5E5E8;
+    --Titulos: "Roboto Condensed", sans-serif;
+    --SubTitulos: "Roboto Condensed", sans-serif;
+    --TextosGeneral: "Open Sans", sans-serif;
+}
+*{
+    font-family: var(--TextosGeneral);
+}
+#main-container{
+    display:flex;
+    flex-direction:column;   
+}
+.titulo{
+    padding: 0 2rem;
+    background: var(--Primario-Dos);
+}
+.titulo h1{
+    color: #ffffff;
+    font-family: var(--SubTitulos);
+    font-size: clamp(1.5rem, 4vw + 1rem, 3rem);
+}
+.contenedor-informacion{
+    max-width: 1050px;
+    width: 100%;
+    margin: 0 auto;
+}
+.contenedor-navegacion{
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 1rem 0;
+}
+.contenedor-navegacion .btn-nav{
+    position: relative;
+    color: var(--Primario-Dos);
+    font-weight: bold;
+    font-family: var(--SubTitulos);
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: var(--Terciario);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background .5s ease-in-out, transform 0.3s ease-in-out;
+}
+.btn-nav:hover {
+    background: var(--Hover);
+    transform: translateY(-10px);
+}
+.btn-nav.active{
+    color: #ffffff;
+    background: var(--Primario-Dos);
+}
+.btn-nav,
+.btn-nav i{
+    font-size: clamp(0.8rem, 2vw, 1rem);
+}
+.btn-nav i{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    transform: rotate(-45deg);
+}
+.contenido{
+    padding: 1rem 0;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.contenido.active {
+    display: block;
+    opacity: 1;
+}
+.contenido p{
+    text-align: justify;
+    line-height: 2;
+    padding-bottom: .35rem;
+}
+#nosotros{
+    padding: 15px;
+    margin: 15px;
+}
+/*-----Formulario-----*/
+.contenedor-formulario{
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    height: 400px;
+    border-radius: 10px;
+    border: 3px solid var(--Primario-Dos);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+form .contenedor-entrada{
+    width: 100%;
+    display: flex;
+    padding: .5rem 1rem;
+    gap: 1rem;
+}
+.contenedor-entrada .entrada-uno{
+    width: 50%;
+    min-height: 40px;
+    display: flex;
+    border-radius: 5px;
+    border: 2px solid var(--Primario-Dos);
+    overflow: hidden;
+}
+.contenedor-entrada .contenedor-entrada-opcion{
+    width: 100%;
+}
+.contenedor-entrada-opcion .contenedor-entrada-icono{
+    width: 10% !important;
+}
+.entrada-uno .contenedor-icono{
+    width: 20%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background: var(--Primario-Dos);
+}
+.entrada-uno .contenedor-input{
+    width: 80%;
+}
+.contenedor-input input,
+.contenedor-input select{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background: none;
+}
+form .contenedor-comentario{
+    width: 100%;
+    min-height: 120px;
+    padding: 1rem;
+}
+.contenedor-comentario textarea{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background: none;
+    border-radius: 5px;
+    border: 2px solid var(--Primario-Dos);
+    resize: none;
+    padding: 8px;
+    field-sizing: content;
+    vertical-align: bottom;
+}
+form .botones{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+.botones input{
+    width: 50%;
+    font-weight: bold;
+    padding: .5rem;
+    border-radius: 5px;
+    border: 2px solid var(--Primario-Dos);
+    cursor: pointer;
+}
+.botones #enviar{
+    color: #fff;
+    background: var(--Primario-Dos);
+}
+.botones #borrar{
+    color: var(--Primario-Dos);
+    background: none;
+}
+
+/*-----Contador-----*/
+.contenedor-contador{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.contenedor-contador .contenedor-primario{
+    width: 200px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--Primario-Dos);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+}
+.contenedor-primario .contenedor-logo{
+    width: 70px;
+    height: 70px;
+    padding: .3rem 0;
+}
+.contenedor-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: 50%;
+}
+.contenedor-primario .contenedor-numero{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.contenedor-numero .numero{
+    color: #fff;
+    font-weight: bold;
+    font-size: clamp(1.5rem, 2vw + 1rem, 4rem);
+    font-family: var(--Titulos);
+}
+.contenedor-numero h4{
+    color: #fff;
+    font-family: var(--SubTitulos);
+    font-size: clamp(1rem, 1.5vw + 0.5rem, 1.2rem);
+}
+
+/*-----Tarjetas de Comentarios-----*/
+.seccion-comentarios {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.tarjeta-comentario {
+    flex: 1 1 100%;
+    background-color: #ffffff;
+    border: 2px solid var(--Primario-Dos);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 400px;
+    margin: 10px;
+}
+.tarjeta-comentario:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+figure {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.imagen-comentario {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid var(--Primario-Dos);
+}
+figure figcaption h3 {
+    font-family: var(--Titulos);
+    font-size: 1.2em;
+    color: var(--Primario);
+}
+figure figcaption .fecha{
+    font-family: var(--SubTitulos);
+    font-size: 0.9em;
+    color: var(--Primario-Dos);
+}
+.tarjeta-comentario p {
+    text-align: justify;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+}
