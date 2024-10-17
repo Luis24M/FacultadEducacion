@@ -18,10 +18,6 @@ Route::get('/pregrado', function () {
     return view('pregrado.index');
 })->name('pregrado');
 
-Route::get('/pregrado/cdlc', function () {
-    return view('pregrado.cienciasDeLaComunicacion.index');
-})->name('pregrado.cdlc');
-
 Route::get('/posgrado', function () {
     return view('posgrado.index');
 })->name('posgrado');
@@ -30,13 +26,13 @@ Route::get('/unidades', function () {
     return view('unidades.index');
 })->name('unidades');
 
-Route::get('/departamentos-academicos', function () {
+Route::get('/departamentos_academicos', function () {
     return view('departamentos-academicos.index');
-})->name('departamentos-academicos');
+})->name('departamentos_academicos');
 
-Route::get('/segunda-especialidad', function () {
+Route::get('/segunda_especialidad', function () {
     return view('segunda-especialidad.index');
-})->name('segunda-especialidad');
+})->name('segunda_especialidad');
 
 Route::get('/cidunt', function () {
     return view('cidunt.index');
@@ -56,7 +52,7 @@ Route::get('/idiomas', function () {
     return view('pregrado.idiomas.index');
 })->name('pregrado');
 
-Route::get('/pregrado/CDLC', function () {
+Route::get('/pregrado/cdlc', function () {
     return view('pregrado.cienciasDeLaComunicacion.index');
 })->name('pregrado');
 Route::get('/pregrado/educacion_secundaria', function () {
