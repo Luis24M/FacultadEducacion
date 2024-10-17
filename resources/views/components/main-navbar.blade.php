@@ -1,36 +1,37 @@
 <ul class="lg:flex justify-around text-white [&>li]:w-fit items-center hidden gap-2 md:w-full">
-  <li><a href="/">Institucional</a></li>
-  <li><a href="/">Pregrado</a></li>
-  <li><a href="/">Posgrado</a></li>
-  <li><a href="/">Unidades</a></li>
-  <li><a href="/">Departamentos Academicos</a></li>
-  <li><a href="/">Segunda Especialidad</a></li>
-  <li><a href="/">Cidunt</a></li>
-  <li><a href="/">R.N.C</a></li>
+    <li><a href="/institucional">Institucional</a></li>
+    <li><a href="/pregrado">Pregrado</a></li>
+    <li><a href="/posgrado">Posgrado</a></li>
+    <li><a href="/unidades">Unidades</a></li>
+    <li><a href="/departamentos_academicos">Departamentos Academicos</a></li>
+    <li><a href="/segunda_especialidad">Segunda Especialidad</a></li>
+    <li><a href="/cidunt">Cidunt</a></li>
+    <li><a href="/rnc">R.N.C</a></li>
 </ul>
 
-{{-- menu burguer for ipad --}}
-<div class="flex items-center justify-center lg:hidden ml-4">
-  <button class="text-white" id="menu-toggle">
-    <i class="fas fa-bars md:w-12"></i>
-  </button>
-</div>
+<button class="text-white flex lg:hidden px-4 w-full justify-end" id="menu-toggle">
+    <i class="fas fa-bars  md:w-12"></i>
+</button>
 
-{{-- Dropdown menu for mobile --}}
-<ul id="mobile-menu" class="flex-col bg-gray-800 text-white hidden w-full items-center">
-  <li class="py-2"><a href="/">Institucional</a></li>
-  <li class="py-2"><a href="/">Pregrado</a></li>
-  <li class="py-2"><a href="/">Posgrado</a></li>
-  <li class="py-2"><a href="/">Unidades</a></li>
-  <li class="py-2"><a href="/">Departamentos Academicos</a></li>
-  <li class="py-2"><a href="/">Segunda Especialidad</a></li>
-  <li class="py-2"><a href="/">Cidunt</a></li>
-  <li class="py-2"><a href="/">R.N.C</a></li>
-</ul>
 
 <script>
-  document.getElementById('menu-toggle').addEventListener('click', function() {
-    const menu = document.getElementById('mobile-menu');
-    menu.classList.toggle('hidden');
-  });
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const icon = document.querySelector('#menu-toggle i');
+        const body = document.body;
+
+        // Toggle menu visibility
+        menu.classList.toggle('hidden');
+
+        // Toggle icon classes
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-x', !icon.classList.contains('fa-bars'));
+
+        // Toggle body overflow to disable/enable scroll
+        if (!menu.classList.contains('hidden')) {
+            body.classList.add('overflow-hidden');
+        } else {
+            body.classList.remove('overflow-hidden');
+        }
+    });
 </script>

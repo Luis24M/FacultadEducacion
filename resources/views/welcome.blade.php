@@ -2,7 +2,7 @@
 
 @section('content')
 <h2 class="text-3xl my-8">Noticias</h2>
-<section class="flex p-4 justify-around">
+<section class="flex lg:flex-row flex-col p-4 gap-4 justify-around mx-auto max-w-7xl">
   <x-card-noticias titulo="Título de la noticia" fecha="09 Octubre 2024" imagen="{{asset('imagenes/index/noticia1.png')}}" descripcion="Descripcion de prueba" />
   <x-card-noticias titulo="Título de la noticia" fecha="09 Octubre 2024" imagen="{{asset('imagenes/index/noticia1.png')}}" descripcion="Descripcion de prueba" />
   <x-card-noticias titulo="Título de la noticia" fecha="09 Octubre 2024" imagen="{{asset('imagenes/index/noticia1.png')}}" descripcion="Descripcion de prueba" />
