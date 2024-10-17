@@ -54,7 +54,7 @@
             <section class="contenedor-contador">
                 <section class="contenedor-primario" data-aos="fade-right" data-aos-duration="1000">
                     <section class="contenedor-logo">
-                        <img src="{{ asset('asset/img/Icono-Profesor.png') }}" alt="Logotipo De Profesor">
+                        <img src="{{ asset('img/Icono-Profesor.png') }}" alt="Logotipo De Profesor">
                     </section>
                     <section class="contenedor-numero">
                         <span class="numero" data-objetivo="150">150</span>
@@ -64,7 +64,7 @@
 
                 <section class="contenedor-primario" data-aos="fade-down" data-aos-duration="1000">
                     <section class="contenedor-logo">
-                        <img src="{{ asset('asset/img/Icono-Estudiante.png') }}" alt="Logotipo De Estudiante">
+                        <img src="{{ asset('img/Icono-Estudiante.png') }}" alt="Logotipo De Estudiante">
                     </section>
                     <section class="contenedor-numero">
                         <span class="numero" data-objetivo="1200">1200</span>
@@ -74,7 +74,7 @@
 
                 <section class="contenedor-primario" data-aos="fade-down" data-aos-duration="1000">
                     <section class="contenedor-logo">
-                        <img src="{{ asset('asset/img/Icono-Excelencia.png') }}" alt="Logotipo De Excelencia Academica">
+                        <img src="{{ asset('img/Icono-Excelencia.png') }}" alt="Logotipo De Excelencia Academica">
                     </section>
                     <section class="contenedor-numero">
                         <span class="numero" data-objetivo="10">10</span>
@@ -84,7 +84,7 @@
 
                 <section class="contenedor-primario" data-aos="fade-down" data-aos-duration="1000">
                     <section class="contenedor-logo">
-                        <img src="{{ asset('asset/img/Icono-Investigacion.png') }}" alt="Logotipo De Proyectos">
+                        <img src="{{ asset('img/Icono-Investigacion.png') }}" alt="Logotipo De Proyectos">
                     </section>
                     <section class="contenedor-numero">
                         <span class="numero" data-objetivo="50">50</span>
@@ -94,7 +94,7 @@
 
                 <section class="contenedor-primario" data-aos="fade-left" data-aos-duration="1000">
                     <section class="contenedor-logo">
-                        <img src="{{ asset('asset/img/Icono-Investigacion.png') }}" alt="Logotipo De Proyectos">
+                        <img src="{{ asset('img/Icono-Investigacion.png') }}" alt="Logotipo De Proyectos">
                     </section>
                     <section class="contenedor-numero">
                         <span class="numero" data-objetivo="50">50</span>
@@ -113,7 +113,7 @@
                 <div class="contenedor-tarjetas">
                     <article class="tarjeta-comentario">
                         <figure>
-                            <img src="{{ asset('asset/img/Img-Nosotros.jpg') }}" alt="Juan Pérez" class="imagen-comentario">
+                            <img src="{{ asset('img/Img-Nosotros.jpg') }}" alt="Juan Pérez" class="imagen-comentario">
                             <figcaption>
                                 <h3>Juan Pérez</h3>
                                 <p class="fecha">25/09/2024</p>
@@ -129,7 +129,7 @@
                     </article>
                     <article class="tarjeta-comentario">
                         <figure>
-                            <img src="{{ asset('asset/img/Img-Nosotros.jpg') }}" alt="María López" class="imagen-comentario">
+                            <img src="{{ asset('img/Img-Nosotros.jpg') }}" alt="María López" class="imagen-comentario">
                             <figcaption>
                                 <h3>María López</h3>
                                 <p class="fecha">20/09/2024</p>
@@ -145,7 +145,7 @@
                     </article>
                     <article class="tarjeta-comentario">
                         <figure>
-                            <img src="{{ asset('asset/img/Img-Nosotros.jpg') }}" alt="Carlos Sánchez" class="imagen-comentario">
+                            <img src="{{ asset('img/Img-Nosotros.jpg') }}" alt="Carlos Sánchez" class="imagen-comentario">
                             <figcaption>
                                 <h3>Carlos Sánchez</h3>
                                 <p class="fecha">18/09/2024</p>
@@ -161,7 +161,7 @@
                     </article>
                     <article class="tarjeta-comentario">
                         <figure>
-                            <img src="{{ asset('asset/img/Img-Nosotros.jpg') }}" alt="Laura Gómez" class="imagen-comentario">
+                            <img src="{{ asset('img/Img-Nosotros.jpg') }}" alt="Laura Gómez" class="imagen-comentario">
                             <figcaption>
                                 <h3>Laura Gómez</h3>
                                 <p class="fecha">15/09/2024</p>
