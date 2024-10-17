@@ -6,7 +6,7 @@
                 alt="Logo unt">
             <h1 class="text-xl font-bold">FACEDU</h1>
         </div>
-        <p class="flex w-80 mx-auto justify-center text-lg text-center">Facultad de educación y ciencias de la
+        <p class="flex max-w-80 mx-auto flex-wrap justify-center text-lg text-center">Facultad de educación y ciencias de la
             comunicación</p>
     </a>
     <section class="mt-10">
