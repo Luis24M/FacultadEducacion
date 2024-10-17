@@ -59,6 +59,17 @@ Route::get('/idiomas', function () {
 Route::get('/pregrado/CDLC', function () {
     return view('pregrado.cienciasDeLaComunicacion.index');
 })->name('pregrado');
+Route::get('/pregrado/educacion_secundaria', function () {
+    return view('pregrado.educacion_secundaria.index');
+})->name('pregrado.educacion_secundaria');
+
+Route::get('/educacion_secundaria/historia', function () {
+    return view('pregrado.educacion_secundaria.historia.index');
+})->name('pregrado.educacion_secundaria');
+
+Route::get('/educacion_secundaria/matematicas', function () {
+    return view('pregrado.educacion_secundaria.matematicas.index');
+})->name('pregrado.educacion_secundaria');
 
 // Rutas Posgrado
 

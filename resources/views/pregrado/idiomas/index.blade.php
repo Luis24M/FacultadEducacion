@@ -1,6 +1,6 @@
  @extends('layouts.app') 
 <!-- |<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
-<link rel="stylesheet" href="styles/styles.css">
+<link rel="stylesheet" href="{{ asset('style/styles.css')}}">   
 @section('content')
 
 
@@ -37,7 +37,7 @@
     <!-- About Section -->
     <section class="about-section">
         <div class="about-images">
-            <img src="img/imagen.jpg" alt="Facultad de Educación">
+            <img src="{{asset('img/imagen.jpg')}}" alt="Facultad de Educación">
         </div>
         <div class="about-text">
             <h2>Departamento de Idiomas</h2>
@@ -61,29 +61,29 @@
 
   <h1>VISIÓN Y MISIÓN</h1>
 
-<div class="cartas">
-  <div class="card">
-    <div class="card-header">
-      <i class="icon fas fa-bullseye"></i>
-      <h2>Misión</h2>
+    <div class="cartas">
+        <div class="card">
+            <div class="card-header">
+              <i class="icon fas fa-bullseye"></i>
+              <h2>Misión</h2>
+            </div>
+            <p>Somos el primer programa de estudios del Perú que forma licenciados en Educación Secundaria
+              con mención en Idiomas: Inglés-Francés e Inglés-Alemán, de excelencia académica y preparados
+              para enfrentar los retos de un mundo complejo y globalizado buscando el desarrollo responsable
+              y sostenible de nuestra región y país.</p>
     </div>
-    <p>Somos el primer programa de estudios del Perú que forma licenciados en Educación Secundaria
-      con mención en Idiomas: Inglés-Francés e Inglés-Alemán, de excelencia académica y preparados
-      para enfrentar los retos de un mundo complejo y globalizado buscando el desarrollo responsable
-      y sostenible de nuestra región y país.</p>
-  </div>
   <div class="card">
     <div class="card-header">
       <i class="icon fas fa-eye"></i>
       <h2>Visión</h2>
     </div>
-    <p>En el 2024, seremos una unidad académica acreditada, que contribuye al desarrollo sustentable
-      de la región, del país y del mundo, sensible a las exigencias sociales, que forma profesionales con
-      excelencia académica en idiomas, se proyecta a la comunidad con responsabilidad social, realiza
-      investigación científica, respeta la diversidad cultural y la ecología y contribuye a la formación
-      integral del ser humano dentro de un marco de valores éticos y estéticos.</p>
-  </div>
-</div>
+        <p>En el 2024, seremos una unidad académica acreditada, que contribuye al desarrollo sustentable
+            de la región, del país y del mundo, sensible a las exigencias sociales, que forma profesionales con
+            excelencia académica en idiomas, se proyecta a la comunidad con responsabilidad social, realiza
+            investigación científica, respeta la diversidad cultural y la ecología y contribuye a la formación
+            integral del ser humano dentro de un marco de valores éticos y estéticos.</p>
+    </div>
+    </div>
 <!-- fin -->
  <br>
  <br>
@@ -96,17 +96,17 @@
             <div class="carrera">
                 <h3>Inglés</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eveniet vel, modi qui nesciunt quam, eos itaque laborum eius quasi quaerat dolorem quod mollitia magni quo necessitatibus?</p>
-                <img src="img/PUENTE.jpg" alt="Imagen de Londres">
+                <img src="{{asset('img/PUENTE.jpg')}}" alt="Imagen de Londres">
             </div>
             <div class="carrera">
                 <h3>Francés</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nesciunt, tenetur asperiores minima repellat perspiciatis natus deleniti ab cumque porro magnam fugiat?</p>
-                <img src="img/PARISS.jpg" alt="Imagen de París">
+                <img src="{{asset('img/PARISS.jpg')}}" alt="Imagen de París">
             </div>
             <div class="carrera">
                 <h3>Alemán</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi omnis amet dolores accusamus. Amet, modi repellendus unde vitae, dolore nesciunt.</p>
-                <img src="img/ALEMAN.jpg" alt="Imagen de Berlín">
+                <img src="{{asset('img/ALEMAN.jpg')}}" alt="Imagen de Berlín">
             </div>
         </div>
     </section>
@@ -142,6 +142,6 @@
         };
     </script>
 
-      </div>
+</div>
 
 @endsection

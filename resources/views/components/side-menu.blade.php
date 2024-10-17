@@ -12,19 +12,24 @@
 @elseif(request()->routeIs('institucional'))
     
 
-@elseif(request()->routeIs('pregrado') || request()->routeIs('pregrado.*'))
+@elseif(request()->routeIs('pregrado'))
     <x-side-button icon="fa-solid fa-house" title="Educación Inicial" route="/pregrado/CDLC" />
     <x-side-button icon="fa-solid fa-house" title="Educación Primaria" route="/pregrado/primaria" />
-    <x-side-button icon="fa-solid fa-house" title="Educación Secundaria" route="/pregrado/CDLC" />
-
+    <x-side-button icon="fa-solid fa-house" title="Educación Secundaria" route="pregrado/educacion_secundaria" />
     <x-side-button icon="fa-solid fa-house" title="Ciencias de la comunicación" route="/pregrado/CDLC" />
 
-<x-drop-down-button 
+    
+@elseif(request()->routeIs('pregrado.educacion_secundaria') || request()->routeIs('pregrado.educacion_secundaria.*'))
+    <x-side-button icon="fa-solid fa-house" title="Educación Secundaria" route="/pregrado/educacion_secundaria" />
+    <x-side-button icon="fa-solid fa-house" title="Historia y Geografia" route="/educacion_secundaria/historia" />
+    <x-side-button icon="fa-solid fa-house" title="Ciencias Matematicas" route="/educacion_secundaria/matematicas" />
+    <x-drop-down-button 
     title="Idiomas : Inglés - Francés" 
     :list="[
         ['name' => 'Home', 'url' => '/idiomas']
     ]" 
 />
+
 @elseif(request()->routeIs('pregrado'))
     <x-side-button icon="fa-solid fa-house" title="Educación Inicial" route="#" />
     <x-side-button icon="fa-solid fa-house" title="Educación Primaria" route="#" />
