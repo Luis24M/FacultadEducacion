@@ -59,16 +59,16 @@ Route::get('/unidades/unidad_calidad', function () {
     return view('unidades.unidad_calidad.index');
 })->name('unidades.unidad_calidad');
 
-Route::get('/unidades/unidad_calidad/iso_9001', function () {
-    return view('unidades.unidad_calidad.iso_9001.index');
+Route::get('/unidades/unidad_calidad/auditoria_interna', function () {
+    return view('unidades.unidad_calidad.auditoria_interna');
 })->name('unidades.iso_9001');
 
 Route::get('/unidades/unidad_calidad/acreditacion', function () {
-    return view('unidades.unidad_calidad.acreditacion.index');
+    return view('unidades.unidad_calidad.acreditacion');
 })->name('unidades.acreditacion');
 
-Route::get('/unidades/unidad_calidad/colaboradores', function () {
-    return view('unidades.unidad_calidad.colaboradores.index');
+Route::get('/unidades/unidad_calidad/licenciamiento', function () {
+    return view('unidades.unidad_calidad.licenciamiento');
 })->name('unidades.colaboradores');
 // Rutas Departamentos Academicos
 
