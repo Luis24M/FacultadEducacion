@@ -47,7 +47,7 @@
     :list="[ 
         ['name' => 'Auditoria Interna', 'url' => '/unidades/unidad_calidad/auditoria_interna'], 
         ['name' => 'Acreditación', 'url' => '/unidades/unidad_calidad/acreditacion'], 
-        ['name' => 'Colaboradores', 'url' => '/unidades/unidad_calidad/colaboradores'] 
+        ['name' => 'Licenciamiento', 'url' => '/unidades/unidad_calidad/licenciamiento'] 
     ]" 
 />
 
