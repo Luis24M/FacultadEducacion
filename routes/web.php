@@ -27,11 +27,11 @@ Route::get('/unidades', function () {
 })->name('unidades');
 
 Route::get('/departamentos_academicos', function () {
-    return view('departamentos-academicos.index');
+    return view('departamentos_academicos.index');
 })->name('departamentos_academicos');
 
 Route::get('/segunda_especialidad', function () {
-    return view('segunda-especialidad.index');
+    return view('segunda_especialidad.index');
 })->name('segunda_especialidad');
 
 Route::get('/cidunt', function () {
@@ -55,15 +55,16 @@ Route::get('/idiomas', function () {
 Route::get('/pregrado/cdlc', function () {
     return view('pregrado.cienciasDeLaComunicacion.index');
 })->name('pregrado');
-Route::get('/pregrado/educacion_secundaria', function () {
+
+Route::get('/pregrado/secundaria', function () {
     return view('pregrado.educacion_secundaria.index');
 })->name('pregrado.educacion_secundaria');
 
-Route::get('/educacion_secundaria/historia', function () {
+Route::get('/pregrado/secundaria/historia', function () {
     return view('pregrado.educacion_secundaria.historia.index');
 })->name('pregrado.educacion_secundaria');
 
-Route::get('/educacion_secundaria/matematicas', function () {
+Route::get('/pregrado/secundaria/matematicas', function () {
     return view('pregrado.educacion_secundaria.matematicas.index');
 })->name('pregrado.educacion_secundaria');
 
@@ -77,10 +78,10 @@ Route::get('/unidades/unidad_calidad', function () {
 
 Route::get('/unidades/unidad_calidad/auditoria_interna', function () {
     return view('unidades.unidad_calidad.auditoria_interna');
+})->name('unidades.auditoria_interna');
+Route::get('/unidades/unidad_calidad/iso_9001', function () {
+    return view('unidades.unidad_calidad.iso_9001');
 })->name('unidades.iso_9001');
-Route::get('/practica_preprofesional', function (){
-    return view('unidades.practica_preprofesional.index');
-})->name('practica_preprofesional');
 
 Route::get('/unidades/unidad_calidad/acreditacion', function () {
     return view('unidades.unidad_calidad.acreditacion');
@@ -88,7 +89,15 @@ Route::get('/unidades/unidad_calidad/acreditacion', function () {
 
 Route::get('/unidades/unidad_calidad/licenciamiento', function () {
     return view('unidades.unidad_calidad.licenciamiento');
+})->name('unidades.licenciamiento');
+
+Route::get('/unidades/unidad_calidad/colaboradores', function () {
+    return view('unidades.unidad_calidad.colaboradores');
 })->name('unidades.colaboradores');
+
+Route::get('/unidades/practica_preprofesional', function (){
+    return view('unidades.practica_preprofesional.index');
+})->name('unidades.practica_preprofesional');
 // Rutas Departamentos Academicos
 
 
