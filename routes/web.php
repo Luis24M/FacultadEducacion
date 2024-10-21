@@ -48,25 +48,25 @@ Route::get('/rnc', function () {
 
 
 // Rutas Pregrado
-Route::get('/idiomas', function () {
-    return view('pregrado.idiomas.index');
-})->name('pregrado');
-
 Route::get('/pregrado/cdlc', function () {
     return view('pregrado.cienciasDeLaComunicacion.index');
-})->name('pregrado');
+})->name('pregrado.cdlc');
 
 Route::get('/pregrado/secundaria', function () {
     return view('pregrado.educacion_secundaria.index');
-})->name('pregrado.educacion_secundaria');
-
-Route::get('/pregrado/secundaria/historia', function () {
-    return view('pregrado.educacion_secundaria.historia.index');
-})->name('pregrado.educacion_secundaria');
+})->name('pregrado.secundaria');
 
 Route::get('/pregrado/secundaria/matematicas', function () {
     return view('pregrado.educacion_secundaria.matematicas.index');
-})->name('pregrado.educacion_secundaria');
+})->name('pregrado.secundaria.matematicas');
+
+Route::get('/pregrado/secundaria/historia', function () {
+    return view('pregrado.educacion_secundaria.historia.index');
+})->name('pregrado.secundaria.historia');
+
+Route::get('/pregrado/secundaria/idiomas', function () {
+    return view('pregrado.educacion_secundaria.idiomas.index');
+})->name('pregrado.secundaria.idiomas');
 
 // Rutas Posgrado
 

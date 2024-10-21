@@ -1,4 +1,4 @@
-<ul class="lg:flex justify-around text-white [&>li]:w-fit items-center hidden gap-2 md:w-full">
+<ul class="lg:flex justify-around text- [&>li]:w-fit items-center hidden gap-2 md:w-full">
     <li><a href="/institucional">Institucional</a></li>
     <li><a href="/pregrado">Pregrado</a></li>
     <li><a href="/posgrado">Posgrado</a></li>

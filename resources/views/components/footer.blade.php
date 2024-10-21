@@ -1,7 +1,7 @@
-<footer class="h-36 w-full  flex gap-3 flex-row-reverse flex-wrap md:flex-nowrap justify-around bg-[#2E4857] text-white items-center [&>section>h3]:text-lg">
+<footer class="h-36 w-full  flex gap-3 flex-row-reverse flex-wrap md:flex-nowrap justify-around bg-[#FFD54F] text- items-center [&>section>h3]:text-lg">
   <section>
     <h3 class="hidden md:flex">Nuestras redes</h3>
-    <div class="flex [&>a>img]:w-8 md:[&>a>img]:w-12 mt-2">
+    <div class="flex [&>a>img]:w-8 md:[&>a>img]:w-12 mt-2 text-black">
       <a class="" href="https://www.facebook.com/faceduntoficial" target="_blank">
         <img src="{{ asset('icons/facebook.png')}}" alt="facebook icon">
       </a>

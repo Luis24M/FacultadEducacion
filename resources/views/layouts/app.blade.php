@@ -27,7 +27,7 @@
             @else
                 @include('components/navbar')
             @endif
-            <section class="p-10 min-h-[calc(100dvh-230px)] bg-[#F0F6FE]">
+            <section class=" min-h-[calc(100dvh-230px)] bg-[#F0F6FE]">
                 {{-- <h1 class="text-4xl text-center">Bienvenido a FACEDU</h1> --}}
                 @yield('content')
             </section>

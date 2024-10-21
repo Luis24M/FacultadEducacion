@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <div class="my-10">
+    <div class="py-10">
         <h2 class="text-5xl text-center my-8 font-bold">Noticias</h2>
         <section class="flex lg:flex-row flex-col p-4 gap-4 justify-around mx-auto max-w-7xl">
             <x-card-noticias titulo="Título de la noticia" fecha="09 Octubre 2024"
@@ -19,7 +19,7 @@
         </div>
     </div>
     <hr>
-    <div class="my-10">
+    <div class="py-10 bg-[#fff]">
         <h2 class="text-5xl text-center my-8 font-bold">Eventos</h2>
         <div class="flex flex-col gap-5 items-center mx-auto lg:flex-row justify-around p-4">
             <img src="{{ asset('imagenes/index/auditorio.jpg') }}" class="rounded float lg:w-[40%] shadow-lg"
@@ -28,9 +28,9 @@
         </div>
     </div>
     <hr>
-    <div class="p-10">
-        <div class="flex flex-col lg:flex-row w-full justify-center my-10 border-2">
-            <img class="min-w-[30%] object-cover" src="{{ asset('imagenes/index/decana.png') }}"
+    <div class="p-10 w-">
+        <div class="flex flex-col lg:flex-row my-10 border-2">
+            <img class="min-w-[50%] object-cover" src="{{ asset('imagenes/index/decana.png') }}"
                 alt="decana Elizabeth Aurea Rafael Sánchez">
             <div class=" bg-white p-4 lg:p-20 lg:max-w-[50%] rounded-e-md text-center">
                 <h3 class="text-3xl font-semibold">Bienvenida</h3>
@@ -59,7 +59,7 @@
         </div>
     </div>
     <hr>
-    <div class="my-10">
+    <div class="mt-10">
         <h2 class="text-5xl text-center my-8 font-bold">Nuestras Escuelas</h2>
         <section class="p-4 flex lg:flex-row flex-col flex-wrap justify-around gap-4 lg:gap-1">
             <x-card-escuelas name="Educación Inicial" url="/pregrado/inicial"

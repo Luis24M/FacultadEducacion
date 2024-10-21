@@ -1,18 +1,20 @@
 @if(request()->routeIs('home'))
     <x-side-button icon="fa-solid fa-house" title="Institucional" route="/institucional"  />
-    <x-side-button icon="fa-solid fa-house" title="Pregrado" route="/pregrado" />
-    <x-side-button icon="fa-solid fa-house" title="Posgrado" route="/posgrado" />
-    <x-side-button icon="fa-solid fa-house" title="Unidades" route="/unidades" />
-    <x-side-button icon="fa-solid fa-house" title="Departamentos academicos"
+    <x-side-button icon="fa-solid fa-book" title="Pregrado" route="/pregrado" />
+    <x-side-button icon="fa-solid fa-graduation-cap" title="Posgrado" route="/posgrado" />
+    <x-side-button icon="fa-solid fa-hammer" title="Unidades" route="/unidades" />
+    <x-side-button icon="fa-solid fa-building-columns" title="Departamentos academicos"
         route="/departamentos_academicos" />
-    <x-side-button icon="fa-solid fa-house" title="Segunda especialidad" route="/segunda_especialidad" />
-    <x-side-button icon="fa-solid fa-house" title="Cidunt" route="/cidunt" />
-    <x-side-button icon="fa-solid fa-house" title="R.N.C" route="/rnc" />
+    <x-side-button icon="fa-solid fa-certificate" title="Segunda especialidad" route="/segunda_especialidad" />
+    <x-side-button icon="fa-solid fa-language" title="Cidunt" route="https://cidunt.edu.pe/web2/" />
+    <x-side-button icon="fa-solid fa-school" title="R.N.C" route="https://www.rnc.edu.pe/" />
 
 @elseif(request()->routeIs('institucional'))
     
 {{-- PREGRADO --}}
 @elseif(request()->routeIs('pregrado'))
+    <h3 class="text-xl font-semibold">Pregrado</h3>
+    <hr>
     <x-side-button icon="fa-solid fa-house" title="Educación Inicial" route="/pregrado/inicial" />
     <x-side-button icon="fa-solid fa-house" title="Educación Primaria" route="/pregrado/primaria" />
     <x-side-button icon="fa-solid fa-house" title="Educación Secundaria" route="pregrado/secundaria" />
@@ -22,24 +24,20 @@
     {{-- PRIMARIA --}}
 
     {{-- SECUNDARIA --}}
-    @elseif(request()->routeIs('pregrado.educacion_secundaria') || request()->routeIs('pregrado.educacion_secundaria.*'))
+    @elseif(request()->routeIs('pregrado.secundaria') || request()->routeIs('pregrado.secundaria.*'))
         <h3 class="text-xl font-semibold">Educacion Secundaria</h3>
         <hr>
         <x-side-button icon="fa-solid fa-house" title="Historia y Geografia" route="/pregrado/secundaria/historia" />
         <x-side-button icon="fa-solid fa-house" title="Ciencias Matematicas" route="/pregrado/secundaria/matematicas" />
-        <x-drop-down-button 
-            title="Idiomas : Inglés - Francés" 
-            :list="[
-                ['name' => 'Home', 'url' => '/idiomas']
-            ]" 
-        />
+        <x-side-button icon="fa-solid fa-house" title="Idiomas" route="/pregrado/secundaria/idiomas" />
 
 {{-- POSGRADO --}}
 @elseif(request()->routeIs('posgrado'))
 
 {{-- UNIDADES --}}
 @elseif(request()->routeIs('unidades') || request()->routeIs('unidades.*'))
-
+<h3 class="text-xl font-semibold">Unidades</h3>
+<hr>
 <x-drop-down-button 
     title="Unidad de Calidad" 
     :list="[ 
@@ -62,7 +60,14 @@
 
 
 
-@elseif(request()->routeIs('departamentos-academicos'))
+@elseif(request()->routeIs('departamentos_academicos'))
+<x-side-button icon="fa-solid fa-house" title="Ciencias de la Educación" route="/departamentos_academicos/educacion" />
+<x-side-button icon="fa-solid fa-house" title="Filosofia y Arte" route="/departamentos_academicos/filosofiayarte" />
+<x-side-button icon="fa-solid fa-house" title="Ciencias Psicológicas" route="/departamentos_academicos/psicologicas" />
+<x-side-button icon="fa-solid fa-house" title="Lengua Nacional y Literatura" route="/departamentos_academicos/lengua" />
+<x-side-button icon="fa-solid fa-house" title="Historia y Geografia" route="/departamentos_academicos/historia" />
+<x-side-button icon="fa-solid fa-house" title="Idiomas y Lingüística" route="/departamentos_academicos/idiomas" />
+<x-side-button icon="fa-solid fa-house" title="Comunicación Social" route="/departamentos_academicos/comunicacion" />
 
 @elseif(request()->routeIs('segunda-especialidad'))
 

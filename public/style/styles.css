@@ -1,10 +1,7 @@
-body {
-    font-family: Arial, sans-serif;
-}
-
 .hero {
     height: 100vh;
-    background-image: url("img/FONDOI.jpeg"); /* Replace with the path to your image */
+    background-image: url("../img/FONDOI.jpeg"); /* Replace with the path to your image */
+    
     background-size: cover;
     background-position: center;
 }
@@ -40,11 +37,6 @@ h1 {
     justify-content: center;
     text-align: justify;
     margin: 5%;
-}
-
-p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
 }
 
 .btn {
