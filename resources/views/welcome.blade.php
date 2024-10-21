@@ -1,5 +1,4 @@
 @extends('layouts.app')
-
 @section('content')
     <div class="my-10">
         <h2 class="text-5xl text-center my-8 font-bold">Noticias</h2>
@@ -12,8 +11,8 @@
                 imagen="{{ asset('imagenes/index/noticia1.png') }}" descripcion="Descripcion de prueba" />
         </section>
         <div class="w-full text-center py-4">
-            <a href="/noticias" id="noticias" class="text-xl bg-neutral-950 text-white p-3 hover:shadow-2xl">
-                <span>
+            <a href="/noticias" id="noticias" class="text-xl md:max-w-[400px] bg-neutral-950 p-3 text-white hover:shadow-2xl">
+                <span class="md:px-6 lg:py-3 lg:text-lg">
                     Ver todas las noticias
                 </span>
             </a>
@@ -29,30 +28,34 @@
         </div>
     </div>
     <hr>
-    <div class="flex flex-col lg:flex-row p-10 w-full justify-center my-10">
-        <div>
-            <img class="min-w-[30%]" src="{{ asset('imagenes/index/decana.png') }}"
+    <div class="p-10">
+        <div class="flex flex-col lg:flex-row w-full justify-center my-10 border-2">
+            <img class="min-w-[30%] object-cover" src="{{ asset('imagenes/index/decana.png') }}"
                 alt="decana Elizabeth Aurea Rafael Sánchez">
-        </div>
-        <div class="border-2 bg-white p-4 lg:p-20 lg:max-w-[50%] rounded-md text-center">
-            <h3 class="text-3xl font-semibold">Bienvenida</h3>
-            <br>
-            <p>"Bienvenidos a la Facultad de Educación y Ciencias de la Comunicación, un espacio donde la excelencia
-                académica se encuentra con la innovación y la pasión por el aprendizaje. En nuestra facultad, nos
-                enorgullece nutrir no solo las mentes brillantes de hoy, sino también los líderes del mañana. Estamos
-                comprometidos con la creación de un ambiente educativo que fomente la curiosidad, la creatividad y el
-                pensamiento crítico. Aquí, cada estudiante es más que un número; son parte de una comunidad académica
-                diversa y vibrante. Con un cuerpo docente dedicado y programas de vanguardia, aspiramos a impulsar el
-                crecimiento intelectual y personal de cada individuo que cruza nuestras puertas. Juntos, construiremos un
-                futuro donde el conocimiento se traduzca en impacto, y donde cada logro sea una prueba de la dedicación y el
-                compromiso de nuestros estudiantes y educadores.
-                ¡Bienvenidos a una experiencia educativa que va más allá de las aulas y trasciende fronteras!"
+            <div class=" bg-white p-4 lg:p-20 lg:max-w-[50%] rounded-e-md text-center">
+                <h3 class="text-3xl font-semibold">Bienvenida</h3>
                 <br>
-                <br>
-                Elizabeth Aurea Rafael Sánchez
-                <br>
-                Decana
-            </p>
+                <p>"Bienvenidos a la Facultad de Educación y Ciencias de la Comunicación, un espacio donde la excelencia
+                    académica se encuentra con la innovación y la pasión por el aprendizaje. En nuestra facultad, nos
+                    enorgullece nutrir no solo las mentes brillantes de hoy, sino también los líderes del mañana. Estamos
+                    comprometidos con la creación de un ambiente educativo que fomente la curiosidad, la creatividad y el
+                    pensamiento crítico. Aquí, cada estudiante es más que un número; son parte de una comunidad académica
+                    diversa y vibrante. Con un cuerpo docente dedicado y programas de vanguardia, aspiramos a impulsar el
+                    crecimiento intelectual y personal de cada individuo que cruza nuestras puertas. Juntos, construiremos
+                    un
+                    futuro donde el conocimiento se traduzca en impacto, y donde cada logro sea una prueba de la dedicación
+                    y el
+                    compromiso de nuestros estudiantes y educadores.
+                    ¡Bienvenidos a una experiencia educativa que va más allá de las aulas y trasciende fronteras!"
+                    <br>
+                    <br>
+                    <strong>
+                        Elizabeth Aurea Rafael Sánchez
+                        <br>
+                        Decana
+                    </strong>
+                </p>
+            </div>
         </div>
     </div>
     <hr>
@@ -74,7 +77,7 @@
         #noticias {
             position: relative;
             display: flex;
-            max-width: 400px;
+            max-width: 300px;
             margin: 0 auto;
             justify-content: center;
             align-items: center;
@@ -106,9 +109,9 @@
             text-align: center;
             text-decoration: none;
             width: 100%;
-            padding: 12px 20px;
+            padding: 4px 8px;
             color: #fff;
-            font-size: 1.125em;
+            font-size: 1rem;
             font-weight: 600;
             z-index: 20;
             transition: all 0.3s ease-in-out;

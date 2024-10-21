@@ -21,6 +21,9 @@
         <section class="w-full md:min-w-[calc(100%-400px)] md:w-[65%]">
         @endif
             @if(request()->routeIs('home'))
+            <div class="md:hidden">
+                @include('components/navbar')
+            </div>
             @else
                 @include('components/navbar')
             @endif
@@ -38,3 +41,17 @@
     </main>
 </body>
 </html>
+
+<style>
+    @layer utilities {
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+     /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+    }
+  }
+</style>
