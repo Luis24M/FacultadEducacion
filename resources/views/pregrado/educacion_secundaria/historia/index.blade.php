@@ -1,5 +1,4 @@
 @extends('layouts.app')
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="{{ asset('style/style2.css')}}">
 
 @section('content')

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 <link rel="stylesheet" href="{{ asset('style/style1.css')}}">   
 @section('content')
-<section class="titulo">
+<section class="titulo py-5">
     <h1>Mención Ciencias Matematicas</h1>
 </section>
 <section class="contenedor-informacion">
