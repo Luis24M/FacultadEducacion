@@ -1,13 +1,13 @@
 @if(request()->routeIs('home'))
-    <x-side-button icon="fa-solid fa-house" title="Institucional" route="/institucional"  />
-    <x-side-button icon="fa-solid fa-book" title="Pregrado" route="/pregrado" />
-    <x-side-button icon="fa-solid fa-graduation-cap" title="Posgrado" route="/posgrado" />
-    <x-side-button icon="fa-solid fa-hammer" title="Unidades" route="/unidades" />
-    <x-side-button icon="fa-solid fa-building-columns" title="Departamentos academicos"
+    <x-side-button icon="home.svg" title="Institucional" route="/institucional"  />
+    <x-side-button icon="book.svg" title="Pregrado" route="/pregrado" />
+    <x-side-button icon="graduation.svg" title="Posgrado" route="/posgrado" />
+    <x-side-button icon="books.svg" title="Unidades" route="/unidades" />
+    <x-side-button icon="building.svg" title="Departamentos academicos"
         route="/departamentos_academicos" />
-    <x-side-button icon="fa-solid fa-certificate" title="Segunda especialidad" route="/segunda_especialidad" />
-    <x-side-button icon="fa-solid fa-language" title="Cidunt" route="https://cidunt.edu.pe/web2/" />
-    <x-side-button icon="fa-solid fa-school" title="R.N.C" route="https://www.rnc.edu.pe/" />
+    <x-side-button icon="diploma.svg" title="Segunda especialidad" route="/segunda_especialidad" />
+    <x-side-button icon="language.svg" title="Cidunt" route="https://cidunt.edu.pe/web2/" />
+    <x-side-button icon="school.svg" title="R.N.C" route="https://www.rnc.edu.pe/" />
 
 @elseif(request()->routeIs('institucional'))
     
@@ -17,7 +17,7 @@
     <hr>
     <x-side-button icon="fa-solid fa-house" title="Educación Inicial" route="/pregrado/inicial" />
     <x-side-button icon="fa-solid fa-house" title="Educación Primaria" route="/pregrado/primaria" />
-    <x-side-button icon="fa-solid fa-house" title="Educación Secundaria" route="pregrado/secundaria" />
+    <x-side-button icon="fa-solid fa-house" title="Educación Secundaria" route="/pregrado/secundaria" />
     <x-side-button icon="fa-solid fa-house" title="Ciencias de la comunicación" route="/pregrado/cdlc" />
     {{-- INICIAL --}}
 
