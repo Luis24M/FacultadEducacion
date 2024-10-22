@@ -13,7 +13,11 @@
     </a>
     <section class="mt-10">
         <div class="idiomas">
-            <p class="my-4">Eng - Esp</p>
+            <p class="my-4">
+                <a href="">Eng</a>  
+                - 
+                <a href="">Esp</a>
+            </p>
         </div>
         <input type="text" placeholder="Buscar" class="p-1 rounded-md border border-black w-4/5 my-2">
     </section>
