@@ -52,11 +52,14 @@ Route::get('/pregrado/cdlc', function () {
     return view('pregrado.cienciasDeLaComunicacion.index');
 })->name('pregrado.cdlc');
     // Educacion Inicial
-    
+    Route::get('/pregrado/inicial', function () {
+        return view('pregrado.educacion_inicial.index');
+    })->name('pregrado.inicial');
+
     // Educacion Primaria
-Route::get('/pregrado/primaria', function () {
-    return view('pregrado.educacion_primaria.index');
-})->name('pregrado.primaria');
+    Route::get('/pregrado/primaria', function () {
+        return view('pregrado.educacion_primaria.index');
+    })->name('pregrado.primaria');
 
     // Educacion Secundaria
     Route::get('/pregrado/secundaria', function () {
