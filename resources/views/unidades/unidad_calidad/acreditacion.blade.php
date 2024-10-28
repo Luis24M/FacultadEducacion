@@ -195,6 +195,7 @@
                     @foreach ($options as $optionKey => $option)
                         <a href="{{ $pdfLinks[$key][$optionKey] }}" target="_blank" class="option-button bg-gray-200 text-gray-700 font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-gray-300 transition duration-200 flex items-center">
                             {{ $option }}
+                            {{$pdfLinks[$key][$optionKey]}}
                             <i class="fas fa-download text-blue-500 ml-2"></i>
                         </a>
                     @endforeach
@@ -226,13 +227,13 @@
             optionsContainer.classList.toggle('hidden');
 
             // Actualizar los enlaces de las opciones de descarga
-            const schoolKey = this.getAttribute('data-school');
+            /*const schoolKey = this.getAttribute('data-school');
             const pdfLinksForSchool = @json($pdfLinks); // Pasar los enlaces desde PHP a JavaScript
 
             document.querySelectorAll('.option-button').forEach((optionButton, index) => {
                 const optionKey = Object.keys({!! json_encode($options) !!})[index]; // Obtener la clave de opción
                 optionButton.href = pdfLinksForSchool[schoolKey][optionKey]; // Asignar el enlace correcto
-            });
+            });*/
         });
     });
 </script>
