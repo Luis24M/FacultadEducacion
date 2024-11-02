@@ -32,7 +32,7 @@
         <div class="flex flex-col lg:flex-row my-10 border-2" id="bienvenida">
             <img class="min-w-[50%] object-cover" src="{{ asset('imagenes/index/decana.png') }}"
                 alt="decana Elizabeth Aurea Rafael Sánchez">
-            <div class=" bg-white p-4 lg:p-20 lg:max-w-[50%] rounded-e-md text-center" id="bienvenida-text">
+            <div class=" bg-white p-4 lg:p-20 lg:max-w-[50%] rounded-e-md text-center flex flex-col justify-center" id="bienvenida-text">
                 <h3 class="text-3xl font-semibold">Bienvenida</h3>
                 <br>
                 <p>"Bienvenidos a la Facultad de Educación y Ciencias de la Comunicación, un espacio donde la excelencia

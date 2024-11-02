@@ -20,6 +20,9 @@
     </style>
 </head>
 <body class="h-full">
+    {{-- <div id="preloader">
+        <img src="{{ asset('icons/book.svg')}}" alt="">
+    </div>     --}}
     <main class="flex justify-between h-full">
         @if(request()->routeIs('noticias'))
         <section class="w-full">
@@ -60,4 +63,23 @@
           scrollbar-width: none;  /* Firefox */
     }
   }
+  /* #preloader {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+
 </style>
+{{-- <script>
+    window.addEventListener('load', function () {
+        document.getElementById('preloader').style.display = 'none';
+    });
+ </script> --}}
+ 

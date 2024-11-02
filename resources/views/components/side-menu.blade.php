@@ -20,13 +20,17 @@
     <x-side-button icon="book.svg" title="Educación Secundaria" route="/pregrado/secundaria" />
     <x-side-button icon="book.svg" title="Ciencias de la comunicación" route="/pregrado/cdlc" />
     {{-- INICIAL --}}
-
+    @elseif(request()->routeIs('pregrado.inicial') || request()->routeIs('pregrado.inicial.*'))
+    <x-side-button icon="book.svg" title="Perfil" route="#perfil" />
+    <x-side-button icon="book.svg" title="Perfil" route="#perfil" />
+    <x-side-button icon="book.svg" title="Perfil" route="#perfil" />
     {{-- PRIMARIA --}}
 
     {{-- SECUNDARIA --}}
     @elseif(request()->routeIs('pregrado.secundaria') || request()->routeIs('pregrado.secundaria.*'))
         <h3 class="text-xl font-semibold">Educacion Secundaria</h3>
         <hr>
+        <x-side-button icon="book.svg" title="Filosofía, Psicología y CCSS" route="/pregrado/secundaria/filosofia" />
         <x-side-button icon="book.svg" title="Historia y Geografia" route="/pregrado/secundaria/historia" />
         <x-side-button icon="book.svg" title="Ciencias Matematicas" route="/pregrado/secundaria/matematicas" />
         <x-side-button icon="book.svg" title="Idiomas" route="/pregrado/secundaria/idiomas" />

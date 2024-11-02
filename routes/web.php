@@ -66,6 +66,10 @@ Route::get('/pregrado/cdlc', function () {
         return view('pregrado.educacion_secundaria.index');
     })->name('pregrado.secundaria');
 
+    Route::get('/pregrado/secundaria/filosofia', function(){
+        return view('pregrado.educacion_secundaria.filosofia');
+    })->name('pregrado.secundaria.filosofia');
+
     Route::get('/pregrado/secundaria/matematicas', function () {
         return view('pregrado.educacion_secundaria.matematicas.index');
     })->name('pregrado.secundaria.matematicas');
