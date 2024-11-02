@@ -36,7 +36,7 @@ function contador(elemento, objetivo, duracion) {
     }, 50);
 }
 document.addEventListener('DOMContentLoaded', () => {
-    const contadores = document.querySelectorAll('.contenedor-numero .numero');
+    const contadores = document.querySelectorAll('.numero');
     contadores.forEach(span => {
         const objetivo = parseInt(span.getAttribute('data-objetivo'), 10);
         const duracion = 5000;

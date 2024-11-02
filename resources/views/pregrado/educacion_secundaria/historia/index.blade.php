@@ -8,7 +8,7 @@
     </section>
 
     <section class="contenedor-informacion">
-        <section class="contenedor-navegacion">
+        <section class="contenedor-navegacion px-14">
             <button class="btn-nav active" data-target="nosotros">
                 Nosotros
                 <i class="fa-solid fa-angles-down"></i>
@@ -27,7 +27,7 @@
             </button>
         </section>
 
-        <section class="contenedor-contenido">
+        <section class="contenedor-contenido p-14">
             <section class="contenido active" id="nosotros">
                 <p id="nosotros">
                     En un mundo en constante cambio, la educación desempeña un papel
