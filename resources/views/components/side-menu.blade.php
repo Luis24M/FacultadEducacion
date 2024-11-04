@@ -13,11 +13,11 @@
     
 
 @elseif(request()->routeIs('pregrado') || request()->routeIs('pregrado.*'))
-    <x-side-button icon="fa-solid fa-house" title="Educación Inicial" route="/pregrado/CDLC" />
-    <x-side-button icon="fa-solid fa-house" title="Educación Primaria" route="/pregrado/primaria" />
-    <x-side-button icon="fa-solid fa-house" title="Educación Secundaria" route="/pregrado/CDLC" />
+    <x-side-button icon="fa-solid" title="Educación Inicial" route="/pregrado/CDLC" />
+    <x-side-button icon="fa-solid" title="Educación Primaria" route="/pregrado/primaria" />
+    <x-side-button icon="fa-solid" title="Educación Secundaria" route="/pregrado/CDLC" />
 
-    <x-side-button icon="fa-solid fa-house" title="Ciencias de la comunicación" route="/pregrado/CDLC" />
+    <x-side-button icon="fa-solid" title="Ciencias de la comunicación" route="/pregrado/CDLC" />
 
 <x-drop-down-button 
     title="Idiomas : Inglés - Francés" 

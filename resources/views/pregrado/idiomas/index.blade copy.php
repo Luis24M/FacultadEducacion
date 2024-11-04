@@ -36,8 +36,8 @@
 
     <!-- About Section -->
     <section class="about-section">
-        <div class="about-images">
-            <img src="https://i.sstatic.net/y9DpT.jpg" alt="Facultad de Educación">
+        <div class="about-images">https://i.sstatic.net/y9DpT.jpg
+            <img src="img/imagen.jpg" alt="Facultad de Educación">
         </div>
         <div class="about-text">
             <h2>Departamento de Idiomas</h2>
@@ -96,17 +96,17 @@
             <div class="carrera">
                 <h3>Inglés</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eveniet vel, modi qui nesciunt quam, eos itaque laborum eius quasi quaerat dolorem quod mollitia magni quo necessitatibus?</p>
-                <img src="https://i.sstatic.net/y9DpT.jpg" alt="Imagen de Londres">
+                <img src="img/PUENTE.jpg" alt="Imagen de Londres">
             </div>
             <div class="carrera">
                 <h3>Francés</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nesciunt, tenetur asperiores minima repellat perspiciatis natus deleniti ab cumque porro magnam fugiat?</p>
-                <img src="https://i.sstatic.net/y9DpT.jpg" alt="Imagen de París">
+                <img src="img/PARISS.jpg" alt="Imagen de París">
             </div>
             <div class="carrera">
                 <h3>Alemán</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi omnis amet dolores accusamus. Amet, modi repellendus unde vitae, dolore nesciunt.</p>
-                <img src="https://i.sstatic.net/y9DpT.jpg" alt="Imagen de Berlín">
+                <img src="img/ALEMAN.jpg" alt="Imagen de Berlín">
             </div>
         </div>
     </section>

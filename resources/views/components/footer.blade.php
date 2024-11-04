@@ -13,13 +13,16 @@
       </a>
     </div>
   </section>
-  <section>
-    <h3 class="hidden md:flex">Encuentranos</h3>
+
+  <section class="flex flex-col items-center">
+    <h3 class="hidden md:flex">Encuéntranos</h3>
     <div class="flex mt-2 [&>a>img]:w-8 md:[&>a>img]:w-12 items-center">
       <a href="https://maps.app.goo.gl/LsFcRpk9Kvb2fJhS8" target="_blank">
         <img class="w-7" src="{{ asset('icons/location.png')}}" alt="">
       </a>
       <p class="text-center w-52">Av. Juan Pablo II s/n. Trujillo 130011</p>
     </div>  
+    
   </section>
+
 </footer>
