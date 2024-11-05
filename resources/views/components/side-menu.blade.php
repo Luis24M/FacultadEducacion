@@ -1,13 +1,12 @@
 @if(request()->routeIs('home'))
     <x-side-button icon="home.svg" title="Institucional" route="/institucional"  />
     <x-side-button icon="book.svg" title="Pregrado" route="/pregrado" />
-    <x-side-button icon="graduation.svg" title="Posgrado" route="/posgrado" />
+    <x-side-button icon="graduation.svg" title="Posgrado" route="https://web.facebook.com/EscuelaDePosgradoUNT/?locale=es_LA&_rdc=1&_rdr" />
     <x-side-button icon="books.svg" title="Unidades" route="/unidades" />
-    <x-side-button icon="building.svg" title="Departamentos academicos"
-        route="/departamentos_academicos" />
-    <x-side-button icon="diploma.svg" title="Segunda especialidad" route="/segunda_especialidad" />
+    <x-side-button icon="diploma.svg" title="Segunda especialidad" route="https://www.facebook.com/sete.tecnologia.5" />
     <x-side-button icon="language.svg" title="Cidunt" route="https://cidunt.edu.pe/web2/" />
     <x-side-button icon="school.svg" title="R.N.C" route="https://www.rnc.edu.pe/" />
+    <x-side-button icon="book.svg" title="Galería" route="/galeria"/>
 
 @elseif(request()->routeIs('institucional'))
     

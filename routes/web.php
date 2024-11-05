@@ -26,21 +26,10 @@ Route::get('/unidades', function () {
     return view('unidades.index');
 })->name('unidades');
 
-Route::get('/departamentos_academicos', function () {
-    return view('departamentos_academicos.index');
-})->name('departamentos_academicos');
 
-Route::get('/segunda_especialidad', function () {
-    return view('segunda_especialidad.index');
-})->name('segunda_especialidad');
-
-Route::get('/cidunt', function () {
-    return view('cidunt.index');
-})->name('cidunt');
-
-Route::get('/rnc', function () {
-    return view('rnc.index');
-})->name('rnc');
+Route::get('/galeria', function(){
+    return view('galeria');
+})->name('galeria');
 
 
 
