@@ -102,8 +102,9 @@
 </section>
 
  <section id="colaboradores-button" class="bg-gray-100 py-0 flex justify-center">
-    <a href="{{ route('unidades.colaboradores') }}" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300">
-         Colaboradores
+    <a href="{{ route('unidades.colaboradores') }}" class="bg-blue-500 text-white px-6 py-3 rounded-lg flex items-center justify-center space-x-2 text-lg font-semibold shadow-lg hover:bg-blue-700 transition duration-300">
+        <i class="fas fa-users"></i>
+        <span>Colaboradores</span>
      </a>
 </section>
 
@@ -184,56 +185,84 @@
 
         <!-- Botones de escuelas -->
  
-        
-        @foreach ($schools as $key => $school)
-            <div class="school-wrapper flex items-center">
-                <button class="school-button bg-gradient-to-r from-blue-500 to-teal-500 text-white font-bold py-3 px-6 rounded-lg focus:outline-none shadow-lg hover:shadow-xl transition duration-300 w-full" data-school="{{ $key }}">
-                    {{ $school }}
+    @foreach ($schools as $key => $school)
+    <div class="school-wrapper flex items-center">
+        <button class="school-button bg-gradient-to-r from-blue-500 to-teal-500 text-white font-bold py-3 px-6 rounded-lg focus:outline-none shadow-lg hover:shadow-xl transition duration-300 w-full" data-school="{{ $key }}">
+            {{ $school }}
+        </button>
+        <div class="options-container hidden ml-4 flex gap-4">
+            @foreach ($options as $optionKey => $option)
+                <button onclick="showAccessCodePrompt('{{ $pdfLinks[$key][$optionKey] }}')" 
+                    class="option-button bg-gray-200 text-gray-700 font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-gray-300 transition duration-200 flex items-center">
+                    {{ $option }}
+                    <i class="fas fa-download text-blue-500 ml-2"></i>
                 </button>
-                <!-- Contenedor de opciones de descarga -->
-                <div class="options-container hidden ml-4 flex gap-4">
-                    @foreach ($options as $optionKey => $option)
-                        <a href="{{ $pdfLinks[$key][$optionKey] }}" target="_blank" class="option-button bg-gray-200 text-gray-700 font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-gray-300 transition duration-200 flex items-center">
-                            {{ $option }}
-                            {{$pdfLinks[$key][$optionKey]}}
-                            <i class="fas fa-download text-blue-500 ml-2"></i>
-                        </a>
-                    @endforeach
-                </div>
-            </div>
-        @endforeach
+            @endforeach
+        </div>
+    </div>
+    @endforeach
+
 
     </div>
 </section>
 
 
+<!-- Agregar el modal para el código de acceso -->
+<div id="accessCodeModal" class="fixed inset-0 bg-gray-600 bg-opacity-50 hidden flex items-center justify-center">
+    <div class="bg-white p-8 rounded-lg shadow-xl">
+        <h3 class="text-xl font-bold mb-4">Código de Acceso Requerido</h3>
+        <input type="password" id="accessCodeInput" class="border rounded px-3 py-2 mb-4 w-full" placeholder="Ingrese el código de acceso">
+        <div class="flex justify-end space-x-3">
+            <button onclick="closeAccessCodeModal()" class="bg-gray-300 px-4 py-2 rounded">Cancelar</button>
+            <button onclick="validateAccessCode()" class="bg-blue-500 text-white px-4 py-2 rounded">Verificar</button>
+        </div>
+    </div>
+</div>
+
 <!-- JavaScript -->
 <script>
+    let currentPdfUrl = '';
+    const ACCESS_CODE = 'facedu2024'; // Cambia esto por tu código deseado
+
+    function showAccessCodePrompt(pdfUrl) {
+        currentPdfUrl = pdfUrl;
+        document.getElementById('accessCodeModal').classList.remove('hidden');
+        document.getElementById('accessCodeInput').value = '';
+    }
+
+    function closeAccessCodeModal() {
+        document.getElementById('accessCodeModal').classList.add('hidden');
+    }
+
+    function validateAccessCode() {
+        const inputCode = document.getElementById('accessCodeInput').value;
+        if (inputCode === ACCESS_CODE) {
+            window.open(currentPdfUrl, '_blank');
+            closeAccessCodeModal();
+        } else {
+            alert('Código de acceso incorrecto');
+        }
+    }
+
+    // Agregar evento para cerrar con ESC
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            closeAccessCodeModal();
+        }
+    });
+
+    // Mantener el código existente de los botones de escuela
     const schoolButtons = document.querySelectorAll('.school-button');
     
     schoolButtons.forEach(button => {
         button.addEventListener('click', function () {
-            // Obtener el contenedor de opciones correspondiente
             const optionsContainer = this.nextElementSibling;
-
-            // Ocultar todas las opciones de los otros botones
             document.querySelectorAll('.options-container').forEach(container => {
                 if (container !== optionsContainer) {
                     container.classList.add('hidden');
                 }
             });
-
-            // Alternar la visibilidad del contenedor de opciones
             optionsContainer.classList.toggle('hidden');
-
-            // Actualizar los enlaces de las opciones de descarga
-            /*const schoolKey = this.getAttribute('data-school');
-            const pdfLinksForSchool = @json($pdfLinks); // Pasar los enlaces desde PHP a JavaScript
-
-            document.querySelectorAll('.option-button').forEach((optionButton, index) => {
-                const optionKey = Object.keys({!! json_encode($options) !!})[index]; // Obtener la clave de opción
-                optionButton.href = pdfLinksForSchool[schoolKey][optionKey]; // Asignar el enlace correcto
-            });*/
         });
     });
 </script>
@@ -262,6 +291,16 @@
         justify-content: space-between;
         width: 200px; /* Aumentar el largo de los botones */
         padding: 10px; /* Aumentar padding para alargar */
+    }
+
+    #accessCodeModal {
+        z-index: 1000;
+    }
+
+    #accessCodeInput:focus {
+        outline: none;
+        border-color: #4A90E2;
+        box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
     }
 </style>
 
