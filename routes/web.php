@@ -112,6 +112,7 @@ Route::get('/unidades/unidad_calidad/colaboradores', function () {
 Route::get('/unidades/practica_preprofesional', function (){
     return view('unidades.practica_preprofesional.index');
 })->name('unidades.practica_preprofesional');
+
 // Rutas Departamentos Academicos
 
 

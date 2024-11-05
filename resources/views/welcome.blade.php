@@ -73,6 +73,9 @@
         </section>
     </div>
 
+    
+
+
     <style>
         #noticias {
             position: relative;
