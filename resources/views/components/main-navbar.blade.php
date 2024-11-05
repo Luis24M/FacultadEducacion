@@ -1,12 +1,11 @@
 <ul class="lg:flex justify-around [&>li]:w-fit items-center hidden gap-2 md:w-full">
     <li><a href="/institucional">Institucional</a></li>
     <li><a href="/pregrado">Pregrado</a></li>
-    <li><a href="/posgrado">Posgrado</a></li>
+    <li><a href="https://web.facebook.com/EscuelaDePosgradoUNT/?locale=es_LA&_rdc=1&_rdr">Posgrado</a></li>
     <li><a href="/unidades">Unidades</a></li>
-    <li><a href="/departamentos_academicos">Departamentos Academicos</a></li>
-    <li><a href="/segunda_especialidad">Segunda Especialidad</a></li>
-    <li><a href="/cidunt">Cidunt</a></li>
-    <li><a href="/rnc">R.N.C</a></li>
+    <li><a href="https://www.facebook.com/sete.tecnologia.5">Segunda Especialidad</a></li>
+    <li><a href="https://cidunt.edu.pe/web2/">Cidunt</a></li>
+    <li><a href="https://www.rnc.edu.pe/">R.N.C</a></li>
 </ul>
 
 <button class="text-white flex lg:hidden" id="menu-toggle">

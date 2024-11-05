@@ -8,7 +8,7 @@
 </section>
 
 <section id="benefits-list" class="bg-gray-100 py-10 relative">
-    <p class="text-lg leading-relaxed text-justify mx-auto max-w-7xl">
+    <p class="text-lg leading-relaxed text-justify px-5 mx-auto max-w-7xl">
         La Facultad de Educación de la Universidad Nacional de Trujillo busca asegurar que sus programas académicos cumplan con altos estándares de calidad y respondan a las necesidades del contexto educativo. A través del proceso de estandarización que abarca una autoevaluación y mejora continua, se logrará un entorno que impulse el desarrollo integral de sus estudiantes.
     </p>
     <br>
