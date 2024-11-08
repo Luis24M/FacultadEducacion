@@ -24,6 +24,7 @@
     <x-side-button icon="book.svg" title="Perfil" route="#perfil" />
     <x-side-button icon="book.svg" title="Perspectiva Ocupacional" route="#ocupacion" />
 
+
     {{-- PRIMARIA --}}
 
     {{-- SECUNDARIA --}}
@@ -34,6 +35,7 @@
         <x-side-button icon="book.svg" title="Historia y Geografia" route="/pregrado/secundaria/historia" />
         <x-side-button icon="book.svg" title="Ciencias Matematicas" route="/pregrado/secundaria/matematicas" />
         <x-side-button icon="book.svg" title="Idiomas" route="/pregrado/secundaria/idiomas" />
+
 
 {{-- POSGRADO --}}
 @elseif(request()->routeIs('posgrado'))
@@ -62,8 +64,6 @@
         
     />
 
-
-
 @elseif(request()->routeIs('departamentos_academicos'))
 <x-side-button icon="building.svg" title="Ciencias de la Educación" route="/departamentos_academicos/educacion" />
 <x-side-button icon="building.svg" title="Filosofia y Arte" route="/departamentos_academicos/filosofiayarte" />
@@ -81,6 +81,7 @@
 
 
 @endif
+
 <script>
     document.querySelectorAll('[data-dropdown]').forEach(button => {
     const dropdown = button.closest('.dropdown').querySelector('[data-dropdown-menu]');
