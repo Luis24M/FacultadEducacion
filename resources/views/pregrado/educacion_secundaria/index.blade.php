@@ -144,26 +144,26 @@
         <div class="container mx-auto flex justify-around">
             <div class="flex space-x-4 ease-out text-base">
                 <!-- Lengua y Literatura -->
-                <a a href="#" onclick="showSection('lengua-literatura')"  class="bg-[#FFB703] text-white px-6 py-4 rounded-lg shadow-lg bg-[#FFB703] hover:bg-[#EBA903] active:bg-[#EBA903] focus:outline-none focus:ring focus:ring-[#EBA903]">
+                <a a href="#" onclick="showSection('lengua-literatura')"  class="bg-[#FFB703] text-white px-6 py-4 rounded-lg shadow-lg hover:bg-[#EBA903] active:bg-[#EBA903] focus:outline-none focus:ring focus:ring-[#EBA903]">
                     Lengua y Literatura
                 </a>
                 <!-- Filosofía, Psicología y CCSS -->
-                <a href="#" onclick="showSection('filosofia-psicologia-ccss')" class="bg-[#FFB703] text-white px-6 py-4 rounded-lg shadow-lg bg-[#FFB703] hover:bg-[#EBA903] active:bg-[#EBA903] focus:outline-none focus:ring focus:ring-[#EBA903]">
+                <a href="#" onclick="showSection('filosofia-psicologia-ccss')" class="bg-[#FFB703] text-white px-6 py-4 rounded-lg shadow-lg hover:bg-[#EBA903] active:bg-[#EBA903] focus:outline-none focus:ring focus:ring-[#EBA903]">
                     Filosofía, Psicología y CCSS
                 </a>
                 <!-- Ciencias Matemáticas -->
-                <a href="#" onclick="showSection('ciencias-matematicas')" class="bg-[#FFB703] text-white px-6 py-4 rounded-lg shadow-lg bg-[#FFB703] hover:bg-[#EBA903] active:bg-[#EBA903] focus:outline-none focus:ring focus:ring-[#EBA903]">
+                <a href="#" onclick="showSection('ciencias-matematicas')" class="bg-[#FFB703] text-white px-6 py-4 rounded-lg shadow-lg hover:bg-[#EBA903] active:bg-[#EBA903] focus:outline-none focus:ring focus:ring-[#EBA903]">
                     Ciencias Matemáticas
                 </a>
-                <a href="#" onclick="showSection('idiomas')" class="bg-[#FFB703] text-white px-6 py-4 rounded-lg shadow-lg bg-[#FFB703] hover:bg-[#EBA903] active:bg-[#EBA903] focus:outline-none focus:ring focus:ring-[#EBA903]">
+                <a href="#" onclick="showSection('idiomas')" class="bg-[#FFB703] text-white px-6 py-4 rounded-lg shadow-lg hover:bg-[#EBA903] active:bg-[#EBA903] focus:outline-none focus:ring focus:ring-[#EBA903]">
                         Idiomas
                 </a>
                 <!-- Historia y Geografía -->
-                <a href="#" onclick="showSection('historia-geografia')" class="bg-[#FFB703] text-white px-6 py-4 rounded-lg shadow-lg bg-[#FFB703] hover:bg-[#EBA903] active:bg-[#EBA903] focus:outline-none focus:ring focus:ring-[#EBA903]">
+                <a href="#" onclick="showSection('historia-geografia')" class="bg-[#FFB703] text-white px-6 py-4 rounded-lg shadow-lg hover:bg-[#EBA903] active:bg-[#EBA903] focus:outline-none focus:ring focus:ring-[#EBA903]">
                     Historia y Geografía
                 </a>
                 <!-- Ciencias Naturales -->
-                <a href="#" onclick="showSection('ciencias-naturales')" class="bg-[#FFB703] text-white px-6 py-4 rounded-lg shadow-lg bg-[#FFB703] hover:bg-[#EBA903] active:bg-[#EBA903] focus:outline-none focus:ring focus:ring-[#EBA903]">
+                <a href="#" onclick="showSection('ciencias-naturales')" class="bg-[#FFB703] text-white px-6 py-4 rounded-lg shadow-lg hover:bg-[#EBA903] active:bg-[#EBA903] focus:outline-none focus:ring focus:ring-[#EBA903]">
                     Ciencias Naturales
                 </a>
             </div>
