@@ -24,6 +24,7 @@
     <x-side-button icon="book.svg" title="Perfil" route="#perfil" />
     <x-side-button icon="book.svg" title="Perspectiva Ocupacional" route="#ocupacion" />
 
+
     {{-- PRIMARIA --}}
 
     {{-- SECUNDARIA --}}
@@ -34,6 +35,7 @@
         <x-side-button icon="book.svg" title="Historia y Geografia" route="/pregrado/secundaria/historia" />
         <x-side-button icon="book.svg" title="Ciencias Matematicas" route="/pregrado/secundaria/matematicas" />
         <x-side-button icon="book.svg" title="Idiomas" route="/pregrado/secundaria/idiomas" />
+
 
 {{-- POSGRADO --}}
 @elseif(request()->routeIs('posgrado'))
@@ -51,6 +53,16 @@
     ]" 
 />
 
+    <x-drop-down-button 
+        class="fa-solid fa-folder-open"
+        title="Practica Preprofesional" 
+        :list="[
+            ['name' => 'Directivas', 'url' => '/unidades/practica_preprofesional'],
+            ['name' => 'Comité', 'url' => '/menu'],
+            ['name' => 'Docentes', 'url' => '/footer']
+        ]" 
+        
+    />
 
 @elseif(request()->routeIs('departamentos_academicos'))
 <x-side-button icon="building.svg" title="Ciencias de la Educación" route="/departamentos_academicos/educacion" />

@@ -3,6 +3,7 @@
 @section('content')
 
 
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -325,6 +326,7 @@
                 </div>
             </div>
         </section>
+<h1 class="text-5xl">Educación Secundaria</h1>
 
 
         <!-- Ex directores-->

@@ -85,6 +85,7 @@ Route::get('/unidades/unidad_calidad/auditoria_interna', function () {
 Route::get('/unidades/unidad_calidad/iso_9001', function () {
     return view('unidades.unidad_calidad.iso_9001');
 })->name('unidades.iso_9001');
+
 Route::get('/practica_preprofesional', function (){
     return view('unidades.practica_preprofesional.index');
 })->name('practica_preprofesional');
@@ -112,6 +113,7 @@ Route::get('/unidades/unidad_calidad/acreditacion', function () {
 Route::get('/unidades/unidad_calidad/colaboradores', function () {
     return view('unidades.unidad_calidad.colaboradores.index');
 })->name('unidades.colaboradores');
+
 // Rutas Departamentos Academicos
 
 
