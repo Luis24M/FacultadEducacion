@@ -1,50 +1,26 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="bg-gradient-to-r from-blue-900 to-orange-500 min-h-screen flex flex-col items-center justify-center text-white">
-  <!-- Encabezado -->
-  <h1 class="text-5xl font-bold mb-6">Unidad de Práctica Preprofesional</h1>
-  
-  <!-- Descripción -->
-  <p class="text-lg text-center max-w-2xl mb-10">
-    Bienvenido a la Unidad de Práctica Preprofesional de nuestra universidad. Aquí encontrarás las herramientas y recursos necesarios para comenzar tu carrera profesional a través de la práctica en empresas y organizaciones reconocidas.
-  </p>
-
-  <!-- Tarjetas de Servicios -->
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl">
-    
-    <!-- Card 1 -->
-    <div class="bg-white text-blue-900 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
-      <h2 class="text-2xl font-semibold mb-4">Oportunidades de Prácticas</h2>
-      <p>
-        Conoce las oportunidades de prácticas disponibles en empresas líderes del sector. Da el primer paso en tu carrera profesional.
-      </p>
+<div class="bg-gradient-to-r from-gray-800 to-gray-400 min-h-screen flex flex-col items-center justify-start text-white p-6">
+    <!-- Frase llamativa -->
+    <div class="text-center mb-8 opacity-0 transform translate-y-4 animate-fade-in">
+        <h1 class="text-4xl font-extrabold transition duration-500 delay-200 opacity-100">Explora Tu Futuro Profesional</h1>
+        <p class="mt-2 text-lg transition duration-500 delay-300 opacity-100">Práctica Preprofesional - Universidad Nacional de Trujillo</p>
     </div>
 
-    <!-- Card 2 -->
-    <div class="bg-white text-blue-900 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
-      <h2 class="text-2xl font-semibold mb-4">Asesoría Profesional</h2>
-      <p>
-        Recibe orientación de nuestros asesores especializados para optimizar tu búsqueda de prácticas y mejorar tu perfil profesional.
-      </p>
+    <!-- Contenedor de PDF -->
+    <div class="w-full max-w-4xl h-[calc(100vh-100px)] bg-white rounded-lg shadow-2xl overflow-hidden">
+        <iframe src="pdfs/Reglamento_FacEdu_Capitulo1.pdf" class="w-full h-full border-none"></iframe>
     </div>
-
-    <!-- Card 3 -->
-    <div class="bg-white text-blue-900 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
-      <h2 class="text-2xl font-semibold mb-4">Convenios Internacionales</h2>
-      <p>
-        Participa en programas internacionales y adquiere experiencia global en empresas de renombre fuera del país.
-      </p>
-    </div>
-  </div>
-
-  <!-- Botón de más información -->
-  <div class="mt-10">
-    <a href="#more-info" class="bg-white text-blue-900 px-8 py-3 rounded-full shadow-lg font-bold transform hover:scale-105 transition-transform duration-300">
-      Más información
-    </a>
-  </div>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const textElement = document.querySelector('.text-center');
+        textElement.classList.remove('opacity-0', 'translate-y-4');
+        textElement.classList.add('opacity-100', 'translate-y-0');
+    });
+</script>
 
 
 @endsection

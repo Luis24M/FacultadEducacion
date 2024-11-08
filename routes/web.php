@@ -62,9 +62,23 @@ Route::get('/unidades/unidad_calidad', function () {
 Route::get('/unidades/unidad_calidad/iso_9001', function () {
     return view('unidades.unidad_calidad.iso_9001.index');
 })->name('unidades.iso_9001');
+
 Route::get('/practica_preprofesional', function (){
     return view('unidades.practica_preprofesional.index');
-})->name('practica_preprofesional');
+})->name('unidades.practica_preprofesional');
+
+Route::get('/Reglamento', function (){
+    return view('unidades.practica_preprofesional.Reglamento.index');
+})->name('unidades.practica_preprofesional.Reglamento');
+
+Route::get('/Comite', function (){
+    return view('unidades.practica_preprofesional.Comite.index');
+})->name('unidades.practica_preprofesional.Comite');
+
+Route::get('/Docentes', function (){
+    return view('unidades.practica_preprofesional.Docentes.index');
+})->name('unidades.practica_preprofesional.Docentes');
+
 
 Route::get('/unidades/unidad_calidad/acreditacion', function () {
     return view('unidades.unidad_calidad.acreditacion.index');

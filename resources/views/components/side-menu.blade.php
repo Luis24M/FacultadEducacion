@@ -47,11 +47,12 @@
 
     <x-drop-down-button 
         class="fa-solid fa-folder-open"
-        title="Practica Preprofesional" 
+        title="Unidad de Practica Preprofesional" 
         :list="[
-            ['name' => 'Directivas', 'url' => '/practica_preprofesional'],
-            ['name' => 'Comité', 'url' => '/menu'],
-            ['name' => 'Docentes', 'url' => '/footer']
+            ['name' => 'Inicio', 'url' => '/practica_preprofesional'],
+            ['name' => 'Reglamento', 'url' => '/Reglamento'],
+            ['name' => 'Comité', 'url' => '/Comite'],
+            ['name' => 'Docentes', 'url' => '/Docentes']
         ]" 
         
     />
