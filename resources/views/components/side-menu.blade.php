@@ -18,9 +18,12 @@
     <x-side-button icon="book.svg" title="Ciencias de la comunicación" route="/pregrado/cdlc" />
     {{-- INICIAL --}}
     @elseif(request()->routeIs('pregrado.inicial') || request()->routeIs('pregrado.inicial.*'))
+    <x-side-button icon="book.svg" title="Inicial" route="#" />
+    <x-side-button icon="book.svg" title="Misión y Visión" route="#mision-vision" />
+    <x-side-button icon="book.svg" title="Datos" route="#datos"/>
     <x-side-button icon="book.svg" title="Perfil" route="#perfil" />
-    <x-side-button icon="book.svg" title="Perfil" route="#perfil" />
-    <x-side-button icon="book.svg" title="Perfil" route="#perfil" />
+    <x-side-button icon="book.svg" title="Perspectiva Ocupacional" route="#ocupacion" />
+
     {{-- PRIMARIA --}}
 
     {{-- SECUNDARIA --}}
