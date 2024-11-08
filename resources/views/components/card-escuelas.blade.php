@@ -1,4 +1,6 @@
-<a href="{{ $url }}" class="border-2 rounded-lg lg:w-1/3 shadow-2xl hover:scale-105 transition-all duration-300">
-    <h3 class="text-xl text-center my-2">{{$name}}</h3>
-    <img class="object-cover lg:h-[320px]  w-fit" src="{{$img}}" alt="">
+<a href="{{ $url }}" class="border-2 lg:max-w-[40%] md:w-full rounded-lg shadow-lg group overflow-hidden">
+    <div class="h-1/6 w-full flex items-center justify-center rounded-t-lg bg-white">
+        <h3 class="text-xl text-center my-2 font-semibold">{{$name}}</h3>
+    </div>
+    <img class="lg:h-5/6 min-w-full rounded-b-lg object-cover group-hover:scale-105 transition-all ease-linear duration-300 " src="{{$img}}" alt="">
 </a>

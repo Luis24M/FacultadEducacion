@@ -1,0 +1,243 @@
+.hero {
+    height: 100vh;
+    background-image: url("../imagenes/idiomas/FONDOI.jpeg"); /* Replace with the path to your image */
+    
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(
+        0,
+        0,
+        0,
+        0.5
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+    color: #fff;
+    max-width: 800px;
+}
+
+h1 {
+    font-size: 3em;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.parrafo {
+    justify-content: center;
+    text-align: justify;
+    margin: 5%;
+}
+
+.btn {
+    background-color: #ffa500;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e59400;
+}
+
+.stats {
+    padding: 10%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.stat {
+    background-color: #f8e6d0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 22%;
+}
+
+.stat h3 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.stat p {
+    font-size: 1.1em;
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.about-text {
+    width: 50%;
+    padding-left: 30px;
+}
+
+.about-text h2 {
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about-text ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.about-text ul li {
+    margin-bottom: 10px;
+}
+
+.about-text ul li::before {
+    content: "✔️";
+    margin-right: 10px;
+    color: #ffa500;
+}
+
+.about-images {
+    width: 40%;
+    margin: 5%;
+}
+
+.about-images img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ffa500;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e59400;
+}
+
+h1 {
+    text-align: center;
+}
+.cartas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.texto {
+    justify-content: center;
+    gap: 20px;
+    text-align: justify;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 410px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card-header .icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #e4b000;
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+}
+
+.card p {
+    text-align: justify;
+    color: #666;
+}
+
+.carreras {
+    text-align: center;
+    padding: 50px;
+}
+
+.carreras h2 {
+    font-size: 2.5rem;
+    color: #b67145;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.carreras-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.carrera {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.carrera h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.carrera p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.carrera img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .carreras-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carrera {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}

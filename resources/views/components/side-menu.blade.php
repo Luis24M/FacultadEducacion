@@ -1,46 +1,50 @@
-@if(request()->routeIs('home'))
-    <x-side-button icon="fa-solid fa-house" title="Institucional" route="/institucional"  />
-    <x-side-button icon="fa-solid fa-house" title="Pregrado" route="/pregrado" />
-    <x-side-button icon="fa-solid fa-house" title="Posgrado" route="/posgrado" />
-    <x-side-button icon="fa-solid fa-house" title="Unidades" route="/unidades" />
-    <x-side-button icon="fa-solid fa-house" title="Departamentos academicos"
-        route="/departamentos-academicos" />
-    <x-side-button icon="fa-solid fa-house" title="Segunda especialidad" route="/segunda-especialidad" />
-    <x-side-button icon="fa-solid fa-house" title="Cidunt" route="/cidunt" />
-    <x-side-button icon="fa-solid fa-house" title="R.N.C" route="/rnc" />
-
-@elseif(request()->routeIs('institucional'))
+@if(request()->routeIs('home') || request()->routeIs('institucional'))
+    <x-side-button icon="home.svg" title="Institucional" route="/institucional"  />
+    <x-side-button icon="book.svg" title="Pregrado" route="/pregrado" />
+    <x-side-button icon="graduation.svg" title="Posgrado" route="https://web.facebook.com/EscuelaDePosgradoUNT/?locale=es_LA&_rdc=1&_rdr" />
+    <x-side-button icon="books.svg" title="Unidades" route="/unidades" />
+    <x-side-button icon="diploma.svg" title="Segunda especialidad" route="https://www.facebook.com/sete.tecnologia.5" />
+    <x-side-button icon="language.svg" title="Cidunt" route="https://cidunt.edu.pe/web2/" />
+    <x-side-button icon="school.svg" title="R.N.C" route="https://www.rnc.edu.pe/" />
+    <x-side-button icon="book.svg" title="Galería" route="/galeria"/>
     
-
-@elseif(request()->routeIs('pregrado') || request()->routeIs('pregrado.*'))
-    <x-side-button icon="fa-solid" title="Educación Inicial" route="/pregrado/CDLC" />
-    <x-side-button icon="fa-solid" title="Educación Primaria" route="/pregrado/primaria" />
-    <x-side-button icon="fa-solid" title="Educación Secundaria" route="/pregrado/CDLC" />
-
-    <x-side-button icon="fa-solid" title="Ciencias de la comunicación" route="/pregrado/CDLC" />
-
-<x-drop-down-button 
-    title="Idiomas : Inglés - Francés" 
-    :list="[
-        ['name' => 'Home', 'url' => '/idiomas']
-    ]" 
-/>
+{{-- PREGRADO --}}
 @elseif(request()->routeIs('pregrado'))
-    <x-side-button icon="fa-solid fa-house" title="Educación Inicial" route="#" />
-    <x-side-button icon="fa-solid fa-house" title="Educación Primaria" route="#" />
-    <x-side-button icon="fa-solid fa-house" title="Ciencia de la comunicación" route="pregrado/CDLC" />
+    <h3 class="text-xl font-semibold">Pregrado</h3>
+    <hr>
+    <x-side-button icon="book.svg" title="Educación Inicial" route="/pregrado/inicial" />
+    <x-side-button icon="book.svg" title="Educación Primaria" route="/pregrado/primaria" />
+    <x-side-button icon="book.svg" title="Educación Secundaria" route="/pregrado/secundaria" />
+    <x-side-button icon="book.svg" title="Ciencias de la comunicación" route="/pregrado/cdlc" />
+    {{-- INICIAL --}}
+    @elseif(request()->routeIs('pregrado.inicial') || request()->routeIs('pregrado.inicial.*'))
+    <x-side-button icon="book.svg" title="Perfil" route="#perfil" />
+    <x-side-button icon="book.svg" title="Perfil" route="#perfil" />
+    <x-side-button icon="book.svg" title="Perfil" route="#perfil" />
+    {{-- PRIMARIA --}}
 
+    {{-- SECUNDARIA --}}
+    @elseif(request()->routeIs('pregrado.secundaria') || request()->routeIs('pregrado.secundaria.*'))
+        <h3 class="text-xl font-semibold">Educacion Secundaria</h3>
+        <hr>
+        <x-side-button icon="book.svg" title="Filosofía, Psicología y CCSS" route="/pregrado/secundaria/filosofia" />
+        <x-side-button icon="book.svg" title="Historia y Geografia" route="/pregrado/secundaria/historia" />
+        <x-side-button icon="book.svg" title="Ciencias Matematicas" route="/pregrado/secundaria/matematicas" />
+        <x-side-button icon="book.svg" title="Idiomas" route="/pregrado/secundaria/idiomas" />
+
+{{-- POSGRADO --}}
 @elseif(request()->routeIs('posgrado'))
 
-
+{{-- UNIDADES --}}
 @elseif(request()->routeIs('unidades') || request()->routeIs('unidades.*'))
-
+<h3 class="text-xl font-semibold">Unidades</h3>
+<hr>
 <x-drop-down-button 
     title="Unidad de Calidad" 
     :list="[ 
-        ['name' => 'ISO 9001', 'url' => '/unidades/unidad_calidad/iso_9001'], 
+        ['name' => 'Auditoria Interna', 'url' => '/unidades/unidad_calidad/auditoria_interna'], 
         ['name' => 'Acreditación', 'url' => '/unidades/unidad_calidad/acreditacion'], 
-        ['name' => 'Colaboradores', 'url' => '/unidades/unidad_calidad/colaboradores'] 
+        ['name' => 'Licenciamiento', 'url' => '/unidades/unidad_calidad/licenciamiento'] 
     ]" 
 />
 
@@ -48,7 +52,7 @@
         class="fa-solid fa-folder-open"
         title="Practica Preprofesional" 
         :list="[
-            ['name' => 'Directivas', 'url' => '/practica_preprofesional'],
+            ['name' => 'Directivas', 'url' => '/unidades/practica_preprofesional'],
             ['name' => 'Comité', 'url' => '/menu'],
             ['name' => 'Docentes', 'url' => '/footer']
         ]" 
@@ -57,7 +61,14 @@
 
 
 
-@elseif(request()->routeIs('departamentos-academicos'))
+@elseif(request()->routeIs('departamentos_academicos'))
+<x-side-button icon="building.svg" title="Ciencias de la Educación" route="/departamentos_academicos/educacion" />
+<x-side-button icon="building.svg" title="Filosofia y Arte" route="/departamentos_academicos/filosofiayarte" />
+<x-side-button icon="building.svg" title="Ciencias Psicológicas" route="/departamentos_academicos/psicologicas" />
+<x-side-button icon="building.svg" title="Lengua Nacional y Literatura" route="/departamentos_academicos/lengua" />
+<x-side-button icon="building.svg" title="Historia y Geografia" route="/departamentos_academicos/historia" />
+<x-side-button icon="building.svg" title="Idiomas y Lingüística" route="/departamentos_academicos/idiomas" />
+<x-side-button icon="building.svg" title="Comunicación Social" route="/departamentos_academicos/comunicacion" />
 
 @elseif(request()->routeIs('segunda-especialidad'))
 

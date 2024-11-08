@@ -1,36 +1,36 @@
-<ul class="lg:flex justify-around text-white [&>li]:w-fit items-center hidden gap-2 md:w-full">
-  <li><a href="/">Institucional</a></li>
-  <li><a href="/">Pregrado</a></li>
-  <li><a href="/">Posgrado</a></li>
-  <li><a href="/">Unidades</a></li>
-  <li><a href="/">Departamentos Académicos</a></li>
-  <li><a href="/">Segunda Especialidad</a></li>
-  <li><a href="/">Cidunt</a></li>
-  <li><a href="/">R.N.C</a></li>
+<ul class="lg:flex justify-around [&>li]:w-fit items-center hidden gap-2 md:w-full">
+    <li><a href="/institucional">Institucional</a></li>
+    <li><a href="/pregrado">Pregrado</a></li>
+    <li><a href="https://web.facebook.com/EscuelaDePosgradoUNT/?locale=es_LA&_rdc=1&_rdr">Posgrado</a></li>
+    <li><a href="/unidades">Unidades</a></li>
+    <li><a href="https://www.facebook.com/sete.tecnologia.5">Segunda Especialidad</a></li>
+    <li><a href="https://cidunt.edu.pe/web2/">Cidunt</a></li>
+    <li><a href="https://www.rnc.edu.pe/">R.N.C</a></li>
 </ul>
 
-{{-- menu burguer for ipad --}}
-<div class="flex items-center justify-center lg:hidden ml-4">
-  <button class="text-white" id="menu-toggle">
-    <i class="fas fa-bars md:w-12"></i>
-  </button>
-</div>
+<button class="text-white flex lg:hidden" id="menu-toggle">
+    <img src="{{ asset('icons/burger.svg')}}" alt="" class="min-w-5" id="burger">
+    <img src="{{ asset('icons/x.svg')}}" alt="" class="hidden min-w-5" id="x">
+</button>
 
-{{-- Dropdown menu for mobile --}}
-<ul id="mobile-menu" class="flex-col bg-gray-800 text-white hidden w-full items-center">
-  <li class="py-2"><a href="/">Institucional</a></li>
-  <li class="py-2"><a href="/">Pregrado</a></li>
-  <li class="py-2"><a href="/">Posgrado</a></li>
-  <li class="py-2"><a href="/">Unidades</a></li>
-  <li class="py-2"><a href="/">Departamentos Academicos</a></li>
-  <li class="py-2"><a href="/">Segunda Especialidad</a></li>
-  <li class="py-2"><a href="/">Cidunt</a></li>
-  <li class="py-2"><a href="/">R.N.C</a></li>
-</ul>
 
 <script>
-  document.getElementById('menu-toggle').addEventListener('click', function() {
-    const menu = document.getElementById('mobile-menu');
-    menu.classList.toggle('hidden');
-  });
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        const burger = document.querySelector('#burger');
+        const x = document.querySelector('#x');
+        const body = document.body;
+
+        // Toggle menu visibility
+        menu.classList.toggle('hidden');
+
+        // Toggle burger and x icons
+        burger.classList.toggle('hidden');
+        x.classList.toggle('hidden');
+
+        // Toggle body overflow
+        body.classList.toggle('overflow-hidden');
+        
+
+    });
 </script>
