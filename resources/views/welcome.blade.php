@@ -32,7 +32,7 @@
         <div class="flex flex-col lg:flex-row my-10 border-2" id="bienvenida">
             <img class="min-w-[50%] object-cover" src="{{ asset('imagenes/index/decana.png') }}"
                 alt="decana Elizabeth Aurea Rafael Sánchez">
-            <div class=" bg-white p-4 lg:p-20 lg:max-w-[50%] rounded-e-md text-center" id="bienvenida-text">
+            <div class=" bg-white p-4 lg:p-20 lg:max-w-[50%] rounded-e-md text-center flex flex-col justify-center" id="bienvenida-text">
                 <h3 class="text-3xl font-semibold">Bienvenida</h3>
                 <br>
                 <p>"Bienvenidos a la Facultad de Educación y Ciencias de la Comunicación, un espacio donde la excelencia
@@ -59,7 +59,7 @@
         </div>
     </div>
     <hr>
-    <div class="mt-10">
+    <div class="py-10 bg-white">
         <h2 class="text-5xl text-center my-8 font-bold">Nuestras Escuelas</h2>
         <section class="p-4 flex lg:flex-row flex-col flex-wrap justify-around gap-4 lg:gap-1">
             <x-card-escuelas name="Educación Inicial" url="/pregrado/inicial"
@@ -72,6 +72,7 @@
                 img="{{ asset('imagenes/index/ciencias.jpg') }}" />
         </section>
     </div>
+
 
     <script type="text/javascript">
     (function(d, t) {
@@ -86,7 +87,6 @@
         v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
     })(document, 'script');
     </script>
-
     <style>
         #noticias {
             position: relative;

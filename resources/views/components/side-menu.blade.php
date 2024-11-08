@@ -1,25 +1,28 @@
-@if(request()->routeIs('home'))
-    <x-side-button icon="fa-solid fa-house" title="Institucional" route="/institucional"  />
-    <x-side-button icon="fa-solid fa-book" title="Pregrado" route="/pregrado" />
-    <x-side-button icon="fa-solid fa-graduation-cap" title="Posgrado" route="/posgrado" />
-    <x-side-button icon="fa-solid fa-hammer" title="Unidades" route="/unidades" />
-    <x-side-button icon="fa-solid fa-building-columns" title="Departamentos academicos"
-        route="/departamentos_academicos" />
-    <x-side-button icon="fa-solid fa-certificate" title="Segunda especialidad" route="/segunda_especialidad" />
-    <x-side-button icon="fa-solid fa-language" title="Cidunt" route="https://cidunt.edu.pe/web2/" />
-    <x-side-button icon="fa-solid fa-school" title="R.N.C" route="https://www.rnc.edu.pe/" />
-
-@elseif(request()->routeIs('institucional'))
+@if(request()->routeIs('home') || request()->routeIs('institucional'))
+    <x-side-button icon="home.svg" title="Institucional" route="/institucional"  />
+    <x-side-button icon="book.svg" title="Pregrado" route="/pregrado" />
+    <x-side-button icon="graduation.svg" title="Posgrado" route="https://web.facebook.com/EscuelaDePosgradoUNT/?locale=es_LA&_rdc=1&_rdr" />
+    <x-side-button icon="books.svg" title="Unidades" route="/unidades" />
+    <x-side-button icon="diploma.svg" title="Segunda especialidad" route="https://www.facebook.com/sete.tecnologia.5" />
+    <x-side-button icon="language.svg" title="Cidunt" route="https://cidunt.edu.pe/web2/" />
+    <x-side-button icon="school.svg" title="R.N.C" route="https://www.rnc.edu.pe/" />
+    <x-side-button icon="book.svg" title="Galería" route="/galeria"/>
     
 {{-- PREGRADO --}}
 @elseif(request()->routeIs('pregrado'))
     <h3 class="text-xl font-semibold">Pregrado</h3>
     <hr>
-    <x-side-button icon="fa-solid fa-house" title="Educación Inicial" route="/pregrado/inicial" />
-    <x-side-button icon="fa-solid fa-house" title="Educación Primaria" route="/pregrado/primaria" />
-    <x-side-button icon="fa-solid fa-house" title="Educación Secundaria" route="pregrado/secundaria" />
-    <x-side-button icon="fa-solid fa-house" title="Ciencias de la comunicación" route="/pregrado/cdlc" />
+    <x-side-button icon="book.svg" title="Educación Inicial" route="/pregrado/inicial" />
+    <x-side-button icon="book.svg" title="Educación Primaria" route="/pregrado/primaria" />
+    <x-side-button icon="book.svg" title="Educación Secundaria" route="/pregrado/secundaria" />
+    <x-side-button icon="book.svg" title="Ciencias de la comunicación" route="/pregrado/cdlc" />
     {{-- INICIAL --}}
+    @elseif(request()->routeIs('pregrado.inicial') || request()->routeIs('pregrado.inicial.*'))
+    <x-side-button icon="book.svg" title="Inicial" route="#" />
+    <x-side-button icon="book.svg" title="Misión y Visión" route="#mision-vision" />
+    <x-side-button icon="book.svg" title="Datos" route="#datos"/>
+    <x-side-button icon="book.svg" title="Perfil" route="#perfil" />
+    <x-side-button icon="book.svg" title="Perspectiva Ocupacional" route="#ocupacion" />
 
     {{-- PRIMARIA --}}
 
@@ -27,9 +30,10 @@
     @elseif(request()->routeIs('pregrado.secundaria') || request()->routeIs('pregrado.secundaria.*'))
         <h3 class="text-xl font-semibold">Educacion Secundaria</h3>
         <hr>
-        <x-side-button icon="fa-solid fa-house" title="Historia y Geografia" route="/pregrado/secundaria/historia" />
-        <x-side-button icon="fa-solid fa-house" title="Ciencias Matematicas" route="/pregrado/secundaria/matematicas" />
-        <x-side-button icon="fa-solid fa-house" title="Idiomas" route="/pregrado/secundaria/idiomas" />
+        <x-side-button icon="book.svg" title="Filosofía, Psicología y CCSS" route="/pregrado/secundaria/filosofia" />
+        <x-side-button icon="book.svg" title="Historia y Geografia" route="/pregrado/secundaria/historia" />
+        <x-side-button icon="book.svg" title="Ciencias Matematicas" route="/pregrado/secundaria/matematicas" />
+        <x-side-button icon="book.svg" title="Idiomas" route="/pregrado/secundaria/idiomas" />
 
 {{-- POSGRADO --}}
 @elseif(request()->routeIs('posgrado'))
@@ -61,13 +65,13 @@
 
 
 @elseif(request()->routeIs('departamentos_academicos'))
-<x-side-button icon="fa-solid fa-house" title="Ciencias de la Educación" route="/departamentos_academicos/educacion" />
-<x-side-button icon="fa-solid fa-house" title="Filosofia y Arte" route="/departamentos_academicos/filosofiayarte" />
-<x-side-button icon="fa-solid fa-house" title="Ciencias Psicológicas" route="/departamentos_academicos/psicologicas" />
-<x-side-button icon="fa-solid fa-house" title="Lengua Nacional y Literatura" route="/departamentos_academicos/lengua" />
-<x-side-button icon="fa-solid fa-house" title="Historia y Geografia" route="/departamentos_academicos/historia" />
-<x-side-button icon="fa-solid fa-house" title="Idiomas y Lingüística" route="/departamentos_academicos/idiomas" />
-<x-side-button icon="fa-solid fa-house" title="Comunicación Social" route="/departamentos_academicos/comunicacion" />
+<x-side-button icon="building.svg" title="Ciencias de la Educación" route="/departamentos_academicos/educacion" />
+<x-side-button icon="building.svg" title="Filosofia y Arte" route="/departamentos_academicos/filosofiayarte" />
+<x-side-button icon="building.svg" title="Ciencias Psicológicas" route="/departamentos_academicos/psicologicas" />
+<x-side-button icon="building.svg" title="Lengua Nacional y Literatura" route="/departamentos_academicos/lengua" />
+<x-side-button icon="building.svg" title="Historia y Geografia" route="/departamentos_academicos/historia" />
+<x-side-button icon="building.svg" title="Idiomas y Lingüística" route="/departamentos_academicos/idiomas" />
+<x-side-button icon="building.svg" title="Comunicación Social" route="/departamentos_academicos/comunicacion" />
 
 @elseif(request()->routeIs('segunda-especialidad'))
 
