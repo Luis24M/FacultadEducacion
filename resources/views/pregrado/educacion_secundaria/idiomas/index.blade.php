@@ -1,158 +1,117 @@
- @extends('layouts.app')
- <link rel="stylesheet" href="{{asset('style/styles.css')}}">
- @section('content')
-     <div id= "body" class="text-lg">
-         <div class="hero">
-             <div class="overlay">
-                 <div class="content">
-                     <h1>Educación Secundaria, <br> Mención: Idiomas: <br> Inglés-Francés <br> Inglés-Alemán</h1>
-                     <p>¡Bienvenidos a Educación Secundaria con énfasis en inglés y, francés o alemán! En este viaje
-                         educativo, formarás parte esencial y guiarás el aprendizaje profundo de dos idiomas
-                         internacionales. ¡Comencemos juntos esta travesía hacia un futuro de descubrimientos en la
-                         Educación Secundaria!</p>
-                     <a href="#" class="btn">Ver Jornada de Investigación Científica</a>
-                 </div>
-             </div>
-         </div>
+@extends('layouts.app')
 
-         <section class="stats">
-             <div class="stat">
-                 <h3 id="years">200</h3>
-                 <p>Año de fundación</p>
-             </div>
-             <div class="stat">
-                 <h3 id="teachers">175</h3>
-                 <p>Docentes</p>
-             </div>
-             <div class="stat">
-                 <h3 id="students">2459</h3>
-                 <p>Alumnos</p>
-             </div>
-             <div class="stat">
-                 <h3 id="graduates">381</h3>
-                 <p>Egresados 2012 - 2023</p>
-             </div>
-         </section>
+@section('content')
 
-         <!-- About Section -->
-         <section class="about-section">
-             <div class="about-images">
-                 <img src="{{asset('imagenes/idiomas/imagen.jpg')}}" alt="Facultad de Educación">
-             </div>
-             <div class="about-text">
-                 <h2>Departamento de Idiomas</h2>
-                 <p>"Bienvenidos al programa de estudios de Idiomas"</p>
-                 <p class= "parrafo">Un Licenciado en Educación Secundaria con Mención en Inglés-Frances o Inglés Alemán es
-                     un profesional comprometido con la formación integral de estudiantes adolescentes. Este educador posee
-                     sólidos conocimientos en pedagogía y didáctica, especializándose en la enseñanza de los idiomas inglés
-                     y, francés o alemán. Su enfoque abarca el desarrollo de habilidades lingüísticas, la promoción de la
-                     comunicación efectiva y la apertura a la diversidad cultural. Con una pasión por inspirar el amor por
-                     los idiomas, este licenciado contribuye al crecimiento académico y personal de sus estudiantes,
-                     preparándolos para enfrentar un mundo globalizado con confianza y competencia lingüística. <br>
-                     <br>
-                     Juntos, construiremos un futuro donde el conocimiento se traduzca en impacto, y donde cada logro
-                     sea una prueba de la dedicación y el compromiso de nuestros estudiantes y educadores.
-                 </p>
-                 <ul>
-                     <li>Duración de Estudios: 10 Semestres Académicos</li>
-                     <li>Grado Académico: Bachiller en Educación Secundaria, Mención Idiomas: Inglés-Francés o Inglés-Alemán
-                     </li>
-                     <li>Título Profesional: Licenciado en Educación Secundaria, Mención Idiomas: Inglés-Francés o
-                         Inglés-Alemán</li>
-                 </ul>
-                 <a href="#" class="btn">Ver Malla Curricular</a>
-             </div>
-         </section>
+    <section class="min-h-60 md:min-h-96 w-full bg-blue-800 flex items-center justify-center gap-5 p-10 ">
+        <div class="flex flex-col justify-center gap-5 text-center ">
+            <h1 class="text-xl md:text-4xl text-white font-semibold ">
+                Mención Idiomas: Inglés-Francés / Inglés-Alemán
+            </h1>
+            <p class="text-md md:text-base text-white">
+                Formando líderes en el aprendizaje de idiomas, para educar con excelencia en un mundo globalizado.
+            </p>
+        </div>
 
-         <!-- mision y vision -->
-         <!--mision, vision-->
+        <img src="https://via.placeholder.com/300x200?text=imagen+Prueba" alt="escuela de educación inicial"
+            class="w-2/5 shadow-lg hidden lg:block">
 
-         <h1>VISIÓN Y MISIÓN</h1>
+    </section>
 
-<div class="cartas">
-  <div class="card">
-    <div class="card-header">
-      <i class="icon fas fa-bullseye"></i>
-      <h2>Misión</h2>
-    </div>
-    <p>Somos el primer programa de estudios del Perú que forma licenciados en Educación Secundaria
-      con mención en Idiomas: Inglés-Francés e Inglés-Alemán, de excelencia académica y preparados
-      para enfrentar los retos de un mundo complejo y globalizado buscando el desarrollo responsable
-      y sostenible de nuestra región y país.</p>
-  </div>
-  <div class="card">
-    <div class="card-header">
-      <i class="icon fas fa-eye"></i>
-      <h2>Visión</h2>
-    </div>
-    <p>En el 2024, seremos una unidad académica acreditada, que contribuye al desarrollo sustentable
-      de la región, del país y del mundo, sensible a las exigencias sociales, que forma profesionales con
-      excelencia académica en idiomas, se proyecta a la comunidad con responsabilidad social, realiza
-      investigación científica, respeta la diversidad cultural y la ecología y contribuye a la formación
-      integral del ser humano dentro de un marco de valores éticos y estéticos.</p>
-  </div>
-</div>
-<!-- fin -->
- <br>
- <br>
+    <!-- perfil -->
+    <section class="md:flex p-5" id="perfil">
+        <div class="container mx-auto p-5">
+            <h2 class="text-2xl text-red-900 font-semibold">Perfil Profesional</h2>
+            <p class="text-gray-700">Un Licenciado en Educación Secundaria con Mención en Inglés-Frances o Inglés Alemán es un profesional comprometido con la formación integral de estudiantes adolescentes. 
+            </p>
+            <br>
+            <p class="text-gray-700">
+                Este educador posee sólidos conocimientos en pedagogía y didáctica, especializándose en la enseñanza de los idiomas inglés y, francés o alemán. Su enfoque abarca el desarrollo de habilidades lingüísticas, la promoción de la comunicación efectiva y la apertura a la diversidad cultural.
+            </p>
+            <br>
+            <p class="text-gray-700">
+                Con una pasión por inspirar el amor por los idiomas, este licenciado contribuye al crecimiento académico y personal de sus estudiantes, preparándolos para enfrentar un mundo globalizado con confianza y competencia lingüística.
+            </p>    
 
-<!-- ingles, frances y aleman -->
-<section class="carreras">
-        <h2>Mención: Idiomas</h2>
-        <br>
-        <div class="carreras-container">
-            <div class="carrera">
-                <h3>Inglés</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eveniet vel, modi qui nesciunt quam, eos itaque laborum eius quasi quaerat dolorem quod mollitia magni quo necessitatibus?</p>
-                <img src="{{asset('imagenes/idiomas/PUENTE.jpg')}}" alt="Imagen de Londres">
+        </div>
+
+        <div class="container mx-auto p-5">
+            <h2 class="text-2xl text-red-900 font-semibold">Campo Ocupacional</h2>
+            <p class="text-gray-700">Las salidas profesionales para un Licenciado en Educación con Mención en Idiomas abarcan diversas áreas:</p>
+            <ul class="list-disc list-inside text-gray-700">
+                <li>
+                    <span class="font-bold "> Enseñanza de idiomas: </span> Imparte clases de idiomas en diversos entornos educativos, guiando a los estudiantes en su aprendizaje y creando un ambiente dinámico.
+                </li>
+                <li>
+                    <span class="font-bold "> Gestión de instituciones educativas: </span> Lidera y administra instituciones, organizando recursos y tomando decisiones estratégicas para fomentar un entorno de aprendizaje óptimo.
+                </li>
+                <li>
+                <span class="font-bold "> Asesoramiento y consultoría: </span> Ofrece orientación a otros educadores en programas de capacitación, mejorando la calidad pedagógica y el entorno educativo.
+                </li>
+                <li>
+                <span class="font-bold ">Liderazgo de proyectos educativos: </span>Emprende iniciativas educativas innovadoras, liderando proyectos que transforman la educación con prácticas pedagógicas creativas y efectivas.
+                </li>              
+                
+            </ul>
+    </section>
+
+    <!-- plan de estudios -->
+    <section class="p-5 md:flex" id="planEstudios">
+        <div class="container mx-auto p-5 md:w-1/3">
+            <h2 class="text-2xl text-red-900 font-semibold">Plan de Estudios</h2>
+
+            <div class="pl-3">
+                <ul class="list-disc list-inside text-gray-700">
+                    <li>
+                        <span class="font-bold"> Duración de Estudios: </span> 10 semestres académicos.
+                    </li>
+                    <li>
+                    <span class="font-bold">Grado Académico: </span> Bachiller en Educación Secundaria, Mención Idiomas: Inglés-Francés o Inglés-Alemán.
+                    </li>
+                    <li>
+                        <span class="font-bold">Título Profesional: </span>Licenciado en Educación Secundaria, Mención Idiomas: Inglés-Francés o Inglés-Alemán.
+                    </li>
+                </ul>
             </div>
-            <div class="carrera">
-                <h3>Francés</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nesciunt, tenetur asperiores minima repellat perspiciatis natus deleniti ab cumque porro magnam fugiat?</p>
-                <img src="{{asset('imagenes/idiomas/PARISS.jpg')}}" alt="Imagen de París">
-            </div>
-            <div class="carrera">
-                <h3>Alemán</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi omnis amet dolores accusamus. Amet, modi repellendus unde vitae, dolore nesciunt.</p>
-                <img src="{{asset('imagenes/idiomas/ALEMAN.jpg')}}" alt="Imagen de Berlín">
+        
+            <a href="https://dpaunt.edu.pe/curriculos/19.pdf" target="_blank" rel="nofollow"
+                class="p-3 w-full mt-4 bg-yellow-400 text-black rounded-md font-semibold text-white hover:bg-yellow-500 block text-center">
+                Ver Malla Curricular
+            </a>
+        </div>
+
+        <div class="container mx-auto rounded-lg">
+            <iframe class="w-full h-56 md:h-80" src="https://youtu.be/LjBkM77MPlo" title="Video informativo"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+
+    <!-- Personal Docente y Administrativo -->
+    <section class="bg-gray-100 p-5 mb-8 rounded-lg" id="planaDocente">
+        <div class="container p-5">
+            <h3 class="text-2xl text-red-900 font-semibold"> Docentes </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-4 bg-white shadow rounded-lg">
+                    <img src="https://via.placeholder.com/300x200?text=Juan+Pérez" alt="Juan Pérez" class="w-full h-48 object-cover rounded-lg">
+                    <h4 class="font-semibold text-gray-800 mt-2">Dr. Juan Pérez</h4>
+                    <p class="text-gray-600 mt-2">Profesor titular, especialista en traducción e interpretación.</p>
+                </div>
+                <div class="p-4 bg-white shadow rounded-lg">
+                    <img src="https://via.placeholder.com/300x200?text=Ana+García" alt="Ana García" class="w-full h-48 object-cover rounded-lg">
+                    <h4 class="font-semibold text-gray-800 mt-2">Mgtr. Ana García</h4>
+                    <p class="text-gray-600 mt-2">Coordinadora académica, con énfasis en la enseñanza del inglés como segunda lengua.</p>
+                </div>
+                <div class="p-4 bg-white shadow rounded-lg">
+                    <img src="https://via.placeholder.com/300x200?text=Ana+García" alt="Ana García" class="w-full h-48 object-cover rounded-lg">
+                    <h4 class="font-semibold text-gray-800 mt-2">Mgtr. Ana García</h4>
+                    <p class="text-gray-600 mt-2">Coordinadora académica, con énfasis en la enseñanza del inglés como segunda lengua.</p>
+                </div>
             </div>
         </div>
     </section>
 
-         <!-- fin -->
+</div>
 
-
-
-     </div>
-     <script>
-         // JavaScript for Animated Number Counting
-         function animateValue(id, start, end, duration) {
-             let obj = document.getElementById(id);
-             let range = end - start;
-             let startTime = new Date().getTime();
-             let endTime = startTime + duration;
-             let step = function() {
-                 let now = new Date().getTime();
-                 let remaining = Math.max((endTime - now) / duration, 0);
-                 let value = Math.round(end - (remaining * range));
-                 obj.innerHTML = value;
-                 if (value == end) {
-                     clearInterval(timer);
-                 }
-             };
-             let timer = setInterval(step, 50);
-             step();
-         }
-
-        // Start animations for each number
-        window.onload = function() {
-            animateValue("years", 0, 200, 2000);
-            animateValue("teachers", 0, 175, 2000);
-            animateValue("students", 0, 2459, 2000);
-            animateValue("graduates", 0, 381, 2000);
-        };
-    </script>
-
-      </div>
 
 @endsection

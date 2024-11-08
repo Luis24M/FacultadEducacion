@@ -6,7 +6,7 @@
     <h1 class="text-xl md:text-4xl text-gray-700 font-semibold">Educación Inicial</h1>
     <p class="text-sm md:text-base text-gray-500">Únete a nuestra Escuela Profesional de Educación Inicial y transforma vidas desde la primera infancia.</p>
   </div>
-  <img src="{{ asset('imagenes/index/inicial.jpg') }}" alt="escuela de educación inicial"
+  <img src="https://via.placeholder.com/300x200?text=imagen+Prueba" alt="escuela de educación inicial"
     class="w-2/5 rotate-6 shadow-lg hidden lg:block">
 </section>
 
@@ -42,6 +42,7 @@
       formación básica, formación profesional y formación especializada, que permiten al estudiante adquirir los
       conocimientos, habilidades y actitudes necesarios para el ejercicio profesional.</p>
   </div>
+  
   <div class="container mx-auto p-5 border rounded-xl bg-white">
     <h2 class="text-2xl text-gray-700 font-semibold">Requisitos de Admisión</h2>
     <ul class="list-disc list-inside text-gray-500">
