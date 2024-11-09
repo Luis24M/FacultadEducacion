@@ -7,6 +7,7 @@
             color: #8B0000
         }
     </style>
+    
     <h1 class="text-3xl md:text-5xl text-[#8B0000] bg-[#FFD700] w-full p-4 font-bold">Filosofía, Psicología y CCSS</h1>
 
     <section class="max-w-[1050px] mx-auto p-5 md:px-0">
@@ -228,5 +229,6 @@
             </section>
         </section>
     </section>
+
     <script src="{{ asset('js/main.js') }}" ></script> 
 @endsection

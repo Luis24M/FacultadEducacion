@@ -24,16 +24,19 @@
     {{-- PRIMARIA --}}
 
     {{-- SECUNDARIA --}}
-    @elseif(request()->routeIs('pregrado.secundaria'))
+    @elseif(request()->routeIs('pregrado.secundaria') || request()->routeIs('pregrado.secundaria.*') ))
         <h3 class="text-xl font-semibold">Educacion Secundaria</h3>
         <hr>
         <x-side-button icon="book.svg" title="Filosofía, Psicología y CCSS" route="/pregrado/secundaria/filosofia" />
         <x-side-button icon="book.svg" title="Historia y Geografia" route="/pregrado/secundaria/historia" />
         <x-side-button icon="book.svg" title="Ciencias Matematicas" route="/pregrado/secundaria/matematicas" />
         <x-side-button icon="book.svg" title="Idiomas" route="/pregrado/secundaria/idiomas" />
-        @elseif(request()->routeIs('pregrado.secundaria.idiomas') || request()->routeIs('pregrado.secundaria.idiomas.*'))
-            <h3 class="text-xl font-semibold">Educacion Secundaria: Mención Idiomas</h3>
+
+        @elseif(request()->routeIs('pregrado.cdlc') || request()->routeIs('pregrado.cdlc.*'))
+            <h3 class="text-xl font-semibold">Ciencias de la Comunicación</h3>
             <hr>
+            <x-side-button icon="book.svg" title="Intitucional" route="#institucional" />
+            <x-side-button icon="book.svg" title="Reseña Histórica" route="#resenaHistorica" />
             <x-side-button icon="book.svg" title="Perfil Profesional" route="#perfilProfesional" />
             <x-side-button icon="book.svg" title="Plan de estudios" route="#planEstudios" />
             <x-side-button icon="book.svg" title="Plana docente" route="#planaDocente" />
