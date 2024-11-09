@@ -64,6 +64,9 @@
     })(document, 'script');
 </script>
 <style>
+    .vf-chat-input textarea{
+        display: none !important;
+    }
     @layer utilities {
       /* Hide scrollbar for Chrome, Safari and Opera */
       .no-scrollbar::-webkit-scrollbar {
