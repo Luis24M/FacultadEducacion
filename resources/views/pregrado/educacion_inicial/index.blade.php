@@ -65,13 +65,16 @@
                 <h3 class="font-medium text-lg md:text-xl">Licenciada de Educación Inicial</h3>
         </section>
 
-        <button class="mx-auto block py-2 px-4 bg-pink-400 rounded-lg text-white my-4 hover:saturate-150 hover:drop-shadow-xl">
-            Descargar malla curricular
-        </button>
+        <section class="w-full text-center">
+            <a href="https://drive.google.com/file/d/1FGgFQbR0b68jgFf2XkgsabrScrbgF3NE/view?usp=sharing" target="_blank" class="mx-auto py-2 px-4 bg-pink-400 rounded-lg text-white my-4 hover:saturate-150 hover:drop-shadow-xl">
+                Descargar malla curricular
+            </a>
+        </section>
 
         <section id="perfil" class="p-10 lg:flex max-w-[1092px] mx-auto">
             <div>
                 <h2 class="text-lg md:text-3xl font-semibold mb-4">Perfil de Ingresante</h2>
+                <hr class="border border-pink-200 px-1">
                 <div
                     class="flex flex-col lg:flex-rsow justify-center gap-3 [&>ul>li]:list-disc [&>ul]:px-5 [&>ul>li]:text-sm md:[&>ul>li]:text-base">
                     <ul>
@@ -92,7 +95,8 @@
             </div>
             <div>
 
-                <h2 class="text-lg md:text-3xl font-semibold my-4">Perfil de Egresado</h2>
+                <h2 class="text-lg md:text-3xl font-semibold my-[26px]">Perfil de Egresado</h2>
+                <hr class="border border-pink-200 px-1">
                 <div
                     class="flex flex-col lg:flex-rsow justify-center gap-3 [&>ul>li]:list-disc [&>ul]:px-5 [&>ul>li]:my-2 [&>ul>li]:drop-shadow-lg [&>ul>li]:text-sm md:[&>ul>li]:text-base">
                     <ul>
