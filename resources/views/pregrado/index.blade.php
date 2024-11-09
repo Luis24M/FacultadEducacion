@@ -8,13 +8,13 @@
 <div class="mt-10">
   <section class="p-4 flex lg:flex-row flex-col flex-wrap justify-around gap-4 lg:gap-1">
       <x-card-escuelas name="Educación Inicial" url="/pregrado/inicial"
-          img="{{ asset('imagenes/index/inicial.jpg') }}" />
+          img="https://via.placeholder.com/300x200?text=imagen+Prueba" />
       <x-card-escuelas name="Educación Primaria" url="/pregrado/primaria"
-          img="{{ asset('imagenes/index/primaria.jpg') }}" />
+          img="https://via.placeholder.com/300x200?text=imagen+Prueba" />
       <x-card-escuelas name="Educación Secundaria" url="/pregrado/secundaria"
-          img="{{ asset('imagenes/index/secundaria.jpg') }}" />
+          img="https://via.placeholder.com/300x200?text=imagen+Prueba" />
       <x-card-escuelas name="Ciencias de la Comunicación" url="/pregrado/cdlc"
-          img="{{ asset('imagenes/index/ciencias.jpg') }}" />
+          img="https://via.placeholder.com/300x200?text=imagen+Prueba" />
   </section>
 </div>
 

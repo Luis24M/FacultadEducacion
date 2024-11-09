@@ -41,6 +41,14 @@
             <x-side-button icon="book.svg" title="Perfil Profesional" route="#perfilProfesional" />
             <x-side-button icon="book.svg" title="Plan de estudios" route="#planEstudios" />
             <x-side-button icon="book.svg" title="Plana docente" route="#planaDocente" />
+        @elseif(request()->routeIs('pregrado.cdlc') || request()->routeIs('pregrado.cdlc.*') )
+            <h3 class="text-xl font-semibold"> Ciencias de la Comunicación </h3>
+            <hr>
+            <x-side-button icon="book.svg" title="Institucional" route="#institucional" />
+            <x-side-button icon="book.svg" title="Reseña histórica" route="#resena-historica" />
+            <x-side-button icon="book.svg" title="Perfil Profesional" route="#perfilProfesional" />
+            <x-side-button icon="book.svg" title="Plan de estudios" route="#planEstudios" />
+            <x-side-button icon="book.svg" title="Plana docente" route="#planaDocente" />
 
 
 {{-- POSGRADO --}}
