@@ -27,7 +27,6 @@
                         </div>
                 </div>
 
-
                 </div>
 
                 <div class="bg-light p-3 text-center rounded" style= "background-color: #F0F6FE";>
