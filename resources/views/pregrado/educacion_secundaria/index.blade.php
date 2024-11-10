@@ -136,39 +136,10 @@
 </head>
 <body class="bg-gray-100">
 <!-- Header Image -->
-    <div class="w-full bg-[#03045e] h-64 bg-cover bg-center text-base" style="background-blue">
-        
+    <div class="flex w-full bg-[#03045e] h-64 bg-cover bg-center text-base text-center items-center justify-center" style="background-blue">
+        <h1 class="text-white text-center text-5xl"><b>Educacion Secundaria</b></h1>
     </div>
-    <!-- Navigation Bar -->
-    <nav class="flex justify-center mb-8 p-4">
-        <div class="container mx-auto flex justify-around">
-            <div class="flex space-x-4 ease-out text-base">
-                <!-- Lengua y Literatura -->
-                <a a href="#" onclick="showSection('lengua-literatura')"  class="bg-[#FFB703] text-white px-6 py-4 rounded-lg shadow-lg hover:bg-[#EBA903] active:bg-[#EBA903] focus:outline-none focus:ring focus:ring-[#EBA903]">
-                    Lengua y Literatura
-                </a>
-                <!-- Filosofía, Psicología y CCSS -->
-                <a href="#" onclick="showSection('filosofia-psicologia-ccss')" class="bg-[#FFB703] text-white px-6 py-4 rounded-lg shadow-lg hover:bg-[#EBA903] active:bg-[#EBA903] focus:outline-none focus:ring focus:ring-[#EBA903]">
-                    Filosofía, Psicología y CCSS
-                </a>
-                <!-- Ciencias Matemáticas -->
-                <a href="#" onclick="showSection('ciencias-matematicas')" class="bg-[#FFB703] text-white px-6 py-4 rounded-lg shadow-lg hover:bg-[#EBA903] active:bg-[#EBA903] focus:outline-none focus:ring focus:ring-[#EBA903]">
-                    Ciencias Matemáticas
-                </a>
-                <a href="#" onclick="showSection('idiomas')" class="bg-[#FFB703] text-white px-6 py-4 rounded-lg shadow-lg hover:bg-[#EBA903] active:bg-[#EBA903] focus:outline-none focus:ring focus:ring-[#EBA903]">
-                        Idiomas
-                </a>
-                <!-- Historia y Geografía -->
-                <a href="#" onclick="showSection('historia-geografia')" class="bg-[#FFB703] text-white px-6 py-4 rounded-lg shadow-lg hover:bg-[#EBA903] active:bg-[#EBA903] focus:outline-none focus:ring focus:ring-[#EBA903]">
-                    Historia y Geografía
-                </a>
-                <!-- Ciencias Naturales -->
-                <a href="#" onclick="showSection('ciencias-naturales')" class="bg-[#FFB703] text-white px-6 py-4 rounded-lg shadow-lg hover:bg-[#EBA903] active:bg-[#EBA903] focus:outline-none focus:ring focus:ring-[#EBA903]">
-                    Ciencias Naturales
-                </a>
-            </div>
-        </div>
-    </nav>
+
 
     <div class="container mx-auto p-8 selection:bg-fuchsia-300 selection:text-fuchsia-900">
         <div class="text-center py-16 bg-white"> 
@@ -296,46 +267,28 @@
 
 
         <!-- organigrama -->
-        <section class=" py-8">
+        <section class=" mx-auto ">
             <div class="container mx-auto text-center">
                 <h2  class="text-3xl font-bold text-gray-800 mt-6 mb-8">
                 Organigrama
                 </h2>
             <div class="w-16 h-1 bg-gray-800 mx-auto mb-10"></div>
-            </div>
         </section>
-        <section class="bg-white rounded-lg p-6 max-w-5xl text-center">  
-        <div class="relative items-center">
-            <img src="ruta/imagen.png" alt="Organigrama" class="max-w-5xl border border-black  border-h ">
-        </div>
-        <a href="rutadocumento.pdf" class="inline-block mt-4 px-4 py-2 bg-[#FFB703] text-white text-base rounded-lg hover:bg-[#FFB703]" download>
-            Descargar en PDF
-        </a>
-    </section>
-
-        <!-- boletin -->
-        <section class="bg-[#FFB703] text-white py-6 mt-20 mb-4">
-        <div class="container mx-auto flex items-center justify-between mb-8 px-6">
-                <div class="md:w-2/3 mb-8 md:mb-0 mb-4">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Boletines de Gestión</h2>
-                </div>
-                <div>
-                    <a href="rutadocumento.pdf" class="inline-block bg-[#03045e] text-base text-white font-bold py-4 px-12 rounded-full shadow-md hover:bg-[#03047e] transition duration-300" download>
-                        Descargar
-                    </a>
-                </div>
+        <section class="flex flex-col w-full bg-white rounded-lg p-6 text-center items-center justify-center">  
+            <div class="flex flex-col items-center justify-center pb-5  ">
+                <img src="{{asset('imagenes/homeSecundaria/organigramaUNT.png')}}" alt="Organigrama" class=" border border-black  border-h ">
             </div>
+            <a href="rutadocumento.pdf" class="inline-block mt-4 px-4 py-2 bg-[#FFB703] text-white text-base rounded-lg hover:bg-[#FFB703]" download>
+                Descargar en PDF
+            </a>
         </section>
-<h1 class="text-5xl">Educación Secundaria</h1>
-
-
         <!-- Ex directores-->
         <section class=" snap-x py-12">
             <div class="text-center mb-12">
             <h2 class="text-3xl font-bold text-gray-800 mb-8">Ex Directores</h2>
             <div class="w-16 h-1 bg-gray-800 mx-auto mb-10"></div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-8 lg:px-24">
+            <div class="flex flex-row justify-center items-center gap-8 px-8 lg:px-24">
                 <div class=" scroll-ml-6 snap-start text-center">
                     <img class="mx-auto rounded-full w-48 h-48 object-cover border-4 border-[#FFB703]" src="https://via.placeholder.com/150" alt="">
                     <h3 class="mt-4 text-base font-semibold text-gray-800">PROF. JULIA SIXTINA CASTAÑEDA AZABACHE</h3>
@@ -345,16 +298,6 @@
                     <img class="mx-auto rounded-full w-48 h-48 object-cover border-4 border-[#FFB703]" src="https://via.placeholder.com/150" alt="">
                     <h3 class="mt-4 text-base font-semibold text-gray-800">PROF. FELIPE TEMOCHE RUMICHE</h3>
                     <p class="text-[#FFB703]">Director</p>
-                </div>
-                <div class="scroll-ml-6 snap-start text-center">
-                    <img class="mx-auto rounded-full w-48 h-48 object-cover border-4 border-[#FFB703]" src="https://via.placeholder.com/150" alt="">
-                    <h3 class="mt-4 text-base font-semibold text-gray-800">director</h3>
-                    <p class="text-[#FFB703]">director</p>
-                </div>
-                <div class="scroll-ml-6 snap-start text-center">
-                    <img class="mx-auto rounded-full w-48 h-48 object-cover border-4 border-[#FFB703]" src="https://via.placeholder.com/150" alt="">
-                    <h3 class="mt-4 text-base font-semibold text-gray-800">director</h3>
-                    <p class="text-[#FFB703]">director</p>
                 </div>
             </div>
         </section>
