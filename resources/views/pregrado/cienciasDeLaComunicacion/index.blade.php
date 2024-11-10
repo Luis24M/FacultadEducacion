@@ -225,7 +225,7 @@
           </iframe>
       </div>
   </section>
-
+<!--
   <div class="h-1 md:flex mx-10 bg-gray-600">
   </div>
 
@@ -262,7 +262,8 @@
     </section>
     
   </section>
+  </div>
+          -->
 
-</div>
 
 @endsection
