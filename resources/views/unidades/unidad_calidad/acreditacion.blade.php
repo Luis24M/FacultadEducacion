@@ -133,52 +133,51 @@
                 // Enlaces de PDF por cada escuela
                 $pdfLinks = [
                     'inicial' => [
-                        'contextualizacion' => 'https://www.fdi.ucm.es/profesor/luis/Fp/FP.pdf',
-                        'informe_autoevaluacion' => 'https://tesuva.edu.co/phocadownloadpap/Arquitectura_computadoras_I.pdf',
-                        'redaccion_hallazgos' => 'https://www.frba.utn.edu.ar/wp-content/uploads/2021/02/IIA-mod1-Fundamentos.pdf',
+                        'contextualizacion' => 'https://drive.google.com/drive/folders/1Dr_pOHry7xJBLZEuDO0A5uDKSwmFpDL4?usp=sharing',
+                        'informe_autoevaluacion' => 'https://drive.google.com/file/d/1pfdOIy1GIbelqwXChhMDJtcLljAnao06/view',
+                        'redaccion_hallazgos' => 'https://drive.google.com/file/d/1LEUmTfC_RmEiz2FZE2pI_1jHzlGbat4V/view?usp=sharing',
                     ],
                     'primaria' => [
-                        'contextualizacion' => 'https://tesuva.edu.co/phocadownloadpap/Arquitectura_computadoras_I.pdf',
-                        'informe_autoevaluacion' => 'https://www.fdi.ucm.es/profesor/luis/Fp/FP.pdf',
-                        'redaccion_hallazgos' => 'https://www.fdi.ucm.es/profesor/luis/Fp/FP.pdf',
+                        'contextualizacion' => 'https://drive.google.com/drive/folders/11jLa4j9AIH4F20bVa-LeJZyyfKdlK4qm?usp=sharing',
+                        'informe_autoevaluacion' => 'https://drive.google.com/file/d/1GzpH4oQ__hDh3vmJ-ntiXousaURbuSUK/view',
+                        'redaccion_hallazgos' => 'https://drive.google.com/file/d/1LEUmTfC_RmEiz2FZE2pI_1jHzlGbat4V/view?usp=sharing',
                     ],
                     'filosofia' => [
-                        'contextualizacion' => 'https://www.fdi.ucm.es/profesor/luis/Fp/FP.pdf',
-                        'informe_autoevaluacion' => 'https://www.fdi.ucm.es/profesor/luis/Fp/FP.pdf',
-                        'redaccion_hallazgos' => 'https://www.fdi.ucm.es/profesor/luis/Fp/FP.pdf',
+                        'contextualizacion' => 'https://drive.google.com/drive/folders/1kjXDFMT6h8BhCH4NGVb2CBUtvzIHELlp?usp=sharing',
+                        'informe_autoevaluacion' => 'https://drive.google.com/file/d/1WfYG2FIYV9OgrIKX7laB9B06igkSAL2z/view',
+                        'redaccion_hallazgos' => 'https://drive.google.com/file/d/1LEUmTfC_RmEiz2FZE2pI_1jHzlGbat4V/view?usp=sharing',
                     ],
                     'matematicas' => [
-                        'contextualizacion' => 'https://www.fdi.ucm.es/profesor/luis/Fp/FP.pdf',
-                        'informe_autoevaluacion' => 'https://www.fdi.ucm.es/profesor/luis/Fp/FP.pdf',
-                        'redaccion_hallazgos' => 'https://www.fdi.ucm.es/profesor/luis/Fp/FP.pdf',
+                        'contextualizacion' => 'https://drive.google.com/drive/folders/1qn_ZadxTaxzgUQXPx-QNw6xSXCEHq0Et?usp=sharing',
+                        'informe_autoevaluacion' => 'https://drive.google.com/file/d/1xpiJIZj4lEyRnHItcHI3S7QGqEcpV5fC/view',
+                        'redaccion_hallazgos' => 'https://drive.google.com/file/d/1LEUmTfC_RmEiz2FZE2pI_1jHzlGbat4V/view?usp=sharing',
                     ],
                     'idiomas' => [
-                        'contextualizacion' => 'https://www.fdi.ucm.es/profesor/luis/Fp/FP.pdf',
-                        'informe_autoevaluacion' => 'https://www.fdi.ucm.es/profesor/luis/Fp/FP.pdf',
-                        'redaccion_hallazgos' => 'https://www.fdi.ucm.es/profesor/luis/Fp/FP.pdf',
+                        'contextualizacion' => 'https://drive.google.com/drive/folders/1mxETeX8deKP3K7TcJOixXkUH4ySB8kj8?usp=sharing',
+                        'informe_autoevaluacion' => 'https://drive.google.com/file/d/1SsQP-5jXLPcgl84xPrAj0b0OfvaP3xcM/view',
+                        'redaccion_hallazgos' => 'https://drive.google.com/file/d/1LEUmTfC_RmEiz2FZE2pI_1jHzlGbat4V/view?usp=sharing',
                     ],
                     'lengua' => [
-                        'contextualizacion' => 'https://www.fdi.ucm.es/profesor/luis/Fp/FP.pdf',
-                        'informe_autoevaluacion' => 'https://www.fdi.ucm.es/profesor/luis/Fp/FP.pdf',
-                        'redaccion_hallazgos' => 'https://www.fdi.ucm.es/profesor/luis/Fp/FP.pdf',
+                        'contextualizacion' => 'https://drive.google.com/drive/folders/1rM1ZWmrH1wdDjJQ01E1E50J1Ns60Kae_?usp=sharing',
+                        'informe_autoevaluacion' => 'https://drive.google.com/file/d/1exojj9oF1eX6xaEO9Lc6WXcIYt8xaDFB/view',
+                        'redaccion_hallazgos' => 'https://drive.google.com/file/d/1LEUmTfC_RmEiz2FZE2pI_1jHzlGbat4V/view?usp=sharing',
                     ],
                     'historia' => [
-                        'contextualizacion' => 'https://www.fdi.ucm.es/profesor/luis/Fp/FP.pdf',
-                        'informe_autoevaluacion' => 'https://www.fdi.ucm.es/profesor/luis/Fp/FP.pdf',
-                        'redaccion_hallazgos' => 'https://www.fdi.ucm.es/profesor/luis/Fp/FP.pdf',
+                        'contextualizacion' => 'https://drive.google.com/drive/folders/1NdDwCcAglJElJfTxNcVWOjafMmARz4iH?usp=sharing',
+                        'informe_autoevaluacion' => 'https://drive.google.com/file/d/1L7QeLUl0E8f9_IZTun9_GndtL8MIGKRm/view',
+                        'redaccion_hallazgos' => 'https://drive.google.com/file/d/1LEUmTfC_RmEiz2FZE2pI_1jHzlGbat4V/view?usp=sharing',
                     ],
                     'naturales' => [
-                        'contextualizacion' => 'https://www.fdi.ucm.es/profesor/luis/Fp/FP.pdf',
-                        'informe_autoevaluacion' => 'https://www.fdi.ucm.es/profesor/luis/Fp/FP.pdf',
-                        'redaccion_hallazgos' => 'https://www.fdi.ucm.es/profesor/luis/Fp/FP.pdf',
+                        'contextualizacion' => 'https://drive.google.com/drive/folders/1SzvnTZ703hX4xotcfrPXcx7oz1We2NW_?usp=sharing',
+                        'informe_autoevaluacion' => 'https://drive.google.com/file/d/1cedttrcJUt_DeRrqtQIMQwQwE9rpuG3t/view?usp=sharing',
+                        'redaccion_hallazgos' => 'https://drive.google.com/file/d/1LEUmTfC_RmEiz2FZE2pI_1jHzlGbat4V/view?usp=sharing',
                     ],
                     'comunicacion' => [
-                        'contextualizacion' => 'https://www.fdi.ucm.es/profesor/luis/Fp/FP.pdf',
-                        'informe_autoevaluacion' => 'https://www.fdi.ucm.es/profesor/luis/Fp/FP.pdf',
-                        'redaccion_hallazgos' => 'https://www.fdi.ucm.es/profesor/luis/Fp/FP.pdf',
+                        'contextualizacion' => 'https://drive.google.com/drive/folders/1bu4gOUQX-4G0Sp3oR1zaX8HWZvxQ9Rn2?usp=sharing',
+                        'informe_autoevaluacion' => 'https://drive.google.com/file/d/17Tykp2bv8dxvjGuhh9jMps1aDf__r2Dz/view',
+                        'redaccion_hallazgos' => 'https://drive.google.com/file/d/1LEUmTfC_RmEiz2FZE2pI_1jHzlGbat4V/view?usp=sharing',
                     ],
                     
-                    // Agrega el resto de las escuelas con sus enlaces correspondientes
                 ];
             @endphp
 

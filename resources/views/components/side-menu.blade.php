@@ -61,15 +61,16 @@
     ]" 
 />
 
-    <x-drop-down-button 
-        class="fa-solid fa-folder-open"
-        title="Practica Preprofesional" 
-        :list="[
-            ['name' => 'Directivas', 'url' => '/unidades/practica_preprofesional'],
+<x-side-button icon="" title="Unidad de Soporte" route="/unidades/unidad_soporte/index"/>
+
+<x-drop-down-button 
+    class="fa-solid fa-folder-open"
+    title="Practica Preprofesional" 
+    :list="[
+        ['name' => 'Directivas', 'url' => '/unidades/practica_preprofesional'],
             ['name' => 'Comité', 'url' => '/menu'],
             ['name' => 'Docentes', 'url' => '/footer']
-        ]" 
-        
+        ]"  
     />
 
 @elseif(request()->routeIs('departamentos_academicos'))
