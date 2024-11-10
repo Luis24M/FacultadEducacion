@@ -102,6 +102,22 @@ Route::get('/unidades/practica_preprofesional', function (){
     return view('unidades.practica_preprofesional.index');
 })->name('unidades.practica_preprofesional');
 
+Route::get('/contacto', function () {
+    return view('unidades.rsu.contacto');
+})->name('rsu');
+
+Route::post('contacto', 'App\Http\Controllers\ContactoController@store')
+->name('contacto.store');
+
+Route::get('/documentacion', function () {
+    return view('unidades.rsu.documentacion');
+})->name('documentacion');
+
+Route::get('/index', function () {
+    return view('unidades.rsu.index');
+})->name('index');
+
+
 // Rutas Departamentos Academicos
 
 

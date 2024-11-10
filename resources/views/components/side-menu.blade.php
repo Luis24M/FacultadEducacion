@@ -71,6 +71,15 @@
         ]" 
         
     />
+    <x-drop-down-button 
+    title="Unidad de Responsabilidad Social" 
+    :list="[
+        ['name' => 'Inicio', 'url' => '/index'],
+        ['name' => 'Documentacion', 'url' => '/documentacion'],
+        ['name' => 'Contacto', 'url' => '/contacto']
+    ]" 
+/>
+
 
 @elseif(request()->routeIs('departamentos_academicos'))
 <x-side-button icon="building.svg" title="Ciencias de la Educación" route="/departamentos_academicos/educacion" />
