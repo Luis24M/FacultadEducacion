@@ -114,6 +114,7 @@
                 </div>
             </div>
         </section>
+        
         <section id="ocupacion" class="p-10  max-w-[1092px] mx-auto">
             <h2 class="text-lg md:text-3xl font-semibold my-4">Perspectiva Ocupacional</h2>
             <ul
