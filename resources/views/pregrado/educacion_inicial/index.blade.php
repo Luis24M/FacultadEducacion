@@ -42,34 +42,7 @@
             </div>
         </section>
 
-        <section id="datos"
-            class="p-10 grid md:grid-cols-6 grid-cols-4 max-w-[1092px] mx-auto gap-4 [&>div]:flex [&>div]:flex-col [&>div]:justify-center [&>div]:items-center [&>div]:rounded-lg [&>div]:py-9 drop-shadow-lg text-center">
-            
-            <div class="col-span-2 bg-neutral-50">
-                <p>Duración</p>
-                <h3 class="md:text-7xl text-4xl font-semibold">10</h3>
-                <p class="font-medium text-lg md:text-xl">Semestres Académicos</p>
-            </div>
-            <div class="col-span-2 bg-neutral-50">
-                <h3 class="md:text-7xl text-4xl font-semibold">220</h3>
-                <p class="font-medium text-lg md:text-xl">Créditos</p>
-            </div>
-            <div class="col-span-4 row-start-1 bg-pink-50">
-                <p>Grado académico</p>
-                <img class="w-20 md:w-40" src="{{ asset('icons/graduation.svg') }}" alt="">
-                <h3 class="font-medium text-lg md:text-xl">Bachiller en Educación Inicial</h3>
-            </div>
-            <div class="col-span-4 bg-pink-50">
-                <p>Título Profesional</p>
-                <img class="w-20 md:w-40" src="{{ asset('icons/diploma.svg') }}" alt="">
-                <h3 class="font-medium text-lg md:text-xl">Licenciada de Educación Inicial</h3>
-        </section>
-
-        <section class="w-full text-center">
-            <a href="https://drive.google.com/file/d/1FGgFQbR0b68jgFf2XkgsabrScrbgF3NE/view?usp=sharing" target="_blank" class="mx-auto py-2 px-4 bg-pink-400 rounded-lg text-white my-4 hover:saturate-150 hover:drop-shadow-xl">
-                Descargar malla curricular
-            </a>
-        </section>
+        
 
         <section id="perfil" class="p-10 lg:flex max-w-[1092px] mx-auto">
             <div>
@@ -157,6 +130,35 @@
                     investigación educativa, estudios y análisis sistemático de la pedagogía y proyectos pedagógicos,
                     científicos y tecnológicos.</li>
             </ul>
+        </section>
+
+        <section id="datos"
+            class="p-10 grid md:grid-cols-6 grid-cols-4 max-w-[1092px] mx-auto gap-4 [&>div]:flex [&>div]:flex-col [&>div]:justify-center [&>div]:items-center [&>div]:rounded-lg [&>div]:py-9 drop-shadow-lg text-center">
+            
+            <div class="col-span-2 bg-neutral-50">
+                <p>Duración</p>
+                <h3 class="md:text-7xl text-4xl font-semibold">10</h3>
+                <p class="font-medium text-lg md:text-xl">Semestres Académicos</p>
+            </div>
+            <div class="col-span-2 bg-neutral-50">
+                <h3 class="md:text-7xl text-4xl font-semibold">220</h3>
+                <p class="font-medium text-lg md:text-xl">Créditos</p>
+            </div>
+            <div class="col-span-4 row-start-1 bg-pink-50">
+                <p>Grado académico</p>
+                <img class="w-20 md:w-40" src="{{ asset('icons/graduation.svg') }}" alt="">
+                <h3 class="font-medium text-lg md:text-xl">Bachiller en Educación Inicial</h3>
+            </div>
+            <div class="col-span-4 bg-pink-50">
+                <p>Título Profesional</p>
+                <img class="w-20 md:w-40" src="{{ asset('icons/diploma.svg') }}" alt="">
+                <h3 class="font-medium text-lg md:text-xl">Licenciada de Educación Inicial</h3>
+        </section>
+
+        <section class="w-full text-center mb-10">
+            <a href="https://drive.google.com/file/d/1FGgFQbR0b68jgFf2XkgsabrScrbgF3NE/view?usp=sharing" target="_blank" class="mx-auto py-2 px-4 bg-pink-400 rounded-lg text-white my-4 hover:saturate-150 hover:shadow-xl transition-all ease-linear duration-300">
+                Descargar malla curricular
+            </a>
         </section>
     </main>
 @endsection
