@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<section class="bg-slate-200 p-5">
-  <h1 class="text-5xl">Pregrado</h1>
+<section class="bg-slate-200s p-5">
+  <h1 class="text-5xl text-center drop-shadow-xl font-semibold">Pregrado</h1>
 </section>
   
 <div class="mt-10">

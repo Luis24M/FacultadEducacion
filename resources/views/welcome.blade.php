@@ -1,5 +1,36 @@
 @extends('layouts.app')
 @section('content')
+<div class="p-10" >
+    <div class="flex flex-col lg:flex-row my-10 border-2" id="bienvenida">
+        <img class="min-w-[50%] object-cover" src="{{ asset('imagenes/index/decana.png') }}"
+            alt="decana Elizabeth Aurea Rafael Sánchez">
+        <div class=" bg-white p-4 lg:p-20 lg:max-w-[50%] rounded-e-md text-center flex flex-col justify-center" id="bienvenida-text">
+            <h3 class="text-3xl font-semibold">Bienvenida</h3>
+            <br>
+            <p>"Bienvenidos a la Facultad de Educación y Ciencias de la Comunicación, un espacio donde la excelencia
+                académica se encuentra con la innovación y la pasión por el aprendizaje. En nuestra facultad, nos
+                enorgullece nutrir no solo las mentes brillantes de hoy, sino también los líderes del mañana. Estamos
+                comprometidos con la creación de un ambiente educativo que fomente la curiosidad, la creatividad y el
+                pensamiento crítico. Aquí, cada estudiante es más que un número; son parte de una comunidad académica
+                diversa y vibrante. Con un cuerpo docente dedicado y programas de vanguardia, aspiramos a impulsar el
+                crecimiento intelectual y personal de cada individuo que cruza nuestras puertas. Juntos, construiremos
+                un
+                futuro donde el conocimiento se traduzca en impacto, y donde cada logro sea una prueba de la dedicación
+                y el
+                compromiso de nuestros estudiantes y educadores.
+                ¡Bienvenidos a una experiencia educativa que va más allá de las aulas y trasciende fronteras!"
+                <br>
+                <br>
+                <strong>
+                    Elizabeth Aurea Rafael Sánchez
+                    <br>
+                    Decana
+                </strong>
+            </p>
+        </div>
+    </div>
+</div>
+<hr>
     <div class="py-10">
         <h2 class="text-5xl text-center my-8 font-bold">Noticias</h2>
         <section class="flex lg:flex-row flex-col p-4 gap-4 justify-around mx-auto max-w-7xl">
@@ -28,37 +59,7 @@
         </div>
     </div>
     <hr>
-    <div class="p-10" >
-        <div class="flex flex-col lg:flex-row my-10 border-2" id="bienvenida">
-            <img class="min-w-[50%] object-cover" src="{{ asset('imagenes/index/decana.png') }}"
-                alt="decana Elizabeth Aurea Rafael Sánchez">
-            <div class=" bg-white p-4 lg:p-20 lg:max-w-[50%] rounded-e-md text-center flex flex-col justify-center" id="bienvenida-text">
-                <h3 class="text-3xl font-semibold">Bienvenida</h3>
-                <br>
-                <p>"Bienvenidos a la Facultad de Educación y Ciencias de la Comunicación, un espacio donde la excelencia
-                    académica se encuentra con la innovación y la pasión por el aprendizaje. En nuestra facultad, nos
-                    enorgullece nutrir no solo las mentes brillantes de hoy, sino también los líderes del mañana. Estamos
-                    comprometidos con la creación de un ambiente educativo que fomente la curiosidad, la creatividad y el
-                    pensamiento crítico. Aquí, cada estudiante es más que un número; son parte de una comunidad académica
-                    diversa y vibrante. Con un cuerpo docente dedicado y programas de vanguardia, aspiramos a impulsar el
-                    crecimiento intelectual y personal de cada individuo que cruza nuestras puertas. Juntos, construiremos
-                    un
-                    futuro donde el conocimiento se traduzca en impacto, y donde cada logro sea una prueba de la dedicación
-                    y el
-                    compromiso de nuestros estudiantes y educadores.
-                    ¡Bienvenidos a una experiencia educativa que va más allá de las aulas y trasciende fronteras!"
-                    <br>
-                    <br>
-                    <strong>
-                        Elizabeth Aurea Rafael Sánchez
-                        <br>
-                        Decana
-                    </strong>
-                </p>
-            </div>
-        </div>
-    </div>
-    <hr>
+    
     <div class="py-10 bg-white">
         <h2 class="text-5xl text-center my-8 font-bold">Nuestras Escuelas</h2>
         <section class="p-4 flex lg:flex-row flex-col flex-wrap justify-around gap-4 lg:gap-1">

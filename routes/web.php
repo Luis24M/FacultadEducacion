@@ -42,7 +42,7 @@ Route::get('/pregrado/cdlc', function () {
 })->name('pregrado.cdlc');
     // Educacion Inicial
     Route::get('/pregrado/inicial', function () {
-        return view('pregrado.educacion_inicial.index');
+        return view('pregrado.inicial');
     })->name('pregrado.inicial');
 
     // Educacion Primaria

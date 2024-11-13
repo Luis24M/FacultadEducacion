@@ -9,22 +9,13 @@
     <x-side-button icon="book.svg" title="Galería" route="/galeria"/>
     
 {{-- PREGRADO --}}
-@elseif(request()->routeIs('pregrado'))
+@elseif(request()->routeIs('pregrado') || request()->routeIs('pregrado.inicial') || request()->routeIs('pregrado.cdlc'))
     <h3 class="text-xl font-semibold">Pregrado</h3>
     <hr>
     <x-side-button icon="book.svg" title="Educación Inicial" route="/pregrado/inicial" />
     <x-side-button icon="book.svg" title="Educación Primaria" route="/pregrado/primaria" />
     <x-side-button icon="book.svg" title="Educación Secundaria" route="/pregrado/secundaria" />
     <x-side-button icon="book.svg" title="Ciencias de la comunicación" route="/pregrado/cdlc" />
-    {{-- INICIAL --}}
-    @elseif(request()->routeIs('pregrado.inicial') || request()->routeIs('pregrado.inicial.*'))
-    <h3 class="text-xl font-semibold">Educacion Inicial</h3>
-    <hr>
-    <x-side-button icon="book.svg" title="Inicial" route="#" />
-    <x-side-button icon="book.svg" title="Misión y Visión" route="#mision-vision" />
-    <x-side-button icon="book.svg" title="Perfiles" route="#perfil" />
-    <x-side-button icon="book.svg" title="Perspectiva Ocupacional" route="#ocupacion" />
-    <x-side-button icon="book.svg" title="Plan de Estudio" route="#datos"/>
 
 
     {{-- PRIMARIA --}}
@@ -63,7 +54,7 @@
     ]" 
 />
 
-<x-side-button icon="" title="Unidad de Soporte" route="/unidades/unidad_soporte/index"/>
+<x-side-button icon="setting.svg" title="Unidad de Soporte" route="/unidades/unidad_soporte/index"/>
 
 <x-drop-down-button 
     class="fa-solid fa-folder-open"
