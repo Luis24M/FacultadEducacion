@@ -8,7 +8,7 @@
         }
     </style>
 
-    <h1 class="text-3xl md:text-5xl text-[#464646] bg-pink-100 w-full p-4 font-bold">Educación Inicial</h1>
+    <h1 class="text-3xl md:text-5xl text-[#464646] bg-pink-100 w-full p-7 font-bold">Escuela Profesional de Educación Inicial</h1>
 
     <section class="max-w-[1050px] flex flex-col justify-between mx-auto p-5 md:px-0">
 
@@ -160,7 +160,7 @@
                     <ul class=" list-inside text-black ml-8">
 
                         <li class="flex mt-2">
-                            <i class="text-pink-100">
+                            <i class="text-pink-500">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
                                     <path fill="currentColor"
                                         d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256L265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256L73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z" />
@@ -174,7 +174,7 @@
 
                         </li>
                         <li class="flex mt-2">
-                            <i class="text-pink-100">
+                            <i class="text-pink-500">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
                                     <path fill="currentColor"
                                         d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256L265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256L73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z" />
@@ -187,7 +187,7 @@
 
                         </li>
                         <li class="flex mt-2">
-                            <i class="text-pink-100">
+                            <i class="text-pink-500">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
                                     <path fill="currentColor"
                                         d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256L265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256L73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z" />
@@ -201,7 +201,7 @@
                         </li>
 
                         <li class="flex mt-2">
-                            <i class="text-pink-100">
+                            <i class="text-pink-500">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
                                     <path fill="currentColor"
                                         d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256L265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256L73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z" />
@@ -263,7 +263,7 @@
             <div class="bg-gray-300 p-6 rounded-lg shadow-lg text-center">
                 <div class="text-red-500 text-6xl mb-4">👩‍💼</div> <!-- Icono personalizado -->
                 <h3 class="text-xl font-bold text-white mb-2">Dra. Hilda Jara León</h3>
-                <p class="text-white">Directora de la Escuela Profsional de Educación Inicial</p>
+                <p class="text-white">Directora de la Escuela Profesional de Educación Inicial</p>
                 <a href="mailto:inicial@unitru.edu.pe" class="text-md font-bold text-white mb-2">inicial@unitru.edu.pe</a>
             </div>
 
