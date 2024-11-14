@@ -1,37 +1,36 @@
-<ul class="lg:flex justify-around text- [&>li]:w-fit items-center hidden gap-2 md:w-full">
+<ul class="lg:flex justify-around [&>li]:w-fit items-center hidden gap-2 md:w-full">
     <li><a href="/institucional">Institucional</a></li>
     <li><a href="/pregrado">Pregrado</a></li>
-    <li><a href="/posgrado">Posgrado</a></li>
+    <li><a href="https://web.facebook.com/EscuelaDePosgradoUNT/?locale=es_LA&_rdc=1&_rdr">Posgrado</a></li>
     <li><a href="/unidades">Unidades</a></li>
-    <li><a href="/departamentos_academicos">Departamentos Academicos</a></li>
-    <li><a href="/segunda_especialidad">Segunda Especialidad</a></li>
-    <li><a href="/cidunt">Cidunt</a></li>
-    <li><a href="/rnc">R.N.C</a></li>
+    <li><a href="https://www.facebook.com/sete.tecnologia.5">Segunda Especialidad</a></li>
+    <li><a href="https://cidunt.edu.pe/web2/">Cidunt</a></li>
+    <li><a href="https://www.rnc.edu.pe/">R.N.C</a></li>
 </ul>
 
-<button class="text-white flex lg:hidden px-4 w-full justify-end" id="menu-toggle">
-    <i class="fas fa-bars  md:w-12"></i>
+<button class="text-white flex lg:hidden" id="menu-toggle">
+    <img src="{{ asset('icons/burger.svg')}}" alt="" class="min-w-5" id="burger">
+    <img src="{{ asset('icons/x.svg')}}" alt="" class="hidden min-w-5" id="x">
 </button>
 
 
 <script>
     document.getElementById('menu-toggle').addEventListener('click', function() {
         const menu = document.getElementById('mobile-menu');
-        const icon = document.querySelector('#menu-toggle i');
+        const burger = document.querySelector('#burger');
+        const x = document.querySelector('#x');
         const body = document.body;
 
         // Toggle menu visibility
         menu.classList.toggle('hidden');
 
-        // Toggle icon classes
-        icon.classList.toggle('fa-bars');
-        icon.classList.toggle('fa-x', !icon.classList.contains('fa-bars'));
+        // Toggle burger and x icons
+        burger.classList.toggle('hidden');
+        x.classList.toggle('hidden');
 
-        // Toggle body overflow to disable/enable scroll
-        if (!menu.classList.contains('hidden')) {
-            body.classList.add('overflow-hidden');
-        } else {
-            body.classList.remove('overflow-hidden');
-        }
+        // Toggle body overflow
+        body.classList.toggle('overflow-hidden');
+        
+
     });
 </script>
