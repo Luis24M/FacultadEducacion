@@ -1,9 +1,9 @@
 document.querySelectorAll('.btn-nav').forEach(tab => {
-    tab.addEventListener('click', function() {
+    tab.addEventListener('click', function () {
         const target = this.getAttribute('data-target');
         console.log(target);
 
-       
+
 
         document.querySelectorAll('.btn-nav').forEach(t => {
             t.classList.remove('active');
@@ -20,12 +20,15 @@ document.querySelectorAll('.btn-nav').forEach(tab => {
         setTimeout(() => {
             activeContent.classList.add('active');
         }, 10);
-         if (target === 'nosotros') {
-            // dejar la clase order-first o colocarla si no la tiene
-            document.querySelector('.datos').classList.add('order-first');
+        
+        // Controlar la visibilidad de las cards
+        const cards = document.getElementById('welcome-cards');
+        if (target === 'nosotros') {
+            cards.classList.remove('hidden'); // Muestra las cards
+            document.querySelector('.datos').classList.add('order-first'); // Agregar 'order-first' a datos
         } else {
-            // quitar la clase order-first
-            document.querySelector('.datos').classList.remove('order-first');
+            cards.classList.add('hidden'); // Oculta las cards
+            document.querySelector('.datos').classList.remove('order-first'); // Quitar 'order-first' de datos
         }
     });
 });
