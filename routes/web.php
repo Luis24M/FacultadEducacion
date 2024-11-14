@@ -67,6 +67,10 @@ Route::get('/pregrado/cdlc', function () {
         return view('pregrado.educacion_secundaria.historia.index');
     })->name('pregrado.secundaria.historia');
 
+    Route::get('/pregrado/secundaria/literatura', function () {
+        return view('pregrado.educacion_secundaria.literatura.index');
+    })->name('pregrado.secundaria.literatura');
+
     Route::get('/pregrado/secundaria/idiomas', function () {
         return view('pregrado.educacion_secundaria.idiomas.index');
     })->name('pregrado.secundaria.idiomas');
@@ -102,6 +106,10 @@ Route::get('/unidades/unidad_calidad/colaboradores', function () {
 Route::get('/unidades/practica_preprofesional', function (){
     return view('unidades.practica_preprofesional.index');
 })->name('unidades.practica_preprofesional');
+
+Route::get('/unidades/unidadInvestigacion/InformeInvestigacion', function (){
+    return view('unidades.unidadInvestigacion.InformeInvestigacion.index');
+})->name('unidades.unidadInvestigacion.informeInvestigacion');
 
 
 Route::get('/contacto', function () {
