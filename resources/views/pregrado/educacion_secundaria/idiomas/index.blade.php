@@ -76,7 +76,7 @@
                     </div>
 
                     <p class="text-md md:text-lg text-gray-700">
-                        “En el año 2024, seremos una unidad académica acreditada, que contribuye al desarrollo sustentable de la región, del país y del mundo, sensible a las exigencias sociales, que forma profesionales con excelencia académica en idiomas, se proyecta a la comunidad con responsabilidad social, realiza investigación científica, respeta la diversidad cultural y la ecología, y contribuye a la formación integral del ser humano dentro del marco de los valores ético y estéticos”.
+                        “En el año 2025, seremos una unidad académica acreditada, que contribuye al desarrollo sustentable de la región, del país y del mundo, sensible a las exigencias sociales, que forma profesionales con excelencia académica en idiomas, se proyecta a la comunidad con responsabilidad social, realiza investigación científica, respeta la diversidad cultural y la ecología, y contribuye a la formación integral del ser humano dentro del marco de los valores ético y estéticos”.
                     </p>
                 </div>
 
@@ -199,7 +199,7 @@
                 </div>
             </div>
 
-            <a href="https://dpaunt.edu.pe/curriculos/19.pdf" target="_blank" rel="nofollow"
+            <a href="https://drive.google.com/drive/folders/1jElAqShBgEWQAbPhCdqtx9zaF-ZQ3WRH" target="_blank" rel="nofollow"
                 class="p-3 w-full mt-4 bg-yellow-400 text-black rounded-md font-semibold text-white hover:bg-yellow-500 block text-center">
                 Ver Malla Curricular
             </a>

@@ -3,12 +3,12 @@
 @section('content')
     <style>
         button.active {
-            background-color: #252850;
+            background-color: #52D0F8;
             color: #ffffff;
         }
     </style>
 
-    <h1 class="text-3xl md:text-5xl text-[#F0F0F2] bg-[#252850] w-full p-4 font-bold">Mencion Ciencias Matematicas</h1>
+    <h1 class="text-3xl md:text-5xl text-[#252850] bg-[#52D0F8] w-full p-4 font-bold">Mencion Lengua y Literatura</h1>
 
     <section class="max-w-[1050px] flex flex-col mx-auto p-5 md:px-0">
         <section class="md:px-11 px-6 py-5 flex flex-wrap gap-4 max-w-[800px]">
@@ -62,21 +62,12 @@
                         </div>
 
                         <p class="text-md md:text-lg text-gray-700">
-                        “Somos una carrera profesional
-                            responsable de la formación
-                            académica de futuros docentes de
-                            matemática, que responden con
-                            pensamiento crítico, creativo e
-                            innovador a las demandas de la
-                            sociedad de la sociedad educativa;
-                            actuando bajo modelos
-                            constructivistas y ética que hacen
-                            posible trasferir conocimientos y
-                            técnicas de aprendizaje e
-                            investigación en las ciencias
-                            matemáticas con impacto en el
-                            desarrollo social y sostenible de la
-                            región y el país.
+                            “Somos una unidad académica que forma profesionales en educación con Mención en
+                            Lengua y Literatura, y contribuye al desarrollo cognitivo de los estudiantes de otras carreras,
+                            con capacidades científicas, tecnológicas y cualidades humanísticas, que responden a las
+                            necesidades sociales de nuestra comunidad; impulsando el desarrollo local, regional y
+                            nacional en el marco de las funciones universitarias: docencia, investigación y proyección
+                            social.
                             ”.
                         </p>
                     </div>
@@ -93,15 +84,11 @@
                         </div>
 
                         <p class="text-md md:text-lg text-gray-700">
-                            “Al 2025, la carrera de educación
-                            secundaria mención ciencias
-                            matemáticas aporta a la sociedad
-                            peruana con docentes altamente
-                            calificados formados integralmente,
-                            potencializados en sus talentos para
-                            la investigación científica y
-                            tecnológica y que actúan con
-                            responsabilidad social contribuyendo”.
+                            “En el 2025 somos una carrera líder, acreditada, que forma profesionales en educación
+                            secundaria, con mención en, Lengua y Literatura y Comunicación con conocimientos
+                            científicos, humanísticos y tecnológicos, con cualidades morales y estéticas; que responden
+                            con pertinencia, equidad y calidad al desarrollo integral del hombre en el marco local,
+                            regional y nacional.”
                         </p>
                     </div>
             </section>
@@ -111,12 +98,12 @@
 
                 <div class="container">
 
-                    <p class="text-black">Las salidas profesionales para un Licenciado en Educación con Mención Ciencias
-                        Matematicas, abarcan diversas áreas:</p>
+                    <p class="text-black">Las salidas profesionales para un Licenciado en Educación con Mención en
+                        Lengua y Literatura, abarcan diversas áreas:</p>
                     <ul class=" list-inside text-black ml-8">
 
                         <li class="flex mt-2">
-                            <i class="text-[#252850]">
+                            <i class="text-[#52D0F8]">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
                                     <path fill="currentColor"
                                         d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256L265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256L73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z" />
@@ -125,138 +112,126 @@
                             <p class="ml-2 ">
                                 <span class="font-bold "> Docencia en Educación Secundaria: </span> Imparte clases en
                                 instituciones de Educación Básica Regular y Educación Básica Alternativa, tanto en
-                                el sector público como privado, especializándose en las áreas de Matematica.
+                                el sector público como privado, especializándose en las áreas de Lengua y Literatura.
                                 Contribuye al desarrollo integral de los adolescentes, promoviendo el análisis
                                 crítico y
                                 la comprensión de aspectos fundamentales de la sociedad y la mente humana.
                             </p>
 
                         </li>
+                        <li class="flex mt-2">
+                            <i class="text-[#52D0F8]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
+                                    <path fill="currentColor"
+                                        d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256L265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256L73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z" />
+                                </svg>
+                            </i>
+                            <p class="ml-2 ">
+                                <span class="font-bold "> Docencia en Educación Superior: </span>Imparte clases en
+                                institutos superiores tecnológicos, pedagógicos y universidades, tanto en el
+                                ámbito público como privado. Comparte su experiencia y conocimientos especializados en
+                                Lengua y Literatura, guiando a estudiantes en su formación académica y
+                                profesional.
+                            </p>
+
+                        </li>
+                    </ul>
                 </div>
 
             </section>
 
             <section class="contenido flex" id="perfil" style="display: none;">
                 <h2 class="text-lg md:text-xl text-color font-bold">Perfil de Ingresante</h2>
-                <ul class="list-none flex flex-col gap-1 p-4" style="">
-                    <li><b>VOCACIONAL</b>
-                    <ul class="list-disc ml-5">
-                        <li>Demuestra interés por el estudio, investigacion y ciencias matemáticas, tanto
-                            en la esfera personal como social.
-                        </li>
-                        <li>Practica valores ético-morales coherentes con el hacer pedagógico.</li>
-                        <li>Trabajo colaborativo</li>
-                    </ul>
-                    <li><b>COGNOSCITIVA</b>
-                        <ul class="list-disc ml-5">
-                            <li>Utiliza el pensamiento logico-matematico para plantear y resolver
-                                problemas de la vida diaria.
-                            </li>
-                            <li>Demuestra habilidades para matematizar, representa, elabora, razona, argumentar,
-                                y solucionar problemas.
-                            </li>
-                            <li>Áctua y piensa matemáticamente en situaciones de cantidad, regularidad, equivalencia y cambio;
-                                forma, movimiento y localización, en situaciones de gestion de datos e incertidumbre
-                            </li>
-                        </ul>
-                    </li>
-                    <li><b>HABILIDADES</b>
-                        <ul class="list-disc ml-5">
-                            <li>Posee habilidades comunicativas para comunicarse en forma oral y escrita</li>
-                            <li>Demuestra habilidades para plantear y resolver problemas</li>
-                            <li>Posee habilidades para indagacion e investigacion</li>
-                        </ul>
-                    </li>
-                </ul>
+                <ul class="list-none flex flex-col gap-1 p-4">
+                <li><b>CONOCIMIENTOS MATEMATICOS</b><ul class="list-disc ml-5">
+                    <li>Razonamiento Verbal.</li>
+                    <li>Razonamiento Matematico.</li>
+                    <li>Ciencia, Tecnologia y Ambiente.</li>
+                    <li>Bioologia, Fisica y Quimica.</li>
+                </ul></li>
+                <li><b>CAPACIDADES</b><ul class="list-disc ml-5">
+                    <li>Capacidad de analisis y sintesis.</li>
+                    <li>Capacidad de argumentacion.</li>
+                    <li>Capacidad basica en el manejo de TICS.</li>
+                    <li>Capacidad para la comprension de textos.</li> 
+                </ul></li>
+                <li><b>ACTITUDES</b><ul class="list-disc ml-5">
+                <li>Tener vocación y motivacion</li>
+                    <li>Trabajar dentro de las normas establecidas</li>
+                    <li>Respeto a su persona y hacia los demas</li>
+                    <li>Actitud para trabajar en equipo.</li>
+                    <li>Capacidad para tomar decisiones frente a nuevas situaciones.</li>
+                    <li>Ser pereseverante para alcanzar sus metas.</li>
+                    <li>Habilidad en comunicacion oral y ecrita.</li>
+                    <li>Capacidad de liderazgo.</li>
+                    <li>Demostrar responsabilidad, honestidad y amabilidad.</li>
+                </ul></li>
+            </ul>
                 <br>
                 <h2 class="text-lg md:text-xl text-color font-bold">Perfil Profesional de Egresado</h2>
-                <ul class="list-none flex flex-col gap-1 p-4" style="">
-                    <li><b>CULTURA GENERAL</b>
-                    <ul class="list-disc ml-5">
-                        <li>Comprende, explica y valora al hombre en su dimension biológica, psicológia, social,
-                            histórica y cultural.
-                        </li>
-                        <li>Conoce, comprende y expplica la problematica economica, social, politica, cultural y ecologica,
-                            regional y nacional.</li>
-                        <li>Comprende, valora y utiliza los aportes humanísticos, cientificos y tecnologicos de la cultura universal
-                            , destacando la contribucion de la cultura peruana y latinoamericana.
-                        </li>
-                        <li>Manifiesta actitudes positivas frente a los valores de solidadridad, paz, libertad, justicia social, verdad
-                            y belleza.
-                        </li>
-                        <li>Comprende, valora y contribuye a la integracion nacional y latinoamericana.
-                        </li>
-                    </ul>
-                    <li><b>AREA PEDAGÓGICA</b>
-                        <ul class="list-disc ml-5">
-                            <li>Comprende, explica Y aplica los principios epistemológicos y metodologicos de las ciencias de la educación.
-                            </li>
-                            <li>Comprende y valora el desarrollo historico de la educacion peruana, destacando las tendencias pedagogicas contemporáneas.
-                            </li>
-                            <li>Comprende y aplica los principios de la psicologia educacional.
-                            </li>
-                            <li>Conoce y aplica el metodo cientifico de la invetigacion educacional.
-                            </li>
-                            <li>Planifica, implementa, ejecuta y evalua el proceso E-A.</li>
-                            <li>Desarrolla programas de Orientación y Bienestar del Educando.</li>
-                            <li>Desarrolla acciones de adminsitracion educacional.</li>
-                            <li>Valora, utiliza y apoya, los recursos iniciativas y creaciones de la comunidad con propositivos educativos.</li>
-                        </ul>
-                    </li>
-                    <li><b>AREA DE ESPECIALIDAD</b>
-                        <ul class="list-disc ml-5">
-                            <li>Conoce, comprende y explica conceptos y fundamentos de las teorias matematicas.</li>
-                            <li>Aplica conceptos y teorias matematicas a la solucion de problemas.</li>
-                            <li>Divulga sus experiencias y conocimientos matematicos, a través de eventos academicos y medios de comunicacion.</li>
-                            <li>Planifica, implementa, ejecuta y evalua el proceso de enseñanza - aprendizaje de la matemática.</li>
-                        </ul>
-                    </li>
+                <ul class="list-disc flex flex-col gap-1 p-4">
+                    <li>Gestiona procesos de diseño y planificación curricular a partir de la comprensión de
+                        teorías psicopedagógicas utilizando soportes tecnológicos considerando la diversidad
+                        cultural, la inclusión, las necesidades educativas de los estudiantes y actuando con
+                        responsabilidad social.</li>
+
+                    <li>Investiga a partir de la reflexión e identificación de situaciones problemáticas de diversos
+                        hechos pedagógicos, lingüísticos y/o literarios para aportar en el desarrollo educativo y
+                        social.</li>
+
+                    <li>Comprende y utiliza las teorías, técnicas, métodos y modelos del análisis de las ciencias
+                        del Lenguaje y la literatura como fundamento para promover procesos de reflexión,
+                        comprensión y producción textuales aportando en el desarrollo de la cultura y sociedad.</li>
+
+                    <li>Reflexiona sobre su desempeño personal y profesional desarrollando acciones de
+                        capacitación y autocapacitación para convertirse en una persona y profesional crítico
+                        reflexivo</li>
                 </ul>
             </section>
             <section class="contenido text-center" id="plan-estudios" style="display: none;">
                 <div
                     class=" grid drop-shadow-lg mb-10 lg:grid-cols-6 gap-5 [&>div]:rounded-md [&>div]:text-center [&>div]:p-2 [&>div]:flex [&>div]:flex-col [&>div]:justify-center [&>div]:items-center [&>div]:py-5">
-                    <div class="bg-gray-300 lg:col-span-2">
+                    <div class="bg-white lg:col-span-2">
                         <p class="text-xl md:text-4xl font-bold">10</p>
                         <h2 class="font-semibold text-neutral-600 text-lg">Semestres académicos</h2>
                     </div>
-                    <div class="bg-[#252850] lg:col-span-4">
-                        <h3 class="text-gray-300">Grado Académico</h3>
+                    <div class="bg-[#52D0F8] lg:col-span-4">
+                        <h3 class="text-white">Grado Académico</h3>
                         <img src="{{ asset('icons/graduation.svg') }}" alt="" class="w-16">
-                        <h2 class="font-semibold text-gray-300 text-lg">Bachiller en Educación Secundaria – Mención:
-                            Historia y geografia</h2>
+                        <h2 class="font-semibold text-white text-lg">Bachiller en Educación Secundaria – Mención:
+                            Lengua y Literatura.</h2>
                     </div>
-                    <div class="bg-[#252850] lg:col-span-4">
-                        <h3 class="text-gray-300">Titulo</h3>
+                    <div class="bg-[#52D0F8] lg:col-span-4">
+                        <h3 class="text-white">Titulo</h3>
                         <img src="{{ asset('icons/diploma.svg') }}" alt="" class="w-16">
-                        <h2 class="font-semibold text-gray-300 text-lg">Licenciado en Educación Secundaria – Mención:
-                            Hisotria y geografia</h2>
+                        <h2 class="font-semibold text-white text-lg">Licenciado en Educación Secundaria – Mención:
+                            Lengua y Literatura</h2>
                     </div>
-                    <div class="bg-gray-300 lg:col-span-2">
+                    <div class="bg-white lg:col-span-2">
                         <p class="text-xl md:text-4xl font-bold">220</p>
                         <h2 class="font-semibold text-neutral-600 text-lg">Créditos</h2>
                     </div>
                 </div>
                 <a class="px-8 rounded-lg py-4 mt-10 bg-[#fee346] hover:shadow-xl transition-all ease-linear duration-300 hover:text-[#F0F0F2]"
-                    href="https://drive.google.com/file/d/1iC0_7LBY_MZs2GeNrz2SWaxMKbyxme7k/view"
+                    href="https://drive.google.com/file/d/1UXWQXr8XhNUk9aMeV_rIP_OisnCu6IGH/view"
                     target="_blank">Ver Malla Curricular</a>
             </section>
         </section>
 
         <section class="datos order-first max-w-6xl px-5 md:px-20 mx-auto my-6 flex flex-col lg:flex-row justify-center gap-6 ">
             <!-- Primera columna: Bienvenida -->
-            <div class="bg-gray-300 p-6 rounded-lg shadow-lg text-center flex flex-col justify-center lg:w-1/3">
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center flex flex-col justify-center lg:w-1/3">
                 <div class="text-red-500 text-6xl mb-4">🤝</div> <!-- Icono personalizado -->
-                <h3 class="text-xl font-bold text-[#252850] mb-2">Bienvenida</h3>
-                <p class="">"Bienvenidos a la Escuela Profesional de Educación Secundaria Mención Ciencias 
-                    Matematicas, un espacio donde la excelencia académica se encuentra con la innovación y la pasión
+                <h3 class="text-xl font-bold text-[#52D0F8] mb-2">Bienvenida</h3>
+                <p class="">"Bienvenidos a la Escuela Profesional de Educación Secundaria Mención Lengua
+                    y Literatura, un espacio donde la excelencia académica se encuentra con la innovación y la pasión
                     por el aprendizaje."</p>
             </div>
 
             <div class="flex flex-col justify-between lg:w-1/3">
                 <img src="{{ asset('imagenes/index/director-secundaria.png')}}" class="rounded-t-lg lg:h-2/4 w-full " alt=""><!-- Icono personalizado -->
-                <div class="bg-gray-300 h-1/2 p-6 rounded-b-lg shadow-lg text-center">
-                    <h3 class="text-xl font-bold text-[#252850] mb-2">Dr. Carlos Oswaldo Caballero Alayo</h3>
+                <div class="bg-white h-1/2 p-6 rounded-b-lg shadow-lg text-center">
+                    <h3 class="text-xl font-bold text-[#52D0F8] mb-2">Dr. Carlos Oswaldo Caballero Alayo</h3>
                     <p class="text-black">Director de la Escuela Profesional de Secundaria</p>
                     <a href="mailto:inicial@unitru.edu.pe"
                     class="text-md font-bold text-black mb-2 text-wrap">secundaria@unitru.edu.pe</a>
@@ -265,8 +240,8 @@
 
             <div class="flex flex-col lg:w-1/3">
                 <img src="{{ asset('imagenes/index/asistente-secundaria.png')}}" class="rounded-t-lg lg lg:h-2/4 w-full" alt=""> <!-- Icono personalizado -->
-                <div class="bg-gray-300 h-1/2 p-6 rounded-b-lg shadow-lg text-center">
-                    <h3 class="text-xl font-bold text-[#252850] mb-2">Sra. Mercedes Pilar Chuica Flores</h3>
+                <div class="bg-white h-1/2 p-6 rounded-b-lg shadow-lg text-center">
+                    <h3 class="text-xl font-bold text-[#52D0F8] mb-2">Sra. Mercedes Pilar Chuica Flores</h3>
                     <p class="">Asistente administrativa</p>
                 </div>
             </div>
@@ -276,7 +251,7 @@
 
             <img src="{{ asset('imagenes/index/filosofia.png') }}" class="w-1/2 hidden lg:block" alt="">
             <form action="" method="POST"
-                class="border-2 border-[#252850] gap-3 shadow-xl mx-auto rounded-lg p-5 grid md:grid-cols-2 [&>section>img]:bg-[#252850] [&>section]:flex [&>section>img]:p-2 [&>section]:rounded-md [&>section]:border [&>section]:border-[#252850] [&>section>img]:rounded-l-[5px] [&>section>input]:w-full [&>section>input]:rounded-r-md [&>section>input]:px-2 [&>section>input]:bg-transparent ">
+                class="border-2 border-[#52D0F8] gap-3 shadow-xl mx-auto rounded-lg p-5 grid md:grid-cols-2 [&>section>img]:bg-[#52D0F8] [&>section]:flex [&>section>img]:p-2 [&>section]:rounded-md [&>section]:border [&>section]:border-[#52D0F8] [&>section>img]:rounded-l-[5px] [&>section>input]:w-full [&>section>input]:rounded-r-md [&>section>input]:px-2 [&>section>input]:bg-transparent ">
                 {{-- Predeterminado la escuela desde donde va --}}
                 <section class="entrada-uno">
                     <img src="{{ asset('icons/user.svg') }}" alt="">
@@ -306,10 +281,10 @@
                     </select>
                 </section>
                 <textarea name="Comentarios" id="Comentarios" placeholder="Escribe Tu Mensaje Aquí"
-                    class="md:col-span-2 rounded-md p-3 border border-[#252850] bg-transparent"></textarea>
-                <input class="py-2 bg-[#252850] rounded-md text-white font-bold cursor-pointer" type="submit"
+                    class="md:col-span-2 rounded-md p-3 border border-[#52D0F8] bg-transparent"></textarea>
+                <input class="py-2 bg-[#52D0F8] rounded-md text-white font-bold cursor-pointer" type="submit"
                     id="enviar" name="enviar" value="Enviar">
-                <input class="py-2 border-2 border-[#252850] rounded-md text-[#252850] font-bold cursor-pointer"
+                <input class="py-2 border-2 border-[#52D0F8] rounded-md text-[#52D0F8] font-bold cursor-pointer"
                     type="reset" id="borrar" name="borrar" value="Borrar">
             </form>
         </section>

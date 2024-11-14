@@ -27,6 +27,7 @@
         <x-side-button icon="book.svg" title="Filosofía, Psicología y CCSS" route="/pregrado/secundaria/filosofia" />
         <x-side-button icon="book.svg" title="Historia y Geografia" route="/pregrado/secundaria/historia" />
         <x-side-button icon="book.svg" title="Ciencias Matematicas" route="/pregrado/secundaria/matematicas" />
+        <x-side-button icon="book.svg" title="Lengua y Literatura" route="/pregrado/secundaria/literatura" />
         <x-side-button icon="book.svg" title="Idiomas" route="/pregrado/secundaria/idiomas" />
 
         @elseif(request()->routeIs('pregrado.cdlc') || request()->routeIs('pregrado.cdlc.*'))
@@ -64,8 +65,8 @@
             ['name' => 'Comité', 'url' => '/menu'],
             ['name' => 'Docentes', 'url' => '/footer']
         ]"  
-    />
-    <x-drop-down-button 
+/>
+<x-drop-down-button 
     title="Unidad de Responsabilidad Social" 
     :list="[
         ['name' => 'Inicio', 'url' => '/index'],
@@ -73,6 +74,14 @@
         ['name' => 'Contacto', 'url' => '/contacto']
     ]" 
 />
+<x-drop-down-button 
+    title="Unidad de Investigacion" 
+    :list="[
+        ['name' => 'Informe de Investigacion', 'url' => '/unidades/unidadInvestigacion/InformeInvestigacion'],
+    ]" 
+/>
+
+
 
 
 @elseif(request()->routeIs('departamentos_academicos'))
