@@ -11,7 +11,7 @@
         <p class="flex max-w-80 mx-auto flex-wrap justify-center text-lg text-center">Facultad de educación y ciencias de la
             comunicación</p>
     </a>
-    <section class="mt-9">
+    {{-- <section class="mt-9">
         <div class="idiomas">
             <p class="my-4">
                 <a href="">Eng</a>  
@@ -20,7 +20,7 @@
             </p>
         </div>
         <input type="text" placeholder="Buscar" class="p-1 rounded-md border border-black w-4/5 my-2">
-    </section>
+    </section> --}}
     <section class="mt-6 flex-1 min-h-0 overflow-y-auto no-scrollbar text-black [&>h3]:text-white">
         @include('components.side-menu')
     </section>

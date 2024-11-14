@@ -20,24 +20,7 @@
                 tomando forma de manera progresiva y se convierta en un reflejo del deseo de todos los peruanos para que la educación contribuya a la formación de ciudadanos activos y 
                 comprometidos con el desarrollo sostenible de su país.
             </p>
-
-
-        <!-- organigrama -->
-        <section class=" mx-auto ">
-            <div class="container mx-auto text-center">
-                <h2  class="text-3xl font-bold text-gray-800 mt-6 mb-8">
-                Organigrama
-                </h2>
-            <div class="w-16 h-1 bg-gray-800 mx-auto mb-10"></div>
-        </section>
-        <section class="flex flex-col w-full bg-white rounded-lg p-6 text-center items-center justify-center">  
-            <div class="flex flex-col items-center justify-center pb-5  ">
-                <img src="{{asset('imagenes/homeSecundaria/organigramaUNT.png')}}" alt="Organigrama" class=" border border-black  border-h ">
-            </div>
-            <a href="rutadocumento.pdf" class="inline-block mt-4 px-4 py-2 bg-[#FFB703] text-white text-base rounded-lg hover:bg-[#FFB703]" download>
-                Descargar en PDF
-            </a>
-        </section>
+    
         <!-- Ex directores-->
         <section class=" snap-x py-12">
             <div class="text-center mb-12">
