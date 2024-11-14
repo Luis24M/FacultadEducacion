@@ -14,7 +14,7 @@
             La Unidad de Soporte de la Facultad de Educación y Ciencias de la Comunicación de la Universidad Nacional de Trujillo 
             es un equipo especializado dedicado a garantizar el óptimo funcionamiento de la infraestructura tecnológica y el 
             mantenimiento general de las instalaciones. Nuestro personal altamente calificado incluye ingenieros de sistemas, 
-            técnicos especializados y personal de mantenimiento que trabajan en conjunto para dar soporte a la facultad de educación
+            técnicos especializados y personal de mantenimiento que trabajan en conjunto para dar soporte a la facultad de educación.
         </p>
     </div>
     
@@ -33,10 +33,10 @@
     <!-- Card 1 -->
     <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center">
         <div class="flex justify-center items-center h-auto overflow-hidden">
-            <img src="{{ asset('colaboradores/HOMBRE DEFAULT.jpg') }}" alt="Ing. Carlos Rodríguez" class="object-cover object-center w-40 h-40">
+            <img src="{{ asset('colaboradores/unidades/Julio Hernán Luna Victoria Valdivia.jpg') }}" alt="Ing. Julio Hernán Luna Victoria Valdivia" class="object-cover object-center w-40 h-40" style="object-position: center 0%;">
         </div>
         <div class="p-4 flex flex-col items-center">
-            <h3 class="text-xl font-bold">Ing. Carlos Rodríguez</h3>
+            <h3 class="text-xl font-bold">Ing. Julio Hernán Luna Victoria Valdivia</h3>
             <p class="text-gray-600 mt-2">"La tecnología al servicio de la educación"</p>
         </div>
     </div>
@@ -74,92 +74,5 @@
         </div>
     </div>
 
-    <!-- Card 5 -->
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center">
-        <div class="flex justify-center items-center h-auto overflow-hidden">
-            <img src="{{ asset('colaboradores/HOMBRE DEFAULT.jpg') }}" alt="Ing. Pedro Díaz" class="object-cover object-center w-40 h-40">
-        </div>
-        <div class="p-4 flex flex-col items-center">
-            <h3 class="text-xl font-bold">Ing. Pedro Díaz</h3>
-            <p class="text-gray-600 mt-2">"Tecnología que transforma"</p>
-        </div>
-    </div>
-
-    <!-- Card 6 -->
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center">
-        <div class="flex justify-center items-center h-auto overflow-hidden">
-            <img src="{{ asset('colaboradores/MUJER DEFAULT.jpg') }}" alt="Téc. María Ruiz" class="object-cover object-center w-40 h-40">
-        </div>
-        <div class="p-4 flex flex-col items-center">
-            <h3 class="text-xl font-bold">Téc. María Ruiz</h3>
-            <p class="text-gray-600 mt-2">"Compromiso con la excelencia"</p>
-        </div>
-    </div>
-
-    <!-- Card 7 -->
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center">
-        <div class="flex justify-center items-center h-auto overflow-hidden">
-            <img src="{{ asset('colaboradores/HOMBRE DEFAULT.jpg') }}" alt="Ing. Jorge Castro" class="object-cover object-center w-40 h-40">
-        </div>
-        <div class="p-4 flex flex-col items-center">
-            <h3 class="text-xl font-bold">Ing. Jorge Castro</h3>
-            <p class="text-gray-600 mt-2">"Soluciones inteligentes"</p>
-        </div>
-    </div>
-
-    <!-- Card 8 -->
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center">
-        <div class="flex justify-center items-center h-auto overflow-hidden">
-            <img src="{{ asset('colaboradores/MUJER DEFAULT.jpg') }}" alt="Téc. Diana Luna" class="object-cover object-center w-40 h-40">
-        </div>
-        <div class="p-4 flex flex-col items-center">
-            <h3 class="text-xl font-bold">Téc. Diana Luna</h3>
-            <p class="text-gray-600 mt-2">"Calidad en cada servicio"</p>
-        </div>
-    </div>
-
-    <!-- Card 9 -->
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center">
-        <div class="flex justify-center items-center h-auto overflow-hidden">
-            <img src="{{ asset('colaboradores/HOMBRE DEFAULT.jpg') }}" alt="Ing. Roberto Paz" class="object-cover object-center w-40 h-40">
-        </div>
-        <div class="p-4 flex flex-col items-center">
-            <h3 class="text-xl font-bold">Ing. Roberto Paz</h3>
-            <p class="text-gray-600 mt-2">"Innovación constante"</p>
-        </div>
-    </div>
-
-    <!-- Card 10 -->
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center">
-        <div class="flex justify-center items-center h-auto overflow-hidden">
-            <img src="{{ asset('colaboradores/MUJER DEFAULT.jpg') }}" alt="Téc. Carmen Silva" class="object-cover object-center w-40 h-40">
-        </div>
-        <div class="p-4 flex flex-col items-center">
-            <h3 class="text-xl font-bold">Téc. Carmen Silva</h3>
-            <p class="text-gray-600 mt-2">"Dedicación y profesionalismo"</p>
-        </div>
-    </div>
-
-    <!-- Card 11 -->
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center">
-        <div class="flex justify-center items-center h-auto overflow-hidden">
-            <img src="{{ asset('colaboradores/HOMBRE DEFAULT.jpg') }}" alt="Ing. Fernando Torres" class="object-cover object-center w-40 h-40">
-        </div>
-        <div class="p-4 flex flex-col items-center">
-            <h3 class="text-xl font-bold">Ing. Fernando Torres</h3>
-            <p class="text-gray-600 mt-2">"Tecnología que conecta"</p>
-        </div>
-    </div>
-
-    <!-- Card 12 -->
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center">
-        <div class="flex justify-center items-center h-auto overflow-hidden">
-            <img src="{{ asset('colaboradores/MUJER DEFAULT.jpg') }}" alt="Téc. Julia Mendoza" class="object-cover object-center w-40 h-40">
-        </div>
-        <div class="p-4 flex flex-col items-center">
-            <h3 class="text-xl font-bold">Téc. Julia Mendoza</h3>
-            <p class="text-gray-600 mt-2">"Excelencia en soporte técnico"</p>
-        </div>
-    </div>
 </div>
 @endsection
