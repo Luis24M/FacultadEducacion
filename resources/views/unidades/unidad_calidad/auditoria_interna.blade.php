@@ -9,7 +9,7 @@
 </section>
 
 
-<div class="flex justify-center p-4">
+<div class="flex justify-center pt-8">
     <div class="grid grid-cols-4 gap-4 w-full max-w-6xl bg-gray-100 p-6 rounded-lg shadow-lg">
         <div class="col-span-1 flex justify-center items-center">
             <img src="/colaboradores//ICON2.png" alt="Imagen 1" class="w-full h-full object-cover rounded-lg shadow-md">
@@ -140,18 +140,19 @@
         </div>
 
         <!-- Agregar botones para cada año con código de acceso -->
-        <div class="year-buttons flex justify-center space-x-6 my-4">
-            <button onclick="showAccessCodePrompt('https://drive.google.com/drive/folders/10boks3g14eWqWCrU9Qxs_lSoDDYL0d4z?usp=sharing')" class="year-button bg-blue-500 text-white px-6 py-3 rounded flex items-center text-lg">
-                2021 <i class="fas fa-download ml-3 text-xl"></i>
+        <div class="year-buttons flex justify-center space-x-6 pb-8">
+            
+            <button onclick="showAccessCodePrompt('https://drive.google.com/drive/folders/10boks3g14eWqWCrU9Qxs_lSoDDYL0d4z?usp=sharing')" class="year-button bg-blue-500 text-white px-6 py-3 rounded flex items-center text-lg ">
+                2021 <img src="{{ asset('icons/download.svg') }}" alt="Icono de Descarga" class="ml-2">
             </button>
-            <button onclick="showAccessCodePrompt('https://drive.google.com/drive/folders/10SxO-7ALy_3bJfzhp-XG19htSV5HIxDp?usp=sharing')" class="year-button bg-blue-500 text-white px-6 py-3 rounded flex items-center text-lg">
-                2022 <i class="fas fa-download ml-3 text-xl"></i>
+            <button onclick="showAccessCodePrompt('https://drive.google.com/drive/folders/10SxO-7ALy_3bJfzhp-XG19htSV5HIxDp?usp=sharing')" class="year-button bg-blue-500 text-white px-6 py-3 rounded flex items-center text-lg ">
+                2022 <img src="{{ asset('icons/download.svg') }}" alt="Icono de Descarga" class="ml-2">
             </button>
             <button onclick="showAccessCodePrompt('https://drive.google.com/drive/folders/1pHrQWoFZeivU6I_3oOtJvQeo8yQFxt6C?usp=sharing')" class="year-button bg-blue-500 text-white px-6 py-3 rounded flex items-center text-lg">
-                2023 <i class="fas fa-download ml-3 text-xl"></i>
+                2023 <img src="{{ asset('icons/download.svg') }}" alt="Icono de Descarga" class="ml-2">
             </button>
             <button onclick="showAccessCodePrompt('https://drive.google.com/drive/folders/1mTXFjaIePQMN_Ajsx9XqDQKKa4rwu5kH?usp=sharing')" class="year-button bg-blue-500 text-white px-6 py-3 rounded flex items-center text-lg">
-                2024 <i class="fas fa-download ml-3 text-xl"></i>
+                2024 <img src="{{ asset('icons/download.svg') }}" alt="Icono de Descarga" class="ml-2">
             </button>
         </div>
     </div>
