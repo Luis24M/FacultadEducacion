@@ -52,10 +52,10 @@
         ['name' => 'Auditoria Interna', 'url' => '/unidades/unidad_calidad/auditoria_interna'], 
         ['name' => 'Acreditación', 'url' => '/unidades/unidad_calidad/acreditacion'], 
         ['name' => 'Licenciamiento', 'url' => '/unidades/unidad_calidad/licenciamiento'] 
-    ]" 
+    ]"
 />
 
-<x-side-button icon="setting.svg" title="Unidad de Soporte" route="/unidades/unidad_soporte/index"/>
+<x-side-button icon="supersetings.svg" title="Unidad de Soporte" route="/unidades/unidad_soporte/index"/>
 
 <x-drop-down-button 
     class="fa-solid fa-folder-open"
