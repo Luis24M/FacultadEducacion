@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.home')
 @section('content')
 <div class="p-10" >
     <div class="flex flex-col lg:flex-row my-10 border-2" id="bienvenida">

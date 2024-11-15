@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.home')
 
 @section('content')
 <div class="bg-gradient-to-r from-blue-900 to-orange-500 min-h-screen flex flex-col items-center justify-center text-white">

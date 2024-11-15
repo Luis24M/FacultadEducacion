@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.home')
 @section('content')
     <div class="w-full mx-auto p-8 bg-white rounded-lg shadow-xl mt-10">
         <h1 class="text-4xl font-extrabold text-center mb-6 text-gray-900">UNIDAD DE INVESTIGACIÓN</h1>
