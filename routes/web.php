@@ -61,11 +61,11 @@ Route::get('/pregrado', function () {
         })->name('pregrado.secundaria.literatura');
 
         Route::get('/pregrado/secundaria/idiomas', function () {
-            return view('pregrado.educacion_secundaria.idiomas.index');
+            return view('pregrado.educacion_secundaria.idiomas');
         })->name('pregrado.secundaria.idiomas');
 
     Route::get('/pregrado/cdlc', function () {
-        return view('pregrado.cienciasDeLaComunicacion.index');
+        return view('pregrado.cdlc');
     })->name('pregrado.cdlc');
 
 // Rutas Unidades
@@ -113,3 +113,29 @@ Route::get('/documentacion', function () {
 Route::get('/index', function () {
     return view('unidades.rsu.index');
 })->name('index');
+
+
+// admin
+
+Route::resource('publicacion', PublicacionController::class);
+
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/admin/publicacion', function () {
+    return view('admin.publicacion');
+})->name('admin.publicacion');
+
+Route::get('/admin/galeria', function () {
+    return view('admin.galeria');
+})->name('admin.galeria');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+require __DIR__.'/auth.php';
