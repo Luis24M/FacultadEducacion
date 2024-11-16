@@ -56,14 +56,15 @@
 
 <x-side-button icon="setting.svg" title="Unidad de Soporte" route="/unidades/unidad_soporte/index"/>
 
-<x-drop-down-button 
-    class="fa-solid fa-folder-open"
-    title="Practica Preprofesional" 
-    :list="[
-        ['name' => 'Directivas', 'url' => '/unidades/practica_preprofesional'],
-            ['name' => 'Comité', 'url' => '/menu'],
-            ['name' => 'Docentes', 'url' => '/footer']
-        ]"  
+    <x-drop-down-button 
+        class="fa-solid fa-folder-open"
+        title="Unidad de Practica Preprofesional" 
+        :list="[
+            ['name' => 'Inicio', 'url' => '/practica_preprofesional'],
+            ['name' => 'Reglamento', 'url' => '/Reglamento'],
+            ['name' => 'Comité', 'url' => '/Comite'],
+            ['name' => 'Docentes', 'url' => '/Docentes']
+        ]" 
     />
     <x-drop-down-button 
     title="Unidad de Responsabilidad Social" 

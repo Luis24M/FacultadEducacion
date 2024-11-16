@@ -19,8 +19,7 @@
                         <div class="p-3">
                             <img src="{{ asset('/colaboradores/MUJER DEFAULT.jpg') }}"
                                 class="rounded-full mx-auto w-[220px] h-[220px] object-cover"
-                                alt="Director de Calidad"
-                                onerror="this.src='{{ asset('images/default-profile.jpg') }}'">
+                                alt="Director de Calidad">
                         </div>
                         <div class="p-3">
                             <h5 class="font-bold">Director de Calidad</h5>
@@ -35,8 +34,7 @@
                         <div class="p-3">
                             <img src="{{ asset('/colaboradores/MUJER DEFAULT.jpg') }}"
                                 class="rounded-full mx-auto w-[220px] h-[220px] object-cover"
-                                alt="Director de Soporte"
-                                onerror="this.src='{{ asset('images/default-profile.jpg') }}'">
+                                alt="Director de Soporte">
                         </div>
                         <div class="p-3">
                             <h5 class="font-bold">Director de Soporte</h5>
@@ -51,8 +49,7 @@
                         <div class="p-3">
                             <img src="{{ asset('/colaboradores/MUJER DEFAULT.jpg') }}"
                                 class="rounded-full mx-auto w-[220px] h-[220px] object-cover"
-                                alt="Director de Investigación"
-                                onerror="this.src='{{ asset('images/default-profile.jpg') }}'">
+                                alt="Director de Investigación">
                         </div>
                         <div class="p-3">
                             <h5 class="font-bold">Director de Investigación</h5>
@@ -67,8 +64,7 @@
                         <div class="p-3">
                             <img src="{{ asset('/colaboradores/MUJER DEFAULT.jpg') }}"
                                 class="rounded-full mx-auto w-[220px] h-[220px] object-cover"
-                                alt="Coordinador de Prácticas"
-                                onerror="this.src='{{ asset('images/default-profile.jpg') }}'">
+                                alt="Coordinador de Prácticas">
                         </div>
                         <div class="p-3">
                             <h5 class="font-bold">Coordinador de Prácticas</h5>
