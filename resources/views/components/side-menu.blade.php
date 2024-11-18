@@ -70,9 +70,6 @@
         title="Unidad de Practica Preprofesional" 
         :list="[
             ['name' => 'Inicio', 'url' => '/practica_preprofesional'],
-            ['name' => 'Reglamento', 'url' => '/Reglamento'],
-            ['name' => 'Comité', 'url' => '/Comite'],
-            ['name' => 'Docentes', 'url' => '/Docentes']
         ]" 
     />
     <x-drop-down-button 
@@ -88,6 +85,7 @@
     title="Unidad de Investigacion" 
     :list="[
         ['name' => 'Informe de Investigacion', 'url' => '/unidades/unidadInvestigacion/InformeInvestigacion'],
+        ['name' => 'Comite de Investigacion', 'url' => '/unidades/unidadInvestigacion/ComiteInvestigacion']
     ]" 
 />
 

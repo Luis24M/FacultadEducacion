@@ -97,6 +97,11 @@ Route::get('/unidades/unidadInvestigacion/InformeInvestigacion', function (){
     return view('unidades.unidadInvestigacion.InformeInvestigacion.index');
 })->name('unidades.unidadInvestigacion.informeInvestigacion');
 
+Route::get('/unidades/unidadInvestigacion/ComiteInvestigacion', function (){
+    return view('unidades.unidadInvestigacion.ComiteInvestigacion.index');
+})->name('unidades.unidadInvestigacion.comiteInvestigacion');
+
+
 
 //Elton
 Route::get('/practica_preprofesional', function (){
