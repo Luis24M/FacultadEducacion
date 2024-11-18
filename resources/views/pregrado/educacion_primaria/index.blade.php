@@ -2,291 +2,381 @@
 
 @section('content')
 
+<style>
+        button.active {
+            background-color: #F97316;
+            color: white;
+        }
+    </style>
 
+    <h1 class="text-3xl md:text-5xl text-orange-600 bg-blue-950 w-full p-7 font-bold">Escuela Profesional de Educación Primaria</h1>
 
-<div class="relative">
-  <img src="https://unitru.edu.pe/webfiles//Noticia/2024/9/0_Noticia_030920241112.jpg"  class="w-full h-auto object-cover " >
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz8PbWHIdUn4h5c3EK3e4PRK0AL4noG_ONQQ&s" class="absolute top-2 left-5 w-24" alt="Imagen superpuesta">
-  <div class="absolute inset-0 flex items-center justify-center flex-col">
-  
-  <span class="bg-black bg-opacity-50 text-white md:text-3xl  font-bold rounded">UNT</span>
-    <br>
-    
-    <span class="bg-black bg-opacity-50 p-4 text-white md:text-5xl rounded">EDUCACION PRIMARIA</span>
-    <br>
-    <span class="bg-black bg-opacity-50 p-4 text-white rounded">¡Bienvenidos a la Carrera de Educación Primaria! Este espacio educativo te invita a sumergirte en la asombrosa travesía de formar parte de la enseñanza fundamental. 
-    Prepárate para iniciar un viaje significativo, donde cultivarás habilidades esenciales y descubrirás la gratificación de guiar los primeros pasos en el aprendizaje
-    de los más jóvenes. Estamos emocionados de acompañarte en este camino educativo, contribuyendo al desarrollo integral de los estudiantes en sus años iniciales de educación. 
-    ¡Comencemos juntos este emocionante viaje hacia un futuro repleto de descubrimientos y aprendizaje en la Educación Primaria!</span> <!-- Ejemplo de texto adicional -->
-  </div>
-</div>
+    <section class="max-w-[1050px] flex flex-col justify-between mx-auto p-5 md:px-0">
 
+        <section class="md:px-11 px-6 py-5 flex flex-wrap gap-4 max-w-[800px]">
+            <button
+                class="btn-nav active bg-pink-100 bg-opacity-15 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
+                data-target="nosotros">
+                Nosotros
+            </button>
 
+            <button
+                class="btn-nav bg-orange-600 bg-opacity-15 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
+                data-target="perfil">
+                Perfiles
+            </button>
 
+            <button
+                class="btn-nav bg-orange-600 bg-opacity-15 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
+                data-target="campo">
+                Campo Ocupacional
+            </button>
 
+            <button
+                class="btn-nav bg-pink-100 bg-opacity-15 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
+                data-target="plan-estudios">
+                Plan de Estudios
+            </button>
 
-  <div class=" max-w-6xl mx-auto my-6 grid grid-cols-1 md:grid-cols-3 gap-6 ">
-        <!-- Primera columna: Bienvenida -->
-        <div class="bg-orange-600 p-6 rounded-lg shadow-lg text-center">
-            <div class="text-red-500 text-6xl mb-4">🤝</div> <!-- Icono personalizado -->
-            <h3 class="text-xl font-bold text-white mb-2">Bienvenida</h3>
-            <p class="text-white">"Bienvenidos a la Facultad de Educación y Ciencias de la Comunicación, un espacio donde la excelencia académica se encuentra con la innovación y la pasión por el aprendizaje."</p>
-        </div>
+        </section>
 
-        <!-- Segunda columna: Dr. Manuel Quipuscoa Silvestre -->
-        <div class="bg-blue-900 p-6 rounded-lg shadow-lg text-center">
-            <div class="text-red-500 text-6xl mb-4">👨‍💼</div> <!-- Icono personalizado -->
-            <h3 class="text-xl font-bold text-white mb-2">Dr. Manuel Quipuscoa Silvestre</h3>
-            <p class="text-white">Director del Programa de Estudios de Educación Primaria<br>Universidad Nacional de Trujillo</p>
-        </div>
+        <section class="contenedor-contenido [&>section]:p-5 md:[&>section]:px-20 md:[&>section]:py-10">
 
-        <!-- Tercera columna: Mg. Patricia Roxana Vela Gálvez -->
-        <div class="bg-orange-600 p-6 rounded-lg shadow-lg text-center">
-            <div class="text-red-500 text-6xl mb-4">👩‍💼</div> <!-- Icono personalizado -->
-            <h3 class="text-xl font-bold text-white mb-2">Mg. Patricia Roxana Vela Gálvez</h3>
-            <p class="text-white">Miembro Representante Administrativo del Programa de Estudios de Educación Primaria.</p>
-        </div>
-    </div>
+            <section class="contenido active" id="nosotros">
 
-    
+                <div class="lg:flex lg:space-x-10">
 
-     <!-- Contenedor principal -->
-     <div class="max-w-7xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
-        <div class="md:flex">
+                    <!-- Columna de Misión -->
+                    <div class="flex-1 mb-5 md:mb-0">
 
-            <!-- Sección de imagen a la izquierda -->
-            <div class="md:w-1/2">
-                <img src="https://facedu.unitru.edu.pe/wp-content/uploads/2023/11/FACEDU_Plaza.jpg" alt="Educación Primaria" class="w-full h-full object-cover">
-                
-            </div>
+                        <div class="flex text-gray-700">
 
-            <!-- Sección de texto a la derecha -->
-            <div class="md:w-1/2 p-6">
-                <h2 class="text-orange-500 font-bold text-xl uppercase mb-4">// Educación Primaria //</h2>
-                <h1 class="text-blue-900 font-bold text-4xl mb-4">Datos de la Carrera</h1>
-                <p class="text-text-black mb-6">
-                    El licenciado en Educación Primaria es un profesional que contribuye al proceso de formación de los niños en edad escolar (seis a once años de edad), jóvenes y adultos que cursan educación primaria. Su formación es integral en los aspectos científicos, tecnológicos y humanísticos.
-                </p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 14 14">
+                                <path fill="currentColor" fill-rule="evenodd"
+                                    d="M11.485.379a.5.5 0 0 0-.839-.233l-2 2a.5.5 0 0 0-.131.475l.36 1.444l-.014.014L6.47 6.47a.75.75 0 0 0 1.06 1.06l2.393-2.39l.014-.015l1.443.361a.5.5 0 0 0 .475-.131l2-2a.5.5 0 0 0-.233-.84l-1.709-.426zm-4.168.38a.75.75 0 0 1-.696.8a5.47 5.47 0 1 0 5.831 5.89a.75.75 0 1 1 1.496.119A6.97 6.97 0 1 1 6.517.062a.75.75 0 0 1 .8.696Zm-.672 3.299a.75.75 0 0 1-.425.972a2.12 2.12 0 1 0 2.75 2.742a.75.75 0 1 1 1.398.544a3.62 3.62 0 1 1-4.694-4.683a.75.75 0 0 1 .971.425"
+                                    clip-rule="evenodd" />
+                            </svg>
 
-                <!-- Misión -->
-                <div class="mb-4">
-                    <h3 class="font-bold text-xl text-blue-900 mb-2">01 Misión:</h3>
-                    <p class="text-black">
-                        Formar licenciados en educación primaria, competitivos, con una sólida formación científica, tecnológica, pedagógica, humanística, ética e inclusiva para la mejora de la calidad educativa a través de la investigación, innovación y desarrollo sostenible de la localidad, región y el país.
-                    </p>
+                            <h3 class="text-lg md:text-xl font-semibold mx-2 tracking-wide text-orange-600 mb-4">
+                                Misión
+                            </h3>
+
+                        </div>
+
+                        <p class="text-md md:text-lg text-gray-700">
+                        Somos el primer programa de estudios de la Región que forma licenciados en Educación Primaria, competitivos, con una sólida formación científica, tecnológica, pedagógica y humanística, que busca
+el mejoramiento de la calidad educativa a través de la innovación y
+currículo por competencias, y contribuye al desarrollo y transformación
+sostenible de la localidad, región y el país.
+                        </p>
+                    </div>
+
+                    <!-- Columna de Visión -->
+                    <div class="flex-1">
+                        <div class="flex text-gray-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 14 14">
+                                <path fill="currentColor" fill-rule="evenodd"
+                                    d="M0 5.368A6.01 6.01 0 0 1 5.58 0a.6.6 0 0 0-.093.093a10.13 10.13 0 0 0-2.209 5.275zM3.652 8.91q0 .066.005.131v2.496A6.01 6.01 0 0 1 0 6.618h3.278c.073.66.21 1.31.41 1.939a2 2 0 0 0-.036.352Zm.885-2.29h1.75l-1.58.684l-.051.023a9 9 0 0 1-.12-.708Zm7.41-1.25H8.665A10.13 10.13 0 0 0 6.457.092A.6.6 0 0 0 6.363 0a6.01 6.01 0 0 1 5.584 5.368Zm-7.41 0h2.87a8.9 8.9 0 0 0-1.435-3.831a8.9 8.9 0 0 0-1.435 3.83ZM9.65 6.71a.55.55 0 0 0-.434 0L5.242 8.432a.6.6 0 0 0-.116.068a.68.68 0 0 0-.349.596v3.028a.682.682 0 0 0 1.365 0v-2.3l3.074 1.331c.139.06.296.06.434 0l3.974-1.721a.546.546 0 0 0 0-1.002zm-2.933 4.51l2.024.877a1.74 1.74 0 0 0 1.383 0l2.024-.877v1.358c0 .12-.038.236-.11.33l-.435-.33l.434.331l-.001.002l-.002.002l-.004.006l-.012.015a2 2 0 0 1-.165.176c-.11.104-.27.237-.483.368c-.431.264-1.071.514-1.937.514s-1.506-.25-1.936-.515a3 3 0 0 1-.61-.5l-.037-.044l-.012-.015l-.004-.006l-.002-.002v-.002H6.83l.435-.33l-.435.33a.55.55 0 0 1-.11-.329l-.004-1.36Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+
+                            <h3 class="text-lg md:text-xl font-semibold mx-2 tracking-wide text-orange-600 mb-4">Visión</h3>
+                        </div>
+
+                        <p class="text-md md:text-lg text-gray-700">
+                        Al 2018 seremos un Programa de Estudios de Educación Primaria de
+la UNT, acreditada que forma líderes de cambio altamente calificados
+con conocimiento científico, tecnológico y humanístico capaces de
+satisfacer la demanda de la Educación Básica de la localidad, la región
+y el país.
+                        </p>
+                    </div>
+
                 </div>
 
-                <!-- Visión -->
-                <div class="mb-4">
-                    <h3 class="font-bold text-xl text-blue-900 mb-2">02 Visión:</h3>
-                    <p class="text-text-black">
-                        Al 2024 somos una Escuela Académica de Educación Primaria de la UNT, acreditada que forma líderes de cambio altamente calificados con conocimiento científico, tecnológico y humanístico capaces de satisfacer la demanda de la Educación Básica de la localidad, la región y el país.
-                    </p>
-                </div>
+            </section>
 
-                <!-- Objetivos Educacionales -->
-                <div class="mb-6">
-                    <h3 class="font-bold text-xl text-blue-900 mb-2">03 Objetivos Educacionales:</h3>
-                    <ul class="list-disc list-inside text-text-black space-y-2">
-                        <li>OE 1: Demuestra competencias profesionales de gestión del proceso de aprendizaje enseñanza para la formación integral a fin de que estos actúen como ciudadanos globales.</li>
-                        <li>OE 2: Gestiona procesos de organización y dirección de instituciones educativas asociados a proyectos de investigación científica, innovación e intervención sociocultural.</li>
-                        <li>OE 3: Demuestra una actitud de compromiso para su superación continua ante los desafíos socioeducativos, evidenciando identidad profesional y ética.</li>
+            <section class="contenido lg:flex" id="perfil" style="display:none;">
+                <div>
+                    <h2 class="text-lg md:text-xl font-bold text-orange-600 mb-4">Perfil de Ingresante</h2>
+
+                    <ul class="list-disc flex flex-col gap-1 p-4 text-gray-700">
+                        <li>Conocimientos básicos en razonamiento verbal.</li>
+                        <li>Conocimientos básicos razonamiento matemático.</li>
+                        <li>Conocimientos básicos de cultura general..</li>
+                        <li>Demuestra interés para el trabajo con niños y niñas</li>
+                        <li>Posee capacidad de liderazgo y actitudes de servicio con niños y niñas</li>
+                        <li>Muestra diversas habilidades cognitivas, artísticas, creativas, sociales y el control de emociones.</li>
+                        <li>Demuestra ser crítico, reflexivo y actúa con coherencia y lógica.</li>
+                        <li>Muestra capacidad para la comunicación horizontal, tolerancia y conciliación</li>
+                        <li>Demuestra un pensamiento abierto y flexible frente a los cambios educativos y de nuestra sociedad.</li>
+                        <li>Capacidad para identificar y actuar frente a situaciones educativas relevantes que promueven
+                        aprendizajes significativos en los niños.</li>
                     </ul>
                 </div>
 
-                <!-- Botón "Ver Más" -->
+                <br>
+
                 <div>
-                    <a href="https://www.youtube.com/embed/6mmdvUizSbk?si=FeLkyF947RocMboP" class="inline-block bg-[rgb(255,102,0)] text-white font-bold py-2 px-4 rounded-full hover:bg-blue-900">
-                        Ver Más →
-                    </a>
+                    <h2 class="text-lg md:text-xl font-bold text-orange-600 mb-4">Perfil Profesional de Egresado</h2>
+
+                    <ul class="list-disc flex flex-col gap-1 p-4">
+                        <li>1. GESTIONA la formación
+integral enfatizando en los
+procesos de enseñanza y
+aprendizaje, para que los
+estudiantes de educación
+Primaria desarrollen
+aprendizajes de calidad,
+críticos, reflexivos y
+significativos para la solución
+de problemas en situaciones
+retadoras y toma de
+decisiones, teniendo en cuenta
+la diversidad, la inclusión y los
+contextos socioculturales.</li>
+
+                        <li>2. INVESTIGA sobre su
+práctica y experiencia
+pedagógica, así como de la
+Educación Primaria
+desarrollando investigación
+científica, propuestas
+innovadoras e intervenciones
+socioculturales para el
+mejoramiento de los procesos
+de enseñanza y aprendizaje
+que respondan a la
+problemática del contexto,
+interactuando en comunidades
+virtuales.</li>
+
+                        <li>3. LIDERA la gestión de
+organizaciones educativas, en
+forma democrática, con las
+familias y la comunidad, así
+como también participa en
+programas, proyectos
+educativos y otros afines,
+propios de la Educación
+Primaria en atención al
+contexto socio educativo para
+generar aprendizajes de
+calidad.</li>
+
+                        <li>4. REFLEXIONA Y
+DEMUESTRA acciones en su
+práctica pedagógica, que
+demuestren confianza en sí
+mismo, espíritu emprendedor,
+manejo de la comunicación
+asertiva, trabajo en equipo,
+gran capacidad de servicio y
+actitud de mejora continua,
+desarrollo sostenible de la
+conciencia ética, estética,
+ecológica, histórica, política y
+de organización social, para
+tener un mejor entendimiento
+de la realidad y contribuir a su
+transformación.</li>
+
+                       
+
+                    </ul>
                 </div>
-            </div>
-
-        </div>
-    </div>
-
-<!-- Sección de estadísticas -->
-<section class="bg-cover bg-center relative" style="background-image: url('{{ asset('images/estadisticas-bg.jpg') }}');">
-    <div class="absolute inset-0 bg-black bg-opacity-15"></div>
-    <div class="relative z-10 max-w-7xl mx-auto py-16 px-6 md:px-12 text-white flex justify-between items-center space-x-8">
-
-        <!-- Tarjeta 1 -->
-        <div class="text-center">
-            <div class="text-5xl font-bold mb-2 text-[rgb(255,102,0)]" id="stat1">0</div>
-            <div class="text-lg text-blue-900">Años de experiencia</div>
-        </div>
-
-        <!-- Tarjeta 2 -->
-        <div class="text-center">
-            <div class="text-5xl font-bold mb-2 text-[rgb(255,102,0)]" id="stat2">0</div>
-            <div class="text-lg text-blue-900">Técnicos expertos</div>
-        </div>
-
-        <!-- Tarjeta 3 -->
-        <div class="text-center">
-            <div class="text-5xl font-bold mb-2 text-[rgb(255,102,0)]" id="stat3">0</div>
-            <div class="text-lg text-blue-900">Alumnos satisfechos</div>
-        </div>
-
-        <!-- Tarjeta 4 -->
-        <div class="text-center">
-            <div class="text-5xl font-bold mb-2 text-[rgb(255,102,0)]" id="stat4">0</div>
-            <div class="text-lg text-blue-900">Proyectos completos</div>
-        </div>
-
-    </div>
-</section>
-
-<!-- Script para animar el conteo -->
-<script>
-    function animateValue(id, start, end, duration) {
-        let obj = document.getElementById(id);
-        let range = end - start;
-        let current = start;
-        let increment = end > start ? 1 : -1;
-        let stepTime = Math.abs(Math.floor(duration / range));
-        let timer = setInterval(function() {
-            current += increment;
-            obj.textContent = current;
-            if (current == end) {
-                clearInterval(timer);
-            }
-        }, stepTime);
-    }
-
-    // Ejecuta la animación al cargar la página
-    window.onload = function() {
-        animateValue("stat1", 0, 199, 2000);  // Años de experiencia
-        animateValue("stat2", 0, 1234, 2000); // Técnicos expertos
-        animateValue("stat3", 0, 1999, 2000); // Alumnos satisfechos
-        animateValue("stat4", 0, 200, 2000);  // Proyectos completos
-    };
-</script>
 
 
+            </section>
 
+            <section class="contenido active" id="campo" style="display:none;">
+                <h2 class="text-xl text-orange-600 font-semibold mb-4">Campo Ocupacional</h2>
 
-    <section class="font-sans bg-gray-100">
+                <div class="container">
 
-<div class="flex p-6">
-    <!-- Sidebar -->
-    <div class="w-1/3">
-        <button onclick="showContent('prueba')" id="prueba-btn" class="block w-full bg-orange-500 text-white py-4 mb-4 text-lg rounded hover:bg-orange-600 active">Prueba</button>
-        <button onclick="showContent('servicio')" id="servicio-btn" class="block w-full bg-gray-200 text-gray-800 py-4 mb-4 text-lg rounded hover:bg-gray-300">Servicio</button>
-        <button onclick="showContent('programa')" id="programa-btn" class="block w-full bg-gray-200 text-gray-800 py-4 mb-4 text-lg rounded hover:bg-gray-300">Programa E.Primaria</button>
-    </div>
+                    <p class="text-black">Las salidas profesionales para un Licenciado en Educación Inicial
+                        abarcan diversas áreas:</p>
+                    <ul class=" list-inside text-black ml-8">
 
-    <!-- Content -->
-    <div class="w-2/3 p-6 bg-blue-950 border-l-1 border-gray-300 rounded">
-        <div id="prueba" class="content-item  ">
-            
-            <h2 class="text-2xl font-bold text-white mb-4">Educación Primaria</h2>
-            <p class="text-white">Ejercicio profesional en instituciones de Educación Básica Regular y Educación Básica Alternativa, tanto en entornos públicos como privados. Implica la aplicación de conocimientos pedagógicos para el desarrollo integral de estudiantes en diferentes contextos educativos.</p>
-            <ul class="list-disc list-inside text-white">
-                <li>Conocimientos básicos en razonamiento verbal.</li>
-                <li>Conocimientos básicos en razonamiento matemático.</li>
-                <li>Conocimientos básicos de cultura general.</li>
-            </ul>
-        </div>
-        <div id="servicio" class="content-item hidden relative p-8 rounded-lg shadow-lg">
-        <img src="https://scontent.ftru2-3.fna.fbcdn.net/v/t39.30808-6/459527392_2837370383094701_7813841501268298919_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGT2wEmwoOROvwDUBlWZlsl1-rVlcXH2N3X6tWVxcfY3cLfeUg2NT3i8K-KD2Z1S04WbTb9J2T6qI2KJxyzoDJO&_nc_ohc=Rt0Sf_yH6vMQ7kNvgFoeKSO&_nc_zt=23&_nc_ht=scontent.ftru2-3.fna&_nc_gid=AyOH35P56VQuzmw7nLJgPYf&oh=00_AYDdMtfuZurtgNsExTWXYJkBhjEKJNO3sTpyIxTpx6Pauw&oe=67347888" class="absolute top-0 left-0 w-full h-full object-cover ">
-        <div class="relative z-10">
-   
-          <h2 class="text-2xl font-bold mb-4 bg-black bg-opacity-50 text-white">Perspectivas Ocupacionales</h2>
-            <p class="bg-black bg-opacity-50 text-white">Esta área implica compartir conocimientos especializados, facilitar el aprendizaje y contribuir al crecimiento académico de los estudiantes en niveles más avanzados.</p>
-            <ul class="list-disc list-inside bg-black bg-opacity-50 text-white">
-                <li>Gestiones de instituciones educativas, abarcando la planificación estratégica, administración de recursos y liderazgo.</li>
-                <li>Asesoramiento y gestión en proyectos educativos de desarrollo social.</li>
-                <li>Promoción social, cultural y comunal, contribuyendo al desarrollo de comunidades a través de actividades que fomentan la inclusión.</li>
-            </ul> 
-            </div>      
-        </div>
+                        <li class="flex mt-2">
+                            <i class="text-orange-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
+                                    <path fill="currentColor"
+                                        d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256L265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256L73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z" />
+                                </svg>
+                            </i>
+                            <p class="ml-2 ">
+                                <span class="font-bold "> Gestión pedagógica: </span> Docentes de niños en Cunas o Jardines de infancia, Coordinación en PRONOEI
+                                (Programas no Escolarizados en
+                                Educación Inicial) o Programa Cuna Más.
+                            </p>
 
-      <div id="programa" class="content-item hidden relative p-8 rounded-lg shadow-lg">
-    
-    <!-- Imagen de fondo con opacidad -->
-    <img src="https://rpu.edu.pe/wp-content/uploads/2016/06/4347348550_cbd101e4f7_b.jpg" class="absolute top-0 left-0 w-full h-full object-cover ">
-    
-    <!-- Contenido sobre la imagen -->
-    <div class="relative z-10">
-        <h2 class="text-2xl font-bold mb-4 bg-black bg-opacity-50 text-white  ">UNT-Universidad Nacional de Trujillo</h2>
-        <p class=" bg-black bg-opacity-50 text-white">Estamos emocionados de acompañarte en este camino educativo, contribuyendo al desarrollo integral de los estudiantes en sus años iniciales de educación.</p>
-        <ul class="list-disc list-inside bg-black bg-opacity-50 text-white">
-            <li>Conocimientos básicos en razonamiento verbal.</li>
-            <li>Conocimientos básicos en razonamiento matemático.</li>
-            <li>Conocimientos básicos de cultura general.</li>
-        </ul>
-    </div>
+                        </li>
+                        <li class="flex mt-2">
+                            <i class="text-orange-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
+                                    <path fill="currentColor"
+                                        d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256L265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256L73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z" />
+                                </svg>
+                            </i>
+                            <p class="ml-2 ">
+                                <span class="font-bold "> Gestión institucional: </span>Promotor y gestor de Instituciones educativas (IE), Directores o subdirectores de
+                                IE, Director de UGEL o jefe de gestión pedagógica, Especialista en educación.
+                            </p>
 
-</div>
-    </div>
-</div>
+                        </li>
+                        <li class="flex mt-2">
+                            <i class="text-orange-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
+                                    <path fill="currentColor"
+                                        d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256L265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256L73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z" />
+                                </svg>
+                            </i>
+                            <p class="ml-2 ">
+                                <span class="font-bold ">Formación docente: </span>Docencia en educación superior, acompañamiento pedagógico en programas de MINEDU,
+                                Mentoría en IE.
+                            </p>
 
-<script>
-    function showContent(contentId) {
-        // Ocultar todos los elementos de contenido
-        var contents = document.getElementsByClassName('content-item');
-        for (var i = 0; i < contents.length; i++) {
-            contents[i].classList.add('hidden');
-        }
+                        </li>
 
-        // Mostrar el contenido seleccionado
-        document.getElementById(contentId).classList.remove('hidden');
+                        <li class="flex mt-2">
+                            <i class="text-orange-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
+                                    <path fill="currentColor"
+                                        d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256L265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256L73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z" />
+                                </svg>
+                            </i>
+                            <p class="ml-2 ">
+                                <span class="font-bold ">Innovación e investigación:</span>Diseño, implementación y evaluación de proyectos de innovación pedagógica e
+                                investigación educativa, estudios y análisis sistemático de la pedagogía y proyectos pedagógicos,
+                                científicos y tecnológicos.
+                            </p>
 
-        // Cambiar el estado activo de los botones
-        var buttons = document.getElementsByTagName('button');
-        for (var i = 0; i < buttons.length; i++) {
-            buttons[i].classList.remove('bg-orange-500', 'text-white');
-            buttons[i].classList.add('bg-gray-200', 'text-gray-800');
-        }
-        document.getElementById(contentId + '-btn').classList.add('bg-orange-500', 'text-white');
-        document.getElementById(contentId + '-btn').classList.remove('bg-white', 'text-orange-500');
-    }
-</script>
+                        </li>
 
-</section>
+                    </ul>
+                </div>
 
+            </section>
 
-<section class="bg-gray-100">
-
-    <!-- Sección de formulario -->
-    <section class="flex items-center justify-center bg-orange-600 p-4">
-        <div class="flex w-full max-w-8xl bg-blue-900 p-8 rounded-lg shadow-lg">
-            
-            <!-- Lado izquierdo: mensaje -->
-            <div class="flex items-center justify-center bg-blue-950 text-white w-1/2 p-8"> <!-- Establecer ancho -->
-                <h2 class="text-2xl font-bold leading-tight text-center">
-                    Complete el siguiente formulario para que podamos responder las inquietudes que existan sobre nosotros
-                </h2>
-            </div>
-
-            <!-- Lado derecho: formulario -->
-            <div class="bg-orange-600 p-8 rounded-lg w-1/2"> <!-- Establecer ancho -->
-                <h2 class="text-white text-2xl font-bold mb-6 text-center">Completa el formulario</h2>
-                
-                <form action="#" class="space-y-4">
-                    <div class="flex gap-4">
-                        <input type="text" placeholder="NOMBRE" class="p-2 border rounded w-full focus:outline-none">
-                        <input type="text" placeholder="APELLIDO" class="p-2 border rounded w-full focus:outline-none">
+            <section class="contenido text-center " id="plan-estudios" style="display:none;">
+                <div
+                    class=" grid drop-shadow-lg mb-10 lg:grid-cols-6 gap-5 [&>div]:rounded-md [&>div]:text-center [&>div]:p-2 [&>div]:flex [&>div]:flex-col [&>div]:justify-center [&>div]:items-center [&>div]:py-5">
+                    <div class="bg-gray-200 lg:col-span-2">
+                        <p class="text-xl md:text-4xl font-bold">10</p>
+                        <h2 class="font-semibold text-lg">Semestres académicos</h2>
                     </div>
-                    
-                    <div class="flex gap-4">
-                        <input type="email" placeholder="CORREO ELECTRONICO" class="p-2 border rounded w-full focus:outline-none">
-                        <input type="date" class="p-2 border rounded w-full focus:outline-none">
+                    <div class="bg-orange-600 lg:col-span-4">
+                        <h3>Grado Académico</h3>
+                        <img src="{{ asset('icons/graduation.svg') }}" alt="grade-icon" class="w-16">
+                        <h2 class="font-semibold text-lg">Bachiller en Educación Inicial</h2>
                     </div>
-                    
-                    <textarea placeholder="MENSAJE" class="p-2 border rounded w-full focus:outline-none" rows="4"></textarea>
-                    
-                    <button type="submit" class="bg-blue-900 text-white py-2 px-4 rounded w-full font-bold">
-                        ENVIAR
-                    </button>
-                </form>
+                    <div class="bg-orange-600 lg:col-span-4">
+                        <h3>Titulo</h3>
+                        <img src="{{ asset('icons/diploma.svg') }}" alt="diploma-icon" class="w-16">
+                        <h2 class="font-semibold  text-lg">Licenciado en Educación Primaria</h2>
+                    </div>
+                    <div class="bg-gray-200 lg:col-span-2">
+                        <p class="text-xl md:text-4xl font-bold">220</p>
+                        <h2 class="font-semibold text-lg">Créditos</h2>
+                    </div>
+                </div>
+
+                <a href="https://dpaunt.edu.pe/curriculos/14.pdf" target="_blank" rel="nofollow"
+                    class="p-3 mt-4 bg-pink-300 text- rounded-md font-semibold text-white hover:bg-pink-500 transition-all ease-linear duration-300 hover:shadow-lg  text-center">
+                    Ver Malla Curricular
+                </a>
+
+            </section>
+        </section>
+        <script>
+        const datos = document.querySelectorAll('.datos');
+
+    </script>
+
+    <script src="{{ asset('js/main.js') }}"></script>
+    
+        <section class="datos order-first p-5 md:px-20 mx-auto my-6 grid grid-cols-1 lg:grid-cols-3 gap-6 ">
+            <!-- Primera columna: Bienvenida -->
+            <div class="bg-blue-950 p-6 rounded-lg shadow-lg text-center">
+                <div class="text-red-500 text-6xl mb-4">🤝</div> <!-- Icono personalizado -->
+                <h3 class="text-xl font-bold text-white mb-2">Bienvenida</h3>
+                <p class="text-white">"Bienvenidos a la Escuela Profesional de Educación Primaria, un espacio donde la
+                    excelencia académica se encuentra con la innovación y la pasión por el aprendizaje."</p>
             </div>
 
-        </div>
+            <!-- Segunda columna: Dr. Manuel Quipuscoa Silvestre -->
+            <div class="bg-orange-600 p-6 rounded-lg shadow-lg text-center">
+                <div class="text-red-500 text-6xl mb-4">👨‍💼</div> <!-- Icono personalizado -->
+                <h3 class="text-xl font-bold text-white mb-2">Dr. Manuel Quipuscoa Silvestre</h3>
+                <p class="text-white">Director del Programa de Estudios de Educación Primaria<br>Universidad Nacional de Trujillo</p>
+                <a href="mailto:inicial@unitru.edu.pe" class="text-md font-bold text-white mb-2">mquipuscoa@unitru.edu.pe</a>
+            </div>
+
+            <!-- Tercera columna: Mg. Patricia Roxana Vela Gálvez -->
+            <div class="bg-blue-950 p-6 rounded-lg shadow-lg text-center">
+                <div class="text-red-500 text-6xl mb-4">👩‍💼</div> <!-- Icono personalizado -->
+                <h3 class="text-xl font-bold text-white mb-2">Mg. Patricia Roxana Vela Gálvez </h3>
+                <p class="text-white">Miembro Representante Administrativo del Programa de Estudios de Educación Primaria.</p>
+            </div>
+        </section>
+
+        <section class="lg:flex p-5 md:px-20 justify-center">
+
+            <img src="{{ asset('imagenes/index/inicial.jpg') }}" class="w-1/2 hidden lg:block" alt="">
+            <form action="" method="POST"
+                class="border-2 border-orange-600 gap-3 shadow-xl max-w-[600px] mx-auto rounded-lg p-5 grid md:grid-cols-2 [&>section>img]:bg-orange-600 [&>section]:flex [&>section>img]:p-2 [&>section]:rounded-md [&>section]:border [&>section]:border-orange-600 [&>section>img]:rounded-l-[5px] [&>section>input]:w-full [&>section>input]:rounded-r-md [&>section>input]:px-2 [&>section>input]:bg-transparent ">
+                {{-- Predeterminado la escuela desde donde va --}}
+                <section class="entrada-uno">
+                    <img src="{{ asset('icons/user.svg') }}" alt="">
+                    <input type="text" placeholder="Escriba su nombre" id="Nombres" name="Nombres">
+                </section>
+                <section class="entrada-uno">
+                    <img src="{{ asset('icons/user.svg') }}" alt="">
+                    <input type="text" placeholder="Escriba su apellido" id="Apellidos" name="Apellidos">
+                </section>
+                <section class="entrada-uno">
+                    <img src="{{ asset('icons/email.svg') }}" alt="">
+                    <input type="text" placeholder="Ingrese su correo" id="Correo" name="Correo">
+                </section>
+                <section class="entrada-uno">
+                    <img src="{{ asset('icons/phone.svg') }}" alt="">
+                    <input type="text" placeholder="Escriba su N° celular" id="Celular" name="Celular">
+                </section>
+                <section class="md:col-span-2 flex ">
+                    <img src="{{ asset('icons/setting.svg') }}" alt="">
+                    <select id="opciones" name="Opciones" class="w-full rounded-r-md bg-transparent">
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="Docente">Docente</option>
+                        <option value="Estudiante">Estudiante</option>
+                        <option value="Egresado">Egresado</option>
+                        <option value="Administrativo">Administrativo</option>
+                        <option value="Otros">Otros</option>
+                    </select>
+                </section>
+                <textarea name="Comentarios" id="Comentarios" placeholder="Escribe Tu Mensaje Aquí"
+                    class="md:col-span-2 rounded-md p-3 border border-orange-600 bg-transparent"></textarea>
+                <input class="py-2 bg-orange-600 rounded-md text-white font-bold cursor-pointer" type="submit"
+                    id="enviar" name="enviar" value="Enviar">
+                <input class="py-2 border-2 border-orange-600 rounded-md text-orange-600 font-bold cursor-pointer"
+                    type="reset" id="borrar" name="borrar" value="Borrar">
+            </form>
+        </section>
     </section>
 
-</section>
+    <script>
+        const datos = document.querySelectorAll('.datos');
+
+    </script>
+
+    <script src="{{ asset('js/main.js') }}"></script>
+
+<div class="relative w-full text-center mt-6">
+    <div class="inset-x-0 top-0 bg-blue-950 text-orange-500 text-4xl font-bold p-4">
+        Plana Docente
+    </div>
+</div>
+
 
 
 <div class="bg-gray-100 gap-4 flex-wrap flex justify-center items-center my-5">
