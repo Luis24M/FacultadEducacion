@@ -93,6 +93,10 @@ Route::get('/unidades/unidad_calidad/colaboradores', function () {
     return view('unidades.unidad_calidad.colaboradores');
 })->name('unidades.colaboradores');
 
+Route::get('/unidades/unidadInvestigacion/InformeInvestigacion', function (){
+    return view('unidades.unidadInvestigacion.InformeInvestigacion.index');
+})->name('unidades.unidadInvestigacion.informeInvestigacion');
+
 
 //Elton
 Route::get('/practica_preprofesional', function (){
