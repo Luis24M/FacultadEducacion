@@ -70,17 +70,9 @@
         title="Unidad de Practica Preprofesional" 
         :list="[
             ['name' => 'Inicio', 'url' => '/practica_preprofesional'],
+
         ]" 
     />
-    <x-drop-down-button 
-
-    title="Unidad de Responsabilidad Social" 
-    :list="[
-        ['name' => 'Inicio', 'url' => '/index'],
-        ['name' => 'Documentacion', 'url' => '/documentacion'],
-        ['name' => 'Contacto', 'url' => '/contacto']
-    ]" 
-/>
 <x-drop-down-button 
     title="Unidad de Investigacion" 
     :list="[
