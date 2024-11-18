@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.home')
 
 @section('content')
 
@@ -139,33 +139,33 @@
                 <!-- Tarjetas de Colaboradores de educación primaria -->
                 <div class="educacion-primaria hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="bg-white shadow-lg rounded-lg p-5">
-                        <h2 class="text-xl font-semibold text-center">Olga Estela Mendoza León</h2>
-                        <p class="text-gray-700 text-center">Licenciada en educación Primaria</p>
+                        <h2 class="text-xl font-semibold text-center">Dra. Olga Estela Mendoza León</h2>
+                        <p class="text-gray-700 text-center">Licenciada en educación Primaria, Doctora en Educación</p>
                         <img src="/colaboradores/OLGA ESTELA MENDOZA LEÓN.jpg" alt="Imagen de Olga Estela Mendoza León" class="w-full h-auto mt-4 rounded">
                     </div>
                     <div class="bg-white shadow-lg rounded-lg p-5">
-                        <h2 class="text-xl font-semibold text-center">Manuel Quipuscoa Silvestre</h2>
-                        <p class="text-gray-700 text-center">Maestría en Educación, Mención en Pedagogía Universitaria</p>
+                        <h2 class="text-xl font-semibold text-center">Dr. Manuel Quipuscoa Silvestre</h2>
+                        <p class="text-gray-700 text-center">Maestría en Educación, Doctor en Ciencias de la Educación</p>
                         <img src="/colaboradores/MANUEL QUIPUSCOA SILVESTRE.jpg" alt="Imagen de Olga Estela Mendoza León" class="w-full h-auto mt-4 rounded">
                     </div>
                     <div class="bg-white shadow-lg rounded-lg p-5">
-                        <h2 class="text-xl font-semibold text-center">Magna Ruth Meregildo Gómez</h2>
-                        <p class="text-gray-700 text-center">Licenciada en Educación Primaria</p>
+                        <h2 class="text-xl font-semibold text-center">Dra. Magna Ruth Meregildo Gómez</h2>
+                        <p class="text-gray-700 text-center">Licenciada en Educación Primaria y Psicología, Doctora en Ciencias de la Educación</p>
                         <img src="/colaboradores/MAGNA RUTH MEREGILDO GOMÉZ.jpg" alt="Imagen de Olga Estela Mendoza León" class="w-full h-auto mt-4 rounded">
                     </div>
                     <div class="bg-white shadow-lg rounded-lg p-5">
-                        <h2 class="text-xl font-semibold text-center">Cecilia del Pilar Vásquez Mondragón</h2>
-                        <p class="text-gray-700 text-center">Licenciada en Educación Primaria</p>
+                        <h2 class="text-xl font-semibold text-center">Dra. Cecilia del Pilar Vásquez Mondragón</h2>
+                        <p class="text-gray-700 text-center">Licenciada en Educación Primaria, Doctora en Educación</p>
                         <img src="/colaboradores/CECILIA DEL PILAR VÁSQUEZ MONDRAGÓN.jpg" alt="Imagen de Olga Estela Mendoza León" class="w-full h-auto mt-4 rounded">
                     </div>
                     <div class="bg-white shadow-lg rounded-lg p-5">
-                        <h2 class="text-xl font-semibold text-center">Anthony Joel Gonzales Pacheco</h2>
-                        <p class="text-gray-700 text-center">Licenciado en Educación Primaria</p>
+                        <h2 class="text-xl font-semibold text-center">Dr. Anthony Joel Gonzales Pacheco</h2>
+                        <p class="text-gray-700 text-center">Licenciado en Educación Primaria, Doctorado en Educación</p>
                         <img src="/colaboradores/ANTHONY JOEL GONZALES PACHECO.jpg" alt="Imagen de Olga Estela Mendoza León" class="w-full h-auto mt-4 rounded">
                     </div>
                     <div class="bg-white shadow-lg rounded-lg p-5">
-                        <h2 class="text-xl font-semibold text-center">Jessica Isabel Alva Chávez</h2>
-                        <p class="text-gray-700 text-center">Licenciada en Educación Primaria</p>
+                        <h2 class="text-xl font-semibold text-center">Dra. Jessica Isabel Alva Chávez</h2>
+                        <p class="text-gray-700 text-center">Licenciada en Educación Primaria, Doctora en Ciencias de la Educación</p>
                         <img src="/colaboradores/JESSICA ISABEL ALVA CHÁVEZ.jpg" alt="Imagen de Olga Estela Mendoza León" class="w-full h-auto mt-4 rounded">
                     </div>
                 </div>
@@ -349,9 +349,9 @@
                 <!-- Tarjetas de Colaboradores de Ciencias de la comunicación -->
                 <div class="educacion-ciencias-de-la-comunicación hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="bg-white shadow-lg rounded-lg p-5">
-                        <h2 class="text-xl font-semibold text-center">Maria Luisa Bazán Guzmán</h2>
-                        <p class="text-gray-700 text-center">Contruyendo el sendero</p>
-                        <img src="/colaboradores/MUJER DEFAULT.jpg" alt="Imagen de Maria Luisa Bazán Guzmán" class="w-full h-auto mt-4 rounded">
+                        <h2 class="text-xl font-semibold text-center">Dra. María Luisa Bazán Guzmán</h2>
+                        <p class="text-gray-700 text-center">Presidente de calidad de ciencias de la comunicación</p>
+                        <img src="/colaboradores/Dra. María Luisa Bazán Guzmán.jpg" alt="Imagen de Maria Luisa Bazán Guzmán" class="w-full h-auto mt-4 rounded">
                     </div>
                     <div class="bg-white shadow-lg rounded-lg p-5">
                         <h2 class="text-xl font-semibold text-center">Pepe Alexánder Hidalgo Jiménez</h2>

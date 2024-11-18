@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.home')
 
 @section('content')
     <style>
@@ -8,7 +8,7 @@
         }
     </style>
 
-    <h1 class="text-3xl md:text-5xl text-[#8B0000] bg-[#FFD700] w-full p-4 font-bold">Filosofía, Psicología y CCSS</h1>
+    <h1 class="text-3xl md:text-5xl text-[#8B0000] bg-[#FFD700] w-full p-7 font-bold">Filosofía, Psicología y CCSS</h1>
 
     <section class="max-w-[1050px] flex flex-col mx-auto p-5 md:px-0">
         <section class="md:px-11 px-6 py-5 flex flex-wrap gap-4 max-w-[800px]">
@@ -266,7 +266,7 @@
 
             <div class="flex flex-col justify-between lg:w-1/3">
                 <img src="{{ asset('imagenes/index/director-secundaria.png')}}" class="rounded-t-lg lg:h-2/4 w-full " alt=""><!-- Icono personalizado -->
-                <div class="bg-[#8B0000] h-1/2 p-6 rounded-b-lg shadow-lg text-center">
+                <div class="bg-[#8B0000] h-1/2 p-6 rounded-b-lg shadow-lg flex flex-col justify-evenly text-center">
                     <h3 class="text-xl font-bold text-[#fee346] mb-2">Dr. Carlos Oswaldo Caballero Alayo</h3>
                     <p class="text-white">Director de la Escuela Profesional de Secundaria</p>
                     <a href="mailto:inicial@unitru.edu.pe"
@@ -276,7 +276,7 @@
 
             <div class="flex flex-col lg:w-1/3">
                 <img src="{{ asset('imagenes/index/asistente-secundaria.png')}}" class="rounded-t-lg lg lg:h-2/4 w-full" alt=""> <!-- Icono personalizado -->
-                <div class="bg-[#fee346] h-1/2 p-6 rounded-b-lg shadow-lg text-center">
+                <div class="bg-[#fee346] h-1/2 p-6 rounded-b-lg shadow-lg text-center flex flex-col justify-evenly ">
                     <h3 class="text-xl font-bold text-[#8B0000] mb-2">Sra. Mercedes Pilar Chuica Flores</h3>
                     <p class="">Asistente administrativa</p>
                 </div>

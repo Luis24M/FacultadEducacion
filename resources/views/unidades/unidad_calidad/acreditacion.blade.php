@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.home')
 
 @section('content')
 <section class="bg-[#483D8B] text-white py-8 flex items-center justify-center">

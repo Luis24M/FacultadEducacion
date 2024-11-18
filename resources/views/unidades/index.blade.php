@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.home')
 
 @section('content')
 <div class="container py-12">
@@ -17,12 +17,14 @@
                     
                 <div class="card shadow-sm text-center">
                         <div class="p-3">
-                            <img src="{{ asset('/colaboradores/MUJER DEFAULT.jpg') }}"
+                            <img src="{{ asset('/colaboradores/unidades/Cristian Raymound Gutiérrez Ulloa.jpg') }}"
                                 class="rounded-full mx-auto w-[220px] h-[220px] object-cover"
                                 alt="Director de Calidad">
                         </div>
                         <div class="p-3">
-                            <h5 class="font-bold">Director de Calidad</h5>
+                            <h5 class="font-bold">Director de Investigación</h5>
+                            <h5 class="font-bold">Dr. Cristian Raymound Gutiérrez Ulloa</h5>
+                            <h5 class="font-bold">investigacion_educacion@unitru.edu.pe</h5>
                         </div>
                 </div>
 
@@ -37,7 +39,9 @@
                                 alt="Director de Soporte">
                         </div>
                         <div class="p-3">
-                            <h5 class="font-bold">Director de Soporte</h5>
+                            <h5 class="font-bold">Coordinador de practicas preprofesionales</h5>
+                            <h5 class="font-bold">Falta coordinar</h5>
+                            <h5 class="font-bold">Falta coordinar</h5>
                         </div>
                 </div>
                 
@@ -47,12 +51,13 @@
                     
                 <div class="card shadow-sm text-center">
                         <div class="p-3">
-                            <img src="{{ asset('/colaboradores/MUJER DEFAULT.jpg') }}"
+                            <img src="{{ asset('/colaboradores/unidades/Liliana Marcela Mendoza Montoya.jpg') }}"
                                 class="rounded-full mx-auto w-[220px] h-[220px] object-cover"
                                 alt="Director de Investigación">
                         </div>
                         <div class="p-3">
-                            <h5 class="font-bold">Director de Investigación</h5>
+                            <h5 class="font-bold">Coordinadora de Responsabilidad Social</h5>
+                            <h5 class="font-bold">Dra. Liliana Marcela Mendoza Montoya</h5>
                         </div>
                 </div>
 
@@ -61,17 +66,58 @@
                 <div class="bg-light p-3 text-center rounded" style= "background-color: #F0F6FE";>
                     
                 <div class="card shadow-sm text-center">
-                        <div class="p-3">
-                            <img src="{{ asset('/colaboradores/MUJER DEFAULT.jpg') }}"
-                                class="rounded-full mx-auto w-[220px] h-[220px] object-cover"
-                                alt="Coordinador de Prácticas">
-                        </div>
-                        <div class="p-3">
-                            <h5 class="font-bold">Coordinador de Prácticas</h5>
-                        </div>
+
+                    <div class="p-3">
+                        <img src="{{ asset('/colaboradores/unidades/Julio Hernán Luna Victoria Valdivia.jpg') }}"
+                            class="rounded-full mx-auto w-[220px] h-[220px] object-cover"
+                            alt="Coordinador de Prácticas"
+                            style="object-position: center 30%;"
+                            onerror="this.src='{{ asset('images/default-profile.jpg') }}'">
+                    </div>
+                    <div class="p-3">
+                        <h5 class="font-bold">Responsable de Soporte</h5>
+                        <h5 class="font-bold">Ing. Julio Hernán Luna Victoria Valdivia</h5>
+                    </div>
                 </div>
+
             
                 </div>
+
+                <div class="bg-light p-3 text-center rounded" style= "background-color: #F0F6FE";>
+                    
+                <div class="card shadow-sm text-center">
+                        <div class="p-3">
+                            <img src="{{ asset('/colaboradores/unidades/Liz Maribel García Salirrosas.jpg') }}"
+                                class="rounded-full mx-auto w-[220px] h-[220px] object-cover"
+                                alt="Coordinador de Prácticas">
+
+                        </div>
+                        <div class="p-3">
+                            <h5 class="font-bold">Presidenta de Calidad</h5>
+                            <h5 class="font-bold">Dra. Liz Maribel García Salirrosas</h5>
+                            <h5 class="font-bold">facedu_calidad@unitru.edu.pe</h5>
+                        </div>
+                </div>
+
+
+                </div>
+
+                <div class="bg-light p-3 text-center rounded" style= "background-color: #F0F6FE";>
+                    
+                    <div class="card shadow-sm text-center">
+                            <div class="p-3">
+                                <img src="{{ asset('/colaboradores/MUJER DEFAULT.jpg') }}"
+                                    class="rounded-full mx-auto w-[220px] h-[220px] object-cover"
+                                    alt="Coordinador de Tutoria"
+                                    onerror="this.src='{{ asset('images/default-profile.jpg') }}'">
+                            </div>
+                            <div class="p-3">
+                                <h5 class="font-bold">Coordinador de Tutoria</h5>
+                            </div>
+                    </div>
+                
+                </div>
+
 
             </div>
         </div>
@@ -116,6 +162,14 @@
             </p>
 
             <p class="text-center font-weight-bold mt-5">Facilitamos la inserción laboral mediante experiencias prácticas en entornos profesionales</p>
+
+            <p class="text-center font-weight-bold mt-5">   
+                <span class="d-inline-block px-4 py-2 border border-gray-600 bg-gray-300">
+                    Unidad de Responsabilidad Social
+                </span>
+            </p>
+
+            <p class="text-center font-weight-bold mt-5">Promovemos el compromiso social y la participación activa en proyectos comunitarios.</p>
             
         </div>
     </div>

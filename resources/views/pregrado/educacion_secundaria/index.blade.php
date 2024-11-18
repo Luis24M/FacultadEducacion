@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.home')
 
 @section('content')
 
@@ -192,6 +192,7 @@
         </div>
     </section>
     <!---->
+
 
 
     <div class="container mx-auto p-8 selection:bg-fuchsia-300 selection:text-fuchsia-900">
@@ -439,6 +440,7 @@
                     posuere eget torquent nec a arcu himenaeos dapibus. Fames nunc quis mauris dictum erat
                     nascetur netus felis, porta pretium risus nisi dapibus donec etiam.
                 </p>
+
             </div>
             <div id="ciencias-matematicas" class="hidden bg-white container mx-auto text-center">
                 <h2 class="text-3xl font-bold text-gray-800 mb-8">
@@ -497,6 +499,7 @@
                 </p>
             </div>
         </div>
+
         <!---->
 
         <!---->
@@ -527,6 +530,7 @@
                 // Mostrar la sección seleccionada
                 document.getElementById(sectionId).classList.remove('hidden');
             }
+
 
 
 
