@@ -254,6 +254,7 @@
         </section>
 
         <section class="datos order-first max-w-6xl px-5 md:px-20 mx-auto my-6 flex flex-col lg:flex-row justify-center gap-6 ">
+            
             <!-- Primera columna: Bienvenida -->
             <div class="bg-[#fee346] p-6 rounded-lg shadow-lg text-center flex flex-col justify-center lg:w-1/3">
                 <div class="text-red-500 text-6xl mb-4">🤝</div> <!-- Icono personalizado -->
