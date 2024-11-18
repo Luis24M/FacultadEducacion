@@ -66,7 +66,7 @@ $docentes = [
 
 <div class="relative">
   <!-- <img src="imagenes/idiomas/banner-idiomas.webp" class="w-full h-auto object-cover "> -->
-  <img src="imagenes/idiomas/banner-idiomas.webp" class="w-full max-h-[300px] object-cover ">
+  <img src="{{asset('imagenes/idiomas/banner-idiomas.webp')}}" class="w-full max-h-[300px] object-cover ">
 
   <div class="absolute inset-0 flex items-center justify-center flex-col">
 
