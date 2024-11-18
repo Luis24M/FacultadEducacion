@@ -54,7 +54,7 @@ $docentes = [
 
   <!-- banner -->
   <div class="relative">
-    <img src="https://www.autonoma.pe/wp-content/uploads/2023/09/conocimientos-alumno-ciencias-comunicacion-universidad-autonoma-1.jpg" class="w-full h-auto object-cover ">
+    <img src="{{ asset('imagenes/cdlc-img/cdlc-banner.jpg') }}" class="w-full max-h-[300px] object-cover ">
 
     <div class="absolute inset-0 flex items-center justify-center flex-col">
 
@@ -62,9 +62,9 @@ $docentes = [
 
       <span class="bg-black bg-opacity-60 p-4 text-white text-lg md:text-xl font-bold lg:text-4xl xl:text-5xl rounded">Ciencias de la Comunicación</span>
       <br>
-      <span class="bg-black bg-opacity-60 text-white rounded text-sm md:text-md lg:text-lg text-center px-20 py-4 font-semibold">
+      <!-- <span class="bg-black bg-opacity-60 text-white rounded text-sm md:text-md lg:text-lg text-center px-20 py-4 font-semibold">
         "Impulsando comunicadores integrales, capaces de informar, inspirar y conectar al mundo a través de la comunicación y la innovación"
-      </span>
+      </span> -->
     </div>
   </div>
 
@@ -135,7 +135,7 @@ $docentes = [
 
       <!-- Segunda columna:  -->
       <div class="bg-gray-600 p-6 rounded-lg shadow-lg text-center">
-        <div class="text-black text-6xl mb-4">👨‍💼</div> <!-- Icono personalizado -->
+        <div class="text-black text-6xl mb-4">👩</div> <!-- Icono personalizado -->
         <h3 class="text-xl font-bold text-white mb-2">Dra. María Luisa Bazán Guzmán</h3>
         <p class="text-white">
           Directora de la Escuela Profesional de Ciencias de la Comunicación.
