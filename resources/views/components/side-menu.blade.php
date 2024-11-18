@@ -63,9 +63,7 @@
     ]"
 />
 
-<x-side-button icon="supersetings.svg" title="Unidad de Soporte" route="/unidades/unidad_soporte/index"/>
-
-    <x-drop-down-button 
+<x-drop-down-button 
         class="fa-solid fa-folder-open"
         title="Unidad de Practica Preprofesional" 
         :list="[
@@ -84,10 +82,12 @@
         ['name' => 'Contacto', 'url' => '/contacto']
     ]" 
 />
+
 <x-drop-down-button 
     title="Unidad de Investigacion" 
     :list="[
         ['name' => 'Informe de Investigacion', 'url' => '/unidades/unidadInvestigacion/InformeInvestigacion'],
+        ['name' => 'Comite de Investigacion', 'url' => '/unidades/unidadInvestigacion/ComiteInvestigacion']
     ]" 
 />
 
