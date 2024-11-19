@@ -36,6 +36,12 @@
                 Plan de Estudios
             </button>
 
+            <button
+                class="btn-nav bg-[#252850] bg-opacity-15 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
+                data-target="contactanos">
+                Contactanos
+            </button>
+
         </section>
 
         <section class="contenedor-contenido [&>section]:p-5 md:[&>section]:px-20 md:[&>section]:py-10">
@@ -241,6 +247,51 @@
                     href="https://drive.google.com/file/d/1iC0_7LBY_MZs2GeNrz2SWaxMKbyxme7k/view"
                     target="_blank">Ver Malla Curricular</a>
             </section>
+
+            <section class="contenido text-center" id="contactanos" style="display: none;">
+            <section class="lg:flex p-5 md:px-20 justify-center max-h-[px]">
+
+
+<form action="" method="POST"
+    class="border-2 border-[#252850] gap-3 shadow-xl mx-auto rounded-lg p-5 grid md:grid-cols-2 [&>section>img]:bg-[#252850] [&>section]:flex [&>section>img]:p-2 [&>section]:rounded-md [&>section]:border [&>section]:border-[#252850] [&>section>img]:rounded-l-[5px] [&>section>input]:w-full [&>section>input]:rounded-r-md [&>section>input]:px-2 [&>section>input]:bg-transparent ">
+    {{-- Predeterminado la escuela desde donde va --}}
+    <section class="entrada-uno">
+        <img src="{{ asset('icons/user.svg') }}" alt="">
+        <input type="text" placeholder="Escriba su nombre" id="Nombres" name="Nombres">
+    </section>
+    <section class="entrada-uno">
+        <img src="{{ asset('icons/user.svg') }}" alt="">
+        <input type="text" placeholder="Escriba su apellido" id="Apellidos" name="Apellidos">
+    </section>
+    <section class="entrada-uno">
+        <img src="{{ asset('icons/email.svg') }}" alt="">
+        <input type="text" placeholder="Ingrese su correo" id="Correo" name="Correo">
+    </section>
+    <section class="entrada-uno">
+        <img src="{{ asset('icons/phone.svg') }}" alt="">
+        <input type="text" placeholder="Escriba su N° celular" id="Celular" name="Celular">
+    </section>
+    <section class="md:col-span-2 flex ">
+        <img src="{{ asset('icons/setting.svg') }}" alt="">
+        <select id="opciones" name="Opciones" class="w-full rounded-r-md bg-transparent">
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="Docente">Docente</option>
+            <option value="Estudiante">Estudiante</option>
+            <option value="Egresado">Egresado</option>
+            <option value="Administrativo">Administrativo</option>
+            <option value="Otros">Otros</option>
+        </select>
+    </section>
+    <textarea name="Comentarios" id="Comentarios" placeholder="Escribe Tu Mensaje Aquí"
+        class="md:col-span-2 rounded-md p-3 border border-[#252850] bg-transparent"></textarea>
+    <input class="py-2 bg-[#252850] rounded-md text-white font-bold cursor-pointer" type="submit"
+        id="enviar" name="enviar" value="Enviar">
+    <input class="py-2 border-2 border-[#252850] rounded-md text-[#252850] font-bold cursor-pointer"
+        type="reset" id="borrar" name="borrar" value="Borrar">
+</form>
+</section>
+            </section>
+
         </section>
 
         <section class="datos order-first max-w-6xl px-5 md:px-20 mx-auto my-6 flex flex-col lg:flex-row justify-center gap-6 ">
@@ -272,47 +323,7 @@
             </div>
         </section>
 
-        <section class="lg:flex p-5 md:px-20 justify-center max-h-[336px]">
 
-            <img src="{{ asset('imagenes/index/filosofia.png') }}" class="w-1/2 hidden lg:block" alt="">
-            <form action="" method="POST"
-                class="border-2 border-[#252850] gap-3 shadow-xl mx-auto rounded-lg p-5 grid md:grid-cols-2 [&>section>img]:bg-[#252850] [&>section]:flex [&>section>img]:p-2 [&>section]:rounded-md [&>section]:border [&>section]:border-[#252850] [&>section>img]:rounded-l-[5px] [&>section>input]:w-full [&>section>input]:rounded-r-md [&>section>input]:px-2 [&>section>input]:bg-transparent ">
-                {{-- Predeterminado la escuela desde donde va --}}
-                <section class="entrada-uno">
-                    <img src="{{ asset('icons/user.svg') }}" alt="">
-                    <input type="text" placeholder="Escriba su nombre" id="Nombres" name="Nombres">
-                </section>
-                <section class="entrada-uno">
-                    <img src="{{ asset('icons/user.svg') }}" alt="">
-                    <input type="text" placeholder="Escriba su apellido" id="Apellidos" name="Apellidos">
-                </section>
-                <section class="entrada-uno">
-                    <img src="{{ asset('icons/email.svg') }}" alt="">
-                    <input type="text" placeholder="Ingrese su correo" id="Correo" name="Correo">
-                </section>
-                <section class="entrada-uno">
-                    <img src="{{ asset('icons/phone.svg') }}" alt="">
-                    <input type="text" placeholder="Escriba su N° celular" id="Celular" name="Celular">
-                </section>
-                <section class="md:col-span-2 flex ">
-                    <img src="{{ asset('icons/setting.svg') }}" alt="">
-                    <select id="opciones" name="Opciones" class="w-full rounded-r-md bg-transparent">
-                        <option value="" disabled selected>Selecciona una opción</option>
-                        <option value="Docente">Docente</option>
-                        <option value="Estudiante">Estudiante</option>
-                        <option value="Egresado">Egresado</option>
-                        <option value="Administrativo">Administrativo</option>
-                        <option value="Otros">Otros</option>
-                    </select>
-                </section>
-                <textarea name="Comentarios" id="Comentarios" placeholder="Escribe Tu Mensaje Aquí"
-                    class="md:col-span-2 rounded-md p-3 border border-[#252850] bg-transparent"></textarea>
-                <input class="py-2 bg-[#252850] rounded-md text-white font-bold cursor-pointer" type="submit"
-                    id="enviar" name="enviar" value="Enviar">
-                <input class="py-2 border-2 border-[#252850] rounded-md text-[#252850] font-bold cursor-pointer"
-                    type="reset" id="borrar" name="borrar" value="Borrar">
-            </form>
-        </section>
     </section>
 
     <style>

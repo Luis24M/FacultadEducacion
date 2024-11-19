@@ -18,8 +18,12 @@
                     desarrollo equitativo y sostenible de la sociedad.  
                 </p>
                 <div class="flex flex-row lg:text-base text-sm justify-end items-center w-full mt-3 ">
-                    <p>Plan Estratégico de la Facultad de Educación<br>y ciencias de la comunicación</p>
+                    <p>Plan Estratégico de la Facultad de Educación<br>y Ciencias de la Comunicación.
+                    2023 - 2026</p>
                 </div>
+        </div>
+        <div>
+          <img src="{{asset('imagenes/PEDF.png')}}" ></img>
         </div>     
     </div>
     <h2 class="flex pl-5 text-xl w-full bg-gray-300 h-[50px] self-center items-center"><b>OBJETIVOS ESTRATÉGICOS DE LA FACULTAD</b></h2> 

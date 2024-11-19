@@ -64,21 +64,7 @@ $docentes = [
 
 <!-- <h1 class="text-3xl md:text-5xl text-white bg-blue-800 w-full p-4 font-bold">Mención Idiomas: Inglés-Francés / Inglés-Alemán</h1> -->
 
-<div class="relative">
-  <!-- <img src="imagenes/idiomas/banner-idiomas.webp" class="w-full h-auto object-cover "> -->
-  <img src="{{asset('imagenes/idiomas/banner-idiomas.webp')}}" class="w-full max-h-[300px] object-cover ">
-
-  <div class="absolute inset-0 flex items-center justify-center flex-col">
-
-    <br>
-
-    <span class="bg-black bg-opacity-60 p-4 text-white text-lg md:text-xl font-bold lg:text-4xl xl:text-5xl rounded">Mención Idiomas: Inglés-Francés / Inglés-Alemán</span>
-    <br>
-    <!-- <span class="bg-black bg-opacity-60 text-white rounded text-sm md:text-md lg:text-lg text-center px-20 py-4 font-semibold">
-      "contenido"
-    </span> -->
-  </div>
-</div>
+<h1 class="text-3xl md:text-5xl text-white bg-blue-800 w-full p-4 font-bold">Mención Idiomas: Inglés-Francés / Inglés-Alemán</h1>
 
 
 <section class="max-w-[1050px] mx-auto p-5 md:px-0">
@@ -186,10 +172,10 @@ $docentes = [
           </div>
 
           <p class="text-md md:text-lg text-gray-700">
-            “Somos el primer programa de estudios del Perú que forma licenciados en Educación Secundaria
+            Somos el primer programa de estudios del Perú que forma licenciados en Educación Secundaria
             con mención en Idiomas: Inglés-Francés e Inglés-Alemán, de excelencia académica y preparados
             para enfrentar los retos de un mundo complejo y globalizado buscando el desarrollo responsable
-            y sostenible de nuestra región y país”.
+            y sostenible de nuestra región y país.
           </p>
         </div>
 
@@ -204,7 +190,10 @@ $docentes = [
           </div>
 
           <p class="text-md md:text-lg text-gray-700">
-            “En el año 2025, seremos una unidad académica acreditada, que contribuye al desarrollo sustentable de la región, del país y del mundo, sensible a las exigencias sociales, que forma profesionales con excelencia académica en idiomas, se proyecta a la comunidad con responsabilidad social, realiza investigación científica, respeta la diversidad cultural y la ecología, y contribuye a la formación integral del ser humano dentro del marco de los valores ético y estéticos”.
+            En el año 2025, seremos una unidad académica acreditada, que contribuye al desarrollo sustentable de la región,
+            del país y del mundo, sensible a las exigencias sociales, que forma profesionales con excelencia académica en idiomas,
+            se proyecta a la comunidad con responsabilidad social, realiza investigación científica, respeta la diversidad cultural
+            y la ecología, y contribuye a la formación integral del ser humano dentro del marco de los valores ético y estéticos”.
           </p>
         </div>
 

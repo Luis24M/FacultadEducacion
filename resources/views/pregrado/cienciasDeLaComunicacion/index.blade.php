@@ -27,18 +27,19 @@
         dentro de las universidades públicas del país una de las primeras a nivel
         nacional, acreditada para la formación científica, tecnológica y
         humanística, de profesionales comunicadores que contribuyan al
-        desarrollo sostenible de la región La Libertad y del país.
+        desarrollo sostenible de la región La Libertad y del país.</br>
+        <b>Curriculo 2018 Ciencias de la Comunicacion</b>
       </p>
     </div>
 
     <div class="text-justify">
       <h3 class="text-2xl font-semibold mb-2 text-black">Misión</h3>
       <p class="text-md">
-        La Escuela Profesional de Ciencias de la Comunicación de la UNT lidera
-        la formación de profesionales comunicadores estratégicos con amplio
-        conocimiento científico y humanístico, solidos valores y sentido crítico
-        acorde con la demanda de la sociedad local, regional, nacional e
-        internacional.
+      La Escuela Profesional de Ciencias de la Comunicación de la UNT lidera
+      la formación de profesionales comunicadores estratégicos con amplio
+      conocimiento científico y humanístico, solidos valores y sentido crítico
+      acorde con la demanda de la sociedad local, regional, nacional e
+      internacional.
       </p>
     </div>
   </section>

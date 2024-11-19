@@ -200,7 +200,8 @@ $docentes = [
               dentro de las universidades públicas del país una de las primeras a nivel
               nacional, acreditada para la formación científica, tecnológica y
               humanística, de profesionales comunicadores que contribuyan al
-              desarrollo sostenible de la región La Libertad y del país".
+              desarrollo sostenible de la región La Libertad y del país".</br>
+              <b class="text-sm">"Currículo del Programa de Estudios Ciencias de la Comunicación(2018)".</b>
             </p>
           </div>
 

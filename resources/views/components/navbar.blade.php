@@ -9,7 +9,7 @@
                 alt="Logo unt">
             <h2>FACEDU</h2>
         </div>
-        <h2 class="flex justify-center text-sm text-center w-[280px]">Facultad de educación y ciencias de la comunicación
+        <h2 class="flex justify-center text-sm text-center w-[280px]">Facultad de Educación y Ciencias de la Comunicación
         </h2>
     </section>
     @include('components/main-navbar')

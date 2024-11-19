@@ -163,34 +163,30 @@
 
 
     <!---->
-    <section class="datos order-first max-w-6xl px-5 md:px-20 mx-auto my-6 flex flex-col lg:flex-row justify-center gap-6 ">
-
-        <!-- Primera columna: Bienvenida -->
-        <div class="bg-[#D1E8FF] p-6 rounded-lg shadow-lg text-center flex flex-col justify-center lg:w-1/3">
-            <div class="text-red-500 text-6xl mb-4">🤝</div> <!-- Icono personalizado -->
-            <h3 class="text-xl font-bold text-[#8B0000] mb-2">Bienvenida</h3>
-            <p class="">"Bienvenidos a la Escuela Profesional de Educación Secundaria, un espacio donde la
-            excelencia académica se encuentra con la innovación y la pasión por el aprendizaje."</p>
-        </div>
-
-        <div class="flex flex-col justify-between lg:w-1/3">
-            <img src="{{ asset('imagenes/index/director-secundaria.png')}}" class="rounded-t-lg lg:h-2/4 w-full " alt=""><!-- Icono personalizado -->
-            <div class="bg-[#FFF4E1] h-1/2 p-6 rounded-b-lg shadow-lg text-center">
-                <h3 class="text-xl font-bold text-[#8B0000] mb-2">Dr. Carlos Oswaldo Caballero Alayo</h3>
-                <p class="text-black">Director de la Escuela Profesional de Secundaria</p>
-                <a href="mailto:inicial@unitru.edu.pe"
-                    class="text-md font-bold text-black mb-2 text-wrap">secundaria@unitru.edu.pe</a>
+    <section class="datos order-first p-5 md:px-20 mx-auto my-6 grid grid-cols-1 lg:grid-cols-3 gap-6 ">
+            <!-- Primera columna: Bienvenida -->
+            <div class="bg-[#D1E8FF] p-6 rounded-lg shadow-lg text-center">
+                <div class="text-red-500 text-6xl mb-4">🤝</div> <!-- Icono personalizado -->
+                <h3 class="text-xl font-bold text-black mb-2">Bienvenida</h3>
+                <p class="text-black">"Bienvenidos a la Escuela Profesional de Educación Secundaria, un espacio donde
+ 		la excelencia académica se encuentra con la innovación y la pasión por el aprendizaje."</p>
             </div>
-        </div>
 
-        <div class="flex flex-col lg:w-1/3">
-            <img src="{{ asset('imagenes/index/asistente-secundaria.png')}}" class="rounded-t-lg lg lg:h-2/4 w-full" alt=""> <!-- Icono personalizado -->
-            <div class="bg-[#D1E8FF] h-1/2 p-6 rounded-b-lg shadow-lg text-center">
-                <h3 class="text-xl font-bold text-[#8B0000] mb-2">Sra. Mercedes Pilar Chuica Flores</h3>
-                <p class="">Asistente administrativa</p>
+            <!-- Segunda columna: Dr. Manuel Quipuscoa Silvestre -->
+            <div class="bg-[#FFF4E1] p-6 rounded-lg shadow-lg text-center">
+                <div class="text-red-500 text-6xl mb-4">👨‍💼</div> <!-- Icono personalizado -->
+                <h3 class="text-xl font-bold text-black mb-2">Dr. Carlos Oswaldo Caballero Alayo</h3>
+                <p class="text-black">Director de la Escuela Profesional de Secundaria<br>Universidad Nacional de Trujillo</p>
+                <a href="mailto:inicial@unitru.edu.pe" class="text-md font-bold text-black mb-2">secundaria@unitru.edu.pe</a>
             </div>
-        </div>
-    </section>
+
+            <!-- Tercera columna: Mg. Patricia Roxana Vela Gálvez -->
+            <div class="bg-[#D1E8FF] p-6 rounded-lg shadow-lg text-center">
+                <div class="text-red-500 text-6xl mb-4">👩‍💼</div> <!-- Icono personalizado -->
+                <h3 class="text-xl font-bold text-black mb-2">Sra. Mercedes Pilar Chuica Flores</h3>
+                <p class="text-black">Asistente Administrativa.</p>
+            </div>
+        </section>
     <!---->
 
 
@@ -338,32 +334,8 @@
                 </div>
                 <a href="rutadocumento.pdf" class="inline-block mt-4 px-4 py-2 bg-[#FFB703] text-white text-base rounded-lg hover:bg-[#FFB703]" download>
                     Descargar en PDF
-                </a>
-            </section>-->
 
-
-            <!-- Ex directores-->
-            <section class=" snap-x py-12">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold text-gray-800 mb-8">Ex Directores</h2>
-                    <div class="w-16 h-1 bg-gray-800 mx-auto mb-10"></div>
-                </div>
-                <div class="flex flex-row justify-center items-center gap-8 px-8 lg:px-24">
-                    <div class=" scroll-ml-6 snap-start text-center">
-                        <img class="mx-auto rounded-full w-48 h-48 object-cover border-4 border-[#1976D2]" src="https://via.placeholder.com/150" alt="">
-                        <h3 class="mt-4 text-base font-semibold text-[#8B0000]">PROF. JULIA SIXTINA CASTAÑEDA AZABACHE</h3>
-                        <p class="text-[#000000]">Directora</p>
-                    </div>
-                    <div class="scroll-ml-6 snap-start text-center">
-                        <img class="mx-auto rounded-full w-48 h-48 object-cover border-4 border-[#1976D2]" src="https://via.placeholder.com/150" alt="">
-                        <h3 class="mt-4 text-base font-semibold text-[#8B0000]">PROF. FELIPE TEMOCHE RUMICHE</h3>
-                        <p class="text-[#000000]">Director</p>
-                    </div>
-                </div>
-            </section>
-
-            <!---->
-            <!---->
+            -->
 
         </div>
 
