@@ -93,6 +93,13 @@ Route::get('/unidades/unidad_calidad/colaboradores', function () {
     return view('unidades.unidad_calidad.colaboradores');
 })->name('unidades.colaboradores');
 
+Route::get('/unidades/unidad_calidad/repositorio', function () {
+    return view('unidades.unidad_calidad.repositorio');
+})->name('unidades.repositorio');
+
+
+
+
 Route::get('/unidades/unidadInvestigacion/InformeInvestigacion', function (){
     return view('unidades.unidadInvestigacion.InformeInvestigacion.index');
 })->name('unidades.unidadInvestigacion.informeInvestigacion');
@@ -120,11 +127,11 @@ Route::get('/Docentes', function (){
     return view('unidades.practica_preprofesional.Docentes.index');
 })->name('unidades.practica_preprofesional.Docentes');
 
-//
+//Sadhu
 
-Route::get('/unidades/unidad_soporte/index', function (){
+Route::get('/unidades/unidad_soporte/index', function () {
     return view('unidades.unidad_soporte.index');
-})->name('unidades.unidad_soporte');
+})->name('unidades.index');
 
 ////////////////////////////////////////////////
 Route::get('/documentacion', function () {

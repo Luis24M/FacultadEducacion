@@ -4,7 +4,7 @@
 
 <section class="bg-[#483D8B] text-white py-8 flex items-center justify-center">
         <div class="text-center">
-        <h1 class="text-4xl font-extrabold">Unidad de Calidad</h1>
+        <h1 class="text-4xl font-extrabold">Auditoría Interna</h1>
          </div>
 </section>
 
@@ -26,65 +26,14 @@
     </div>
 </div>
 
-
 <div class="flex justify-center p-4">
     <div class="grid grid-cols-1 gap-4 w-full max-w-6xl p-6">
         <div class="flex flex-col items-center">
             <!-- Inicio de cuadro para Características -->
             <div class="col-span-1 flex justify-center items-center mb-8">
-                <div class="w-100 max-w-3xl bg-white shadow-lg rounded-lg overflow-hidden">
-                    <table class="w-full text-left border border-gray-300">
-                        <thead>
-                            <tr>
-                                <th colspan="2" class="bg-blue-500 text-white text-center py-3 text-xl font-semibold">
-                                    Características
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="border border-gray-300 p-4 text-center align-middle" id="independenciaTd">
-                                    <button class="characteristic-button" onclick="showCharacteristicText('independencia', this)">Independencia</button>
-                                </td>
-                                <td rowspan="6" id="characteristicText" class="border border-gray-300 p-4 align-middle text-center">
-                                    La auditoría interna debe operar de manera independiente de las actividades académicas y administrativas que audita.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="border border-gray-300 p-4 text-center align-middle" id="enfoqueRiesgoTd">
-                                    <button class="characteristic-button" onclick="showCharacteristicText('enfoque_riesgo', this)">Enfoque en el riesgo</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="border border-gray-300 p-4 text-center align-middle" id="evaluacionControlesTd">
-                                    <button class="characteristic-button" onclick="showCharacteristicText('evaluacion_controles', this)">Evaluación de controles internos</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="border border-gray-300 p-4 text-center align-middle" id="mejoraContinuaTd">
-                                    <button class="characteristic-button" onclick="showCharacteristicText('mejora_continua', this)">Mejora continua</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="border border-gray-300 p-4 text-center align-middle" id="cumplimientoNormativoTd">
-                                    <button class="characteristic-button" onclick="showCharacteristicText('cumplimiento_normativo', this)">Cumplimiento normativo</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="border border-gray-300 p-4 text-center align-middle" id="informesDireccionTd">
-                                    <button class="characteristic-button" onclick="showCharacteristicText('informes_direccion', this)">Informes a la dirección</button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <!-- Termino de cuadro-->
-
-            <!-- Inicio de cuadro para Proceso de Auditoría Interna -->
-            <div class="col-span-1 flex justify-center items-center">
                 <div class="w-80 max-w-2xl bg-white shadow-lg rounded-lg overflow-hidden">
                     <table class="w-full text-left border border-gray-300">
+                        
                         <thead>
                             <tr>
                                 <th colspan="2" class="bg-blue-500 text-white text-center py-3 text-xl font-semibold">
@@ -92,6 +41,7 @@
                                 </th>
                             </tr>
                         </thead>
+
                         <tbody>
                             <tr>
                                 <td class="border border-gray-300 p-4 text-center align-middle" id="planificacionTd">
@@ -124,7 +74,6 @@
         </div>
     </div>
 </div>
-
 
         
         <!-- Agregar el modal para el código de acceso -->
