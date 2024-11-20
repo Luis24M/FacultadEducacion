@@ -8,6 +8,7 @@
     <x-side-button icon="school.svg" title="R.N.C" route="https://www.rnc.edu.pe/" />
     <x-side-button icon="book.svg" title="Galería" route="/galeria"/>
     <x-side-button icon="login.svg" title="Iniciar Sesion" route="/login"/>
+    <x-side-button icon="aula.svg" title="Aula Virtual" route="javascript:window.open('https://aulavirtual2.unitru.edu.pe/login/index.php', '_blank');"/>
     
 {{-- PREGRADO --}}
 @elseif(request()->routeIs('pregrado') || request()->routeIs('pregrado.inicial') || request()->routeIs('pregrado.cdlc'))
