@@ -12,40 +12,40 @@
 @php
 $docentes = [
 [
-"nombre" => "Dra. María Luisa Bazán Guzmán",
-"foto" => "imagenes/cdlc-img/1.jpg"
-],
-[
-"nombre" => "Dr. Alfieri Díaz Arias",
-"foto" => "imagenes/cdlc-img/2.jpg"
-],
-[
-"nombre" => "Dr. Pepe Alexander Hidalgo Jimenez",
-"foto" => "imagenes/cdlc-img/3.jpg"
-],
-[
-"nombre" => "Dra. Karinn Jacquelin Chávez Díaz",
-"foto" => "imagenes/cdlc-img/4.jpg"
+"nombre" => "Dra. Graciela Martha Lamela Ríos",
+"foto" => "imagenes/cdlc-img/9.jpg"
 ],
 [
 "nombre" => "Mg. Juan Lorgio Vásquez Sánchez",
 "foto" => "imagenes/cdlc-img/5.jpg"
 ],
 [
+"nombre" => "Dra. María Luisa Bazán Guzmán",
+"foto" => "imagenes/cdlc-img/1.jpg"
+],
+[
+"nombre" => "Dr. Pepe Alexander Hidalgo Jimenez",
+"foto" => "imagenes/cdlc-img/3.jpg"
+],
+[
+"nombre" => "Dr. Alfieri Díaz Arias",
+"foto" => "imagenes/cdlc-img/2.jpg"
+],
+[
 "nombre" => "Mg. Narso Alberto Saez Valle",
 "foto" => "imagenes/cdlc-img/6.jpg"
 ],
 [
+"nombre" => "Dr. Miguel Ángel Álvarez Carrasco",
+"foto" => "imagenes/cdlc-img/8.png"
+],
+[
+"nombre" => "Dra. Karinn Jacquelin Chávez Díaz",
+"foto" => "imagenes/cdlc-img/4.jpg"
+],
+[
 "nombre" => "Mg. Vicente Paúl Gastañadui Fernández",
 "foto" => "imagenes/cdlc-img/7.jpg"
-],
-[
-"nombre" => "Dr. Miguel Ángel Álvarez Carrasco",
-"foto" => "imagenes/cdlc-img/8.jpg"
-],
-[
-"nombre" => "Dra. Graciela Martha Lamela Ríos",
-"foto" => "imagenes/cdlc-img/9.jpg"
 ],
 ];
 @endphp
