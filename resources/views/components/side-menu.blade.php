@@ -16,11 +16,20 @@
     <hr>
     <x-side-button icon="book.svg" title="Educación Inicial" route="/pregrado/inicial" />
     <x-side-button icon="book.svg" title="Educación Primaria" route="/pregrado/primaria" />
+    <x-side-button icon="book.svg" title="Ciencias de la Comunicación" route="/pregrado/cdlc" />
     <x-side-button icon="book.svg" title="Educación Secundaria" route="/pregrado/secundaria" />
-    <x-side-button icon="book.svg" title="Ciencias de la comunicación" route="/pregrado/cdlc" />
+
 
 
     {{-- PRIMARIA --}}
+    @elseif(request()->routeIs('pregrado') || request()->routeIs('pregrado.primaria') || request()->routeIs('pregrado.cdlc'))
+    <h3 class="text-xl font-semibold">Pregrado</h3>
+    <hr>
+    <x-side-button icon="book.svg" title="Educación Inicial" route="/pregrado/inicial" />
+    <x-side-button icon="book.svg" title="Educación Primaria" route="/pregrado/primaria" />
+    <x-side-button icon="book.svg" title="Ciencias de la Comunicación" route="/pregrado/cdlc" />
+    <x-side-button icon="book.svg" title="Educación Secundaria" route="/pregrado/secundaria" />
+
 
     {{-- SECUNDARIA --}}
     @elseif(request()->routeIs('pregrado.secundaria') || request()->routeIs('pregrado.secundaria.*') )
@@ -32,14 +41,14 @@
         <x-side-button icon="book.svg" title="Lengua y Literatura" route="/pregrado/secundaria/literatura" />
         <x-side-button icon="book.svg" title="Idiomas" route="/pregrado/secundaria/idiomas" />
 
-        @elseif(request()->routeIs('pregrado.cdlc') || request()->routeIs('pregrado.cdlc.*'))
-            <h3 class="text-xl font-semibold">Ciencias de la Comunicación</h3>
-            <hr>
-            <x-side-button icon="book.svg" title="Intitucional" route="#institucional" />
-            <x-side-button icon="book.svg" title="Reseña Histórica" route="#resenaHistorica" />
-            <x-side-button icon="book.svg" title="Perfil Profesional" route="#perfilProfesional" />
-            <x-side-button icon="book.svg" title="Plan de estudios" route="#planEstudios" />
-            <x-side-button icon="book.svg" title="Plana docente" route="#planaDocente" />
+    @elseif(request()->routeIs('pregrado.cdlc') || request()->routeIs('pregrado.cdlc.*'))
+        <h3 class="text-xl font-semibold">Ciencias de la Comunicación</h3>
+        <hr>
+        <x-side-button icon="book.svg" title="Intitucional" route="#institucional" />
+        <x-side-button icon="book.svg" title="Reseña Histórica" route="#resenaHistorica" />
+        <x-side-button icon="book.svg" title="Perfil Profesional" route="#perfilProfesional" />
+        <x-side-button icon="book.svg" title="Plan de estudios" route="#planEstudios" />
+        <x-side-button icon="book.svg" title="Plana docente" route="#planaDocente" />
 
 {{-- POSGRADO --}}
 @elseif(request()->routeIs('posgrado'))
@@ -57,18 +66,18 @@
     ]"
 />
 
-<x-side-button icon="supersetings.svg" title="Unidad de Soporte" route="/unidades/unidad_soporte/index"/>
+<x-drop-down-button 
+        class="fa-solid fa-folder-open"
+        title="Unidad de Practica Preprofesional" 
+        :list="[
+            ['name' => 'Inicio', 'url' => '/practica_preprofesional'],
+            ['name' => 'Reglamento', 'url' => '/Reglamento'],
+            ['name' => 'Comité', 'url' => '/Comite'],
+            ['name' => 'Docentes', 'url' => '/Docentes']
+        ]" 
+    />
+    <x-drop-down-button 
 
-<x-drop-down-button 
-    class="fa-solid fa-folder-open"
-    title="Practica Preprofesional" 
-    :list="[
-        ['name' => 'Directivas', 'url' => '/unidades/practica_preprofesional'],
-            ['name' => 'Comité', 'url' => '/menu'],
-            ['name' => 'Docentes', 'url' => '/footer']
-        ]"  
-/>
-<x-drop-down-button 
     title="Unidad de Responsabilidad Social" 
     :list="[
         ['name' => 'Inicio', 'url' => '/index'],
@@ -76,10 +85,12 @@
         ['name' => 'Contacto', 'url' => '/contacto']
     ]" 
 />
+
 <x-drop-down-button 
     title="Unidad de Investigacion" 
     :list="[
         ['name' => 'Informe de Investigacion', 'url' => '/unidades/unidadInvestigacion/InformeInvestigacion'],
+        ['name' => 'Comite de Investigacion', 'url' => '/unidades/unidadInvestigacion/ComiteInvestigacion']
     ]" 
 />
 

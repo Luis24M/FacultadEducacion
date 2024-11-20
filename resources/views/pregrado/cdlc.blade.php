@@ -12,40 +12,40 @@
 @php
 $docentes = [
 [
-"nombre" => "Dra. María Luisa Bazán Guzmán",
-"foto" => "imagenes/cdlc-img/1.jpg"
-],
-[
-"nombre" => "Dr. Alfieri Díaz Arias",
-"foto" => "imagenes/cdlc-img/2.jpg"
-],
-[
-"nombre" => "Dr. Pepe Alexander Hidalgo Jimenez",
-"foto" => "imagenes/cdlc-img/3.jpg"
-],
-[
-"nombre" => "Dra. Karinn Jacquelin Chávez Díaz",
-"foto" => "imagenes/cdlc-img/4.jpg"
+"nombre" => "Dra. Graciela Martha Lamela Ríos",
+"foto" => "imagenes/cdlc-img/9.jpg"
 ],
 [
 "nombre" => "Mg. Juan Lorgio Vásquez Sánchez",
 "foto" => "imagenes/cdlc-img/5.jpg"
 ],
 [
+"nombre" => "Dra. María Luisa Bazán Guzmán",
+"foto" => "imagenes/cdlc-img/1.jpg"
+],
+[
+"nombre" => "Dr. Pepe Alexander Hidalgo Jimenez",
+"foto" => "imagenes/cdlc-img/3.jpg"
+],
+[
+"nombre" => "Dr. Alfieri Díaz Arias",
+"foto" => "imagenes/cdlc-img/2.jpg"
+],
+[
 "nombre" => "Mg. Narso Alberto Saez Valle",
 "foto" => "imagenes/cdlc-img/6.jpg"
 ],
 [
+"nombre" => "Dr. Miguel Ángel Álvarez Carrasco",
+"foto" => "imagenes/cdlc-img/8.png"
+],
+[
+"nombre" => "Dra. Karinn Jacquelin Chávez Díaz",
+"foto" => "imagenes/cdlc-img/4.jpg"
+],
+[
 "nombre" => "Mg. Vicente Paúl Gastañadui Fernández",
 "foto" => "imagenes/cdlc-img/7.jpg"
-],
-[
-"nombre" => "Dr. Miguel Ángel Álvarez Carrasco",
-"foto" => "imagenes/cdlc-img/8.jpg"
-],
-[
-"nombre" => "Dra. Graciela Martha Lamela Ríos",
-"foto" => "imagenes/cdlc-img/9.jpg"
 ],
 ];
 @endphp
@@ -54,7 +54,7 @@ $docentes = [
 
   <!-- banner -->
   <div class="relative">
-    <img src="https://www.autonoma.pe/wp-content/uploads/2023/09/conocimientos-alumno-ciencias-comunicacion-universidad-autonoma-1.jpg" class="w-full h-auto object-cover ">
+    <img src="{{ asset('imagenes/cdlc-img/cdlc-banner.jpg') }}" class="w-full max-h-[300px] object-cover ">
 
     <div class="absolute inset-0 flex items-center justify-center flex-col">
 
@@ -62,9 +62,9 @@ $docentes = [
 
       <span class="bg-black bg-opacity-60 p-4 text-white text-lg md:text-xl font-bold lg:text-4xl xl:text-5xl rounded">Ciencias de la Comunicación</span>
       <br>
-      <span class="bg-black bg-opacity-60 text-white rounded text-sm md:text-md lg:text-lg text-center px-20 py-4 font-semibold">
+      <!-- <span class="bg-black bg-opacity-60 text-white rounded text-sm md:text-md lg:text-lg text-center px-20 py-4 font-semibold">
         "Impulsando comunicadores integrales, capaces de informar, inspirar y conectar al mundo a través de la comunicación y la innovación"
-      </span>
+      </span> -->
     </div>
   </div>
 
@@ -130,14 +130,16 @@ $docentes = [
         <!-- Icono personalizado -->
 
         <h3 class="text-xl font-bold text-white mb-2">Bienvenida</h3>
-        <p class="text-white">"Bienvenidos a la Escuela Profesional de Ciencias de la Comunicación"</p>
+        <p class="text-white">"Bienvenidos a la Escuela Profesional de Ciencias de la Comunicacion,
+           un espacio donde la excelencia académica se encuentra con la innovación y la pasión
+                    por el aprendizaje."</p>
       </div>
 
       <!-- Segunda columna:  -->
-      <div class="bg-gray-600 p-6 rounded-lg shadow-lg text-center">
-        <div class="text-black text-6xl mb-4">👨‍💼</div> <!-- Icono personalizado -->
-        <h3 class="text-xl font-bold text-white mb-2">Dra. María Luisa Bazán Guzmán</h3>
-        <p class="text-white">
+      <div class="bg-gray-600 bg-opacity-30 p-6 rounded-lg shadow-lg text-center">
+        <div class="text-black text-6xl mb-4">👩</div> <!-- Icono personalizado -->
+        <h3 class="text-xl font-bold text-black mb-2">Dra. María Luisa Bazán Guzmán</h3>
+        <p class="text-black">
           Directora de la Escuela Profesional de Ciencias de la Comunicación.
           <br>
           <span class="text-sm font-semibold"> comunicacion@unitru.edu.pe </span>
@@ -200,7 +202,8 @@ $docentes = [
               dentro de las universidades públicas del país una de las primeras a nivel
               nacional, acreditada para la formación científica, tecnológica y
               humanística, de profesionales comunicadores que contribuyan al
-              desarrollo sostenible de la región La Libertad y del país".
+              desarrollo sostenible de la región La Libertad y del país".</br>
+              <b class="text-sm">"Currículo del Programa de Estudios de Ciencias de la Comunicación(2018)".</b>
             </p>
           </div>
 

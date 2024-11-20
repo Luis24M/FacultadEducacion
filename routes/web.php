@@ -93,13 +93,34 @@ Route::get('/unidades/unidad_calidad/colaboradores', function () {
     return view('unidades.unidad_calidad.colaboradores');
 })->name('unidades.colaboradores');
 
-Route::get('/unidades/practica_preprofesional', function (){
-    return view('unidades.practica_preprofesional.index');
-})->name('unidades.practica_preprofesional');
-
 Route::get('/unidades/unidadInvestigacion/InformeInvestigacion', function (){
     return view('unidades.unidadInvestigacion.InformeInvestigacion.index');
 })->name('unidades.unidadInvestigacion.informeInvestigacion');
+
+Route::get('/unidades/unidadInvestigacion/ComiteInvestigacion', function (){
+    return view('unidades.unidadInvestigacion.ComiteInvestigacion.index');
+})->name('unidades.unidadInvestigacion.comiteInvestigacion');
+
+
+
+//Elton
+Route::get('/practica_preprofesional', function (){
+    return view('unidades.practica_preprofesional.index');
+})->name('unidades.practica_preprofesional');
+
+Route::get('/Reglamento', function (){
+    return view('unidades.practica_preprofesional.Reglamento.index');
+})->name('unidades.practica_preprofesional.Reglamento');
+
+Route::get('/Comite', function (){
+    return view('unidades.practica_preprofesional.Comite.index');
+})->name('unidades.practica_preprofesional.Comite');
+
+Route::get('/Docentes', function (){
+    return view('unidades.practica_preprofesional.Docentes.index');
+})->name('unidades.practica_preprofesional.Docentes');
+
+//
 
 Route::get('/unidades/unidad_soporte/index', function (){
     return view('unidades.unidad_soporte.index');

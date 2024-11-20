@@ -62,23 +62,9 @@ $docentes = [
 ];
 @endphp
 
+<!-- <h1 class="text-3xl md:text-5xl text-white bg-blue-800 w-full p-4 font-bold">Mención Idiomas: Inglés-Francés / Inglés-Alemán</h1> -->
+
 <h1 class="text-3xl md:text-5xl text-white bg-blue-800 w-full p-4 font-bold">Mención Idiomas: Inglés-Francés / Inglés-Alemán</h1>
-
-<!-- banner
-<div class="relative">
-  <img src="imagenes/idiomas/banner-idiomas.webp" class="w-full h-auto object-cover ">
-
-  <div class="absolute inset-0 flex items-center justify-center flex-col">
-
-    <br>
-
-    <span class="bg-black bg-opacity-60 p-4 text-white text-lg md:text-xl font-bold lg:text-4xl xl:text-5xl rounded">Mención Idiomas: Inglés-Francés / Inglés-Alemán</span>
-    <br>
-    <span class="bg-black bg-opacity-60 text-white rounded text-sm md:text-md lg:text-lg text-center px-20 py-4 font-semibold">
-      "asdfasdfasdf"
-    </span>
-  </div>
-</div> -->
 
 
 <section class="max-w-[1050px] mx-auto p-5 md:px-0">
@@ -141,7 +127,8 @@ $docentes = [
       <!-- Icono personalizado -->
 
       <h3 class="text-xl font-bold text-white mb-2">Bienvenida</h3>
-      <p class="text-white">"Bienvenidos al programa de Idiomas: Inglés-Alemán / Inglés-Francés"</p>
+      <p class="text-white">"Bienvenidos a la Escuela Profesional de Educación Secundaria Mención Idiomas,
+         un espacio donde la excelencia académica se encuentra con la innovación y la pasión por el aprendizaje."</p>
     </div>
 
     <!-- Segunda columna:  -->
@@ -159,7 +146,7 @@ $docentes = [
     <div class="bg-blue-900 p-6 rounded-lg shadow-lg text-center">
       <div class="text-red-500 text-6xl mb-4">👩‍💼</div> <!-- Icono personalizado -->
       <h3 class="text-xl font-bold text-white mb-2">Fredesvinda García Andrade</h3>
-      <p class="text-white">Asistente Administrativo</p>
+      <p class="text-white">Asistente Administrativa</p>
     </div>
 
   </div>
@@ -186,10 +173,10 @@ $docentes = [
           </div>
 
           <p class="text-md md:text-lg text-gray-700">
-            “Somos el primer programa de estudios del Perú que forma licenciados en Educación Secundaria
+            Somos el primer programa de estudios del Perú que forma licenciados en Educación Secundaria
             con mención en Idiomas: Inglés-Francés e Inglés-Alemán, de excelencia académica y preparados
             para enfrentar los retos de un mundo complejo y globalizado buscando el desarrollo responsable
-            y sostenible de nuestra región y país”.
+            y sostenible de nuestra región y país.
           </p>
         </div>
 
@@ -204,7 +191,11 @@ $docentes = [
           </div>
 
           <p class="text-md md:text-lg text-gray-700">
-            “En el año 2025, seremos una unidad académica acreditada, que contribuye al desarrollo sustentable de la región, del país y del mundo, sensible a las exigencias sociales, que forma profesionales con excelencia académica en idiomas, se proyecta a la comunidad con responsabilidad social, realiza investigación científica, respeta la diversidad cultural y la ecología, y contribuye a la formación integral del ser humano dentro del marco de los valores ético y estéticos”.
+            En el año 2025, seremos una unidad académica acreditada, que contribuye al desarrollo sustentable de la región,
+            del país y del mundo, sensible a las exigencias sociales, que forma profesionales con excelencia académica en idiomas,
+            se proyecta a la comunidad con responsabilidad social, realiza investigación científica, respeta la diversidad cultural
+            y la ecología, y contribuye a la formación integral del ser humano dentro del marco de los valores ético y estéticos.
+          </br><b class="text-sm italic">Currículo del Programa de Estudios de Educación Secundaria Idiomas(2018)</b>
           </p>
         </div>
 
@@ -242,7 +233,7 @@ $docentes = [
       <div>
         <h2 class="text-lg md:text-xl font-bold text-blue-800 mb-4">Perfil de Ingresante</h2>
 
-        <ul class="list-disc flex flex-col gap-1 p-4 text-lg ml-8">
+        <ul class="list-disc flex flex-col gap-1 p-4 text-md md:text-lg ml-8">
           <li class="text-gray-700">Tiene conocimientos básicos de inglés.</li>
           <li class="text-gray-700">Posee aptitud para el procesamiento de sistemas lingüísticos, demostrando competencias básicas en la comprensión y producción de textos orales y escritos.</li>
           <li class="text-gray-700">Tiene información básica de las Ciencias Naturales, Sociales y Formales; así como, de la cultura humanística en perspectiva histórica a niveles del Perú y el mundo. Tiene interés por la investigación científica.</li>
@@ -262,7 +253,7 @@ $docentes = [
       <div>
         <h2 class="text-lg md:text-xl font-bold text-blue-800 mb-4 ">Perfil Profesional de Egresado</h2>
 
-        <ul class="list-disc flex flex-col gap-1 p-4 text-gray-700 text-lg ml-8">
+        <ul class="list-disc flex flex-col gap-1 p-4 text-gray-700 text-md md:text-lg ml-8">
           <li>Un Licenciado en Educación Secundaria con Mención en Inglés-Francés o Inglés-Alemán es un profesional comprometido con la formación integral de estudiantes adolescentes.</li>
           <li>Este educador posee sólidos conocimientos en pedagogía y didáctica, especializándose en la enseñanza de los idiomas inglés y, francés o alemán. Su enfoque abarca el desarrollo de habilidades lingüísticas, la promoción de la comunicación efectiva y la apertura a la diversidad cultural.</li>
           <li>Con una pasión por inspirar el amor por los idiomas, este licenciado contribuye al crecimiento académico y personal de sus estudiantes, preparándolos para enfrentar un mundo globalizado con confianza y competencia lingüística.</li>
@@ -277,8 +268,8 @@ $docentes = [
 
       <div class="container">
 
-        <p class="text-gray-700 text-lg">Las salidas profesionales para un Licenciado en Educación con Mención en Idiomas abarcan diversas áreas:</p>
-        <ul class=" list-inside text-gray-700 ml-8 text-lg">
+        <p class="text-gray-700 text-md md:text-lg">Las salidas profesionales para un Licenciado en Educación con Mención en Idiomas abarcan diversas áreas:</p>
+        <ul class=" list-inside text-gray-700 ml-8 text-md md:text-lg">
 
           <li class="flex mt-2">
             <i class="text-blue-800">
@@ -339,7 +330,9 @@ $docentes = [
         </div>
         <div class="bg-blue-900 lg:col-span-4">
           <h3>Grado Académico</h3>
+
           <img src="{{ asset('icons/graduation.svg') }}" alt="grade-icon" class="w-16">
+
           <h2 class="font-semibold text-lg">Bachiller en Educación Secundaria, Mención Idiomas: Inglés-Francés o Inglés-Alemán</h2>
         </div>
         <div class="bg-blue-900 lg:col-span-4">
@@ -353,7 +346,7 @@ $docentes = [
         </div>
       </div>
 
-      <a href="https://drive.google.com/drive/folders/1jElAqShBgEWQAbPhCdqtx9zaF-ZQ3WRH" target="_blank" rel="nofollow"
+      <a href="{{ asset('curriculos/PlanCurricularIdiomas.pdf') }}" target="_blank" rel="nofollow"
         class="p-3 w-full mt-4 bg-blue-700 rounded-md font-semibold text-white hover:bg-blue-800 block text-center">
         Ver Currículo del Programa de Estudios
       </a>

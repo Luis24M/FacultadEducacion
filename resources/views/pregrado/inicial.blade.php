@@ -4,7 +4,7 @@
     <style>
         button.active {
             background-color: #ffd8f8;
-            color: white;
+            color: black;
         }
     </style>
 
@@ -14,25 +14,25 @@
 
         <section class="md:px-11 px-6 py-5 flex flex-wrap gap-4 max-w-[800px]">
             <button
-                class="btn-nav active bg-pink-100 bg-opacity-15 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
+                class="btn-nav active bg-gray-500 bg-opacity-15 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
                 data-target="nosotros">
                 Nosotros
             </button>
 
             <button
-                class="btn-nav bg-pink-100 bg-opacity-15 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
+                class="btn-nav bg-gray-500 bg-opacity-15 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
                 data-target="perfil">
                 Perfiles
             </button>
 
             <button
-                class="btn-nav bg-pink-100 bg-opacity-15 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
+                class="btn-nav bg-gray-500 bg-opacity-15 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
                 data-target="campo">
                 Campo Ocupacional
             </button>
 
             <button
-                class="btn-nav bg-pink-100 bg-opacity-15 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
+                class="btn-nav bg-gray-500 bg-opacity-15 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
                 data-target="plan-estudios">
                 Plan de Estudios
             </button>
@@ -63,11 +63,10 @@
                         </div>
 
                         <p class="text-md md:text-lg text-gray-700">
-                            Somos una unidad académica que forma profesionales en educación y ciencias de la
-                            comunicación, con valores éticos y morales, con capacidades científicas, cualidades
-                            humanísticas y conciencia ambiental, que responden a las necesidades sociales de nuestra
-                            comunidad, contribuyendo al desarrollo local, regional y nacional en el marco de las
-                            funciones universitarias: docencia, investigación y proyección social.
+                        Somos una unidad académica profesional, formamos profesionales competentes en la
+                        educación infantil, con calidad humana, con capacidades, habilidades y actitudes;
+                        desarrollamos investigación científica, responsabilidad social y una adecuada gestión
+                        educativa, para el desarrollo sostenible de la localidad, la región y el país.</br>
                         </p>
                     </div>
 
@@ -84,10 +83,11 @@
                         </div>
 
                         <p class="text-md md:text-lg text-gray-700">
-                            En el año 2024, seremos una Facultad líder y reconocida, con carreras acreditadas que
-                            forma profesionales competentes con cualidades éticas y estéticas, con conocimientos
-                            humanísticos, científicos, tecnológicos y con conciencia ambiental que respondan con
-                            pertinencia, equidad, calidad y compromiso al desarrollo integral del hombre y la sociedad.
+                        Al 2024, líder y acreditada a nivel nacional e internacional, reconocida por su calidad, por
+                        su vocación democrática, por la formación de profesionales en la educación infantil, la
+                        investigación científica y responsabilidad social; manteniendo vínculos con los grupos de
+                        interés y contribuyendo al desarrollo local, regional y nacional.</br>
+                        <b class="text-sm italic">“Currículo del Programa de Estudios de Educación Inicial(2021)”.</b>
                         </p>
                     </div>
 
@@ -244,34 +244,35 @@
                 </div>
 
                 <a href="https://dpaunt.edu.pe/curriculos/19.pdf" target="_blank" rel="nofollow"
-                    class="p-3 mt-4 bg-pink-300 text- rounded-md font-semibold text-white hover:bg-pink-500 transition-all ease-linear duration-300 hover:shadow-lg  text-center">
+                    class="p-3 mt-4 bg-pink-300 text- rounded-md font-semibold text-black hover:bg-pink-500 transition-all ease-linear duration-300 hover:shadow-lg  text-center">
                     Ver Malla Curricular
                 </a>
 
             </section>
         </section>
-        <section class="datos order-first p-5 md:px-20 mx-auto my-6 grid grid-cols-1 lg:grid-cols-3 gap-6 ">
+        
+        <section class="datos order-first p-5 md:px-20 mx-auto my-6 grid grid-cols-1 lg:grid-cols-3 gap-6 text-black-100 ">
             <!-- Primera columna: Bienvenida -->
-            <div class="bg-pink-200 p-6 rounded-lg shadow-lg text-center">
+            <div class="bg-pink-200 p-6 rounded-lg shadow-lg text-center text-black">
                 <div class="text-red-500 text-6xl mb-4">🤝</div> <!-- Icono personalizado -->
-                <h3 class="text-xl font-bold text-white mb-2">Bienvenida</h3>
-                <p class="text-white">"Bienvenidos a la Escuela Profesional de Educación Inicial, un espacio donde la
+                <h3 class="text-xl font-bold text-black mb-2">Bienvenida</h3>
+                <p class="text-black">"Bienvenidos a la Escuela Profesional de Educación Inicial, un espacio donde la
                     excelencia académica se encuentra con la innovación y la pasión por el aprendizaje."</p>
             </div>
 
             <!-- Segunda columna: Dr. Manuel Quipuscoa Silvestre -->
             <div class="bg-gray-300 p-6 rounded-lg shadow-lg text-center">
                 <div class="text-red-500 text-6xl mb-4">👩‍💼</div> <!-- Icono personalizado -->
-                <h3 class="text-xl font-bold text-white mb-2">Dra. Hilda Jara León</h3>
-                <p class="text-white">Directora de la Escuela Profesional de Educación Inicial</p>
-                <a href="mailto:inicial@unitru.edu.pe" class="text-md font-bold text-white mb-2">inicial@unitru.edu.pe</a>
+                <h3 class="text-xl font-bold text-black mb-2">Dra. Hilda Jara León</h3>
+                <p class="text-gray-900">Directora de la Escuela Profesional de Educación Inicial</p>
+                <a href="mailto:inicial@unitru.edu.pe" class="text-md font-bold text-gray-900 mb-2">inicial@unitru.edu.pe</a>
             </div>
 
             <!-- Tercera columna: Mg. Patricia Roxana Vela Gálvez -->
             <div class="bg-pink-200 p-6 rounded-lg shadow-lg text-center">
                 <div class="text-red-500 text-6xl mb-4">👩‍💼</div> <!-- Icono personalizado -->
-                <h3 class="text-xl font-bold text-white mb-2">Lic. Liliana Mercedes Polonio Chávez </h3>
-                <p class="text-white">Asistente administrativa</p>
+                <h3 class="text-xl font-bold text-black mb-2">Lic. Liliana Mercedes Polonio Chávez </h3>
+                <p class="text-black">Asistente administrativa</p>
             </div>
         </section>
 
@@ -310,7 +311,7 @@
                 </section>
                 <textarea name="Comentarios" id="Comentarios" placeholder="Escribe Tu Mensaje Aquí"
                     class="md:col-span-2 rounded-md p-3 border border-pink-400 bg-transparent"></textarea>
-                <input class="py-2 bg-pink-400 rounded-md text-white font-bold cursor-pointer" type="submit"
+                <input class="py-2 bg-pink-400 rounded-md text-black font-bold cursor-pointer" type="submit"
                     id="enviar" name="enviar" value="Enviar">
                 <input class="py-2 border-2 border-pink-400 rounded-md text-pink-400 font-bold cursor-pointer"
                     type="reset" id="borrar" name="borrar" value="Borrar">

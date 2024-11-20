@@ -36,6 +36,12 @@
                 Plan de Estudios
             </button>
 
+            <button
+                class="btn-nav bg-[#252850] bg-opacity-15 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
+                data-target="contactanos">
+                Contactanos
+            </button>
+
         </section>
 
         <section class="contenedor-contenido [&>section]:p-5 md:[&>section]:px-20 md:[&>section]:py-10">
@@ -62,13 +68,12 @@
                         </div>
 
                         <p class="text-md md:text-lg text-gray-700">
-                            “Somos una unidad académica que forma profesionales en educación con Mención en
-                            Lengua y Literatura, y contribuye al desarrollo cognitivo de los estudiantes de otras carreras,
-                            con capacidades científicas, tecnológicas y cualidades humanísticas, que responden a las
-                            necesidades sociales de nuestra comunidad; impulsando el desarrollo local, regional y
-                            nacional en el marco de las funciones universitarias: docencia, investigación y proyección
-                            social.
-                            ”.
+                        Somos una unidad académica que forma profesionales en educación con
+                        Mención en Lengua y Literatura, y contribuye al desarrollo cognitivo de los
+                        estudiantes de otras carreras, con capacidades científicas, tecnológicas y
+                        cualidades humanísticas, que responden a las necesidades sociales de nuestra
+                        comunidad; impulsando el desarrollo local, regional y nacional en el marco de
+                        las funciones universitarias: docencia, investigación y proyección social.
                         </p>
                     </div>
 
@@ -84,11 +89,11 @@
                         </div>
 
                         <p class="text-md md:text-lg text-gray-700">
-                            “En el 2025 somos una carrera líder, acreditada, que forma profesionales en educación
+                            En el 2021 somos una carrera líder, acreditada, que forma profesionales en educación
                             secundaria, con mención en, Lengua y Literatura y Comunicación con conocimientos
                             científicos, humanísticos y tecnológicos, con cualidades morales y estéticas; que responden
                             con pertinencia, equidad y calidad al desarrollo integral del hombre en el marco local,
-                            regional y nacional.”
+                            regional y nacional.</br><b class="text-sm italic">Currículo del Programa de Estudios de Educación Secundaria Lengua y Literatura(2018)</b>
                         </p>
                     </div>
             </section>
@@ -216,78 +221,76 @@
                     href="https://drive.google.com/file/d/1UXWQXr8XhNUk9aMeV_rIP_OisnCu6IGH/view"
                     target="_blank">Ver Malla Curricular</a>
             </section>
+
+            <section class="contenido text-center" id="contactanos" style="display: none;">
+            <section class="lg:flex p-5 md:px-20 justify-center max-h-[px]">
+
+<form action="" method="POST"
+    class="border-2 border-[#52D0F8] gap-3 shadow-xl mx-auto rounded-lg p-5 grid md:grid-cols-2 [&>section>img]:bg-[#52D0F8] [&>section]:flex [&>section>img]:p-2 [&>section]:rounded-md [&>section]:border [&>section]:border-[#52D0F8] [&>section>img]:rounded-l-[5px] [&>section>input]:w-full [&>section>input]:rounded-r-md [&>section>input]:px-2 [&>section>input]:bg-transparent ">
+    {{-- Predeterminado la escuela desde donde va --}}
+    <section class="entrada-uno">
+        <img src="{{ asset('icons/user.svg') }}" alt="">
+        <input type="text" placeholder="Escriba su nombre" id="Nombres" name="Nombres">
+    </section>
+    <section class="entrada-uno">
+        <img src="{{ asset('icons/user.svg') }}" alt="">
+        <input type="text" placeholder="Escriba su apellido" id="Apellidos" name="Apellidos">
+    </section>
+    <section class="entrada-uno">
+        <img src="{{ asset('icons/email.svg') }}" alt="">
+        <input type="text" placeholder="Ingrese su correo" id="Correo" name="Correo">
+    </section>
+    <section class="entrada-uno">
+        <img src="{{ asset('icons/phone.svg') }}" alt="">
+        <input type="text" placeholder="Escriba su N° celular" id="Celular" name="Celular">
+    </section>
+    <section class="md:col-span-2 flex ">
+        <img src="{{ asset('icons/setting.svg') }}" alt="">
+        <select id="opciones" name="Opciones" class="w-full rounded-r-md bg-transparent">
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="Docente">Docente</option>
+            <option value="Estudiante">Estudiante</option>
+            <option value="Egresado">Egresado</option>
+            <option value="Administrativo">Administrativo</option>
+            <option value="Otros">Otros</option>
+        </select>
+    </section>
+    <textarea name="Comentarios" id="Comentarios" placeholder="Escribe Tu Mensaje Aquí"
+        class="md:col-span-2 rounded-md p-3 border border-[#52D0F8] bg-transparent"></textarea>
+    <input class="py-2 bg-[#52D0F8] rounded-md text-white font-bold cursor-pointer" type="submit"
+        id="enviar" name="enviar" value="Enviar">
+    <input class="py-2 border-2 border-[#52D0F8] rounded-md text-[#52D0F8] font-bold cursor-pointer"
+        type="reset" id="borrar" name="borrar" value="Borrar">
+</form>
+</section>
+            </section>
+
         </section>
 
-        <section class="datos order-first max-w-6xl px-5 md:px-20 mx-auto my-6 flex flex-col lg:flex-row justify-center gap-6 ">
+        <section class="datos order-first p-5 md:px-20 mx-auto my-6 grid grid-cols-1 lg:grid-cols-3 gap-6 ">
             <!-- Primera columna: Bienvenida -->
-            <div class="bg-white p-6 rounded-lg shadow-lg text-center flex flex-col justify-center lg:w-1/3">
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
                 <div class="text-red-500 text-6xl mb-4">🤝</div> <!-- Icono personalizado -->
-                <h3 class="text-xl font-bold text-[#52D0F8] mb-2">Bienvenida</h3>
-                <p class="">"Bienvenidos a la Escuela Profesional de Educación Secundaria Mención Lengua
-                    y Literatura, un espacio donde la excelencia académica se encuentra con la innovación y la pasión
-                    por el aprendizaje."</p>
+                <h3 class="text-xl font-bold text-black mb-2">Bienvenida</h3>
+                <p class="text-black">"Bienvenidos a la Escuela Profesional de Educación Secundaria Mención Lengua y Literatura, un espacio donde la excelencia académica se encuentra con la innovación y la pasión por el aprendizaje."</p>
             </div>
 
-            <div class="flex flex-col justify-between lg:w-1/3">
-                <img src="{{ asset('imagenes/index/director-secundaria.png')}}" class="rounded-t-lg lg:h-2/4 w-full " alt=""><!-- Icono personalizado -->
-                <div class="bg-white h-1/2 p-6 rounded-b-lg shadow-lg text-center">
-                    <h3 class="text-xl font-bold text-[#52D0F8] mb-2">Dr. Carlos Oswaldo Caballero Alayo</h3>
-                    <p class="text-black">Director de la Escuela Profesional de Secundaria</p>
-                    <a href="mailto:inicial@unitru.edu.pe"
-                    class="text-md font-bold text-black mb-2 text-wrap">secundaria@unitru.edu.pe</a>
-                </div>
+            <!-- Segunda columna: Dr. Manuel Quipuscoa Silvestre -->
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <div class="text-red-500 text-6xl mb-4">👨‍💼</div> <!-- Icono personalizado -->
+                <h3 class="text-xl font-bold text-black mb-2">Dr. Carlos Oswaldo Caballero Alayo</h3>
+                <p class="text-black">Director de la Escuela Profesional de Secundaria<br>Universidad Nacional de Trujillo</p>
+                <a href="mailto:inicial@unitru.edu.pe" class="text-md font-bold text-black mb-2">secundaria@unitru.edu.pe</a>
             </div>
 
-            <div class="flex flex-col lg:w-1/3">
-                <img src="{{ asset('imagenes/index/asistente-secundaria.png')}}" class="rounded-t-lg lg lg:h-2/4 w-full" alt=""> <!-- Icono personalizado -->
-                <div class="bg-white h-1/2 p-6 rounded-b-lg shadow-lg text-center">
-                    <h3 class="text-xl font-bold text-[#52D0F8] mb-2">Sra. Mercedes Pilar Chuica Flores</h3>
-                    <p class="">Asistente administrativa</p>
-                </div>
+            <!-- Tercera columna: Mg. Patricia Roxana Vela Gálvez -->
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <div class="text-red-500 text-6xl mb-4">👩‍💼</div> <!-- Icono personalizado -->
+                <h3 class="text-xl font-bold text-black mb-2">Sra. Mercedes Pilar Chuica Flores</h3>
+                <p class="text-black">Asistente Administrativa.</p>
             </div>
         </section>
 
-        <section class="lg:flex p-5 md:px-20 justify-center max-h-[336px]">
-
-            <img src="{{ asset('imagenes/index/filosofia.png') }}" class="w-1/2 hidden lg:block" alt="">
-            <form action="" method="POST"
-                class="border-2 border-[#52D0F8] gap-3 shadow-xl mx-auto rounded-lg p-5 grid md:grid-cols-2 [&>section>img]:bg-[#52D0F8] [&>section]:flex [&>section>img]:p-2 [&>section]:rounded-md [&>section]:border [&>section]:border-[#52D0F8] [&>section>img]:rounded-l-[5px] [&>section>input]:w-full [&>section>input]:rounded-r-md [&>section>input]:px-2 [&>section>input]:bg-transparent ">
-                {{-- Predeterminado la escuela desde donde va --}}
-                <section class="entrada-uno">
-                    <img src="{{ asset('icons/user.svg') }}" alt="">
-                    <input type="text" placeholder="Escriba su nombre" id="Nombres" name="Nombres">
-                </section>
-                <section class="entrada-uno">
-                    <img src="{{ asset('icons/user.svg') }}" alt="">
-                    <input type="text" placeholder="Escriba su apellido" id="Apellidos" name="Apellidos">
-                </section>
-                <section class="entrada-uno">
-                    <img src="{{ asset('icons/email.svg') }}" alt="">
-                    <input type="text" placeholder="Ingrese su correo" id="Correo" name="Correo">
-                </section>
-                <section class="entrada-uno">
-                    <img src="{{ asset('icons/phone.svg') }}" alt="">
-                    <input type="text" placeholder="Escriba su N° celular" id="Celular" name="Celular">
-                </section>
-                <section class="md:col-span-2 flex ">
-                    <img src="{{ asset('icons/setting.svg') }}" alt="">
-                    <select id="opciones" name="Opciones" class="w-full rounded-r-md bg-transparent">
-                        <option value="" disabled selected>Selecciona una opción</option>
-                        <option value="Docente">Docente</option>
-                        <option value="Estudiante">Estudiante</option>
-                        <option value="Egresado">Egresado</option>
-                        <option value="Administrativo">Administrativo</option>
-                        <option value="Otros">Otros</option>
-                    </select>
-                </section>
-                <textarea name="Comentarios" id="Comentarios" placeholder="Escribe Tu Mensaje Aquí"
-                    class="md:col-span-2 rounded-md p-3 border border-[#52D0F8] bg-transparent"></textarea>
-                <input class="py-2 bg-[#52D0F8] rounded-md text-white font-bold cursor-pointer" type="submit"
-                    id="enviar" name="enviar" value="Enviar">
-                <input class="py-2 border-2 border-[#52D0F8] rounded-md text-[#52D0F8] font-bold cursor-pointer"
-                    type="reset" id="borrar" name="borrar" value="Borrar">
-            </form>
-        </section>
     </section>
 
     <style>

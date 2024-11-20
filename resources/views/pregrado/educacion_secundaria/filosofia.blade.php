@@ -13,27 +13,32 @@
     <section class="max-w-[1050px] flex flex-col mx-auto p-5 md:px-0">
         <section class="md:px-11 px-6 py-5 flex flex-wrap gap-4 max-w-[800px]">
             <button
-                class="btn-nav active bg-pink-100 bg-opacity-15 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
+                class="btn-nav active bg-red-500 bg-opacity-20 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
                 data-target="nosotros">
                 Nosotros
             </button>
 
             <button
-                class="btn-nav bg-pink-100 bg-opacity-15 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
+                class="btn-nav bg-red-500 bg-opacity-20 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
                 data-target="perfil">
                 Perfiles
             </button>
 
             <button
-                class="btn-nav bg-pink-100 bg-opacity-15 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
+                class="btn-nav bg-red-500 bg-opacity-20 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
                 data-target="campo">
                 Campo Ocupacional
             </button>
 
             <button
-                class="btn-nav bg-pink-100 bg-opacity-15 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
+                class="btn-nav bg-red-500 bg-opacity-20 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
                 data-target="plan-estudios">
                 Plan de Estudios
+            </button>
+            <button
+                class="btn-nav bg-red-500 bg-opacity-20 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
+                data-target="contactanos">
+                Contactanos
             </button>
 
         </section>
@@ -62,12 +67,11 @@
                         </div>
 
                         <p class="text-md md:text-lg text-gray-700">
-                            “El Programa de Estudios de Filosofía, Psicología y Ciencias Sociales tiene la
+                            El Programa de Estudios de Filosofía, Psicología y Ciencias Sociales tiene la
                             misión de contribuir al desarrollo económico, político y cultural de la localidad, la
                             región y el país, formando profesionales competentes para desarrollar procesos
                             de investigación científica, administración gestión educativa y de
                             responsabilidad social para una mejor convivencia humana.
-                            social”.
                         </p>
                     </div>
 
@@ -83,7 +87,18 @@
                         </div>
 
                         <p class="text-md md:text-lg text-gray-700">
-                            “La carrera de Filosofía, Psicología y Ciencias Sociales busca ser reconocida nacional e internacionalmente por su equipo humano capacitado y creativo, que brinda educación de calidad y fomenta la formación integral de sus estudiantes. Promueve una cultura democrática y abierta al debate académico, la tolerancia y la transformación social, además de establecer vínculos con instituciones para mejorar la formación docente y curricular, apoyando el desarrollo del talento humano y los objetivos institucionales.”.
+                            La carrera profesional de Filosofía, Psicología y Ciencias Sociales, en el año 2022, inspirada en los
+                            más altos valores científicos y espirituales de la cultura occidental y del mundo andino y amazónico,
+                            aspira a ser reconocida nacional e internacionalmente por: estar conformada por un grupo humano
+                            capacitado, creativo, solidario y participativo, dinámico y dinamizador del cambio permanente que
+                            ofrece servicios educativos de calidad, promueve la formación integral de sus estudiantes que den
+                            respuesta a las demandas de la sociedad.
+                            Así mismo, promueve una cultura abierta y democrática, en la que predomine el debate académico,
+                            la tolerancia y la creatividad orientada a la transformación social, establece vínculos con otras
+                            instituciones educativas, locales, nacionales e internacionales para promover el mejoramiento de
+                            sus docentes y experiencias curriculares y ejerce una administración académica, que promueve el
+                            desarrollo del talento humano y el logro de los objetivos institucionales.</br>
+                            <b class="text-sm italic">Currículo del Programa de Estudios de Educacion Secundaria Mencion Filosofia, Psicologia y CCSS(2018)</b>
                         </p>
                     </div>
             </section>
@@ -253,76 +268,75 @@
             </section>
         </section>
 
-        <section class="datos order-first max-w-6xl px-5 md:px-20 mx-auto my-6 flex flex-col lg:flex-row justify-center gap-6 ">
+        <section class="contenido text-center" id="contactanos" style="display: none;">
+        <section class="lg:flex p-5 md:px-20 justify-center max-h-[px] ">
+
+<!--<img src="{{ asset('imagenes/index/filosofia.png') }}" class="w-1/2 hidden lg:block" alt="">-->
+        <form action="" method="POST"
+            class="border-2 border-[#8B0000] gap-3 shadow-xl mx-auto rounded-lg p-5 grid md:grid-cols-2 [&>section>img]:bg-[#8B0000] [&>section]:flex [&>section>img]:p-2 [&>section]:rounded-md [&>section]:border [&>section]:border-[#8B0000] [&>section>img]:rounded-l-[5px] [&>section>input]:w-full [&>section>input]:rounded-r-md [&>section>input]:px-2 [&>section>input]:bg-transparent ">
+            {{-- Predeterminado la escuela desde donde va --}}
+            <section class="entrada-uno">
+                <img src="{{ asset('icons/user.svg') }}" alt="">
+                <input type="text" placeholder="Escriba su nombre" id="Nombres" name="Nombres">
+            </section>
+            <section class="entrada-uno">
+                <img src="{{ asset('icons/user.svg') }}" alt="">
+                <input type="text" placeholder="Escriba su apellido" id="Apellidos" name="Apellidos">
+            </section>
+            <section class="entrada-uno">
+                <img src="{{ asset('icons/email.svg') }}" alt="">
+                <input type="text" placeholder="Ingrese su correo" id="Correo" name="Correo">
+            </section>
+            <section class="entrada-uno">
+                <img src="{{ asset('icons/phone.svg') }}" alt="">
+                <input type="text" placeholder="Escriba su N° celular" id="Celular" name="Celular">
+            </section>
+            <section class="md:col-span-2 flex ">
+                <img src="{{ asset('icons/setting.svg') }}" alt="">
+                <select id="opciones" name="Opciones" class="w-full rounded-r-md bg-transparent">
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="Docente">Docente</option>
+                    <option value="Estudiante">Estudiante</option>
+                    <option value="Egresado">Egresado</option>
+                    <option value="Administrativo">Administrativo</option>
+                    <option value="Otros">Otros</option>
+                </select>
+            </section>
+            <textarea name="Comentarios" id="Comentarios" placeholder="Escribe Tu Mensaje Aquí"
+                class="md:col-span-2 rounded-md p-3 border border-[#8B0000] bg-transparent"></textarea>
+            <input class="py-2 bg-[#8B0000] rounded-md text-white font-bold cursor-pointer" type="submit"
+                id="enviar" name="enviar" value="Enviar">
+            <input class="py-2 border-2 border-[#8B0000] rounded-md text-[#8B0000] font-bold cursor-pointer"
+                type="reset" id="borrar" name="borrar" value="Borrar">
+        </form>
+        </section>
+            
+        </section>
+
+        <section class="datos order-first p-5 md:px-20 mx-auto my-6 grid grid-cols-1 lg:grid-cols-3 gap-6 ">
             <!-- Primera columna: Bienvenida -->
-            <div class="bg-[#fee346] p-6 rounded-lg shadow-lg text-center flex flex-col justify-center lg:w-1/3">
+            <div class="bg-[#fee346] p-6 rounded-lg shadow-lg text-center">
                 <div class="text-red-500 text-6xl mb-4">🤝</div> <!-- Icono personalizado -->
-                <h3 class="text-xl font-bold text-[#8B0000] mb-2">Bienvenida</h3>
-                <p class="">"Bienvenidos a la Escuela Profesional de Educación Secundaria Mención Filosofía,
-                    Psicología y CCSS, un espacio donde la excelencia académica se encuentra con la innovación y la pasión
-                    por el aprendizaje."</p>
+                <h3 class="text-xl font-bold text- mb-2">Bienvenida</h3>
+                <p class="text-">"Bienvenidos a la Escuela Profesional de Educación Secundaria Mención Filosofía, Psicología y CCSS, un espacio donde la excelencia académica se encuentra con la innovación y la pasión por el aprendizaje.</p>
             </div>
 
-            <div class="flex flex-col justify-between lg:w-1/3">
-                <img src="{{ asset('imagenes/index/director-secundaria.png')}}" class="rounded-t-lg lg:h-2/4 w-full " alt=""><!-- Icono personalizado -->
-                <div class="bg-[#8B0000] h-1/2 p-6 rounded-b-lg shadow-lg flex flex-col justify-evenly text-center">
-                    <h3 class="text-xl font-bold text-[#fee346] mb-2">Dr. Carlos Oswaldo Caballero Alayo</h3>
-                    <p class="text-white">Director de la Escuela Profesional de Secundaria</p>
-                    <a href="mailto:inicial@unitru.edu.pe"
-                    class="text-md font-bold text-white mb-2 text-wrap">secundaria@unitru.edu.pe</a>
-                </div>
+            <!-- Segunda columna: Dr. Manuel Quipuscoa Silvestre -->
+            <div class="bg-[#8B0000] p-6 rounded-lg shadow-lg text-center">
+                <div class="text-red-500 text-6xl mb-4">👨‍💼</div> <!-- Icono personalizado -->
+                <h3 class="text-xl font-bold text-white mb-2">Dr. Carlos Oswaldo Caballero Alayo</h3>
+                <p class="text-white">Director de la Escuela Profesional de Secundaria<br>Universidad Nacional de Trujillo</p>
+                <a href="mailto:inicial@unitru.edu.pe" class="text-md font-bold text-white mb-2">secundaria@unitru.edu.pe</a>
             </div>
 
-            <div class="flex flex-col lg:w-1/3">
-                <img src="{{ asset('imagenes/index/asistente-secundaria.png')}}" class="rounded-t-lg lg lg:h-2/4 w-full" alt=""> <!-- Icono personalizado -->
-                <div class="bg-[#fee346] h-1/2 p-6 rounded-b-lg shadow-lg text-center flex flex-col justify-evenly ">
-                    <h3 class="text-xl font-bold text-[#8B0000] mb-2">Sra. Mercedes Pilar Chuica Flores</h3>
-                    <p class="">Asistente administrativa</p>
-                </div>
+            <!-- Tercera columna: Mg. Patricia Roxana Vela Gálvez -->
+            <div class="bg-[#fee346] p-6 rounded-lg shadow-lg text-center">
+                <div class="text-red-500 text-6xl mb-4">👩‍💼</div> <!-- Icono personalizado -->
+                <h3 class="text-xl font-bold text- mb-2">Sra. Mercedes Pilar Chuica Flores</h3>
+                <p class="text-">Asistente Administrativa.</p>
             </div>
         </section>
 
-        <section class="lg:flex p-5 md:px-20 justify-center max-h-[336px]">
-
-            <img src="{{ asset('imagenes/index/filosofia.png') }}" class="w-1/2 hidden lg:block" alt="">
-            <form action="" method="POST"
-                class="border-2 border-[#8B0000] gap-3 shadow-xl mx-auto rounded-lg p-5 grid md:grid-cols-2 [&>section>img]:bg-[#8B0000] [&>section]:flex [&>section>img]:p-2 [&>section]:rounded-md [&>section]:border [&>section]:border-[#8B0000] [&>section>img]:rounded-l-[5px] [&>section>input]:w-full [&>section>input]:rounded-r-md [&>section>input]:px-2 [&>section>input]:bg-transparent ">
-                {{-- Predeterminado la escuela desde donde va --}}
-                <section class="entrada-uno">
-                    <img src="{{ asset('icons/user.svg') }}" alt="">
-                    <input type="text" placeholder="Escriba su nombre" id="Nombres" name="Nombres">
-                </section>
-                <section class="entrada-uno">
-                    <img src="{{ asset('icons/user.svg') }}" alt="">
-                    <input type="text" placeholder="Escriba su apellido" id="Apellidos" name="Apellidos">
-                </section>
-                <section class="entrada-uno">
-                    <img src="{{ asset('icons/email.svg') }}" alt="">
-                    <input type="text" placeholder="Ingrese su correo" id="Correo" name="Correo">
-                </section>
-                <section class="entrada-uno">
-                    <img src="{{ asset('icons/phone.svg') }}" alt="">
-                    <input type="text" placeholder="Escriba su N° celular" id="Celular" name="Celular">
-                </section>
-                <section class="md:col-span-2 flex ">
-                    <img src="{{ asset('icons/setting.svg') }}" alt="">
-                    <select id="opciones" name="Opciones" class="w-full rounded-r-md bg-transparent">
-                        <option value="" disabled selected>Selecciona una opción</option>
-                        <option value="Docente">Docente</option>
-                        <option value="Estudiante">Estudiante</option>
-                        <option value="Egresado">Egresado</option>
-                        <option value="Administrativo">Administrativo</option>
-                        <option value="Otros">Otros</option>
-                    </select>
-                </section>
-                <textarea name="Comentarios" id="Comentarios" placeholder="Escribe Tu Mensaje Aquí"
-                    class="md:col-span-2 rounded-md p-3 border border-[#8B0000] bg-transparent"></textarea>
-                <input class="py-2 bg-[#8B0000] rounded-md text-white font-bold cursor-pointer" type="submit"
-                    id="enviar" name="enviar" value="Enviar">
-                <input class="py-2 border-2 border-[#8B0000] rounded-md text-[#8B0000] font-bold cursor-pointer"
-                    type="reset" id="borrar" name="borrar" value="Borrar">
-            </form>
-        </section>
     </section>
 
     <style>

@@ -13,7 +13,7 @@
     <section class="max-w-[1050px] flex flex-col mx-auto p-5 md:px-0">
         <section class="md:px-11 px-6 py-5 flex flex-wrap gap-4 max-w-[800px]">
             <button
-                class="btn-nav active bg-pink-100 bg-opacity-15 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
+                class="btn-nav active bg-[#E1DFD1] bg-opacity-15 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
                 data-target="nosotros">
                 Nosotros
             </button>
@@ -34,6 +34,12 @@
                 class="btn-nav bg-pink-100 bg-opacity-15 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
                 data-target="plan-estudios">
                 Plan de Estudios
+            </button>
+
+            <button
+                class="btn-nav bg-pink-100 bg-opacity-15 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
+                data-target="contactanos">
+                Contactanos
             </button>
 
         </section>
@@ -62,9 +68,9 @@
                         </div>
 
                         <p class="text-md md:text-lg text-gray-700">
-                            “Formar profesionales en Educación, en la especialidad de Historia y Geografía, con capacidades
+                            Formar profesionales en Educación, en la especialidad de Historia y Geografía, con capacidades
                             científicas y cualidades humanísticas que responden a las necesidades sociales de nuestra
-                            comunidad; contribuyendo al desarrollo sostenible local, regional y nacional”.
+                            comunidad; contribuyendo al desarrollo sostenible local, regional y nacional.
                         </p>
                     </div>
 
@@ -80,11 +86,12 @@
                         </div>
 
                         <p class="text-md md:text-lg text-gray-700">
-                            “Al 2025 seremos un programa académico líder reconocido a nivel regional y nacional en la formación
+                            Al 2025 seremos un programa académico líder reconocido a nivel regional y nacional en la formación
                             de docentes de Historia y Geografía con sólidos conocimientos humanísticos, científicos y
                             tecnológicos; con ética, vocación de servicio, equidad y justicia que contribuyan a fortalecer la
                             identidad cultural y ciudadanía para la solución de los problemas de su entorno en un ambiente
-                            democrático.”.
+                            democrático.</br>
+                            <b class="text-sm italic">Currículo del Programa de Estudios de Educación Secundaria Mencion Historia y Geografia(2021)</b>.
                         </p>
                     </div>
             </section>
@@ -219,77 +226,75 @@
                     href="https://drive.google.com/file/d/1GEr1Ozk4sdpm_9papTzElEYKv6_vYpbe/view"
                     target="_blank">Ver Malla Curricular</a>
             </section>
+
+            <section class="contenido text-center" id="contactanos" style="display: none;">
+            <section class="lg:flex p-5 md:px-20 justify-center max-h-[px]">
+
+<form action="" method="POST"
+    class="border-2 border-[#A54332] gap-3 shadow-xl mx-auto rounded-lg p-5 grid md:grid-cols-2 [&>section>img]:bg-[#A54332] [&>section]:flex [&>section>img]:p-2 [&>section]:rounded-md [&>section]:border [&>section]:border-[#A54332] [&>section>img]:rounded-l-[5px] [&>section>input]:w-full [&>section>input]:rounded-r-md [&>section>input]:px-2 [&>section>input]:bg-transparent ">
+    {{-- Predeterminado la escuela desde donde va --}}
+    <section class="entrada-uno">
+        <img src="{{ asset('icons/user.svg') }}" alt="">
+        <input type="text" placeholder="Escriba su nombre" id="Nombres" name="Nombres">
+    </section>
+    <section class="entrada-uno">
+        <img src="{{ asset('icons/user.svg') }}" alt="">
+        <input type="text" placeholder="Escriba su apellido" id="Apellidos" name="Apellidos">
+    </section>
+    <section class="entrada-uno">
+        <img src="{{ asset('icons/email.svg') }}" alt="">
+        <input type="text" placeholder="Ingrese su correo" id="Correo" name="Correo">
+    </section>
+    <section class="entrada-uno">
+        <img src="{{ asset('icons/phone.svg') }}" alt="">
+        <input type="text" placeholder="Escriba su N° celular" id="Celular" name="Celular">
+    </section>
+    <section class="md:col-span-2 flex ">
+        <img src="{{ asset('icons/setting.svg') }}" alt="">
+        <select id="opciones" name="Opciones" class="w-full rounded-r-md bg-transparent">
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="Docente">Docente</option>
+            <option value="Estudiante">Estudiante</option>
+            <option value="Egresado">Egresado</option>
+            <option value="Administrativo">Administrativo</option>
+            <option value="Otros">Otros</option>
+        </select>
+    </section>
+    <textarea name="Comentarios" id="Comentarios" placeholder="Escribe Tu Mensaje Aquí"
+        class="md:col-span-2 rounded-md p-3 border border-[#A54332] bg-transparent"></textarea>
+    <input class="py-2 bg-[#A54332] rounded-md text-white font-bold cursor-pointer" type="submit"
+        id="enviar" name="enviar" value="Enviar">
+    <input class="py-2 border-2 border-[#A54332] rounded-md text-[#A54332] font-bold cursor-pointer"
+        type="reset" id="borrar" name="borrar" value="Borrar">
+</form>
+</section>
+            </section>
+
         </section>
 
-        <section class="datos order-first max-w-6xl px-5 md:px-20 mx-auto my-6 flex flex-col lg:flex-row justify-center gap-6 ">
+        <section class="datos order-first p-5 md:px-20 mx-auto my-6 grid grid-cols-1 lg:grid-cols-3 gap-6 ">
             <!-- Primera columna: Bienvenida -->
-            <div class="bg-[#E1DFD1] p-6 rounded-lg shadow-lg text-center flex flex-col justify-center lg:w-1/3">
+            <div class="bg-[#E1DFD1] p-6 rounded-lg shadow-lg text-center">
                 <div class="text-red-500 text-6xl mb-4">🤝</div> <!-- Icono personalizado -->
-                <h3 class="text-xl font-bold text-[#A54332] mb-2">Bienvenida</h3>
-                <p class="">"Bienvenidos a la Escuela Profesional de Educación Secundaria Mención Historia y 
-                    geografia, un espacio donde la excelencia académica se encuentra con la innovación y la pasión
-                    por el aprendizaje."</p>
+                <h3 class="text-xl font-bold text-black mb-2">Bienvenida</h3>
+                <p class="text-black">"Bienvenidos a la Escuela Profesional de Educación Secundaria Mención Historia y geografia,
+                     un espacio donde la excelencia académica se encuentra con la innovación y la pasión por el aprendizaje."</p>
             </div>
 
-            <div class="flex flex-col justify-between lg:w-1/3">
-                <img src="{{ asset('imagenes/index/director-secundaria.png')}}" class="rounded-t-lg lg:h-2/4 w-full " alt=""><!-- Icono personalizado -->
-                <div class="bg-[#F0F0F2] h-1/2 p-6 rounded-b-lg shadow-lg text-center">
-                    <h3 class="text-xl font-bold text-[#A54332] mb-2">Dr. Carlos Oswaldo Caballero Alayo</h3>
-                    <p class="text-black">Director de la Escuela Profesional de Secundaria</p>
-                    <a href="mailto:inicial@unitru.edu.pe"
-                    class="text-md font-bold text-black mb-2 text-wrap">secundaria@unitru.edu.pe</a>
-                </div>
+            <!-- Segunda columna: Dr. Manuel Quipuscoa Silvestre -->
+            <div class="bg-[#F0F0F2] p-6 rounded-lg shadow-lg text-center">
+                <div class="text-red-500 text-6xl mb-4">👨‍💼</div> <!-- Icono personalizado -->
+                <h3 class="text-xl font-bold text-black mb-2">Dr. Carlos Oswaldo Caballero Alayo</h3>
+                <p class="text-black">Director de la Escuela Profesional de Secundaria<br>Universidad Nacional de Trujillo</p>
+                <a href="mailto:inicial@unitru.edu.pe" class="text-md font-bold text-black mb-2">secundaria@unitru.edu.pe</a>
             </div>
 
-            <div class="flex flex-col lg:w-1/3">
-                <img src="{{ asset('imagenes/index/asistente-secundaria.png')}}" class="rounded-t-lg lg lg:h-2/4 w-full" alt=""> <!-- Icono personalizado -->
-                <div class="bg-[#E1DFD1] h-1/2 p-6 rounded-b-lg shadow-lg text-center">
-                    <h3 class="text-xl font-bold text-[#A54332] mb-2">Sra. Mercedes Pilar Chuica Flores</h3>
-                    <p class="">Asistente administrativa</p>
-                </div>
+            <!-- Tercera columna: Mg. Patricia Roxana Vela Gálvez -->
+            <div class="bg-[#E1DFD1] p-6 rounded-lg shadow-lg text-center">
+                <div class="text-red-500 text-6xl mb-4">👩‍💼</div> <!-- Icono personalizado -->
+                <h3 class="text-xl font-bold text-black mb-2">Sra. Mercedes Pilar Chuica Flores</h3>
+                <p class="text-black">Asistente Administrativa.</p>
             </div>
-        </section>
-
-        <section class="lg:flex p-5 md:px-20 justify-center max-h-[336px]">
-
-            <img src="{{ asset('imagenes/index/filosofia.png') }}" class="w-1/2 hidden lg:block" alt="">
-            <form action="" method="POST"
-                class="border-2 border-[#A54332] gap-3 shadow-xl mx-auto rounded-lg p-5 grid md:grid-cols-2 [&>section>img]:bg-[#A54332] [&>section]:flex [&>section>img]:p-2 [&>section]:rounded-md [&>section]:border [&>section]:border-[#A54332] [&>section>img]:rounded-l-[5px] [&>section>input]:w-full [&>section>input]:rounded-r-md [&>section>input]:px-2 [&>section>input]:bg-transparent ">
-                {{-- Predeterminado la escuela desde donde va --}}
-                <section class="entrada-uno">
-                    <img src="{{ asset('icons/user.svg') }}" alt="">
-                    <input type="text" placeholder="Escriba su nombre" id="Nombres" name="Nombres">
-                </section>
-                <section class="entrada-uno">
-                    <img src="{{ asset('icons/user.svg') }}" alt="">
-                    <input type="text" placeholder="Escriba su apellido" id="Apellidos" name="Apellidos">
-                </section>
-                <section class="entrada-uno">
-                    <img src="{{ asset('icons/email.svg') }}" alt="">
-                    <input type="text" placeholder="Ingrese su correo" id="Correo" name="Correo">
-                </section>
-                <section class="entrada-uno">
-                    <img src="{{ asset('icons/phone.svg') }}" alt="">
-                    <input type="text" placeholder="Escriba su N° celular" id="Celular" name="Celular">
-                </section>
-                <section class="md:col-span-2 flex ">
-                    <img src="{{ asset('icons/setting.svg') }}" alt="">
-                    <select id="opciones" name="Opciones" class="w-full rounded-r-md bg-transparent">
-                        <option value="" disabled selected>Selecciona una opción</option>
-                        <option value="Docente">Docente</option>
-                        <option value="Estudiante">Estudiante</option>
-                        <option value="Egresado">Egresado</option>
-                        <option value="Administrativo">Administrativo</option>
-                        <option value="Otros">Otros</option>
-                    </select>
-                </section>
-                <textarea name="Comentarios" id="Comentarios" placeholder="Escribe Tu Mensaje Aquí"
-                    class="md:col-span-2 rounded-md p-3 border border-[#A54332] bg-transparent"></textarea>
-                <input class="py-2 bg-[#A54332] rounded-md text-white font-bold cursor-pointer" type="submit"
-                    id="enviar" name="enviar" value="Enviar">
-                <input class="py-2 border-2 border-[#A54332] rounded-md text-[#A54332] font-bold cursor-pointer"
-                    type="reset" id="borrar" name="borrar" value="Borrar">
-            </form>
         </section>
     </section>
 

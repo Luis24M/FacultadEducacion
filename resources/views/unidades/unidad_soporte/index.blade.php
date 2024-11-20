@@ -3,7 +3,7 @@
 @section('content')
 
 
-<div class="flex justify-center items-center">
+<div class="flex justify-center items-center bg-yellow-300 w-full">
     <h2 class="text-3xl my-8 font-bold text-blue-500">UNIDAD DE SOPORTE</h2>
 </div>
 

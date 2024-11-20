@@ -8,8 +8,8 @@
                 <h1 class="text-xl font-bold">FACEDU</h1>
             </div>
         </div>
-        <p class="flex max-w-80 mx-auto flex-wrap justify-center text-lg text-center">Facultad de educación y ciencias de la
-            comunicación</p>
+        <p class="flex max-w-80 mx-auto flex-wrap justify-center text-lg text-center">Facultad de Educación y Ciencias de la
+            Comunicación</p>
     </a>
     {{-- <section class="mt-9">
         <div class="idiomas">
