@@ -127,7 +127,8 @@ $docentes = [
       <!-- Icono personalizado -->
 
       <h3 class="text-xl font-bold text-white mb-2">Bienvenida</h3>
-      <p class="text-white">"Bienvenidos al programa de Idiomas: Inglés-Alemán / Inglés-Francés"</p>
+      <p class="text-white">"Bienvenidos a la Escuela Profesional de Educación Secundaria Mención Idiomas,
+         un espacio donde la excelencia académica se encuentra con la innovación y la pasión por el aprendizaje."</p>
     </div>
 
     <!-- Segunda columna:  -->
@@ -145,7 +146,7 @@ $docentes = [
     <div class="bg-blue-900 p-6 rounded-lg shadow-lg text-center">
       <div class="text-red-500 text-6xl mb-4">👩‍💼</div> <!-- Icono personalizado -->
       <h3 class="text-xl font-bold text-white mb-2">Fredesvinda García Andrade</h3>
-      <p class="text-white">Asistente Administrativo</p>
+      <p class="text-white">Asistente Administrativa</p>
     </div>
 
   </div>
@@ -193,7 +194,8 @@ $docentes = [
             En el año 2025, seremos una unidad académica acreditada, que contribuye al desarrollo sustentable de la región,
             del país y del mundo, sensible a las exigencias sociales, que forma profesionales con excelencia académica en idiomas,
             se proyecta a la comunidad con responsabilidad social, realiza investigación científica, respeta la diversidad cultural
-            y la ecología, y contribuye a la formación integral del ser humano dentro del marco de los valores ético y estéticos”.
+            y la ecología, y contribuye a la formación integral del ser humano dentro del marco de los valores ético y estéticos.
+          </br><b class="text-sm italic">Currículo del Programa de estudios de Educación Secundaria Idiomas(2018)</b>
           </p>
         </div>
 

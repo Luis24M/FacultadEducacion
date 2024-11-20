@@ -13,7 +13,7 @@
     <section class="max-w-[1050px] flex flex-col mx-auto p-5 md:px-0">
         <section class="md:px-11 px-6 py-5 flex flex-wrap gap-4 max-w-[800px]">
             <button
-                class="btn-nav active bg-pink-100 bg-opacity-15 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
+                class="btn-nav active bg-[#E1DFD1] bg-opacity-15 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
                 data-target="nosotros">
                 Nosotros
             </button>
@@ -68,9 +68,9 @@
                         </div>
 
                         <p class="text-md md:text-lg text-gray-700">
-                            “Formar profesionales en Educación, en la especialidad de Historia y Geografía, con capacidades
+                            Formar profesionales en Educación, en la especialidad de Historia y Geografía, con capacidades
                             científicas y cualidades humanísticas que responden a las necesidades sociales de nuestra
-                            comunidad; contribuyendo al desarrollo sostenible local, regional y nacional”.
+                            comunidad; contribuyendo al desarrollo sostenible local, regional y nacional.
                         </p>
                     </div>
 
@@ -86,11 +86,12 @@
                         </div>
 
                         <p class="text-md md:text-lg text-gray-700">
-                            “Al 2025 seremos un programa académico líder reconocido a nivel regional y nacional en la formación
+                            Al 2025 seremos un programa académico líder reconocido a nivel regional y nacional en la formación
                             de docentes de Historia y Geografía con sólidos conocimientos humanísticos, científicos y
                             tecnológicos; con ética, vocación de servicio, equidad y justicia que contribuyan a fortalecer la
                             identidad cultural y ciudadanía para la solución de los problemas de su entorno en un ambiente
-                            democrático.”.
+                            democrático.</br>
+                            <b class="text-sm italic">Currículo del Programa de estudios de Educación Secundaria Mencion Historia y Geografia(2021)</b>.
                         </p>
                     </div>
             </section>
@@ -271,32 +272,27 @@
 
         </section>
 
-        <section class="datos order-first max-w-6xl px-5 md:px-20 mx-auto my-6 flex flex-col lg:flex-row justify-center gap-6 ">
+        <section class="datos order-first p-5 md:px-20 mx-auto my-6 grid grid-cols-1 lg:grid-cols-3 gap-6 ">
             <!-- Primera columna: Bienvenida -->
-            <div class="bg-[#E1DFD1] p-6 rounded-lg shadow-lg text-center flex flex-col justify-center lg:w-1/3">
+            <div class="bg-[#E1DFD1] p-6 rounded-lg shadow-lg text-center">
                 <div class="text-red-500 text-6xl mb-4">🤝</div> <!-- Icono personalizado -->
-                <h3 class="text-xl font-bold text-[#A54332] mb-2">Bienvenida</h3>
-                <p class="">"Bienvenidos a la Escuela Profesional de Educación Secundaria Mención Historia y 
-                    geografia, un espacio donde la excelencia académica se encuentra con la innovación y la pasión
-                    por el aprendizaje."</p>
+                <h3 class="text-xl font-bold text-black mb-2">Bienvenida</h3>
+                <p class="text-black">"Bienvenidos a la Escuela Profesional de Educación Secundaria Mención Historia y geografia, un espacio donde la excelencia académica se encuentra con la innovación y la pasión por el aprendizaje."</p>
             </div>
 
-            <div class="flex flex-col justify-between lg:w-1/3">
-                <img src="{{ asset('imagenes/index/director-secundaria.png')}}" class="rounded-t-lg lg:h-2/4 w-full " alt=""><!-- Icono personalizado -->
-                <div class="bg-[#F0F0F2] h-1/2 p-6 rounded-b-lg shadow-lg text-center">
-                    <h3 class="text-xl font-bold text-[#A54332] mb-2">Dr. Carlos Oswaldo Caballero Alayo</h3>
-                    <p class="text-black">Director de la Escuela Profesional de Secundaria</p>
-                    <a href="mailto:inicial@unitru.edu.pe"
-                    class="text-md font-bold text-black mb-2 text-wrap">secundaria@unitru.edu.pe</a>
-                </div>
+            <!-- Segunda columna: Dr. Manuel Quipuscoa Silvestre -->
+            <div class="bg-[#F0F0F2] p-6 rounded-lg shadow-lg text-center">
+                <div class="text-red-500 text-6xl mb-4">👨‍💼</div> <!-- Icono personalizado -->
+                <h3 class="text-xl font-bold text-black mb-2">Dr. Carlos Oswaldo Caballero Alayo</h3>
+                <p class="text-black">Director de la Escuela Profesional de Secundaria<br>Universidad Nacional de Trujillo</p>
+                <a href="mailto:inicial@unitru.edu.pe" class="text-md font-bold text-black mb-2">secundaria@unitru.edu.pe</a>
             </div>
 
-            <div class="flex flex-col lg:w-1/3">
-                <img src="{{ asset('imagenes/index/asistente-secundaria.png')}}" class="rounded-t-lg lg lg:h-2/4 w-full" alt=""> <!-- Icono personalizado -->
-                <div class="bg-[#E1DFD1] h-1/2 p-6 rounded-b-lg shadow-lg text-center">
-                    <h3 class="text-xl font-bold text-[#A54332] mb-2">Sra. Mercedes Pilar Chuica Flores</h3>
-                    <p class="">Asistente administrativa</p>
-                </div>
+            <!-- Tercera columna: Mg. Patricia Roxana Vela Gálvez -->
+            <div class="bg-[#E1DFD1] p-6 rounded-lg shadow-lg text-center">
+                <div class="text-red-500 text-6xl mb-4">👩‍💼</div> <!-- Icono personalizado -->
+                <h3 class="text-xl font-bold text-black mb-2">Sra. Mercedes Pilar Chuica Flores</h3>
+                <p class="text-black">Asistente Administrativa.</p>
             </div>
         </section>
     </section>

@@ -130,14 +130,16 @@ $docentes = [
         <!-- Icono personalizado -->
 
         <h3 class="text-xl font-bold text-white mb-2">Bienvenida</h3>
-        <p class="text-white">"Bienvenidos a la Escuela Profesional de Ciencias de la Comunicación"</p>
+        <p class="text-white">"Bienvenidos a la Escuela Profesional de Ciencias de la Comunicacion,
+           un espacio donde la excelencia académica se encuentra con la innovación y la pasión
+                    por el aprendizaje."</p>
       </div>
 
       <!-- Segunda columna:  -->
-      <div class="bg-gray-600 p-6 rounded-lg shadow-lg text-center">
+      <div class="bg-gray-600 bg-opacity-30 p-6 rounded-lg shadow-lg text-center">
         <div class="text-black text-6xl mb-4">👩</div> <!-- Icono personalizado -->
-        <h3 class="text-xl font-bold text-white mb-2">Dra. María Luisa Bazán Guzmán</h3>
-        <p class="text-white">
+        <h3 class="text-xl font-bold text-black mb-2">Dra. María Luisa Bazán Guzmán</h3>
+        <p class="text-black">
           Directora de la Escuela Profesional de Ciencias de la Comunicación.
           <br>
           <span class="text-sm font-semibold"> comunicacion@unitru.edu.pe </span>

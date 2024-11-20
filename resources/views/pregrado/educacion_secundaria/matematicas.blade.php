@@ -68,7 +68,7 @@
                         </div>
 
                         <p class="text-md md:text-lg text-gray-700">
-                        “Somos una carrera profesional
+                        Somos una carrera profesional
                             responsable de la formación
                             académica de futuros docentes de
                             matemática, que responden con
@@ -83,7 +83,7 @@
                             matemáticas con impacto en el
                             desarrollo social y sostenible de la
                             región y el país.
-                            ”.
+                            .
                         </p>
                     </div>
 
@@ -99,7 +99,7 @@
                         </div>
 
                         <p class="text-md md:text-lg text-gray-700">
-                            “Al 2025, la carrera de educación
+                            Al 2024, la carrera de educación
                             secundaria mención ciencias
                             matemáticas aporta a la sociedad
                             peruana con docentes altamente
@@ -107,8 +107,9 @@
                             potencializados en sus talentos para
                             la investigación científica y
                             tecnológica y que actúan con
-                            responsabilidad social contribuyendo”.
-                        </p>
+                            responsabilidad social contribuyendo.</br>
+                            <b class="text-sm italic">Currículo del Programa de estudios de Educación Secundaria Ciencias Matematicas(2018)</b>
+                        </p></br>
                     </div>
             </section>
 
@@ -294,32 +295,27 @@
 
         </section>
 
-        <section class="datos order-first max-w-6xl px-5 md:px-20 mx-auto my-6 flex flex-col lg:flex-row justify-center gap-6 ">
+        <section class="datos order-first p-5 md:px-20 mx-auto my-6 grid grid-cols-1 lg:grid-cols-3 gap-6 ">
             <!-- Primera columna: Bienvenida -->
-            <div class="bg-gray-300 p-6 rounded-lg shadow-lg text-center flex flex-col justify-center lg:w-1/3">
+            <div class="bg-gray-300 p-6 rounded-lg shadow-lg text-center">
                 <div class="text-red-500 text-6xl mb-4">🤝</div> <!-- Icono personalizado -->
-                <h3 class="text-xl font-bold text-[#252850] mb-2">Bienvenida</h3>
-                <p class="">"Bienvenidos a la Escuela Profesional de Educación Secundaria Mención Ciencias 
-                    Matematicas, un espacio donde la excelencia académica se encuentra con la innovación y la pasión
-                    por el aprendizaje."</p>
+                <h3 class="text-xl font-bold text-black mb-2">Bienvenida</h3>
+                <p class="text-black">"Bienvenidos a la Escuela Profesional de Educación Secundaria Mención Ciencias Matematicas, un espacio donde la excelencia académica se encuentra con la innovación y la pasión por el aprendizaje."</p>
             </div>
 
-            <div class="flex flex-col justify-between lg:w-1/3">
-                <img src="{{ asset('imagenes/index/director-secundaria.png')}}" class="rounded-t-lg lg:h-2/4 w-full " alt=""><!-- Icono personalizado -->
-                <div class="bg-gray-300 h-1/2 p-6 rounded-b-lg shadow-lg text-center">
-                    <h3 class="text-xl font-bold text-[#252850] mb-2">Dr. Carlos Oswaldo Caballero Alayo</h3>
-                    <p class="text-black">Director de la Escuela Profesional de Secundaria</p>
-                    <a href="mailto:inicial@unitru.edu.pe"
-                    class="text-md font-bold text-black mb-2 text-wrap">secundaria@unitru.edu.pe</a>
-                </div>
+            <!-- Segunda columna: Dr. Manuel Quipuscoa Silvestre -->
+            <div class="bg-[#252850] p-6 rounded-lg shadow-lg text-center">
+                <div class="text-red-500 text-6xl mb-4">👨‍💼</div> <!-- Icono personalizado -->
+                <h3 class="text-xl font-bold text-white mb-2">Dr. Carlos Oswaldo Caballero Alayo</h3>
+                <p class="text-white">Director de la Escuela Profesional de Secundaria<br>Universidad Nacional de Trujillo</p>
+                <a href="mailto:inicial@unitru.edu.pe" class="text-md font-bold text-white mb-2">secundaria@unitru.edu.pe</a>
             </div>
 
-            <div class="flex flex-col lg:w-1/3">
-                <img src="{{ asset('imagenes/index/asistente-secundaria.png')}}" class="rounded-t-lg lg lg:h-2/4 w-full" alt=""> <!-- Icono personalizado -->
-                <div class="bg-gray-300 h-1/2 p-6 rounded-b-lg shadow-lg text-center">
-                    <h3 class="text-xl font-bold text-[#252850] mb-2">Sra. Mercedes Pilar Chuica Flores</h3>
-                    <p class="">Asistente administrativa</p>
-                </div>
+            <!-- Tercera columna: Mg. Patricia Roxana Vela Gálvez -->
+            <div class="bg-gray-300 p-6 rounded-lg shadow-lg text-center">
+                <div class="text-red-500 text-6xl mb-4">👩‍💼</div> <!-- Icono personalizado -->
+                <h3 class="text-xl font-bold text-black mb-2">Sra. Mercedes Pilar Chuica Flores</h3>
+                <p class="text-black">Asistente Administrativa.</p>
             </div>
         </section>
 
