@@ -93,7 +93,7 @@
                             secundaria, con mención en, Lengua y Literatura y Comunicación con conocimientos
                             científicos, humanísticos y tecnológicos, con cualidades morales y estéticas; que responden
                             con pertinencia, equidad y calidad al desarrollo integral del hombre en el marco local,
-                            regional y nacional.</br><b class="text-sm italic">Currículo del Programa de estudios de Educación Secundaria Lengua y Literatura(2018)</b>
+                            regional y nacional.</br><b class="text-sm italic">Currículo del Programa de Estudios de Educación Secundaria Lengua y Literatura(2018)</b>
                         </p>
                     </div>
             </section>

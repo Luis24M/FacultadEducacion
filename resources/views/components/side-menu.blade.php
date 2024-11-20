@@ -26,8 +26,9 @@
     <hr>
     <x-side-button icon="book.svg" title="Educación Inicial" route="/pregrado/inicial" />
     <x-side-button icon="book.svg" title="Educación Primaria" route="/pregrado/primaria" />
+    <x-side-button icon="book.svg" title="Ciencias de la Comunicación" route="/pregrado/cdlc" />
     <x-side-button icon="book.svg" title="Educación Secundaria" route="/pregrado/secundaria" />
-    <x-side-button icon="book.svg" title="Ciencias de la comunicación" route="/pregrado/cdlc" />
+
 
     {{-- SECUNDARIA --}}
     @elseif(request()->routeIs('pregrado.secundaria') || request()->routeIs('pregrado.secundaria.*') )

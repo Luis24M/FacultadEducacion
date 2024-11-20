@@ -195,7 +195,7 @@ $docentes = [
             del país y del mundo, sensible a las exigencias sociales, que forma profesionales con excelencia académica en idiomas,
             se proyecta a la comunidad con responsabilidad social, realiza investigación científica, respeta la diversidad cultural
             y la ecología, y contribuye a la formación integral del ser humano dentro del marco de los valores ético y estéticos.
-          </br><b class="text-sm italic">Currículo del Programa de estudios de Educación Secundaria Idiomas(2018)</b>
+          </br><b class="text-sm italic">Currículo del Programa de Estudios de Educación Secundaria Idiomas(2018)</b>
           </p>
         </div>
 

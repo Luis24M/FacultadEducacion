@@ -98,7 +98,7 @@
                             instituciones educativas, locales, nacionales e internacionales para promover el mejoramiento de
                             sus docentes y experiencias curriculares y ejerce una administración académica, que promueve el
                             desarrollo del talento humano y el logro de los objetivos institucionales.</br>
-                            <b class="text-sm italic">Currículo del Programa de Estudios de Filosofia, Psicologia y CCSS(2018)</b>
+                            <b class="text-sm italic">Currículo del Programa de Estudios de Educacion Secundaria Mencion Filosofia, Psicologia y CCSS(2018)</b>
                         </p>
                     </div>
             </section>

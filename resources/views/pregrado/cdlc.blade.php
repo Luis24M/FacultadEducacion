@@ -203,7 +203,7 @@ $docentes = [
               nacional, acreditada para la formación científica, tecnológica y
               humanística, de profesionales comunicadores que contribuyan al
               desarrollo sostenible de la región La Libertad y del país".</br>
-              <b class="text-sm">"Currículo del Programa de Estudios Ciencias de la Comunicación(2018)".</b>
+              <b class="text-sm">"Currículo del Programa de Estudios de Ciencias de la Comunicación(2018)".</b>
             </p>
           </div>
 

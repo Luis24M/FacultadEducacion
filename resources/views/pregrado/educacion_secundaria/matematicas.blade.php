@@ -108,7 +108,7 @@
                             la investigación científica y
                             tecnológica y que actúan con
                             responsabilidad social contribuyendo.</br>
-                            <b class="text-sm italic">Currículo del Programa de estudios de Educación Secundaria Ciencias Matematicas(2018)</b>
+                            <b class="text-sm italic">Currículo del Programa de Estudios de Educación Secundaria Mencion Ciencias Matematicas(2018)</b>
                         </p></br>
                     </div>
             </section>

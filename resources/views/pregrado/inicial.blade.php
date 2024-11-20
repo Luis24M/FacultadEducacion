@@ -87,7 +87,7 @@
                         su vocación democrática, por la formación de profesionales en la educación infantil, la
                         investigación científica y responsabilidad social; manteniendo vínculos con los grupos de
                         interés y contribuyendo al desarrollo local, regional y nacional.</br>
-                        <b class="text-sm italic">“Currículo del Programa de estudios de Educación Inicial(2021)”.</b>
+                        <b class="text-sm italic">“Currículo del Programa de Estudios de Educación Inicial(2021)”.</b>
                         </p>
                     </div>
 

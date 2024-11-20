@@ -91,7 +91,7 @@
                             tecnológicos; con ética, vocación de servicio, equidad y justicia que contribuyan a fortalecer la
                             identidad cultural y ciudadanía para la solución de los problemas de su entorno en un ambiente
                             democrático.</br>
-                            <b class="text-sm italic">Currículo del Programa de estudios de Educación Secundaria Mencion Historia y Geografia(2021)</b>.
+                            <b class="text-sm italic">Currículo del Programa de Estudios de Educación Secundaria Mencion Historia y Geografia(2021)</b>.
                         </p>
                     </div>
             </section>
@@ -277,7 +277,8 @@
             <div class="bg-[#E1DFD1] p-6 rounded-lg shadow-lg text-center">
                 <div class="text-red-500 text-6xl mb-4">🤝</div> <!-- Icono personalizado -->
                 <h3 class="text-xl font-bold text-black mb-2">Bienvenida</h3>
-                <p class="text-black">"Bienvenidos a la Escuela Profesional de Educación Secundaria Mención Historia y geografia, un espacio donde la excelencia académica se encuentra con la innovación y la pasión por el aprendizaje."</p>
+                <p class="text-black">"Bienvenidos a la Escuela Profesional de Educación Secundaria Mención Historia y geografia,
+                     un espacio donde la excelencia académica se encuentra con la innovación y la pasión por el aprendizaje."</p>
             </div>
 
             <!-- Segunda columna: Dr. Manuel Quipuscoa Silvestre -->
