@@ -3,10 +3,11 @@
 @section('content')
 
 
-<div class="flex justify-center items-center bg-yellow-300 w-full">
-    <h2 class="text-3xl my-8 font-bold text-blue-500">UNIDAD DE SOPORTE</h2>
-</div>
-
+<section class="bg-[#483D8B] text-white py-8 flex items-center justify-center">
+        <div class="text-center">
+        <h1 class="text-4xl font-extrabold">Unidad de Soporte</h1>
+         </div>
+</section>
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
     <div class="bg-white p-10 rounded-lg shadow-lg ml-8">

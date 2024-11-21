@@ -1,6 +1,13 @@
 @extends('layouts.home')
 
 @section('content')
+
+<section class="bg-[#483D8B] text-white py-8 flex items-center justify-center">
+        <div class="text-center">
+        <h1 class="text-4xl font-extrabold">Licenciamiento</h1>
+         </div>
+</section>
+
 <div class="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
     <div class="max-w-7xl mx-auto">
 

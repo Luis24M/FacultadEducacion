@@ -3,7 +3,7 @@
 @section('content')
 <section class="bg-[#483D8B] text-white py-8 flex items-center justify-center">
     <div class="text-center">
-        <h1 class="text-4xl font-extrabold">Unidad de Calidad</h1>
+        <h1 class="text-4xl font-extrabold">Autoevalucación con fines de Acreditación</h1>
     </div>
 </section>
 

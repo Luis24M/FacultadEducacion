@@ -62,7 +62,8 @@
     :list="[ 
         ['name' => 'Auditoria Interna', 'url' => '/unidades/unidad_calidad/auditoria_interna'], 
         ['name' => 'Acreditación', 'url' => '/unidades/unidad_calidad/acreditacion'], 
-        ['name' => 'Licenciamiento', 'url' => '/unidades/unidad_calidad/licenciamiento'] 
+        ['name' => 'Licenciamiento', 'url' => '/unidades/unidad_calidad/licenciamiento'],
+        ['name' => 'Repositorio', 'url' => '/unidades/unidad_calidad/repositorio']
     ]"
 />
 
@@ -94,7 +95,7 @@
     ]" 
 />
 
-
+<x-side-soporte title="Unidad de Soporte" route="/unidades/unidad_soporte/index" />
 
 
 @elseif(request()->routeIs('departamentos_academicos'))
