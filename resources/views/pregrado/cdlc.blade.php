@@ -52,23 +52,6 @@ $docentes = [
 
 <main>
 
-  <!-- banner -->
-  <div class="relative">
-    <img src="{{ asset('imagenes/cdlc-img/cdlc-banner.jpg') }}" class="w-full max-h-[300px] object-cover ">
-
-    <div class="absolute inset-0 flex items-center justify-center flex-col">
-
-      <br>
-
-      <span class="bg-black bg-opacity-60 p-4 text-white text-lg md:text-xl font-bold lg:text-4xl xl:text-5xl rounded">Ciencias de la Comunicación</span>
-      <br>
-      <!-- <span class="bg-black bg-opacity-60 text-white rounded text-sm md:text-md lg:text-lg text-center px-20 py-4 font-semibold">
-        "Impulsando comunicadores integrales, capaces de informar, inspirar y conectar al mundo a través de la comunicación y la innovación"
-      </span> -->
-    </div>
-  </div>
-
-
   <section class="max-w-[1050px] mx-auto p-5 md:px-0">
 
     <!-- Navigation buttons -->
@@ -103,9 +86,9 @@ $docentes = [
     <div id="welcome-cards" class="max-w-6xl mt-6 grid grid-cols-1 lg:grid-cols-3 gap-6 ">
 
       <!-- Primera columna: Bienvenida -->
-      <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-center">
-        <div class="text-red-500 mb-4 flex justify-center">
-          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 36 36">
+      <div class="bg-gray-500 p-6 rounded-lg shadow-lg text-center">
+        <div class="mb-4 flex justify-center">
+          <svg class="drop-shadow-lg" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 36 36">
             <path fill="#292f33" d="M6 15h24v2H6zm15 15c0 2.208-.792 4-3 4s-3-1.792-3-4s.791-2 3-2s3-.208 3 2" />
             <path fill="#66757f" d="M18 31c-6.627 0-10 1.343-10 3v2h20v-2c0-1.657-3.373-3-10-3" />
             <path fill="#99aab5" d="M18 0a9 9 0 0 0-9 9v7h18V9a9 9 0 0 0-9-9" />
@@ -136,10 +119,10 @@ $docentes = [
       </div>
 
       <!-- Segunda columna:  -->
-      <div class="bg-gray-600 bg-opacity-30 p-6 rounded-lg shadow-lg text-center">
-        <div class="text-black text-6xl mb-4">👩</div> <!-- Icono personalizado -->
-        <h3 class="text-xl font-bold text-black mb-2">Dra. María Luisa Bazán Guzmán</h3>
-        <p class="text-black">
+      <div class="bg-gray-600 bg-opacity-30 p-6 rounded-lg shadow-lg text-white text-center">
+        <div class="text-white text-6xl mb-4">👩</div> <!-- Icono personalizado -->
+        <h3 class="text-xl font-bold  mb-2">Dra. María Luisa Bazán Guzmán</h3>
+        <p>
           Directora de la Escuela Profesional de Ciencias de la Comunicación.
           <br>
           <span class="text-sm font-semibold"> comunicacion@unitru.edu.pe </span>
@@ -147,7 +130,7 @@ $docentes = [
       </div>
 
       <!-- Tercera columna: -->
-      <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-center">
+      <div class="bg-gray-500 p-6 rounded-lg shadow-lg text-center">
         <div class="text-red-500 text-6xl mb-4">👩‍💼</div> <!-- Icono personalizado -->
         <h3 class="text-xl font-bold text-white mb-2">Bach. Yanet Jacqueline Varas Castillo</h3>
         <p class="text-white">Asistente Administrativo</p>

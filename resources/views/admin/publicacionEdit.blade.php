@@ -15,20 +15,21 @@
       </div>
   @endif
 
-  <form action="{{ route('publicacion.store') }}" method="POST" enctype="multipart/form-data">
+  <form action="{{ route('publicacion.update', $publicacion) }}" method="POST" enctype="multipart/form-data">
     @csrf
+    @method('PUT')
     <div class="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
       <div>
         <label for="nombrePublicacion" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Nombre de la publicación</label>
-        <input type="text" name="nombrePublicacion" id="nombrePublicacion" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+        <input type="text" name="nombrePublicacion" id="nombrePublicacion" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" value="{{ $publicacion->nombrePublicacion }}">
       </div>
       <div>
         <label for="desPublicacion" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Descripcion de la publicación</label>
-        <textarea name="desPublicacion" id="desPublicacion" class="mt-1 text-black focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"></textarea>
+        <textarea name="desPublicacion" id="desPublicacion" class="mt-1 text-black focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">{{ $publicacion->desPublicacion }}</textarea>
       </div>
       <div>
         <label for="imgPublicacion" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Imagen de la publicación</label>
-        <input type="file" name="imgPublicacion" id="imgPublicacion" class="mt-1 text-white focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+        <input type="file" name="imgPublicacion" id="imgPublicacion" class="mt-1 text-white focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" value="{{ $publicacion->imgPublicacion }}">
       </div>
       <div>
         <label for="idTipoPublicacion" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Tipo de publicación</label>

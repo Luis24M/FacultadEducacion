@@ -12,12 +12,25 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('admin.publicacion')" :active="request()->routeIs('admin.publicacion')">
+                    <x-nav-link :href="route('home')" :active="request()->routeIs('home')">
+                        {{ __('Home') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                        {{ __('Dashboard') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('publicacion.index')" :active="request()->routeIs('publicacion.index')">
                         {{ __('Publicación') }}
                     </x-nav-link>
                     <x-nav-link :href="route('admin.galeria')" :active="request()->routeIs('admin.galeria')">
                         {{ __('Galeria') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('tipo-publicacion.index')" :active="request()->routeIs('tipo-publicacion.index')">
+                        {{ __('Tipo de Publicación') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('tipescuela.index')" :active="request()->routeIs('tipescuela.index')">
+                        {{ __('Tipo de Escuelas') }}
+                    </x-nav-link>
+
                 </div>
             </div>
 
@@ -70,10 +83,36 @@
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('home')" :active="request()->routeIs('home')">
+                {{ __('Home') }}
+            </x-responsive-nav-link>
+        </div>
+        <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
         </div>
+        <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('publicacion.index')" :active="request()->routeIs('publicacion.index')">
+                {{ __('Publicación') }}
+            </x-responsive-nav-link>
+        </div>
+        <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('admin.galeria')" :active="request()->routeIs('admin.galeria')">
+                {{ __('Galeria') }}
+            </x-responsive-nav-link>
+        </div>
+        <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('tipo-publicacion.index')" :active="request()->routeIs('tipo-publicacion.index')">
+                {{ __('Tipo de Publicación') }}
+            </x-responsive-nav-link>
+        </div>
+        <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('tipescuela.index')" :active="request()->routeIs('tipescuela.index')">
+                {{ __('Tipo de Escuelas') }}
+            </x-responsive-nav-link>
+        </div>
+
 
         <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-gray-200 dark:border-gray-600">

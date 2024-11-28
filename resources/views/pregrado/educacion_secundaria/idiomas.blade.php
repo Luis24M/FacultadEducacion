@@ -62,11 +62,6 @@ $docentes = [
 ];
 @endphp
 
-<!-- <h1 class="text-3xl md:text-5xl text-white bg-blue-800 w-full p-4 font-bold">Mención Idiomas: Inglés-Francés / Inglés-Alemán</h1> -->
-
-<h1 class="text-3xl md:text-5xl text-white bg-blue-800 w-full p-4 font-bold">Mención Idiomas: Inglés-Francés / Inglés-Alemán</h1>
-
-
 <section class="max-w-[1050px] mx-auto p-5 md:px-0">
 
   <section class="md:px-11 px-6 py-5 flex flex-wrap gap-4 max-w-[800px]">

@@ -2,6 +2,9 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PublicacionController;
+use App\Http\Controllers\TipopublicacionController;
+use App\Http\Controllers\TipEscuelaController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -143,27 +146,20 @@ Route::get('/index', function () {
 })->name('index');
 
 
-// admin
-
-Route::resource('publicacion', PublicacionController::class);
-
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
-
-Route::get('/admin/publicacion', function () {
-    return view('admin.publicacion');
-})->name('admin.publicacion');
-
-Route::get('/admin/galeria', function () {
-    return view('admin.galeria');
-})->name('admin.galeria');
-
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    
+    Route::resource('publicacion', PublicacionController::class);
+    Route::resource('tipo-publicacion', TipopublicacionController::class);
+    Route::resource('tipescuela', TipEscuelaController::class);
+
+    Route::get('/dashboard', [PublicacionController::class, 'dashboard'])->name('dashboard');
+
+    Route::get('/admin/galeria', function () {
+        return view('admin.galeria');
+    })->name('admin.galeria');
 });
 
 require __DIR__.'/auth.php';

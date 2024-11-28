@@ -1,15 +1,13 @@
 @extends('layouts.home')
 
 @section('content')
-<style>
 
-</style>
 <div class="flex flex-col w-full min-h-[calc(100dvh-230px)] ">
     <div class="bg-gray-300 h-2/5 w-full" id="Header">
         <h2 class="pl-5 my-3 text-xl"><b>MISION</b></h2>            
     </div>
-    <div class="flex md:flex-row flex-col min-h-[calc(100dvh-230px)] justify-center items-center gap-5 md:mx-5 mx-0" id="Body">
-        <div class="border-solid border-2 border-sky-500 md:w-1/2 w-full h-[300px] flex flex-col justify-center items-center px-5 shadow-xl ">
+    <div class="mision flex md:flex-row flex-col min-h-[calc(100dvh-230px)] justify-center items-center gap-5 md:mx-5 mx-0" id="Body">
+        <div class="border-solid border-2 border-sky-500 md:w-1/2 w-full py-3 min-h-[300px] flex flex-col justify-center items-center px-5 shadow-xl ">
             <h1 class="text-center lg:text-xl text-sm mb-2"><b>Mision</b></h1>
             
                 <p class="c">Formar  profesionales  en  ciencias  de  la  educación  y  comunicación  social
@@ -76,4 +74,13 @@
           </table>
     <div>
 </div>
+
+<style>
+@media(max-width: 1150px){
+  .mision{
+    flex-direction: column
+  }
+}
+</style>
+
 @endsection
