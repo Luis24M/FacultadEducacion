@@ -2,11 +2,9 @@
 @section('content')
     <div class="flex flex-col w-full min-h-[calc(100dvh-230px)]  bg-white rounded-lg shadow-xl ">
         <div class="w-full text-4xl font-bold bg-blue-400 h-300px  ">
-            <h1 class="p-5">UNIDAD DE INVESTIGACIÓN</h1>
+            <h1 class="p-5 text-black">UNIDAD DE INVESTIGACIÓN</h1>
         </div>
-        <p class=" text-gray-700 mb-8 text-lg m-5">
-            Nuestra principal motivación es el desempeño académico de cada uno de nuestros alumnos. Su progreso nos llena de alegría y es nuestra mejor carta de presentación al mundo.
-        </p>
+
         <div class="flex flex-col w-full h-full space-x-5  justify-center items-center my-5">
             <div class="flex lg:flex-row flex-col justify-center  gap-x-3 flex-wrap w-full  ">
                 <!-- Botones con documentos PDF -->

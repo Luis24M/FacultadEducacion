@@ -32,14 +32,15 @@
 
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
     <!-- Card 1 -->
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center ml-3 my-8">
+    
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center mx-3 my-8 ">
         <div class="flex justify-center items-center h-auto overflow-hidden mt-3">
-            <img src="{{ asset('colaboradores/HOMBRE DEFAULT.jpg') }}" alt="Ing. Julio Hernán Luna Victoria Valdivia" class="object-cover object-center w-40 h-40" style="object-position: center 0%;">
+            <img src="{{ asset('/colaboradores/unidades/Cristian Raymound Gutiérrez Ulloa.jpg') }}" alt="Téc. Laura Vega" class="object-cover object-center w-40 h-40">
         </div>
         <div class="p-4 flex flex-col items-center">
-            <h3 class="text-xl font-bold"><b>DR. NELVER EDUARDO VERA MOSTACERO</b> </h3>
-            <p class="text-gray-600 mt-2">"Departamento academido de idiomas"</p>
-            <p class="text-gray-600 mt-2">"nvera@unitru.edu.pe"</p>
+            <h3 class="text-xl font-bold"><b>DR. CRISTIAN RAYMOUND GUTIERREZ ULLOA</b></h3>
+            <p class="text-gray-600 mt-2">"Departamento Académico de Filosofía y Arte"</p>
+            <a class="text-gray-600 mt-2">"investigacion_educacion</br>@unitru.edu.pe"</a>
         </div>
     </div>
 
@@ -94,7 +95,7 @@
     <!-- Card 6 -->
         <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center mx-3 my-8 ">
         <div class="flex justify-center items-center h-auto overflow-hidden mt-3">
-            <img src="{{ asset('colaboradores/MUJER DEFAULT.jpg') }}" alt="Téc. Laura Vega" class="object-cover object-center w-40 h-40">
+            <img src="{{ asset('/colaboradores/unidades/Liliana Marcela Mendoza Montoya.jpg') }}" alt="Téc. Laura Vega" class="object-cover object-center w-40 h-40">
         </div>
         <div class="p-4 flex flex-col items-center">
             <h3 class="text-xl font-bold"><b>DRA. LILIANA MARCELA MENDOZA MONTOYA </b></h3>
@@ -103,22 +104,23 @@
         </div>
     </div>
 
-    <!-- Card 7 -->
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center mx-3 my-8 ">
+
+
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center ml-3 my-8">
         <div class="flex justify-center items-center h-auto overflow-hidden mt-3">
-            <img src="{{ asset('colaboradores/HOMBRE DEFAULT.jpg') }}" alt="Téc. Laura Vega" class="object-cover object-center w-40 h-40">
+            <img src="{{ asset('imagenes/idiomas/9.jpg') }}" alt="Ing. Julio Hernán Luna Victoria Valdivia" class="object-cover object-center w-40 h-40" ">
         </div>
         <div class="p-4 flex flex-col items-center">
-            <h3 class="text-xl font-bold"><b>DR. CRISTIAN RAYMOUND GUTIERREZ ULLOA</b></h3>
-            <p class="text-gray-600 mt-2">"Departamento Académico de Filosofía y Arte"</p>
-            <p class="text-gray-600 mt-2">"investigacion_educacion</br>@unitru.edu.pe"</p>
+            <h3 class="text-xl font-bold"><b>DR. NELVER EDUARDO VERA MOSTACERO</b> </h3>
+            <p class="text-gray-600 mt-2">"Departamento academido de idiomas"</p>
+            <p class="text-gray-600 mt-2">"nvera@unitru.edu.pe"</p>
         </div>
     </div>
 
         <!-- Card 8 -->
         <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center mx-3 my-8 ">
         <div class="flex justify-center items-center h-auto overflow-hidden mt-3">
-            <img src="{{ asset('colaboradores/HOMBRE DEFAULT.jpg') }}" alt="Téc. Laura Vega" class="object-cover object-center w-40 h-40">
+            <img src="https://ctivitae.concytec.gob.pe/appDirectorioCTI/UploadFotoPath.do?tipo=visualizar_archivo&id_investigador=29777&ruta=/documents/docInvestigadores/29777/imagenes/Manuel.jpg&content_type=image/jpeg" alt="Téc. Laura Vega" class="object-cover object-center w-40 h-40">
         </div>
         <div class="p-4 flex flex-col items-center">
             <h3 class="text-xl font-bold"><b>DR. MANUEL QUIPUSCOA SILVESTRE</b></h3>
