@@ -418,16 +418,7 @@ sostenible de la localidad, región y el país.
 
 <div class="bg-gray-100 gap-4 flex-wrap flex justify-center items-center my-5">
     <!-- Card -->
-    <div class="w-60 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl flex flex-col min-h-72">
-        <!-- Image -->
-        <img class="h-50 object-cover rounded-xl" src="https://ctivitae.concytec.gob.pe/appDirectorioCTI/UploadFotoPath.do?tipo=visualizar_archivo&id_investigador=29777&ruta=/documents/docInvestigadores/29777/imagenes/Manuel.jpg&content_type=image/jpeg" alt="">
-        <div class="p-2 flex-grow flex flex-col">
-            <!-- Heading -->
-            <h2 class="font-bold text-lg mb-2">MANUEL QUIPUSCOA SILVESTRE</h2>
-            <!-- Description -->
-            <p class="text-sm text-gray-600 flex-grow">Licenciado en Educación Primaria Maestría en Educación, Mención en Pedagogía Universitaria Segunda Especialidad en Tecnologías Educativa, Mención en Currículo y Estrategias de Enseñanza y Aprendizaje Licenciatura en Psicología Doctor en Ciencias de la Educación.</p>
-        </div>
-    </div>
+
 
     <!-- Card -->
     <div class="w-60 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl flex flex-col min-h-72">

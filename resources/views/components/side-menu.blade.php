@@ -90,7 +90,7 @@
 <x-drop-down-button 
     title="Unidad de Investigacion" 
     :list="[
-        ['name' => 'Informe de Investigacion', 'url' => '/unidades/unidadInvestigacion/InformeInvestigacion'],
+        ['name' => 'Repositorio de Investigacion', 'url' => '/unidades/unidadInvestigacion/InformeInvestigacion'],
         ['name' => 'Comite de Investigacion', 'url' => '/unidades/unidadInvestigacion/ComiteInvestigacion']
     ]" 
 />
