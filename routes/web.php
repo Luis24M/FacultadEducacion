@@ -5,14 +5,13 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicacionController;
 use App\Http\Controllers\TipopublicacionController;
 use App\Http\Controllers\TipEscuelaController;
+use App\Http\Controllers\HomeController;
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/noticias', function () {
-    return view('noticias');
-})->name('noticias');
+Route::get('/noticias', [HomeController::class, 'noticias'])->name('noticias');
+
+Route::get('/galeria', [HomeController::class, 'galeria'])->name('galeria');
 
 Route::get('/institucional', function () {
     return view('institucional');
@@ -21,11 +20,6 @@ Route::get('/institucional', function () {
 Route::get('/unidades', function () {
     return view('unidades.index');
 })->name('unidades');
-
-Route::get('/galeria', function(){
-    return view('galeria');
-})->name('galeria');
-
 
 // Rutas Pregrado
 Route::get('/pregrado', function () {

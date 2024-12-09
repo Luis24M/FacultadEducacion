@@ -1,4 +1,4 @@
-@if(request()->routeIs('home') || request()->routeIs('institucional'))
+@if(request()->routeIs('home') || request()->routeIs('institucional') || request()->routeIs('noticias'))
     <x-side-button icon="home.svg" title="Institucional" route="/institucional"  />
     <x-side-button icon="book.svg" title="Pregrado" route="/pregrado" />
     <x-side-button icon="graduation.svg" title="Posgrado" route="https://web.facebook.com/EscuelaDePosgradoUNT/?locale=es_LA&_rdc=1&_rdr" />

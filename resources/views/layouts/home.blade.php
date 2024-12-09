@@ -1,100 +1,214 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="{{ asset('favicon/favicon.ico') }}" type="image/x-icon">
     <meta name="description" content="Facultad de Educación de la Universidad Nacional de Trujillo">
-    <meta name="keywords" content="Educación, Universidad, Trujillo, Educación Inicial, Educación Primaria, Educación Secundaria, Educación Física, Educación Artística, Educación Especial">
+    <meta name="keywords"
+        content="Educación, Universidad, Trujillo, Educación Inicial, Educación Primaria, Educación Secundaria, Educación Física, Educación Artística, Educación Especial">
     <meta name="author" content="FACEDU - UNT">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>FACEDU - UNT</title>
     <script type="module">
         import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
-      </script>
+    </script>
     <style>
-        *{
+        * {
             font-family: 'Poppins', sans-serif;
         }
     </style>
 </head>
+
 <body class="h-full">
     {{-- <div id="preloader">
-        <img src="{{ asset('icons/book.svg')}}" alt="">
-    </div>     --}}
-    <main class="flex justify-between h-full">
-        @if(request()->routeIs('noticias'))
-        <section class="w-full">
-        @else
-        <section class="w-full md:min-w-[calc(100%-400px)] md:w-[65%]">
-        @endif
-            @if(request()->routeIs('home'))
-            <div class="md:hidden">
-                @include('components/navbar')
+        <div class="book">
+            <div class="cover">
+                <img src="{{ asset('imagenes/logoUNT.png')}}" alt="Logo UNT">
             </div>
+            <div class="pages">
+                <div class="page"></div>
+                <div class="page"></div>
+                <div class="page"></div>
+            </div>
+        </div>
+    </div>     --}}
+
+    <main class="flex justify-between h-full">
+        <section class="w-full md:min-w-[calc(100%-400px)] md:w-[65%]">
+            @if (request()->routeIs('home') || request()->routeIs('noticias'))
+                <div class="md:hidden">
+                    @include('components/navbar')
+                </div>
             @else
                 @include('components/navbar')
             @endif
             <section class=" min-h-[calc(100dvh-230px)] bg-[#F0F6FE]">
-                {{-- <h1 class="text-4xl text-center">Bienvenido a FACEDU</h1> --}}
                 @yield('content')
             </section>
             @include('components/footer')
         </section>
-        @if(!request()->routeIs('noticias'))
         <section class="hidden md:flex">
-                @include('components/sidebar')
+            @include('components/sidebar')
         </section>
-        @endif
     </main>
 </body>
+
 </html>
 <script type="text/javascript">
     (function(d, t) {
-        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        var v = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
         v.onload = function() {
             window.voiceflow.chat.load({
-            verify: { projectID: '6722932bfb0d295a57c92361' },
-            url: 'https://general-runtime.voiceflow.com',
-            versionID: 'production'
+                verify: {
+                    projectID: '6722932bfb0d295a57c92361'
+                },
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production'
             });
         }
-        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
+        v.type = "text/javascript";
+        s.parentNode.insertBefore(v, s);
     })(document, 'script');
 </script>
 <style>
-    .vf-chat-input textarea{
+    .vf-chat-input textarea {
         display: none !important;
     }
+
     @layer utilities {
-      /* Hide scrollbar for Chrome, Safari and Opera */
-      .no-scrollbar::-webkit-scrollbar {
-          display: none;
-      }
-     /* Hide scrollbar for IE, Edge and Firefox */
-      .no-scrollbar {
-          -ms-overflow-style: none;  /* IE and Edge */
-          scrollbar-width: none;  /* Firefox */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
     }
-  }
-  /* #preloader {
+
+    /* #preloader {
         position: fixed;
-        left: 0;
         top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
-        background: #fff;
+        background-color: #fff;
         z-index: 9999;
         display: flex;
-        align-items: center;
         justify-content: center;
-    } */
+        align-items: center;
+    }
 
+
+    .book {
+        position: relative;
+        width: 100px;
+        height: 120px;
+        perspective: 1000px;
+    }
+
+    .book .cover {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #1A3A5A;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        transform: rotateY(0deg);
+    }
+
+    .book .cover img {
+        max-width: 60%;
+        max-height: 60%;
+        animation: cover-bounce 1.5s infinite;
+    }
+
+    .book .pages {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform-style: preserve-3d;
+        animation: book-flip 2s infinite linear;
+    }
+
+    .book .pages .page {
+        position: absolute;
+        top: 5%;
+        width: 100%;
+        height: 95%;
+        background: #fff3ba;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        transform-origin: left center;
+        transform: rotateY(45deg);
+        border-radius: 4px;
+        animation: page-turn 2s infinite linear;
+    }
+
+    .book .pages .page:nth-child(1) {
+        transform: rotateY(0deg);
+        animation-delay: 0s;
+    }
+
+    .book .pages .page:nth-child(2) {
+        transform: rotateY(120deg);
+        animation-delay: 0.2s;
+    }
+
+    .book .pages .page:nth-child(3) {
+        transform: rotateY(240deg);
+        animation-delay: 0.4s;
+    }
+
+    @keyframes book-flip {
+
+        0%,
+        100% {
+            transform: rotateY(0deg);
+        }
+
+        50% {
+            transform: rotateY(360deg);
+        }
+    }
+
+    @keyframes page-turn {
+
+        0%,
+        100% {
+            transform: rotateY(0deg);
+        }
+
+        50% {
+            transform: rotateY(180deg);
+        }
+    }
+
+    @keyframes cover-bounce {
+
+        0%,
+        100% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.1);
+        }
+    } */
 </style>
 {{-- <script>
-    window.addEventListener('load', function () {
+    window.addEventListener('load', function() {
         document.getElementById('preloader').style.display = 'none';
     });
- </script> --}}
- 
+</script> --}}
