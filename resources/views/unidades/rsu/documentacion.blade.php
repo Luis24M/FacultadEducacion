@@ -1,24 +1,22 @@
-@extends('layouts.home')
+@extends('layouts.app')
 
 @section('content')
 
-<div class="a">
-<img src="{{ asset('imagenes/facedu.jpg') }}" alt="..." class="h-85" >
-</div>
+
 
 <div class="b">
-<span class="bg-blue-800  text-yellow-500 md:text-5xl  font-bold rounded block w-full text-center" >Documentacion</span> 
+<span class="bg-blue-800  text-yellow-500 md:text-5xl  font-bold rounded block w-full text-center" >Informes de R.S.U</span> 
 </div>
 
 <div class="p-6 bg-gray-100 rounded-lg">
     <h1 class="text-2xl font-bold mb-4">Bienvenido</h1>
 
     <p class="text-gray-700">
-        ¡Bienvenido a la documentación! Aquí podrás explorar todo lo que necesitas conocer acerca de nuestra unidad de responsabilidad social. 
+        ¡Bienvenido a la informes de R.S.U! Aquí podrás explorar todo lo que necesitas conocer acerca de nuestra unidad de responsabilidad social Universitaria. 
         Por favor, haz clic en cada boton de los enlaces para que puedas descargar los pdf respectivos con la información de cada año.
     </p>
 
-    <p class="mt-4 font-semibold">Documentación</p>
+    <p class="mt-4 font-semibold">INFORMES DE R.S.U</p>
     
     <!-- tabla de docuememtos por año -->
     <div class="p-4 mx-32">
