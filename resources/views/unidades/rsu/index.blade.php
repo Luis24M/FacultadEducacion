@@ -44,7 +44,7 @@
   
   <div class="px-6 py-4">
     <a
-      href="/ruta-al-documento/documento.pdf"
+      href="https://drive.google.com/file/d/1THvT6VtRuTPTrt_FDYFZTfaW_kRsF58f/view"
       target="_blank"
       class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
     >

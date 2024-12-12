@@ -135,11 +135,17 @@ Route::get('/unidades/unidad_soporte/index', function () {
 ////////////////////////////////////////////////
 Route::get('/documentacion', function () {
     return view('unidades.rsu.documentacion');
-})->name('documentacion');
+})->name('unidades.rsu.documentacion');
+
+
+Route::get('/contacto', function () {
+    return view('unidades.rsu.contacto');
+})->name('unidades.rsu.contacto');
+
 
 Route::get('/index', function () {
     return view('unidades.rsu.index');
-})->name('index');
+})->name('unidades.rsu.index');
 
 Route::post('comentario', [ComentarioController::class, 'store'])->name('comentario.store');
 
