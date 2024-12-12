@@ -24,11 +24,16 @@
     <div class="flex justify-center items-center p-4 h-screen">
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 w-2/4">
         <!-- Primer grid -->
-        <div class="flex flex-col justify-center items-center">
+        <div class="flex flex-col items-center">
         <img src="/colaboradores/UNT X SINEACE.png" alt="Imagen 1" class="w-full h-auto rounded shadow mb-4">
-        <a href="https://repositorio.sineace.gob.pe/repositorio/bitstream/handle/20.500.12982/5490/Explicaci%c3%b3n%20de%20est%c3%a1ndares%20del%20modelo%20de%20acreditaci%c3%b3n.pdf?sequence=1&isAllowed=y" target="_blank" class="bg-blue-500 text-white px-6 py-3 rounded flex items-center justify-center text-lg w-full h-16">
-            SINEACE <img src="{{ asset('icons/arrow.svg') }}" alt="Icono de Descarga" class="ml-2">
-        </a>
+        <div class="flex flex-row space-x-4">
+            <a href="https://repositorio.sineace.gob.pe/repositorio/bitstream/handle/20.500.12982/5490/Explicaci%c3%b3n%20de%20est%c3%a1ndares%20del%20modelo%20de%20acreditaci%c3%b3n.pdf?sequence=1&isAllowed=y" target="_blank" class="bg-blue-500 text-white px-6 py-3 rounded flex items-center justify-center text-lg w-1/2 h-16">
+                SINEACE EXPLICACION <img src="{{ asset('icons/arrow.svg') }}" alt="Icono de Descarga" class="ml-2">
+            </a>
+            <a href="https://repositorio.sineace.gob.pe/repositorio/bitstream/handle/20.500.12982/5490/Explicaci%c3%b3n%20de%20est%c3%a1ndares%20del%20modelo%20de%20acreditaci%c3%b3n.pdf?sequence=1&isAllowed=y" target="_blank" class="bg-blue-500 text-white px-6 py-3 rounded flex items-center justify-center text-lg w-1/2 h-16">
+                SINEACE APLICATIVO <img src="{{ asset('icons/arrow.svg') }}" alt="Icono de Descarga" class="ml-2">
+            </a>
+        </div>
         </div>
         
         <!-- Segundo grid -->
@@ -67,8 +72,6 @@
 
     function validateAccessCode() {
         const inputCode = document.getElementById('accessCodeInput').value;
-        if (inputCode === ACCESS_CODE) {
-            window.open(currentPdfUrl, '_blank');
             closeAccessCodeModal();
         } else {
             alert('Código de acceso incorrecto');
