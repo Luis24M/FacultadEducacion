@@ -71,10 +71,10 @@
         class="fa-solid fa-folder-open"
         title="Unidad de Practica Preprofesional" 
         :list="[
-            ['name' => 'Inicio', 'url' => '/practica_preprofesional'],
-            ['name' => 'Reglamento', 'url' => '/Reglamento'],
-            ['name' => 'Comité', 'url' => '/Comite'],
-            ['name' => 'Docentes', 'url' => '/Docentes']
+            // ['name' => 'Inicio', 'url' => '/practica_preprofesional'],
+            // ['name' => 'Reglamento', 'url' => '/Reglamento'],
+            ['name' => 'Repositorio Documental', 'url' => '/unidades/practica_preprofesional/Repositorio'],
+            ['name' => 'Comite', 'url' => '/unidades/practica_preprofesional/Comite']
         ]" 
     />
     <x-drop-down-button 
