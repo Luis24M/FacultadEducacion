@@ -27,8 +27,11 @@
                     <x-nav-link :href="route('tipo-publicacion.index')" :active="request()->routeIs('tipo-publicacion.index')">
                         {{ __('Tipo de Publicación') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('tipescuela.index')" :active="request()->routeIs('tipescuela.index')">
-                        {{ __('Tipo de Escuelas') }}
+                    <x-nav-link :href="route('comentario.index')" :active="request()->routeIs('comentario.index')">
+                        {{ __('Comentarios') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('aplicacionesExt.index')" :active="request()->routeIs('aplicacionesExt.index')">
+                        {{ __('Aplicaciones') }}
                     </x-nav-link>
 
                 </div>
@@ -108,8 +111,8 @@
             </x-responsive-nav-link>
         </div>
         <div class="pt-2 pb-3 space-y-1">
-            <x-responsive-nav-link :href="route('tipescuela.index')" :active="request()->routeIs('tipescuela.index')">
-                {{ __('Tipo de Escuelas') }}
+            <x-responsive-nav-link :href="route('comentario.index')" :active="request()->routeIs('tipo-publicacion.index')">
+                {{ __('Comentarios') }}
             </x-responsive-nav-link>
         </div>
 

@@ -1,5 +1,5 @@
 @extends('layouts.home')
-<!--<link rel="stylesheet" href="{{ asset('style/style2.css')}}">-->
+<!--<link rel="stylesheet" href="{{ asset('style/style2.css') }}">-->
 @section('content')
     <style>
         button.active {
@@ -55,7 +55,8 @@
 
                         <div class="flex text-gray-700">
 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 14 14" class="text-[#252850]" >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 14 14"
+                                class="text-[#252850]">
                                 <path fill="currentColor" fill-rule="evenodd"
                                     d="M11.485.379a.5.5 0 0 0-.839-.233l-2 2a.5.5 0 0 0-.131.475l.36 1.444l-.014.014L6.47 6.47a.75.75 0 0 0 1.06 1.06l2.393-2.39l.014-.015l1.443.361a.5.5 0 0 0 .475-.131l2-2a.5.5 0 0 0-.233-.84l-1.709-.426zm-4.168.38a.75.75 0 0 1-.696.8a5.47 5.47 0 1 0 5.831 5.89a.75.75 0 1 1 1.496.119A6.97 6.97 0 1 1 6.517.062a.75.75 0 0 1 .8.696Zm-.672 3.299a.75.75 0 0 1-.425.972a2.12 2.12 0 1 0 2.75 2.742a.75.75 0 1 1 1.398.544a3.62 3.62 0 1 1-4.694-4.683a.75.75 0 0 1 .971.425"
                                     clip-rule="evenodd" />
@@ -68,18 +69,19 @@
                         </div>
 
                         <p class="text-md md:text-lg text-gray-700">
-                        Somos una unidad académica que forma profesionales en educación con
-                        Mención en Lengua y Literatura, y contribuye al desarrollo cognitivo de los
-                        estudiantes de otras carreras, con capacidades científicas, tecnológicas y
-                        cualidades humanísticas, que responden a las necesidades sociales de nuestra
-                        comunidad; impulsando el desarrollo local, regional y nacional en el marco de
-                        las funciones universitarias: docencia, investigación y proyección social.
+                            Somos una unidad académica que forma profesionales en educación con
+                            Mención en Lengua y Literatura, y contribuye al desarrollo cognitivo de los
+                            estudiantes de otras carreras, con capacidades científicas, tecnológicas y
+                            cualidades humanísticas, que responden a las necesidades sociales de nuestra
+                            comunidad; impulsando el desarrollo local, regional y nacional en el marco de
+                            las funciones universitarias: docencia, investigación y proyección social.
                         </p>
                     </div>
 
                     <div class="flex-1">
                         <div class="flex text-gray-700">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 14 14" class="text-[#252850]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 14 14"
+                                class="text-[#252850]">
                                 <path fill="currentColor" fill-rule="evenodd"
                                     d="M0 5.368A6.01 6.01 0 0 1 5.58 0a.6.6 0 0 0-.093.093a10.13 10.13 0 0 0-2.209 5.275zM3.652 8.91q0 .066.005.131v2.496A6.01 6.01 0 0 1 0 6.618h3.278c.073.66.21 1.31.41 1.939a2 2 0 0 0-.036.352Zm.885-2.29h1.75l-1.58.684l-.051.023a9 9 0 0 1-.12-.708Zm7.41-1.25H8.665A10.13 10.13 0 0 0 6.457.092A.6.6 0 0 0 6.363 0a6.01 6.01 0 0 1 5.584 5.368Zm-7.41 0h2.87a8.9 8.9 0 0 0-1.435-3.831a8.9 8.9 0 0 0-1.435 3.83ZM9.65 6.71a.55.55 0 0 0-.434 0L5.242 8.432a.6.6 0 0 0-.116.068a.68.68 0 0 0-.349.596v3.028a.682.682 0 0 0 1.365 0v-2.3l3.074 1.331c.139.06.296.06.434 0l3.974-1.721a.546.546 0 0 0 0-1.002zm-2.933 4.51l2.024.877a1.74 1.74 0 0 0 1.383 0l2.024-.877v1.358c0 .12-.038.236-.11.33l-.435-.33l.434.331l-.001.002l-.002.002l-.004.006l-.012.015a2 2 0 0 1-.165.176c-.11.104-.27.237-.483.368c-.431.264-1.071.514-1.937.514s-1.506-.25-1.936-.515a3 3 0 0 1-.61-.5l-.037-.044l-.012-.015l-.004-.006l-.002-.002v-.002H6.83l.435-.33l-.435.33a.55.55 0 0 1-.11-.329l-.004-1.36Z"
                                     clip-rule="evenodd" />
@@ -93,7 +95,8 @@
                             secundaria, con mención en, Lengua y Literatura y Comunicación con conocimientos
                             científicos, humanísticos y tecnológicos, con cualidades morales y estéticas; que responden
                             con pertinencia, equidad y calidad al desarrollo integral del hombre en el marco local,
-                            regional y nacional.</br><b class="text-sm italic">Currículo del Programa de Estudios de Educación Secundaria Lengua y Literatura(2018)</b>
+                            regional y nacional.</br><b class="text-sm italic">Currículo del Programa de Estudios de
+                                Educación Secundaria Lengua y Literatura(2018)</b>
                         </p>
                     </div>
             </section>
@@ -148,30 +151,36 @@
             <section class="contenido flex" id="perfil" style="display: none;">
                 <h2 class="text-lg md:text-xl text-color font-bold">Perfil de Ingresante</h2>
                 <ul class="list-none flex flex-col gap-1 p-4">
-                <li><b>CONOCIMIENTOS MATEMATICOS</b><ul class="list-disc ml-5">
-                    <li>Razonamiento Verbal.</li>
-                    <li>Razonamiento Matematico.</li>
-                    <li>Ciencia, Tecnologia y Ambiente.</li>
-                    <li>Bioologia, Fisica y Quimica.</li>
-                </ul></li>
-                <li><b>CAPACIDADES</b><ul class="list-disc ml-5">
-                    <li>Capacidad de analisis y sintesis.</li>
-                    <li>Capacidad de argumentacion.</li>
-                    <li>Capacidad basica en el manejo de TICS.</li>
-                    <li>Capacidad para la comprension de textos.</li> 
-                </ul></li>
-                <li><b>ACTITUDES</b><ul class="list-disc ml-5">
-                <li>Tener vocación y motivacion</li>
-                    <li>Trabajar dentro de las normas establecidas</li>
-                    <li>Respeto a su persona y hacia los demas</li>
-                    <li>Actitud para trabajar en equipo.</li>
-                    <li>Capacidad para tomar decisiones frente a nuevas situaciones.</li>
-                    <li>Ser pereseverante para alcanzar sus metas.</li>
-                    <li>Habilidad en comunicacion oral y ecrita.</li>
-                    <li>Capacidad de liderazgo.</li>
-                    <li>Demostrar responsabilidad, honestidad y amabilidad.</li>
-                </ul></li>
-            </ul>
+                    <li><b>CONOCIMIENTOS MATEMATICOS</b>
+                        <ul class="list-disc ml-5">
+                            <li>Razonamiento Verbal.</li>
+                            <li>Razonamiento Matematico.</li>
+                            <li>Ciencia, Tecnologia y Ambiente.</li>
+                            <li>Bioologia, Fisica y Quimica.</li>
+                        </ul>
+                    </li>
+                    <li><b>CAPACIDADES</b>
+                        <ul class="list-disc ml-5">
+                            <li>Capacidad de analisis y sintesis.</li>
+                            <li>Capacidad de argumentacion.</li>
+                            <li>Capacidad basica en el manejo de TICS.</li>
+                            <li>Capacidad para la comprension de textos.</li>
+                        </ul>
+                    </li>
+                    <li><b>ACTITUDES</b>
+                        <ul class="list-disc ml-5">
+                            <li>Tener vocación y motivacion</li>
+                            <li>Trabajar dentro de las normas establecidas</li>
+                            <li>Respeto a su persona y hacia los demas</li>
+                            <li>Actitud para trabajar en equipo.</li>
+                            <li>Capacidad para tomar decisiones frente a nuevas situaciones.</li>
+                            <li>Ser pereseverante para alcanzar sus metas.</li>
+                            <li>Habilidad en comunicacion oral y ecrita.</li>
+                            <li>Capacidad de liderazgo.</li>
+                            <li>Demostrar responsabilidad, honestidad y amabilidad.</li>
+                        </ul>
+                    </li>
+                </ul>
                 <br>
                 <h2 class="text-lg md:text-xl text-color font-bold">Perfil Profesional de Egresado</h2>
                 <ul class="list-disc flex flex-col gap-1 p-4">
@@ -218,53 +227,12 @@
                     </div>
                 </div>
                 <a class="px-8 rounded-lg py-4 mt-10 bg-[#fee346] hover:shadow-xl transition-all ease-linear duration-300 hover:text-[#F0F0F2]"
-                    href="https://drive.google.com/file/d/1UXWQXr8XhNUk9aMeV_rIP_OisnCu6IGH/view"
-                    target="_blank">Ver Malla Curricular</a>
+                    href="https://drive.google.com/file/d/1UXWQXr8XhNUk9aMeV_rIP_OisnCu6IGH/view" target="_blank">Ver
+                    Malla Curricular</a>
             </section>
 
             <section class="contenido text-center" id="contactanos" style="display: none;">
-            <section class="lg:flex p-5 md:px-20 justify-center max-h-[px]">
-
-<form action="" method="POST"
-    class="border-2 border-[#52D0F8] gap-3 shadow-xl mx-auto rounded-lg p-5 grid md:grid-cols-2 [&>section>img]:bg-[#52D0F8] [&>section]:flex [&>section>img]:p-2 [&>section]:rounded-md [&>section]:border [&>section]:border-[#52D0F8] [&>section>img]:rounded-l-[5px] [&>section>input]:w-full [&>section>input]:rounded-r-md [&>section>input]:px-2 [&>section>input]:bg-transparent ">
-    {{-- Predeterminado la escuela desde donde va --}}
-    <section class="entrada-uno">
-        <img src="{{ asset('icons/user.svg') }}" alt="">
-        <input type="text" placeholder="Escriba su nombre" id="Nombres" name="Nombres">
-    </section>
-    <section class="entrada-uno">
-        <img src="{{ asset('icons/user.svg') }}" alt="">
-        <input type="text" placeholder="Escriba su apellido" id="Apellidos" name="Apellidos">
-    </section>
-    <section class="entrada-uno">
-        <img src="{{ asset('icons/email.svg') }}" alt="">
-        <input type="text" placeholder="Ingrese su correo" id="Correo" name="Correo">
-    </section>
-    <section class="entrada-uno">
-        <img src="{{ asset('icons/phone.svg') }}" alt="">
-        <input type="text" placeholder="Escriba su N° celular" id="Celular" name="Celular">
-    </section>
-    <section class="md:col-span-2 flex ">
-        <img src="{{ asset('icons/setting.svg') }}" alt="">
-        <select id="opciones" name="Opciones" class="w-full rounded-r-md bg-transparent">
-            <option value="" disabled selected>Selecciona una opción</option>
-            <option value="Docente">Docente</option>
-            <option value="Estudiante">Estudiante</option>
-            <option value="Egresado">Egresado</option>
-            <option value="Administrativo">Administrativo</option>
-            <option value="Otros">Otros</option>
-        </select>
-    </section>
-    <textarea name="Comentarios" id="Comentarios" placeholder="Escribe Tu Mensaje Aquí"
-        class="md:col-span-2 rounded-md p-3 border border-[#52D0F8] bg-transparent"></textarea>
-    <input class="py-2 bg-[#52D0F8] rounded-md text-white font-bold cursor-pointer" type="submit"
-        id="enviar" name="enviar" value="Enviar">
-    <input class="py-2 border-2 border-[#52D0F8] rounded-md text-[#52D0F8] font-bold cursor-pointer"
-        type="reset" id="borrar" name="borrar" value="Borrar">
-</form>
-</section>
-            </section>
-
+                <x-form-programa color="[#52D0F8]" programa="Lengua y literatura" />
         </section>
 
         <section class="datos order-first p-5 md:px-20 mx-auto my-6 grid grid-cols-1 lg:grid-cols-3 gap-6 ">
@@ -272,15 +240,19 @@
             <div class="bg-white p-6 rounded-lg shadow-lg text-center">
                 <div class="text-red-500 text-6xl mb-4">🤝</div> <!-- Icono personalizado -->
                 <h3 class="text-xl font-bold text-black mb-2">Bienvenida</h3>
-                <p class="text-black">"Bienvenidos a la Escuela Profesional de Educación Secundaria Mención Lengua y Literatura, un espacio donde la excelencia académica se encuentra con la innovación y la pasión por el aprendizaje."</p>
+                <p class="text-black">"Bienvenidos a la Escuela Profesional de Educación Secundaria Mención Lengua y
+                    Literatura, un espacio donde la excelencia académica se encuentra con la innovación y la pasión por el
+                    aprendizaje."</p>
             </div>
 
             <!-- Segunda columna: Dr. Manuel Quipuscoa Silvestre -->
             <div class="bg-white p-6 rounded-lg shadow-lg text-center">
                 <div class="text-red-500 text-6xl mb-4">👨‍💼</div> <!-- Icono personalizado -->
                 <h3 class="text-xl font-bold text-black mb-2">Dr. Carlos Oswaldo Caballero Alayo</h3>
-                <p class="text-black">Director de la Escuela Profesional de Secundaria<br>Universidad Nacional de Trujillo</p>
-                <a href="mailto:inicial@unitru.edu.pe" class="text-md font-bold text-black mb-2">secundaria@unitru.edu.pe</a>
+                <p class="text-black">Director de la Escuela Profesional de Secundaria<br>Universidad Nacional de Trujillo
+                </p>
+                <a href="mailto:inicial@unitru.edu.pe"
+                    class="text-md font-bold text-black mb-2">secundaria@unitru.edu.pe</a>
             </div>
 
             <!-- Tercera columna: Mg. Patricia Roxana Vela Gálvez -->
@@ -302,6 +274,7 @@
             .datos>div {
                 width: 100%;
             }
+
             .datos>div>img {
                 height: 350px;
             }

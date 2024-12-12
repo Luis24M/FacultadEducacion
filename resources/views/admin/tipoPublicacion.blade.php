@@ -37,29 +37,38 @@
                   </tr>
               </thead>
               <tbody class="bg-gray-200 divide-y divide-black text-black">
-                  @foreach ($tipoPublicacion as $tipo)
-                      <tr>
-                        <td>
-                            <div class="ml-4">
-                                {{$tipo->idTipo}}
-                            </div>
+                @if (count($tipoPublicacion) == 0)
+                    <tr>
+                        <td class="px-6 py-4 whitespace-no-wrap" colspan="3">
+                            <div class="text-sm leading-5 font-medium">No hay tipos de publicación</div>
                         </td>
-                          <td class="px-6 py-4 whitespace-no-wrap">
-                                  <div class="">
-                                      <div class="text-sm  leading-5 font-medium">{{ $tipo->nombreTipo }}</div>
-                                  </div>
-                          </td>
-                          <td class="px-6 py-4 whitespace-no-wrap flex g text-right text-sm leading-5 font-medium">
-                              <a href="{{ route('tipo-publicacion.edit', $tipo) }}" class="text-blue-900 ">Editar</a>
-                              <form action="{{ route('tipo-publicacion.destroy', $tipo) }}" method="POST" style="display: inline;">
-                                  @csrf
-                                  @method('DELETE')
-                                  <button type="submit" class="text-red-600 hover:text-red-900">Eliminar</button>
-                              </form>
-                          </td>
-                      </tr>
-                  @endforeach
-              </tbody>
+                    </tr>
+                @else
+                    @foreach ($tipoPublicacion as $tipo)
+                        <tr>
+                            <td>
+                                <div class="ml-4">
+                                    {{ $tipo->id }}
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-no-wrap">
+                                <div>
+                                    <div class="text-sm leading-5 font-medium">{{ $tipo->nombreTipo }}</div>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-no-wrap flex g text-right text-sm leading-5 font-medium">
+                                <a href="{{ route('tipo-publicacion.edit', $tipo->id) }}" class="text-blue-900">Editar</a>
+                                <form action="{{ route('tipo-publicacion.destroy', $tipo->id) }}" method="POST" style="display: inline;">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="text-red-600 hover:text-red-900">Eliminar</button>
+                                </form>
+                            </td>
+                        </tr>
+                    @endforeach
+                @endif
+            </tbody>
+            
           </table>
       </div>
   </div>

@@ -11,7 +11,6 @@
     <h1 class="text-3xl md:text-5xl text-[#464646] bg-pink-100 w-full p-7 font-bold">Escuela Profesional de Educación Inicial</h1>
 
     <section class="max-w-[1050px] flex flex-col justify-between mx-auto p-5 md:px-0">
-
         <section class="md:px-11 px-6 py-5 flex flex-wrap gap-4 max-w-[800px]">
             <button
                 class="btn-nav active bg-gray-500 bg-opacity-15 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
@@ -37,29 +36,26 @@
                 Plan de Estudios
             </button>
 
+            <button
+                class="btn-nav bg-gray-500 bg-opacity-15 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
+                data-target="contactanos">
+                Contactanos
+            </button>
         </section>
 
         <section class="contenedor-contenido [&>section]:p-5 md:[&>section]:px-20 md:[&>section]:py-10">
-
             <section class="contenido active" id="nosotros">
-
                 <div class="lg:flex lg:space-x-10">
-
-                    <!-- Columna de Misión -->
                     <div class="flex-1 mb-5 md:mb-0">
-
                         <div class="flex text-gray-700">
-
                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 14 14">
                                 <path fill="currentColor" fill-rule="evenodd"
                                     d="M11.485.379a.5.5 0 0 0-.839-.233l-2 2a.5.5 0 0 0-.131.475l.36 1.444l-.014.014L6.47 6.47a.75.75 0 0 0 1.06 1.06l2.393-2.39l.014-.015l1.443.361a.5.5 0 0 0 .475-.131l2-2a.5.5 0 0 0-.233-.84l-1.709-.426zm-4.168.38a.75.75 0 0 1-.696.8a5.47 5.47 0 1 0 5.831 5.89a.75.75 0 1 1 1.496.119A6.97 6.97 0 1 1 6.517.062a.75.75 0 0 1 .8.696Zm-.672 3.299a.75.75 0 0 1-.425.972a2.12 2.12 0 1 0 2.75 2.742a.75.75 0 1 1 1.398.544a3.62 3.62 0 1 1-4.694-4.683a.75.75 0 0 1 .971.425"
                                     clip-rule="evenodd" />
                             </svg>
-
                             <h3 class="text-lg md:text-xl font-semibold mx-2 tracking-wide text-pink-300 mb-4">
                                 Misión
                             </h3>
-
                         </div>
 
                         <p class="text-md md:text-lg text-gray-700">
@@ -69,8 +65,6 @@
                         educativa, para el desarrollo sostenible de la localidad, la región y el país.</br>
                         </p>
                     </div>
-
-                    <!-- Columna de Visión -->
                     <div class="flex-1">
                         <div class="flex text-gray-700">
                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 14 14">
@@ -90,11 +84,8 @@
                         <b class="text-sm italic">“Currículo del Programa de Estudios de Educación Inicial(2021)”.</b>
                         </p>
                     </div>
-
                 </div>
-
             </section>
-
             <section class="contenido lg:flex" id="perfil" style="display:none;">
                 <div>
                     <h2 class="text-lg md:text-xl font-bold text-pink-300 mb-4">Perfil de Ingresante</h2>
@@ -114,12 +105,9 @@
                         <li>Convive y participa en forma democrática y construye interpretaciones históricas.</li>
                     </ul>
                 </div>
-
                 <br>
-
                 <div>
                     <h2 class="text-lg md:text-xl font-bold text-pink-300 mb-4">Perfil Profesional de Egresado</h2>
-
                     <ul class="list-disc flex flex-col gap-1 p-4">
                         <li>Gestiona habilidades investigativas usando razonamiento lógico, matemático, conocimientos
                             informáticos y científicos para solucionar problemas a nivel regional y nacional.</li>
@@ -146,19 +134,13 @@
 
                     </ul>
                 </div>
-
-
             </section>
-
             <section class="contenido active" id="campo" style="display:none;">
                 <h2 class="text-xl text-pink-300 font-semibold mb-4">Campo Ocupacional</h2>
-
                 <div class="container">
-
                     <p class="text-black">Las salidas profesionales para un Licenciado en Educación Inicial
                         abarcan diversas áreas:</p>
                     <ul class=" list-inside text-black ml-8">
-
                         <li class="flex mt-2">
                             <i class="text-pink-500">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
@@ -171,7 +153,6 @@
                                 (Programas no Escolarizados en
                                 Educación Inicial) o Programa Cuna Más.
                             </p>
-
                         </li>
                         <li class="flex mt-2">
                             <i class="text-pink-500">
@@ -184,7 +165,6 @@
                                 <span class="font-bold "> Gestión institucional: </span>Promotor y gestor de Instituciones educativas (IE), Directores o subdirectores de
                                 IE, Director de UGEL o jefe de gestión pedagógica, Especialista en educación.
                             </p>
-
                         </li>
                         <li class="flex mt-2">
                             <i class="text-pink-500">
@@ -197,7 +177,6 @@
                                 <span class="font-bold ">Formación docente: </span>Docencia en educación superior, acompañamiento pedagógico en programas de MINEDU,
                                 Mentoría en IE.
                             </p>
-
                         </li>
 
                         <li class="flex mt-2">
@@ -212,12 +191,9 @@
                                 investigación educativa, estudios y análisis sistemático de la pedagogía y proyectos pedagógicos,
                                 científicos y tecnológicos.
                             </p>
-
                         </li>
-
                     </ul>
                 </div>
-
             </section>
 
             <section class="contenido text-center " id="plan-estudios" style="display:none;">
@@ -250,9 +226,12 @@
 
             </section>
         </section>
+        <section class="contenido text-center" id="contactanos" style="display: none;">
+            {{-- <section class="lg:flex p-5 md:px-20 justify-center"> --}}
+                <x-form-programa color="pink-400" programa="Inicial"/>
+        </section>
         
         <section class="datos order-first p-5 md:px-20 mx-auto my-6 grid grid-cols-1 lg:grid-cols-3 gap-6 text-black-100 ">
-            <!-- Primera columna: Bienvenida -->
             <div class="bg-pink-200 p-6 rounded-lg shadow-lg text-center text-black">
                 <div class="text-red-500 text-6xl mb-4">🤝</div> <!-- Icono personalizado -->
                 <h3 class="text-xl font-bold text-black mb-2">Bienvenida</h3>
@@ -275,54 +254,8 @@
                 <p class="text-black">Asistente administrativa</p>
             </div>
         </section>
+        
 
-        <section class="lg:flex p-5 md:px-20 justify-center">
-
-            <img src="{{ asset('imagenes/index/inicial.jpg') }}" class="w-1/2 hidden lg:block" alt="">
-            <form action="" method="POST"
-                class="border-2 border-pink-400 gap-3 shadow-xl max-w-[600px] mx-auto rounded-lg p-5 grid md:grid-cols-2 [&>section>img]:bg-pink-400 [&>section]:flex [&>section>img]:p-2 [&>section]:rounded-md [&>section]:border [&>section]:border-pink-400 [&>section>img]:rounded-l-[5px] [&>section>input]:w-full [&>section>input]:rounded-r-md [&>section>input]:px-2 [&>section>input]:bg-transparent ">
-                {{-- Predeterminado la escuela desde donde va --}}
-                <section class="entrada-uno">
-                    <img src="{{ asset('icons/user.svg') }}" alt="">
-                    <input type="text" placeholder="Escriba su nombre" id="Nombres" name="Nombres">
-                </section>
-                <section class="entrada-uno">
-                    <img src="{{ asset('icons/user.svg') }}" alt="">
-                    <input type="text" placeholder="Escriba su apellido" id="Apellidos" name="Apellidos">
-                </section>
-                <section class="entrada-uno">
-                    <img src="{{ asset('icons/email.svg') }}" alt="">
-                    <input type="text" placeholder="Ingrese su correo" id="Correo" name="Correo">
-                </section>
-                <section class="entrada-uno">
-                    <img src="{{ asset('icons/phone.svg') }}" alt="">
-                    <input type="text" placeholder="Escriba su N° celular" id="Celular" name="Celular">
-                </section>
-                <section class="md:col-span-2 flex ">
-                    <img src="{{ asset('icons/setting.svg') }}" alt="">
-                    <select id="opciones" name="Opciones" class="w-full rounded-r-md bg-transparent">
-                        <option value="" disabled selected>Selecciona una opción</option>
-                        <option value="Docente">Docente</option>
-                        <option value="Estudiante">Estudiante</option>
-                        <option value="Egresado">Egresado</option>
-                        <option value="Administrativo">Administrativo</option>
-                        <option value="Otros">Otros</option>
-                    </select>
-                </section>
-                <textarea name="Comentarios" id="Comentarios" placeholder="Escribe Tu Mensaje Aquí"
-                    class="md:col-span-2 rounded-md p-3 border border-pink-400 bg-transparent"></textarea>
-                <input class="py-2 bg-pink-400 rounded-md text-black font-bold cursor-pointer" type="submit"
-                    id="enviar" name="enviar" value="Enviar">
-                <input class="py-2 border-2 border-pink-400 rounded-md text-pink-400 font-bold cursor-pointer"
-                    type="reset" id="borrar" name="borrar" value="Borrar">
-            </form>
-        </section>
     </section>
-
-    <script>
-        const datos = document.querySelectorAll('.datos');
-
-    </script>
-
     <script src="{{ asset('js/main.js') }}"></script>
 @endsection

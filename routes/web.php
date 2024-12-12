@@ -6,6 +6,8 @@ use App\Http\Controllers\PublicacionController;
 use App\Http\Controllers\TipopublicacionController;
 use App\Http\Controllers\TipEscuelaController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ComentarioController;
+use App\Http\Controllers\AplicacionesExtController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
@@ -139,6 +141,7 @@ Route::get('/index', function () {
     return view('unidades.rsu.index');
 })->name('index');
 
+Route::post('comentario', [ComentarioController::class, 'store'])->name('comentario.store');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -147,7 +150,8 @@ Route::middleware('auth')->group(function () {
     
     Route::resource('publicacion', PublicacionController::class);
     Route::resource('tipo-publicacion', TipopublicacionController::class);
-    Route::resource('tipescuela', TipEscuelaController::class);
+    Route::resource('comentario', ComentarioController::class)->only(['index', 'edit', 'update', 'destroy']);
+    Route::resource('aplicacionesExt', AplicacionesExtController::class);
 
     Route::get('/dashboard', [PublicacionController::class, 'dashboard'])->name('dashboard');
 

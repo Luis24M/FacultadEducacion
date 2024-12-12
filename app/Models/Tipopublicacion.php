@@ -21,8 +21,8 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Tipopublicacion extends Model
 {
-	protected $table = 'tipopublicacion';
-	protected $primaryKey = 'idTipo';
+	protected $table = 'tipo_publicacion';
+	protected $primaryKey = 'id';
 	public $timestamps = false;
 
 	protected $fillable = [

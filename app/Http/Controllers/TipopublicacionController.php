@@ -30,9 +30,9 @@ class TipopublicacionController extends Controller
         return redirect()->route('tipo-publicacion.index')->with('success', 'Tipo de publicación creado exitosamente');
     }
 
-    public function edit($tipo)
+    public function edit(String $tipo)
     {
-        $tipo = TipoPublicacion::findOrFail($tipo);
+        $tipo = Tipopublicacion::where('id', $tipo)->first();
         return view('admin.tipoPublicacionEdit', compact('tipo'));
     }
 

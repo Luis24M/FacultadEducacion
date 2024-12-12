@@ -8,7 +8,7 @@
         }
     </style>
 
-    <h1 class="text-3xl md:text-5xl text-[#8B0000] bg-[#FFD700] w-full p-7 font-bold">Filosofía, Psicología y CCSS</h1>
+    <h1 class="text-3xl md:text-5xl text-[#8B0000] bg-[#FFD700] w-full p-7 font-bold">Mención Filosofía, Psicología y CCSS</h1>
 
     <section class="max-w-[1050px] flex flex-col mx-auto p-5 md:px-0">
         <section class="md:px-11 px-6 py-5 flex flex-wrap gap-4 max-w-[800px]">
@@ -87,18 +87,24 @@
                         </div>
 
                         <p class="text-md md:text-lg text-gray-700">
-                            La carrera profesional de Filosofía, Psicología y Ciencias Sociales, en el año 2022, inspirada en los
-                            más altos valores científicos y espirituales de la cultura occidental y del mundo andino y amazónico,
+                            La carrera profesional de Filosofía, Psicología y Ciencias Sociales, en el año 2022, inspirada
+                            en los
+                            más altos valores científicos y espirituales de la cultura occidental y del mundo andino y
+                            amazónico,
                             aspira a ser reconocida nacional e internacionalmente por: estar conformada por un grupo humano
-                            capacitado, creativo, solidario y participativo, dinámico y dinamizador del cambio permanente que
-                            ofrece servicios educativos de calidad, promueve la formación integral de sus estudiantes que den
+                            capacitado, creativo, solidario y participativo, dinámico y dinamizador del cambio permanente
+                            que
+                            ofrece servicios educativos de calidad, promueve la formación integral de sus estudiantes que
+                            den
                             respuesta a las demandas de la sociedad.
                             Así mismo, promueve una cultura abierta y democrática, en la que predomine el debate académico,
-                            la tolerancia y la creatividad orientada a la transformación social, establece vínculos con otras
+                            la tolerancia y la creatividad orientada a la transformación social, establece vínculos con
+                            otras
                             instituciones educativas, locales, nacionales e internacionales para promover el mejoramiento de
                             sus docentes y experiencias curriculares y ejerce una administración académica, que promueve el
                             desarrollo del talento humano y el logro de los objetivos institucionales.</br>
-                            <b class="text-sm italic">Currículo del Programa de Estudios de Educacion Secundaria Mencion Filosofia, Psicologia y CCSS(2018)</b>
+                            <b class="text-sm italic">Currículo del Programa de Estudios de Educacion Secundaria Mencion
+                                Filosofia, Psicologia y CCSS(2018)</b>
                         </p>
                     </div>
             </section>
@@ -269,48 +275,7 @@
         </section>
 
         <section class="contenido text-center" id="contactanos" style="display: none;">
-        <section class="lg:flex p-5 md:px-20 justify-center max-h-[px] ">
-
-<!--<img src="{{ asset('imagenes/index/filosofia.png') }}" class="w-1/2 hidden lg:block" alt="">-->
-        <form action="" method="POST"
-            class="border-2 border-[#8B0000] gap-3 shadow-xl mx-auto rounded-lg p-5 grid md:grid-cols-2 [&>section>img]:bg-[#8B0000] [&>section]:flex [&>section>img]:p-2 [&>section]:rounded-md [&>section]:border [&>section]:border-[#8B0000] [&>section>img]:rounded-l-[5px] [&>section>input]:w-full [&>section>input]:rounded-r-md [&>section>input]:px-2 [&>section>input]:bg-transparent ">
-            {{-- Predeterminado la escuela desde donde va --}}
-            <section class="entrada-uno">
-                <img src="{{ asset('icons/user.svg') }}" alt="">
-                <input type="text" placeholder="Escriba su nombre" id="Nombres" name="Nombres">
-            </section>
-            <section class="entrada-uno">
-                <img src="{{ asset('icons/user.svg') }}" alt="">
-                <input type="text" placeholder="Escriba su apellido" id="Apellidos" name="Apellidos">
-            </section>
-            <section class="entrada-uno">
-                <img src="{{ asset('icons/email.svg') }}" alt="">
-                <input type="text" placeholder="Ingrese su correo" id="Correo" name="Correo">
-            </section>
-            <section class="entrada-uno">
-                <img src="{{ asset('icons/phone.svg') }}" alt="">
-                <input type="text" placeholder="Escriba su N° celular" id="Celular" name="Celular">
-            </section>
-            <section class="md:col-span-2 flex ">
-                <img src="{{ asset('icons/setting.svg') }}" alt="">
-                <select id="opciones" name="Opciones" class="w-full rounded-r-md bg-transparent">
-                    <option value="" disabled selected>Selecciona una opción</option>
-                    <option value="Docente">Docente</option>
-                    <option value="Estudiante">Estudiante</option>
-                    <option value="Egresado">Egresado</option>
-                    <option value="Administrativo">Administrativo</option>
-                    <option value="Otros">Otros</option>
-                </select>
-            </section>
-            <textarea name="Comentarios" id="Comentarios" placeholder="Escribe Tu Mensaje Aquí"
-                class="md:col-span-2 rounded-md p-3 border border-[#8B0000] bg-transparent"></textarea>
-            <input class="py-2 bg-[#8B0000] rounded-md text-white font-bold cursor-pointer" type="submit"
-                id="enviar" name="enviar" value="Enviar">
-            <input class="py-2 border-2 border-[#8B0000] rounded-md text-[#8B0000] font-bold cursor-pointer"
-                type="reset" id="borrar" name="borrar" value="Borrar">
-        </form>
-        </section>
-            
+            <x-form-programa color="[#8B0000]" programa="Filosofía, Psicología y CCSS"/>
         </section>
 
         <section class="datos order-first p-5 md:px-20 mx-auto my-6 grid grid-cols-1 lg:grid-cols-3 gap-6 ">
@@ -318,15 +283,19 @@
             <div class="bg-[#fee346] p-6 rounded-lg shadow-lg text-center">
                 <div class="text-red-500 text-6xl mb-4">🤝</div> <!-- Icono personalizado -->
                 <h3 class="text-xl font-bold text- mb-2">Bienvenida</h3>
-                <p class="text-">"Bienvenidos a la Escuela Profesional de Educación Secundaria Mención Filosofía, Psicología y CCSS, un espacio donde la excelencia académica se encuentra con la innovación y la pasión por el aprendizaje.</p>
+                <p class="text-">"Bienvenidos a la Escuela Profesional de Educación Secundaria Mención Filosofía,
+                    Psicología y CCSS, un espacio donde la excelencia académica se encuentra con la innovación y la pasión
+                    por el aprendizaje.</p>
             </div>
 
             <!-- Segunda columna: Dr. Manuel Quipuscoa Silvestre -->
             <div class="bg-[#8B0000] p-6 rounded-lg shadow-lg text-center">
                 <div class="text-red-500 text-6xl mb-4">👨‍💼</div> <!-- Icono personalizado -->
                 <h3 class="text-xl font-bold text-white mb-2">Dr. Carlos Oswaldo Caballero Alayo</h3>
-                <p class="text-white">Director de la Escuela Profesional de Secundaria<br>Universidad Nacional de Trujillo</p>
-                <a href="mailto:inicial@unitru.edu.pe" class="text-md font-bold text-white mb-2">secundaria@unitru.edu.pe</a>
+                <p class="text-white">Director de la Escuela Profesional de Secundaria<br>Universidad Nacional de Trujillo
+                </p>
+                <a href="mailto:inicial@unitru.edu.pe"
+                    class="text-md font-bold text-white mb-2">secundaria@unitru.edu.pe</a>
             </div>
 
             <!-- Tercera columna: Mg. Patricia Roxana Vela Gálvez -->
@@ -348,6 +317,7 @@
             .datos>div {
                 width: 100%;
             }
+
             .datos>div>img {
                 height: 350px;
             }

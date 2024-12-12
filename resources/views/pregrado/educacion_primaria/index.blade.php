@@ -1,16 +1,15 @@
 @extends('layouts.home')
 
 @section('content')
-
-<style>
+    <style>
         button.active {
             background-color: #F97316;
             color: white;
         }
     </style>
 
-    <h1 class="text-3xl md:text-5xl text-orange-600 bg-blue-950 w-full p-7 font-bold">Escuela Profesional de Educación Primaria</h1>
-
+    <h1 class="text-3xl md:text-5xl text-gray-200 bg-blue-950 w-full p-7 font-bold">Escuela Profesional de Educación
+        Primaria</h1>
     <section class="max-w-[1050px] flex flex-col justify-between mx-auto p-5 md:px-0">
 
         <section class="md:px-11 px-6 py-5 flex flex-wrap gap-4 max-w-[800px]">
@@ -36,6 +35,12 @@
                 class="btn-nav bg-orange-600 bg-opacity-15 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
                 data-target="plan-estudios">
                 Plan de Estudios
+            </button>
+
+            <button
+                class="btn-nav bg-orange-600 bg-opacity-15 text-gray-700 flex-1 font-bold px-4 py-2 rounded-lg shadow-md text-sm md:text-lg hover:-translate-y-2 transition-all ease-linear duration-200"
+                data-target="contactanos">
+                Contactanos
             </button>
 
         </section>
@@ -64,10 +69,12 @@
                         </div>
 
                         <p class="text-md md:text-lg text-gray-700">
-                        Somos el primer programa de estudios de la Región que forma licenciados en Educación Primaria, competitivos, con una sólida formación científica, tecnológica, pedagógica y humanística, que busca
-el mejoramiento de la calidad educativa a través de la innovación y
-currículo por competencias, y contribuye al desarrollo y transformación
-sostenible de la localidad, región y el país.
+                            Somos el primer programa de estudios de la Región que forma licenciados en Educación Primaria,
+                            competitivos, con una sólida formación científica, tecnológica, pedagógica y humanística, que
+                            busca
+                            el mejoramiento de la calidad educativa a través de la innovación y
+                            currículo por competencias, y contribuye al desarrollo y transformación
+                            sostenible de la localidad, región y el país.
                         </p>
                     </div>
 
@@ -84,12 +91,12 @@ sostenible de la localidad, región y el país.
                         </div>
 
                         <p class="text-md md:text-lg text-gray-700">
-                        Al 2018 seremos un Programa de Estudios de Educación Primaria de
-                        la UNT, acreditada que forma líderes de cambio altamente calificados
-                        con conocimiento científico, tecnológico y humanístico capaces de
-                        satisfacer la demanda de la Educación Básica de la localidad, la región
-                        y el país.</br>
-                        <b class="text-sm italic">Currículo del Programa de Estudios de Educación Primaria(2018)"</b>
+                            Al 2018 seremos un Programa de Estudios de Educación Primaria de
+                            la UNT, acreditada que forma líderes de cambio altamente calificados
+                            con conocimiento científico, tecnológico y humanístico capaces de
+                            satisfacer la demanda de la Educación Básica de la localidad, la región
+                            y el país.</br>
+                            <b class="text-sm italic">Currículo del Programa de Estudios de Educación Primaria(2018)"</b>
                         </p>
                     </div>
 
@@ -107,12 +114,14 @@ sostenible de la localidad, región y el país.
                         <li>Conocimientos básicos de cultura general..</li>
                         <li>Demuestra interés para el trabajo con niños y niñas</li>
                         <li>Posee capacidad de liderazgo y actitudes de servicio con niños y niñas</li>
-                        <li>Muestra diversas habilidades cognitivas, artísticas, creativas, sociales y el control de emociones.</li>
+                        <li>Muestra diversas habilidades cognitivas, artísticas, creativas, sociales y el control de
+                            emociones.</li>
                         <li>Demuestra ser crítico, reflexivo y actúa con coherencia y lógica.</li>
                         <li>Muestra capacidad para la comunicación horizontal, tolerancia y conciliación</li>
-                        <li>Demuestra un pensamiento abierto y flexible frente a los cambios educativos y de nuestra sociedad.</li>
+                        <li>Demuestra un pensamiento abierto y flexible frente a los cambios educativos y de nuestra
+                            sociedad.</li>
                         <li>Capacidad para identificar y actuar frente a situaciones educativas relevantes que promueven
-                        aprendizajes significativos en los niños.</li>
+                            aprendizajes significativos en los niños.</li>
                     </ul>
                 </div>
 
@@ -123,64 +132,64 @@ sostenible de la localidad, región y el país.
 
                     <ul class="list-disc flex flex-col gap-1 p-4">
                         <li>1. GESTIONA la formación
-                        integral enfatizando en los
-                        procesos de enseñanza y
-                        aprendizaje, para que los
-                        estudiantes de educación
-                        Primaria desarrollen
-                        aprendizajes de calidad,
-                        críticos, reflexivos y
-                        significativos para la solución
-                        de problemas en situaciones
-                        retadoras y toma de
-                        decisiones, teniendo en cuenta
-                        la diversidad, la inclusión y los
-                        contextos socioculturales.</li>
+                            integral enfatizando en los
+                            procesos de enseñanza y
+                            aprendizaje, para que los
+                            estudiantes de educación
+                            Primaria desarrollen
+                            aprendizajes de calidad,
+                            críticos, reflexivos y
+                            significativos para la solución
+                            de problemas en situaciones
+                            retadoras y toma de
+                            decisiones, teniendo en cuenta
+                            la diversidad, la inclusión y los
+                            contextos socioculturales.</li>
 
                         <li>2. INVESTIGA sobre su
-                        práctica y experiencia
-                        pedagógica, así como de la
-                        Educación Primaria
-                        desarrollando investigación
-                        científica, propuestas
-                        innovadoras e intervenciones
-                        socioculturales para el
-                        mejoramiento de los procesos
-                        de enseñanza y aprendizaje
-                        que respondan a la
-                        problemática del contexto,
-                        interactuando en comunidades
-                        virtuales.</li>
+                            práctica y experiencia
+                            pedagógica, así como de la
+                            Educación Primaria
+                            desarrollando investigación
+                            científica, propuestas
+                            innovadoras e intervenciones
+                            socioculturales para el
+                            mejoramiento de los procesos
+                            de enseñanza y aprendizaje
+                            que respondan a la
+                            problemática del contexto,
+                            interactuando en comunidades
+                            virtuales.</li>
 
                         <li>3. LIDERA la gestión de
-                        organizaciones educativas, en
-                        forma democrática, con las
-                        familias y la comunidad, así
-                        como también participa en
-                        programas, proyectos
-                        educativos y otros afines,
-                        propios de la Educación
-                        Primaria en atención al
-                        contexto socio educativo para
-                        generar aprendizajes de
-                        calidad.</li>
+                            organizaciones educativas, en
+                            forma democrática, con las
+                            familias y la comunidad, así
+                            como también participa en
+                            programas, proyectos
+                            educativos y otros afines,
+                            propios de la Educación
+                            Primaria en atención al
+                            contexto socio educativo para
+                            generar aprendizajes de
+                            calidad.</li>
 
                         <li>4. REFLEXIONA Y
-                        DEMUESTRA acciones en su
-                        práctica pedagógica, que
-                        demuestren confianza en sí
-                        mismo, espíritu emprendedor,
-                        manejo de la comunicación
-                        asertiva, trabajo en equipo,
-                        gran capacidad de servicio y
-                        actitud de mejora continua,
-                        desarrollo sostenible de la
-                        conciencia ética, estética,
-                        ecológica, histórica, política y
-                        de organización social, para
-                        tener un mejor entendimiento
-                        de la realidad y contribuir a su
-                        transformación.</li>
+                            DEMUESTRA acciones en su
+                            práctica pedagógica, que
+                            demuestren confianza en sí
+                            mismo, espíritu emprendedor,
+                            manejo de la comunicación
+                            asertiva, trabajo en equipo,
+                            gran capacidad de servicio y
+                            actitud de mejora continua,
+                            desarrollo sostenible de la
+                            conciencia ética, estética,
+                            ecológica, histórica, política y
+                            de organización social, para
+                            tener un mejor entendimiento
+                            de la realidad y contribuir a su
+                            transformación.</li>
 
                     </ul>
                 </div>
@@ -205,7 +214,8 @@ sostenible de la localidad, región y el país.
                                 </svg>
                             </i>
                             <p class="ml-2 ">
-                                <span class="font-bold "> Gestión pedagógica: </span> Docentes de niños en Cunas o Jardines de infancia, Coordinación en PRONOEI
+                                <span class="font-bold "> Gestión pedagógica: </span> Docentes de niños en Cunas o Jardines
+                                de infancia, Coordinación en PRONOEI
                                 (Programas no Escolarizados en
                                 Educación Inicial) o Programa Cuna Más.
                             </p>
@@ -219,7 +229,8 @@ sostenible de la localidad, región y el país.
                                 </svg>
                             </i>
                             <p class="ml-2 ">
-                                <span class="font-bold "> Gestión institucional: </span>Promotor y gestor de Instituciones educativas (IE), Directores o subdirectores de
+                                <span class="font-bold "> Gestión institucional: </span>Promotor y gestor de Instituciones
+                                educativas (IE), Directores o subdirectores de
                                 IE, Director de UGEL o jefe de gestión pedagógica, Especialista en educación.
                             </p>
 
@@ -232,7 +243,8 @@ sostenible de la localidad, región y el país.
                                 </svg>
                             </i>
                             <p class="ml-2 ">
-                                <span class="font-bold ">Formación docente: </span>Docencia en educación superior, acompañamiento pedagógico en programas de MINEDU,
+                                <span class="font-bold ">Formación docente: </span>Docencia en educación superior,
+                                acompañamiento pedagógico en programas de MINEDU,
                                 Mentoría en IE.
                             </p>
 
@@ -246,8 +258,10 @@ sostenible de la localidad, región y el país.
                                 </svg>
                             </i>
                             <p class="ml-2 ">
-                                <span class="font-bold ">Innovación e investigación:</span>Diseño, implementación y evaluación de proyectos de innovación pedagógica e
-                                investigación educativa, estudios y análisis sistemático de la pedagogía y proyectos pedagógicos,
+                                <span class="font-bold ">Innovación e investigación:</span>Diseño, implementación y
+                                evaluación de proyectos de innovación pedagógica e
+                                investigación educativa, estudios y análisis sistemático de la pedagogía y proyectos
+                                pedagógicos,
                                 científicos y tecnológicos.
                             </p>
 
@@ -282,19 +296,18 @@ sostenible de la localidad, región y el país.
                 </div>
 
                 <a href="https://dpaunt.edu.pe/curriculos/14.pdf" target="_blank" rel="nofollow"
-                    class="p-3 mt-4 bg-pink-300 text- rounded-md font-semibold text-white hover:bg-pink-500 transition-all ease-linear duration-300 hover:shadow-lg  text-center">
+                    class="p-3 mt-4 bg-orange-600 text- rounded-md font-semibold text-white hover:bg-pink-500 transition-all ease-linear duration-300 hover:shadow-lg  text-center">
                     Ver Malla Curricular
                 </a>
 
             </section>
         </section>
-        <script>
-        const datos = document.querySelectorAll('.datos');
 
-    </script>
+        <section class="contenido text-center" id="contactanos" style="display: none;">
+            {{-- <section class="lg:flex p-5 md:px-20 justify-center"> --}}
+                <x-form-programa color="orange-600" programa="Primaria"/>
+        </section>
 
-    <script src="{{ asset('js/main.js') }}"></script>
-    
         <section class="datos order-first p-5 md:px-20 mx-auto my-6 grid grid-cols-1 lg:grid-cols-3 gap-6 ">
             <!-- Primera columna: Bienvenida -->
             <div class="bg-blue-950 p-6 rounded-lg shadow-lg text-center">
@@ -308,8 +321,10 @@ sostenible de la localidad, región y el país.
             <div class="bg-orange-600 p-6 rounded-lg shadow-lg text-center">
                 <div class="text-red-500 text-6xl mb-4">👨‍💼</div> <!-- Icono personalizado -->
                 <h3 class="text-xl font-bold text-white mb-2">Dr. Manuel Quipuscoa Silvestre</h3>
-                <p class="text-white">Director del Programa de Estudios de Educación Primaria<br>Universidad Nacional de Trujillo</p>
-                <a href="mailto:inicial@unitru.edu.pe" class="text-md font-bold text-white mb-2">primaria@unitru.edu.pe</a>
+                <p class="text-white">Director del Programa de Estudios de Educación Primaria<br>Universidad Nacional de
+                    Trujillo</p>
+                <a href="mailto:inicial@unitru.edu.pe"
+                    class="text-md font-bold text-white mb-2">primaria@unitru.edu.pe</a>
             </div>
 
             <!-- Tercera columna: Mg. Patricia Roxana Vela Gálvez -->
@@ -320,48 +335,121 @@ sostenible de la localidad, región y el país.
             </div>
         </section>
 
-        <section class="lg:flex p-5 md:px-20 justify-center">
+        
 
-            <img src="{{ asset('imagenes/index/inicial.jpg') }}" class="w-1/2 hidden lg:block" alt="">
-            <form action="" method="POST"
-                class="border-2 border-orange-600 gap-3 shadow-xl max-w-[600px] mx-auto rounded-lg p-5 grid md:grid-cols-2 [&>section>img]:bg-orange-600 [&>section]:flex [&>section>img]:p-2 [&>section]:rounded-md [&>section]:border [&>section]:border-orange-600 [&>section>img]:rounded-l-[5px] [&>section>input]:w-full [&>section>input]:rounded-r-md [&>section>input]:px-2 [&>section>input]:bg-transparent ">
-                {{-- Predeterminado la escuela desde donde va --}}
-                <section class="entrada-uno">
-                    <img src="{{ asset('icons/user.svg') }}" alt="">
-                    <input type="text" placeholder="Escriba su nombre" id="Nombres" name="Nombres">
-                </section>
-                <section class="entrada-uno">
-                    <img src="{{ asset('icons/user.svg') }}" alt="">
-                    <input type="text" placeholder="Escriba su apellido" id="Apellidos" name="Apellidos">
-                </section>
-                <section class="entrada-uno">
-                    <img src="{{ asset('icons/email.svg') }}" alt="">
-                    <input type="text" placeholder="Ingrese su correo" id="Correo" name="Correo">
-                </section>
-                <section class="entrada-uno">
-                    <img src="{{ asset('icons/phone.svg') }}" alt="">
-                    <input type="text" placeholder="Escriba su N° celular" id="Celular" name="Celular">
-                </section>
-                <section class="md:col-span-2 flex ">
-                    <img src="{{ asset('icons/setting.svg') }}" alt="">
-                    <select id="opciones" name="Opciones" class="w-full rounded-r-md bg-transparent">
-                        <option value="" disabled selected>Selecciona una opción</option>
-                        <option value="Docente">Docente</option>
-                        <option value="Estudiante">Estudiante</option>
-                        <option value="Egresado">Egresado</option>
-                        <option value="Administrativo">Administrativo</option>
-                        <option value="Otros">Otros</option>
-                    </select>
-                </section>
-                <textarea name="Comentarios" id="Comentarios" placeholder="Escribe Tu Mensaje Aquí"
-                    class="md:col-span-2 rounded-md p-3 border border-orange-600 bg-transparent"></textarea>
-                <input class="py-2 bg-orange-600 rounded-md text-white font-bold cursor-pointer" type="submit"
-                    id="enviar" name="enviar" value="Enviar">
-                <input class="py-2 border-2 border-orange-600 rounded-md text-orange-600 font-bold cursor-pointer"
-                    type="reset" id="borrar" name="borrar" value="Borrar">
-            </form>
-        </section>
-    </section>
+    <div class="relative w-full text-center mt-6">
+        <div class="inset-x-0 top-0 bg-blue-950 text-orange-500 text-4xl font-bold p-4">
+            Plana Docente
+        </div>
+    </div>
+
+
+
+    <div class="bg-gray-100 gap-4 flex-wrap flex justify-center items-center my-5">
+        <!-- Card -->
+        <div
+            class="w-60 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl flex flex-col min-h-72">
+            <!-- Image -->
+            <img class="h-80 object-cover rounded-xl"
+                src="https://ctivitae.concytec.gob.pe/appDirectorioCTI/UploadFotoPath.do?tipo=visualizar_archivo&id_investigador=935&ruta=/documents/docInvestigadores/935/imagenes/RUTH%202018.jpg&content_type=image/jpeg"
+                alt="">
+            <div class="p-2 flex-grow flex flex-col">
+                <!-- Heading -->
+                <h2 class="font-bold text-lg mb-2">MAGNA RUTH MEREGILDO GOMEZ</h2>
+                <!-- Description -->
+                <p class="text-sm text-gray-600 flex-grow">Licenciada en Educación Primaria Maestría en Educación, mención
+                    Gestión y Acreditación Educativa Especialista en Tecnología Educativa, mención Administración y
+                    planeamiento educativo Doctora en Ciencias de la Educación.</p>
+            </div>
+        </div>
+
+        <!-- Card -->
+        <div
+            class="w-60 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl flex flex-col min-h-72">
+            <!-- Image -->
+            <img class="h-50 object-cover rounded-xl"
+                src="https://ctivitae.concytec.gob.pe/appDirectorioCTI/UploadFotoPath.do?tipo=visualizar_archivo&id_investigador=29777&ruta=/documents/docInvestigadores/29777/imagenes/Manuel.jpg&content_type=image/jpeg"
+                alt="">
+            <div class="p-2 flex-grow flex flex-col">
+                <!-- Heading -->
+                <h2 class="font-bold text-lg mb-2">MANUEL QUIPUSCOA SILVESTRE</h2>
+                <!-- Description -->
+                <p class="text-sm text-gray-600 flex-grow">Licenciado en Educación Primaria Maestría en Educación, Mención
+                    en Pedagogía Universitaria Segunda Especialidad en Tecnologías Educativa, Mención en Currículo y
+                    Estrategias de Enseñanza y Aprendizaje Licenciatura en Psicología Doctor en Ciencias de la Educación.
+                </p>
+            </div>
+        </div>
+
+        <!-- Card -->
+        <div
+            class="w-60 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl flex flex-col min-h-72">
+            <!-- Image -->
+            <img class="h-45 object-cover rounded-xl" src="{{ asset('imagenes/CeciliaDPV.jpeg') }}" alt="">
+            <div class="p-2 flex-grow flex flex-col">
+                <!-- Heading -->
+                <h2 class="font-bold text-lg mb-2">DRA. CECILIA DEL PILAR VÁSQUEZ MONDRAGÓN</h2>
+                <!-- Description -->
+                <p class="text-sm text-gray-600 flex-grow">Licenciada en Investigación y Docencia Universitaria, Doctora en
+                    Educación, con Segunda Especialidad en Administración y Planeamiento.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-gray-100 gap-4 flex-wrap flex justify-center items-center my-5">
+        <!-- Card -->
+
+
+        <!-- Card -->
+        <div
+            class="w-60 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl flex flex-col min-h-72">
+            <!-- Image -->
+            <img class="h-50 object-cover rounded-xl" src="{{ asset('imagenes/FOTO JESY-ok (1).jpeg') }}"
+                alt="">
+            <div class="p-2 flex-grow flex flex-col">
+                <!-- Heading -->
+                <h2 class="font-bold text-lg mb-2">JESSICA ISABEL ALVA CHÁVEZ</h2>
+                <!-- Description -->
+                <p class="text-sm text-gray-600 flex-grow">Licenciado en Educación Primaria Maestría en Educación, Mención
+                    en Pedagogía Universitaria Segunda Especialidad en Didáctica en la Comunicación Doctora en Ciencias de
+                    la Educación.</p>
+            </div>
+        </div>
+
+        <!-- Card -->
+        <div
+            class="w-60 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl flex flex-col min-h-72">
+            <!-- Image -->
+            <img class="h-45 object-cover rounded-xl"
+                src="https://ctivitae.concytec.gob.pe/appDirectorioCTI/UploadFotoPath.do?tipo=visualizar_archivo&id_investigador=144862&ruta=/documents/docInvestigadores/144862/imagenes/OLGA%20TAMANO%20CARNET.jpg&content_type=image/jpeg"
+                alt="">
+            <div class="p-2 flex-grow flex flex-col">
+                <!-- Heading -->
+                <h2 class="font-bold text-lg mb-2">DRA.OLGA ESTELA MENDOZA LEÓN</h2>
+                <!-- Description -->
+                <p class="text-sm text-gray-600 flex-grow">Licenciada en educación Primaria Maestra Mención en Problemas de
+                    aprendizaje Doctora en educación Segunda especialidad en Neuropsicología infantil.</p>
+            </div>
+        </div>
+
+        <!-- Card -->
+        <div
+            class="w-60 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl flex flex-col min-h-72">
+            <!-- Image -->
+            <img class="h-80 object-cover rounded-xl"
+                src="https://0.academia-photos.com/211772623/71041518/59477299/s200_anthony_joel.gonzales_pacheco.jpeg"
+                alt="">
+            <div class="p-2 flex-grow flex flex-col">
+                <!-- Heading -->
+                <h2 class="font-bold text-lg mb-2">DR. ANTHONY JOEL GONZALES PACHECO</h2>
+                <!-- Description -->
+                <p class="text-sm text-gray-600 flex-grow">Licenciado en Educación Primaria Maestría en Educación con
+                    mención en Pedagogía Universitaria Doctorado en Educación.</p>
+            </div>
+        </div>
+
+
+    </div>
 
     <script>
         const datos = document.querySelectorAll('.datos');
@@ -369,95 +457,4 @@ sostenible de la localidad, región y el país.
     </script>
 
     <script src="{{ asset('js/main.js') }}"></script>
-
-<div class="relative w-full text-center mt-6">
-    <div class="inset-x-0 top-0 bg-blue-950 text-orange-500 text-4xl font-bold p-4">
-        Plana Docente
-    </div>
-</div>
-
-
-
-<div class="bg-gray-100 gap-4 flex-wrap flex justify-center items-center my-5">
-        <!-- Card -->
-        <div class="w-60 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl flex flex-col min-h-72">
-        <!-- Image -->
-        <img class="h-80 object-cover rounded-xl" src="https://ctivitae.concytec.gob.pe/appDirectorioCTI/UploadFotoPath.do?tipo=visualizar_archivo&id_investigador=935&ruta=/documents/docInvestigadores/935/imagenes/RUTH%202018.jpg&content_type=image/jpeg" alt="">
-        <div class="p-2 flex-grow flex flex-col">
-            <!-- Heading -->
-            <h2 class="font-bold text-lg mb-2">MAGNA RUTH MEREGILDO GOMEZ</h2>
-            <!-- Description -->
-            <p class="text-sm text-gray-600 flex-grow">Licenciada en Educación Primaria Maestría en Educación, mención Gestión y Acreditación Educativa Especialista en Tecnología Educativa, mención Administración y planeamiento educativo Doctora en Ciencias de la Educación.</p>
-        </div>
-    </div>
-
-        <!-- Card -->
-        <div class="w-60 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl flex flex-col min-h-72">
-        <!-- Image -->
-        <img class="h-50 object-cover rounded-xl" src="https://ctivitae.concytec.gob.pe/appDirectorioCTI/UploadFotoPath.do?tipo=visualizar_archivo&id_investigador=29777&ruta=/documents/docInvestigadores/29777/imagenes/Manuel.jpg&content_type=image/jpeg" alt="">
-        <div class="p-2 flex-grow flex flex-col">
-            <!-- Heading -->
-            <h2 class="font-bold text-lg mb-2">MANUEL QUIPUSCOA SILVESTRE</h2>
-            <!-- Description -->
-            <p class="text-sm text-gray-600 flex-grow">Licenciado en Educación Primaria Maestría en Educación, Mención en Pedagogía Universitaria Segunda Especialidad en Tecnologías Educativa, Mención en Currículo y Estrategias de Enseñanza y Aprendizaje Licenciatura en Psicología Doctor en Ciencias de la Educación.</p>
-        </div>
-    </div>
-
-    <!-- Card -->
-    <div class="w-60 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl flex flex-col min-h-72">
-        <!-- Image -->
-        <img class="h-45 object-cover rounded-xl" src="{{ asset('imagenes/CeciliaDPV.jpeg') }}" alt="">
-        <div class="p-2 flex-grow flex flex-col">
-            <!-- Heading -->
-            <h2 class="font-bold text-lg mb-2">DRA. CECILIA DEL PILAR VÁSQUEZ MONDRAGÓN</h2>
-            <!-- Description -->
-            <p class="text-sm text-gray-600 flex-grow">Licenciada en Investigación y Docencia Universitaria, Doctora en Educación, con Segunda Especialidad en Administración y Planeamiento.</p>
-        </div>
-    </div>
-</div>
-
-<div class="bg-gray-100 gap-4 flex-wrap flex justify-center items-center my-5">
-    <!-- Card -->
-
-
-    <!-- Card -->
-    <div class="w-60 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl flex flex-col min-h-72">
-        <!-- Image -->
-        <img class="h-50 object-cover rounded-xl" src="{{ asset('imagenes/FOTO JESY-ok (1).jpeg') }}" alt="">
-        <div class="p-2 flex-grow flex flex-col">
-            <!-- Heading -->
-            <h2 class="font-bold text-lg mb-2">JESSICA ISABEL ALVA CHÁVEZ</h2>
-            <!-- Description -->
-            <p class="text-sm text-gray-600 flex-grow">Licenciado en Educación Primaria Maestría en Educación, Mención en Pedagogía Universitaria Segunda Especialidad en Didáctica en la Comunicación Doctora en Ciencias de la Educación.</p>
-        </div>
-    </div>
-
-        <!-- Card -->
-        <div class="w-60 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl flex flex-col min-h-72">
-        <!-- Image -->
-        <img class="h-45 object-cover rounded-xl" src="https://ctivitae.concytec.gob.pe/appDirectorioCTI/UploadFotoPath.do?tipo=visualizar_archivo&id_investigador=144862&ruta=/documents/docInvestigadores/144862/imagenes/OLGA%20TAMANO%20CARNET.jpg&content_type=image/jpeg" alt="">
-        <div class="p-2 flex-grow flex flex-col">
-            <!-- Heading -->
-            <h2 class="font-bold text-lg mb-2">DRA.OLGA ESTELA MENDOZA LEÓN</h2>
-            <!-- Description -->
-            <p class="text-sm text-gray-600 flex-grow">Licenciada en educación Primaria Maestra Mención en Problemas de aprendizaje Doctora en educación Segunda especialidad en Neuropsicología infantil.</p>
-        </div>
-    </div>
-
-    <!-- Card -->
-    <div class="w-60 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl flex flex-col min-h-72">
-        <!-- Image -->
-        <img class="h-80 object-cover rounded-xl" src="https://0.academia-photos.com/211772623/71041518/59477299/s200_anthony_joel.gonzales_pacheco.jpeg" alt="">
-        <div class="p-2 flex-grow flex flex-col">
-            <!-- Heading -->
-            <h2 class="font-bold text-lg mb-2">DR. ANTHONY JOEL GONZALES PACHECO</h2>
-            <!-- Description -->
-            <p class="text-sm text-gray-600 flex-grow">Licenciado en Educación Primaria Maestría en Educación con mención en Pedagogía Universitaria Doctorado en Educación.</p>
-        </div>
-    </div>
-
-
-</div>
-
-
 @endsection
