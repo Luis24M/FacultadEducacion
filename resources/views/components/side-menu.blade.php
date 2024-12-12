@@ -77,14 +77,15 @@
             ['name' => 'Docentes', 'url' => '/Docentes']
         ]" 
     />
-    <x-drop-down-button 
+    
+<x-drop-down-button 
 
-    title="Unidad de Responsabilidad Social" 
+    title="Unidad de Responsabilidad Social Universitaria" 
     :list="[
-        ['name' => 'Inicio', 'url' => '/index'],
-        ['name' => 'Documentacion', 'url' => '/documentacion'],
-        ['name' => 'Contacto', 'url' => '/contacto']
-    ]" 
+        ['name' => 'Repositrorio Documental', 'url' => '/index'],
+        ['name' => 'Informes de R.S.U', 'url' => '/documentacion'],
+        ['name' => 'Proyectos actuales de R.S.U', 'url' => '/contacto']
+    ]"
 />
 
 <x-drop-down-button 

@@ -27,9 +27,31 @@
             </button>
             <div id="dropdown1" class="hidden mt-2 p-2 rounded-md shadow">
                 <ul>
-                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0">
-                        <a class="ml-5" target="_blank" href="{{ asset('descarga/2021/OFICIO N° 004-2021.pdf') }}"> Documento1 </a>
+                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0 border border-black rounded-md shadow-sm">
+                        <a class="ml-5" target="_blank" href="https://drive.google.com/file/d/1ymbbiOjZp7EytZSpEEL6GOUxHi6TPt5j/view"> PROYECTO INICIAL bilbioteca infantil </a>
                     </li>
+                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0 border border-black rounded-md shadow-sm">
+                        <a class="ml-5" target="_blank" href="https://drive.google.com/file/d/1x3W26LHHhjMZSBqxbk1zHEgFJlr-TjzA/view"> PROYECTO DE LENGUA Y LITERATURA - PROF. ZORÁN </a>
+                    </li>
+                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0 border border-black rounded-md shadow-sm">
+                        <a class="ml-5" target="_blank" href="https://drive.google.com/file/d/1N5YeVWVZIoWqlqLyuAvDvHPUrD4oqyw-/view">  PROYECTO DE LENGUA Y LITERATURA - PROF. MARTHA PAREDES </a>
+                    </li>
+                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0 border border-black rounded-md shadow-sm">
+                        <a class="ml-5" target="_blank" href="https://drive.google.com/file/d/159AWkth-oGDR2hW1mYYrzurghXf2tbl4/view"> PROYECTO DE IDIOMAS</a>
+                    </li>
+                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0 border border-black rounded-md shadow-sm">
+                        <a class="ml-5" target="_blank" href="https://drive.google.com/file/d/1rF5JLC8Oe8juabeJhgQzOblZhSm-oYbg/view"> PROYECTO DE HISTORIA Y GEOGRAFÍA </a>
+                    </li>
+                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0 border border-black rounded-md shadow-sm">
+                        <a class="ml-5" target="_blank" href="https://drive.google.com/file/d/1S9v75y9yaRfiCUfRctB4LTp3OFFP-GSl/view"> PROYECTO DE CIENCIAS PSICOLÓGICAS </a>
+                    </li>
+                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0 border border-black rounded-md shadow-sm">
+                        <a class="ml-5" target="_blank" href="https://drive.google.com/file/d/1IQDYLsy6nOebeWjrAAIOzLwd8SXCivDr/view"> PEOYECTO DE FILOSOFÍA Y ARTE </a>
+                    </li>
+                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0 border border-black rounded-md shadow-sm">
+                        <a class="ml-5" target="_blank" href="https://drive.google.com/drive/folders/1aIKnrl3Rxfxx_U1Xm0XM0SaV_WKkeY0z"> no considerar </a>
+                    </li>
+                    
                 </ul>
 
 
@@ -42,41 +64,41 @@
             </button>
             <div id="dropdown2" class="hidden mt-2 p-2 bg-gray-50 rounded-md shadow">
                 <ul>
-                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0"> 
-                        <a class="ml-5" target="_blank" href="{{ asset('descarga/2022/643-ENVÍO PROYECTOS DE RESPONSABILIDAD SOCIAL 2022. - CON OBSERVACIONES LEVANTADASOK.pdf') }}"> Documento1 </a> 
+                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0 border border-black rounded-md shadow-sm"> 
+                        <a class="ml-5" target="_blank" href="https://drive.google.com/file/d/18woyuLQF7jrcfVNlvQNkq4fTcaAr2FPO/view"> X Congreso Regional de Filosofía del Norte del Perú-CON CARTAS DE INTENCIÓN </a> 
                     </li>
                     
-                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0"> 
-                        <a class="ml-5" target="_blank" href="{{ asset('descarga/2022/1134-ALCANZA PROYECTOS DE RSU 2022.pdf') }}"> Documento2 </a> 
+                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0 border border-black rounded-md shadow-sm"> 
+                        <a class="ml-5" target="_blank" href="https://drive.google.com/file/d/1aUiQAh9GSHFfll4aMRgaNc5aV7TdgJl4/view">TRABAJANDO JUNTOS PARAFORTALECER NUESTRAS CAPACIDADES (1) </a> 
                     </li>
 
-                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0"> 
-                        <a class="ml-5" target="_blank" href="{{ asset('descarga/2022/ACCIONES EDUCOMUNICATIVAS PARA PREVENIR LA VIOLENCIA DE (1).pdf') }}"> Documento3 </a> 
+                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0 border border-black rounded-md shadow-sm"> 
+                        <a class="ml-5" target="_blank" href="https://drive.google.com/file/d/1br88nqNinKhBm1jXG-T7K_BvdmpS_Rks/view"> PROYECTO RSU 2022 last</a> 
                     </li>
 
-                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0"> 
-                        <a class="ml-5" target="_blank" href="{{ asset('descarga/2022/Plan estrategico multidisciplinario para la atención integral infantil completo y en pdf.pdf') }}"> Documento4 </a> 
+                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0 border border-black rounded-md shadow-sm"> 
+                        <a class="ml-5" target="_blank" href="https://drive.google.com/file/d/1MoBCblZ4kP5jVeOQI6C-AbXhCPW94aLc/view"> Proyecto Promoviendo la identidad </a> 
                     </li>
 
-                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0"> 
-                        <a class="ml-5 hover:bg-gray-200 bg-gray-50" target="_blank" href="{{ asset('descarga/2022/Proyecto de RS Cultura de la responsabilidad tributaria- 2022 (1).pdf') }}"> Documento5 </a> 
+                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0 border border-black rounded-md shadow-sm"> 
+                        <a class="ml-5 hover:bg-gray-200 bg-gray-50" target="_blank" href="https://drive.google.com/file/d/1Myl9jjDQB5Lv7uTCQ8rvR0HC_VRLxxbd/view"> Proyecto de RS Cultura de la responsabilidad tributaria- 2022 (1)</a> 
                     </li>
                     
-                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0"> 
-                        <a class="ml-5" target="_blank" href="{{ asset('descarga/2022/Proyecto Promoviendo la identidad.pdf') }}"> Documento6 </a> 
+                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0 border border-black rounded-md shadow-sm"> 
+                        <a class="ml-5" target="_blank" href="https://drive.google.com/file/d/16Dt5N3YWZUIjcatmDa0Nz0jDPqzKbLFl/view"> Plan estrategico multidisciplinario para la atención integral infantil completo y en pdf </a> 
                     </li>
 
-                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0"> 
-                        <a class="ml-5" target="_blank" href="{{ asset('descarga/2022/PROYECTO RSU 2022 last.pdf') }}"> Documento7 </a> 
+                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0 border border-black rounded-md shadow-sm"> 
+                        <a class="ml-5" target="_blank" href="https://drive.google.com/file/d/12PC8nEnkOUrUMa9ewUveHV5LeqY5AM7d/view"> ACCIONES EDUCOMUNICATIVAS PARA PREVENIR LA VIOLENCIA DE (1) </a> 
                     </li>
 
-                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0"> 
-                        <a class="ml-5" target="_blank" href="{{ asset('descarga/2022/TRABAJANDO JUNTOS PARAFORTALECER NUESTRAS CAPACIDADES (1).pdf') }}"> Documento8 </a> 
+                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0 border border-black rounded-md shadow-sm"> 
+                        <a class="ml-5" target="_blank" href="https://drive.google.com/file/d/1u2Ybh8eYcJ5ZtqYWRWzXHRBbBUQC5aBw/view"> 1134-ALCANZA PROYECTOS DE RSU 2022 </a> 
                     </li>
 
                     
-                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0"> 
-                        <a class="ml-5" target="_blank" href="{{ asset('descarga/2022/X Congreso Regional de Filosofía del Norte del Perú-CON CARTAS DE INTENCIÓN.pdf') }}"> Documento9 </a> 
+                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0 border border-black rounded-md shadow-sm"> 
+                        <a class="ml-5" target="_blank" href="https://drive.google.com/file/d/1VaWkEuPX5AiRqectFVZVbegKhGsxoq8S/view"> 643-ENVÍO PROYECTOS DE RESPONSABILIDAD SOCIAL 2022. - CON OBSERVACIONES LEVANTADASOK </a> 
                     </li>
 
                 </ul>
@@ -91,13 +113,34 @@
             <div id="dropdown3" class="hidden mt-2 p-2 bg-gray-50 rounded-md shadow">
                 <ul>
 
-                    <li class="hover:bg-gray-200 bg-gray-50">
-                    <a class="ml-5" target="_blank" href="{{ asset('descarga/2023/327-RSU - REMITO PROYECTOS 2023.pdf') }}"> Documento 1 <i></i></a>
+                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0 border border-black rounded-md shadow-sm">
+                    <a class="ml-5" target="_blank" href="https://drive.google.com/file/d/108TD4pwqZlOI1R_Tjh9ulEfNDdMJwPWm/view"> XI-COREFIL23 <i></i></a>
                     </li>
-                    <li class="hover:bg-gray-200 bg-gray-50">
-                    <a class="ml-5" target="_blank" href="{{ asset('descarga/2023/977-ALCANZA PROYECTOS DE RSU.pdf') }}"> Documento 2 <i></i></a>
+                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0 border border-black rounded-md shadow-sm">
+                    <a class="ml-5" target="_blank" href="https://drive.google.com/file/d/1y12o_qe__wpbV9j1x9nmDdZv5zm4AUBZ/view"> RSU 2023PROGRAMA EDUCACIÓN EMOCIONAL (1) <i></i></a>
                     </li>
-                </ul>
+                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0 border border-black rounded-md shadow-sm">
+                    <a class="ml-5" target="_blank" href="https://drive.google.com/file/d/1mvbvYSsUCI8cUtlE1zo-5xehpNAaCy79/view"> PROYECTO RSU 2023 <i></i></a>
+                    </li>
+                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0 border border-black rounded-md shadow-sm">
+                    <a class="ml-5" target="_blank" href="https://drive.google.com/file/d/1Ws2S1SdacsstavW0zcDHyM3WY_x-VSEr/view"> PROYECTO RSU 2023-2 YACKELINE SILVA <i></i></a>
+                    </li>
+                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0 border border-black rounded-md shadow-sm">
+                    <a class="ml-5" target="_blank" href="https://drive.google.com/file/d/1-CeLySyeAMJjEyrLsxY6VgL-JrFi6wce/view"> PROYECTO RSU 2023 idiomas<i></i></a>
+                    </li>
+                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0 border border-black rounded-md shadow-sm">
+                    <a class="ml-5" target="_blank" href="https://drive.google.com/file/d/1i1hiwXqkZlueS6BpxlsV9hOINnn6Qmkb/view"> PROYECTO DE RSU- PROGRAMA DE EDUCACIÓN PRIMARIA<i></i></a>
+                    </li>
+                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0 border border-black rounded-md shadow-sm">
+                    <a class="ml-5" target="_blank" href="https://drive.google.com/file/d/1dGsqsdBnYFEpQVgOMhZdk1UrSN3m7fk7/view"> PROYECTO DE RESPONSABILIDAD SOCIAL 2023 - V4 PDF <i></i></a>
+                    </li>
+                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0 border border-black rounded-md shadow-sm">
+                    <a class="ml-5" target="_blank" href="https://drive.google.com/file/d/19fv80K_IBueE-VV6kR1zdPBt14BwVcsL/view"> OFICIO Nº 042- 2023 RSU - proyecto 2023. <i></i></a>
+                    </li>
+                    <li class="hover:bg-gray-200 bg-gray-50 m-0 p-0 border border-black rounded-md shadow-sm">
+                    <a class="ml-5" target="_blank" href="https://drive.google.com/file/d/1YPTCJO0zKmF9mBlD_PaaD8GvkFPH_uQa/view"> I CONGRESO INTERNACIONAL HÍBRIDO DE EDUCACIÓN MATEMÁTICA 2023 <i></i></a>
+                    </li>
+                    
 
             </div>
         </div>
