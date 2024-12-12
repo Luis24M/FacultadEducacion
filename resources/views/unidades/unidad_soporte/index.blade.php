@@ -70,8 +70,8 @@
             <img src="{{ asset('colaboradores/HOMBRE DEFAULT.jpg') }}" alt="Téc. Laura Vega" class="object-cover object-center w-40 h-40">
         </div>
         <div class="p-4 flex flex-col items-center">
-            <h3 class="text-xl font-bold">Téc. Laura Vega</h3>
-            <p class="text-gray-600 mt-2">"Eficiencia en cada solución"</p>
+            <h3 class="text-xl font-bold">Ing. Ronny Nelson Guzmán Bermúdez</h3>
+            <p class="text-gray-600 mt-2">"La Tecnologia es desarrollo"</p>
         </div>
     </div>
 

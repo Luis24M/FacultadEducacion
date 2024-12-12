@@ -26,24 +26,24 @@
         <!-- Primer grid -->
         <div class="flex flex-col justify-center items-center">
         <img src="/colaboradores/UNT X SINEACE.png" alt="Imagen 1" class="w-full h-auto rounded shadow mb-4">
-        <button onclick="showAccessCodePrompt('https://drive.google.com/drive/folders/1a6QD8fBpOAkACUqhcsflBQqJnOOXmPuU?usp=sharing')" class="bg-blue-500 text-white px-6 py-3 rounded flex items-center justify-center text-lg w-full h-16">
-            SINEACE <img src="{{ asset('icons/download.svg') }}" alt="Icono de Descarga" class="ml-2">
-        </button>
+        <a href="https://repositorio.sineace.gob.pe/repositorio/bitstream/handle/20.500.12982/5490/Explicaci%c3%b3n%20de%20est%c3%a1ndares%20del%20modelo%20de%20acreditaci%c3%b3n.pdf?sequence=1&isAllowed=y" target="_blank" class="bg-blue-500 text-white px-6 py-3 rounded flex items-center justify-center text-lg w-full h-16">
+            SINEACE <img src="{{ asset('icons/arrow.svg') }}" alt="Icono de Descarga" class="ml-2">
+        </a>
         </div>
         
         <!-- Segundo grid -->
         <div class="flex flex-col justify-center items-center">
         <img src="/colaboradores/ISO 9001.png" alt="Imagen 2" class="w-full h-auto rounded shadow mb-4">
-        <button onclick="showAccessCodePrompt('https://drive.google.com/drive/folders/13QAFBeY5AUxJFu4A8JmRk_hy4qXGfiI2?usp=sharing')" class="bg-blue-500 text-white px-6 py-3 rounded flex items-center justify-center text-lg w-full h-16">
+        <button onclick="showAccessCodePrompt('https://www.iso.org/obp/ui/#iso:std:iso:9001:ed-5:v1:es')" class="bg-blue-500 text-white px-6 py-3 rounded flex items-center justify-center text-lg w-full h-16">
             NORMA ISO 9001 <img src="{{ asset('icons/download.svg') }}" alt="Icono de Descarga" class="ml-2">
         </button>
         </div>
         
         <!-- Tercer grid -->
         <div class="flex flex-col justify-center items-center">
-        <img src="/colaboradores/ISO 14001.png" alt="Imagen 3" class="w-full h-auto rounded shadow mb-4">
-        <button onclick="showAccessCodePrompt('https://drive.google.com/drive/folders/1LkKIj3mrLIIwKhRp5CfIOJ87nGmpvhCm?usp=sharing')" class="bg-blue-500 text-white px-6 py-3 rounded flex items-center justify-center text-lg w-full h-16">
-            NORMA ISO 14001 <img src="{{ asset('icons/download.svg') }}" alt="Icono de Descarga" class="ml-2">
+        <img src="/colaboradores/ISO 24001.png" alt="Imagen 3" class="w-full h-auto rounded shadow mb-4">
+        <button onclick="showAccessCodePrompt('https://normasiso.org/norma-iso-24001/')" class="bg-blue-500 text-white px-6 py-3 rounded flex items-center justify-center text-lg w-full h-16">
+            NORMA ISO 24001 <img src="{{ asset('icons/download.svg') }}" alt="Icono de Descarga" class="ml-2">
         </button>
         </div>
     </div>
