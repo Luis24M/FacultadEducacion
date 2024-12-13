@@ -92,9 +92,7 @@ Route::get('/unidades/unidad_calidad/colaboradores', function () {
     return view('unidades.unidad_calidad.colaboradores');
 })->name('unidades.colaboradores');
 
-Route::get('/unidades/unidad_calidad/repositorio', function () {
-    return view('unidades.unidad_calidad.repositorio');
-})->name('unidades.repositorio');
+Route::get('/unidades/unidad_calidad/repositorio', [AplicacionesExtController::class, 'sineace'])->name('unidades.repositorio');
 
 
 

@@ -45,4 +45,9 @@ class AplicacionesExtController extends Controller
         $aplicacion->delete();
         return redirect()->route('aplicacionesExt.index');
     }
+
+    public function sineace() {
+        $aplicaciones = AplicacionesExt::whereNotNull('sineace')->latest()->first();
+        return view('unidades.unidad_calidad.repositorio', compact('aplicaciones'));
+    }
 }
