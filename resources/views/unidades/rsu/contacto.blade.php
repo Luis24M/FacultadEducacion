@@ -2,13 +2,13 @@
 
 @section('content')
 
-<div class="flex items-center justify-center   ">
-  <span class="bg-blue-950 text-yellow-500 md:text-5xl font-bold w-full items-center px-8 py-4 rounded">
+<div class="flex items-center justify-center">
+  <span class="bg-blue-950 text-yellow-500 text-2xl md:text-5xl font-bold w-full text-center px-4 md:px-8 py-4 rounded">
     Proyectos actuales de R.S.U
   </span>
 </div>
 
-    <!-- Carrusel de tarjetas con navegación -->
+<!-- Carrusel de tarjetas con navegación -->
 <div class="relative w-full bg-blue-950 py-8">
   <!-- Botón Izquierdo -->
   <button
@@ -21,34 +21,41 @@
   <!-- Contenedor del carrusel -->
   <div
     id="carousel"
-    class="flex gap-4 overflow-x-hidden scroll-smooth snap-x snap-mandatory"
+    class="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory px-4 md:px-8"
   >
     <!-- Tarjeta 1 -->
-    <div class="flex-shrink-0 w-60 p-4 bg-white rounded-lg shadow-md snap-start">
-      <img class="w-full h-40 object-cover rounded" src="/img/card1.jpg" alt="Card 1" />
-      <h2 class="mt-4 font-bold text-lg text-center">Título 1</h2>
-      <p class="text-gray-700 text-sm text-center">Descripción breve de la tarjeta 1.</p>
+    <div class="flex-shrink-0 w-72 md:w-80 p-4 md:p-6 bg-white rounded-lg shadow-md snap-start">
+      <img class="w-full h-48 md:h-60 object-cover rounded" src="{{ asset('imagenes/2021/f6193b7e-d2b0-40dc-a22f-6009acde4289.jfif') }}" alt="Card 1" />
+      <h2 class="mt-4 font-bold text-lg md:text-xl text-center">2021</h2>
+      <p class="text-gray-700 text-sm md:text-base text-center">Liderazgo pedagógico</p>
     </div>
 
     <!-- Tarjeta 2 -->
-    <div class="flex-shrink-0 w-60 p-4 bg-white rounded-lg shadow-md snap-start">
-      <img class="w-full h-40 object-cover rounded" src="/img/card2.jpg" alt="Card 2" />
-      <h2 class="mt-4 font-bold text-lg text-center">Título 2</h2>
-      <p class="text-gray-700 text-sm text-center">Descripción breve de la tarjeta 2.</p>
+    <div class="flex-shrink-0 w-72 md:w-80 p-4 md:p-6 bg-white rounded-lg shadow-md snap-start">
+      <img class="w-full h-48 md:h-60 object-cover rounded" src="{{ asset('imagenes/2022/89a7bced-67f9-4bbe-9aeb-d5e00508f768.jfif') }}" alt="Card 2" />
+      <h2 class="mt-4 font-bold text-lg md:text-xl text-center">2022</h2>
+      <p class="text-gray-700 text-sm md:text-base text-center">acciones educomunicativas de violencia contra mujer</p>
     </div>
 
     <!-- Tarjeta 3 -->
-    <div class="flex-shrink-0 w-60 p-4 bg-white rounded-lg shadow-md snap-start">
-      <img class="w-full h-40 object-cover rounded" src="/img/card3.jpg" alt="Card 3" />
-      <h2 class="mt-4 font-bold text-lg text-center">Título 3</h2>
-      <p class="text-gray-700 text-sm text-center">Descripción breve de la tarjeta 3.</p>
+    <div class="flex-shrink-0 w-72 md:w-80 p-4 md:p-6 bg-white rounded-lg shadow-md snap-start">
+      <img class="w-full h-48 md:h-60 object-cover rounded" src="{{ asset('imagenes/2023/6e194cea-5507-402e-b312-ebb0106f821d.jfif') }}" alt="Card 3" />
+      <h2 class="mt-4 font-bold text-lg md:text-xl text-center">2023</h2>
+      <p class="text-gray-700 text-sm md:text-base text-center">Violencia de género</p>
     </div>
 
     <!-- Tarjeta 4 -->
-    <div class="flex-shrink-0 w-60 p-4 bg-white rounded-lg shadow-md snap-start">
-      <img class="w-full h-40 object-cover rounded" src="/img/card4.jpg" alt="Card 4" />
-      <h2 class="mt-4 font-bold text-lg text-center">Título 4</h2>
-      <p class="text-gray-700 text-sm text-center">Descripción breve de la tarjeta 4.</p>
+    <div class="flex-shrink-0 w-72 md:w-80 p-4 md:p-6 bg-white rounded-lg shadow-md snap-start">
+      <img class="w-full h-48 md:h-60 object-cover rounded" src="{{ asset('imagenes/2024/9ecf6958-2943-4164-83d5-a3b1b9bc388a.jfif') }}" alt="Card 4" />
+      <h2 class="mt-4 font-bold text-lg md:text-xl text-center">2024</h2>
+      <p class="text-gray-700 text-sm md:text-base text-center">Proyecto de reciclaje</p>
+    </div>
+
+    <!-- Tarjeta 5 -->
+    <div class="flex-shrink-0 w-72 md:w-80 p-4 md:p-6 bg-white rounded-lg shadow-md snap-start">
+      <img class="w-full h-48 md:h-60 object-cover rounded" src="{{ asset('imagenes/fondo.avif') }}" alt="Card 5" />
+      <h2 class="mt-4 font-bold text-lg md:text-xl text-center">2025</h2>
+      <p class="text-gray-700 text-sm md:text-base text-center">PRONTO</p>
     </div>
   </div>
 
@@ -67,8 +74,7 @@
   const prevButton = document.getElementById("prevButton");
   const nextButton = document.getElementById("nextButton");
 
-  // Ancho de desplazamiento por tarjeta
-  const cardWidth = carousel.querySelector(".w-60").offsetWidth + 16; // Ancho más margen
+  const cardWidth = carousel.querySelector(".w-72").offsetWidth + 16; // Ajustar ancho más margen
 
   prevButton.addEventListener("click", () => {
     carousel.scrollBy({ left: -cardWidth, behavior: "smooth" });
