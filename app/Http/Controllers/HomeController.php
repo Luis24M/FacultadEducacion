@@ -61,4 +61,16 @@ class HomeController extends Controller
         $galerias = Publicacion::where('idTipoPublicacion', $galeria)->orderBy('fechaPublicacion', 'desc')->get();
         return view('galeria', compact('galerias'));
     }
+
+    public function showDocument($id){
+        $rutasDocumentos=[
+            '1'=>'../../../pdfs/unidades/practicas-preprofesionales/1.Ficha de monitoreo de tutoria.pdf',
+            '2'=>'../../../pdfs/unidades/practicas-preprofesionales/2.FICHA PARA EVALUAR LA SESIÓN DE APRENDIZAJE.pdf',
+            '3'=>'../../../pdfs/unidades/practicas-preprofesionales/3.REGISTRO DE ASISTENCIA filosofia.pdf',
+        ];
+
+        $ruta=['url'=>$rutasDocumentos[$id]];
+
+        return view('unidades.practica_preprofesional.index',compact('ruta'));
+    }
 }
