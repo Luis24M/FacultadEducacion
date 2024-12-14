@@ -82,9 +82,9 @@
 
     title="Unidad de Responsabilidad Social Universitaria" 
     :list="[
-        ['name' => 'Repositrorio Documental', 'url' => '/index'],
-        ['name' => 'Informes de R.S.U', 'url' => '/documentacion'],
-        ['name' => 'Proyectos actuales de R.S.U', 'url' => '/contacto']
+        ['name' => 'Repositrorio Documental', 'url' => '/unidades/rsu'],
+        ['name' => 'Informes de R.S.U', 'url' => '/unidades/rsu/documentacion'],
+        ['name' => 'Proyectos actuales de R.S.U', 'url' => '/unidades/rsu/contacto']
     ]"
 />
 

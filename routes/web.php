@@ -126,17 +126,17 @@ Route::get('/unidades/unidad_soporte/index', function () {
 })->name('unidades.index');
 
 ////////////////////////////////////////////////
-Route::get('/documentacion', function () {
+Route::get('/unidades/rsu/documentacion', function () {
     return view('unidades.rsu.documentacion');
 })->name('unidades.rsu.documentacion');
 
 
-Route::get('/contacto', function () {
+Route::get('/unidades/rsu/contacto', function () {
     return view('unidades.rsu.contacto');
 })->name('unidades.rsu.contacto');
 
 
-Route::get('/index', function () {
+Route::get('/unidades/rsu', function () {
     return view('unidades.rsu.index');
 })->name('unidades.rsu.index');
 
