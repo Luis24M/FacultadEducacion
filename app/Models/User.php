@@ -8,6 +8,8 @@ namespace App\Models;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable; // Importa la clase base
+use Illuminate\Notifications\Notifiable;
 
 /**
  * Class User
@@ -23,7 +25,7 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @package App\Models
  */
-class User extends Model
+class User extends Authenticatable // Extiende la clase Authenticatable
 {
 	protected $table = 'users';
 

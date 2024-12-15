@@ -72,7 +72,7 @@
     </div>
     <hr>
 
-    <section class="py-8">
+    <section class="py-8 px-4">
         <div class="container mx-auto text-center">
             <h2  class="text-3xl font-bold text-gray-800 mb-8">
             Nuestra Historia

@@ -123,7 +123,7 @@ Route::get('/unidades/practica_preprofesional/Repositorio/{id}',[HomeController:
 
 Route::get('/unidades/unidad_soporte/index', function () {
     return view('unidades.unidad_soporte.index');
-})->name('unidades.index');
+})->name('unidades.soporte');
 
 ////////////////////////////////////////////////
 Route::get('/documentacion', function () {

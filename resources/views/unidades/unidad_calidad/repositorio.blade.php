@@ -30,8 +30,8 @@
             <a href="https://repositorio.sineace.gob.pe/repositorio/bitstream/handle/20.500.12982/5490/Explicaci%c3%b3n%20de%20est%c3%a1ndares%20del%20modelo%20de%20acreditaci%c3%b3n.pdf?sequence=1&isAllowed=y" target="_blank" class="bg-blue-500 text-white px-6 py-3 rounded flex items-center justify-center text-lg w-1/2 h-16">
                 SINEACE EXPLICACION <img src="{{ asset('icons/arrow.svg') }}" alt="Icono de Descarga" class="ml-2">
             </a>
-            <a href="https://repositorio.sineace.gob.pe/repositorio/bitstream/handle/20.500.12982/5490/Explicaci%c3%b3n%20de%20est%c3%a1ndares%20del%20modelo%20de%20acreditaci%c3%b3n.pdf?sequence=1&isAllowed=y" target="_blank" class="bg-blue-500 text-white px-6 py-3 rounded flex items-center justify-center text-lg w-1/2 h-16">
-                SINEACE APLICATIVO <img src="{{ asset('icons/arrow.svg') }}" alt="Icono de Descarga" class="ml-2">
+            <a href="{{ $aplicaciones->sineace }}" target="_blank" class="bg-blue-500 text-white px-6 py-3 rounded flex items-center justify-center text-lg w-1/2 h-16">
+                SINEACE APLICATIVO  <img src="{{ asset('icons/arrow.svg') }}" alt="Icono de Descarga" class="ml-2">
             </a>
         </div>
         </div>

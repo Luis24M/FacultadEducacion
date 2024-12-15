@@ -1,8 +1,11 @@
 <div class="mx-2 my-4 dropdown">
     <div class="hover:bg-black hover:text-white transition-all duration-300 flex text-center border border-black rounded-md p-2 bg-[#eee] shadow-lg">
-        <button type="button" class="flex justify-center items-center w-full dropdown-button" aria-expanded="false" aria-haspopup="true" data-dropdown>
-            {{ $title }}
-            <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <button type="button" class="grid grid-cols-12 items-center w-full dropdown-button" aria-expanded="false" aria-haspopup="true" data-dropdown>
+            <p class=""></p>
+            <p class=" col-span-10 justify-self-center">
+                {{ $title }}
+            </p>
+            <svg class="ml-2 h-5 w-5 justify-self-end" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
             </svg>
         </button>
