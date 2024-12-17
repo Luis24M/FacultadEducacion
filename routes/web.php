@@ -119,26 +119,21 @@ Route::get('/unidades/practica_preprofesional/Comite', function (){
 Route::get('/unidades/practica_preprofesional/Repositorio/{id}',[HomeController::class,'showDocument'])->name('unidades.practica_preprofesional.informeInvestigacion.showDocument');
 
 
-//Sadhu
-
 Route::get('/unidades/unidad_soporte/index', function () {
     return view('unidades.unidad_soporte.index');
 })->name('unidades.soporte');
 
-////////////////////////////////////////////////
 Route::get('/unidades/rsu/documentacion', function () {
     return view('unidades.rsu.documentacion');
 })->name('unidades.rsu.documentacion');
-
 
 Route::get('/unidades/rsu/contacto', function () {
     return view('unidades.rsu.contacto');
 })->name('unidades.rsu.contacto');
 
-
 Route::get('/unidades/rsu', function () {
     return view('unidades.rsu.index');
-})->name('unidades.rsu.index');
+})->name('unidades.rsu');
 
 Route::post('comentario', [ComentarioController::class, 'store'])->name('comentario.store');
 

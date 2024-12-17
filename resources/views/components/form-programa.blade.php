@@ -25,7 +25,7 @@
                 <option value="Otros">Otros</option>
             </select>
         </section>
-        <textarea name="mensaje" id="Comentarios" placeholder="Escribe Tu Mensaje Aquí"
+        <textarea id="mensaje" name="mensaje" id="Comentarios" placeholder="Escribe Tu Mensaje Aquí"
             class="md:col-span-2 rounded-md p-3 border border-{{$color}} bg-transparent"></textarea>
         <input type="hidden" name="escuela" value="{{$programa}}">
         <input class="py-2 bg-{{$color}} rounded-md text-black font-bold cursor-pointer" type="submit" id="enviar"
@@ -34,3 +34,9 @@
             id="borrar" name="borrar" value="Borrar">
     </form>
 </div>
+
+<style>
+    #mensaje {
+        field-sizing: content;
+    }
+</style>

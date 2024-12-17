@@ -43,8 +43,6 @@
         :active="request()->routeIs('pregrado.secundaria.literatura')" />
     <x-side-button icon="book.svg" title="Idiomas" route="/pregrado/secundaria/idiomas" :active="request()->routeIs('pregrado.secundaria.idiomas')" />
 
-    {{-- POSGRADO --}}
-@elseif(request()->routeIs('posgrado'))
     {{-- UNIDADES --}}
 @elseif(request()->routeIs('unidades') || request()->routeIs('unidades.*'))
     <h3 class="text-xl font-semibold">Unidades</h3>

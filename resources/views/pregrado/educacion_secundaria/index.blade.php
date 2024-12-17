@@ -341,45 +341,7 @@
 
         <!--Formulario-->
         <section class="lg:flex p-5 md:px-20 justify-center">
-
-            <img src="{{ asset('imagenes/index/inicial.jpg') }}" class="w-1/2 hidden lg:block" alt="">
-            <form action="" method="POST"
-                class="border-2 border-[#1976D2] gap-3 shadow-xl max-w-[600px] mx-auto rounded-lg p-5 grid md:grid-cols-2 [&>section>img]:bg-[#1976D2] [&>section]:flex [&>section>img]:p-2 [&>section]:rounded-md [&>section]:border [&>section]:border-[#1976D2] [&>section>img]:rounded-l-[5px] [&>section>input]:w-full [&>section>input]:rounded-r-md [&>section>input]:px-2 [&>section>input]:bg-transparent ">
-                {{-- Predeterminado la escuela desde donde va --}}
-                <section class="entrada-uno">
-                    <img src="{{ asset('icons/user.svg') }}" alt="">
-                    <input type="text" placeholder="Escriba su nombre" id="Nombres" name="Nombres">
-                </section>
-                <section class="entrada-uno">
-                    <img src="{{ asset('icons/user.svg') }}" alt="">
-                    <input type="text" placeholder="Escriba su apellido" id="Apellidos" name="Apellidos">
-                </section>
-                <section class="entrada-uno">
-                    <img src="{{ asset('icons/email.svg') }}" alt="">
-                    <input type="text" placeholder="Ingrese su correo" id="Correo" name="Correo">
-                </section>
-                <section class="entrada-uno">
-                    <img src="{{ asset('icons/phone.svg') }}" alt="">
-                    <input type="text" placeholder="Escriba su N° celular" id="Celular" name="Celular">
-                </section>
-                <section class="md:col-span-2 flex ">
-                    <img src="{{ asset('icons/setting.svg') }}" alt="">
-                    <select id="opciones" name="Opciones" class="w-full rounded-r-md bg-transparent">
-                        <option value="" disabled selected>Selecciona una opción</option>
-                        <option value="Docente">Docente</option>
-                        <option value="Estudiante">Estudiante</option>
-                        <option value="Egresado">Egresado</option>
-                        <option value="Administrativo">Administrativo</option>
-                        <option value="Otros">Otros</option>
-                    </select>
-                </section>
-                <textarea name="Comentarios" id="Comentarios" placeholder="Escribe Tu Mensaje Aquí"
-                    class="md:col-span-2 rounded-md p-3 border border-[#1976D2] bg-transparent"></textarea>
-                <input class="py-2 bg-[#1976D2] rounded-md text-white font-bold cursor-pointer" type="submit"
-                    id="enviar" name="enviar" value="Enviar">
-                <input class="py-2 border-2 border-[#1976D2] rounded-md text-[#1976D2] font-bold cursor-pointer"
-                    type="reset" id="borrar" name="borrar" value="Borrar">
-            </form>
+            <x-form-programa programa="Educación Secundaria" color="[#2C76D2]"/>
         </section>
         <!---->
 

@@ -18,7 +18,7 @@
                     <div class="p-6 text-gray-900 dark:text-gray-100">
                         <h3 class="text-lg font-bold mb-4">{{ $tipo->nombreTipo }}</h3>
                         <div class=" flex gap-5 flex-wrap justify-center ">
-                            @foreach ($publicaciones->where('idTipoPublicacion', $tipo->idTipo) as $publicacion)
+                            @foreach ($publicaciones->where('idTipoPublicacion', $tipo->id) as $publicacion)
                                 <div class="border p-4 rounded-md card-publi">
                                     <h4 class="text-md font-semibold">{{ $publicacion->nombrePublicacion }}</h4>
                                     <p class="text-sm text-gray-600">{{ $publicacion->desPublicacion }}</p>
@@ -31,9 +31,9 @@
                                             class="rounded-md">
                                     @endif
                                     <div class="flex gap-5 mt-3">
-                                        <a href="{{ route('publicacion.edit', $publicacion->idPublicacion) }}"
+                                        <a href="{{ route('publicacion.edit', $publicacion->id) }}"
                                             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Editar</a>
-                                        <form action="{{ route('publicacion.destroy', $publicacion->idPublicacion) }}"
+                                        <form action="{{ route('publicacion.destroy', $publicacion->id) }}"
                                             method="POST">
                                             @csrf
                                             @method('DELETE')
@@ -44,7 +44,7 @@
                                 </div>
                             @endforeach
 
-                            @if ($publicaciones->where('idTipoPublicacion', $tipo->idTipo)->isEmpty())
+                            @if ($publicaciones->where('idTipoPublicacion', $tipo->id)->isEmpty())
                                 <p class="text-gray-500">{{ __('No hay publicaciones en esta categoría.') }}</p>
                             @endif
                         </div>
