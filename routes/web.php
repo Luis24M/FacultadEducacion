@@ -92,9 +92,7 @@ Route::get('/unidades/unidad_calidad/colaboradores', function () {
     return view('unidades.unidad_calidad.colaboradores');
 })->name('unidades.colaboradores');
 
-Route::get('/unidades/unidad_calidad/repositorio', function () {
-    return view('unidades.unidad_calidad.repositorio');
-})->name('unidades.repositorio');
+Route::get('/unidades/unidad_calidad/repositorio', [AplicacionesExtController::class, 'sineace'])->name('unidades.repositorio');
 
 
 
@@ -109,37 +107,38 @@ Route::get('/unidades/unidadInvestigacion/ComiteInvestigacion', function (){
 
 
 
-//Elton
-Route::get('/practica_preprofesional', function (){
-    return view('unidades.practica_preprofesional.index');
-})->name('unidades.practica_preprofesional');
+//Morales - Unidad de Practicas Preprofesionales
+Route::get('/unidades/practica_preprofesional/Repositorio', function (){
+    return view('unidades.practica_preprofesional.RepositorioDocumental.index');
+})->name('unidades.practica_preprofesional.informeInvestigacion');
 
-Route::get('/Reglamento', function (){
-    return view('unidades.practica_preprofesional.Reglamento.index');
-})->name('unidades.practica_preprofesional.Reglamento');
-
-Route::get('/Comite', function (){
+Route::get('/unidades/practica_preprofesional/Comite', function (){
     return view('unidades.practica_preprofesional.Comite.index');
-})->name('unidades.practica_preprofesional.Comite');
+})->name('unidades.practica_preprofesional.comiteInvestigacion');
 
-Route::get('/Docentes', function (){
-    return view('unidades.practica_preprofesional.Docentes.index');
-})->name('unidades.practica_preprofesional.Docentes');
+Route::get('/unidades/practica_preprofesional/Repositorio/{id}',[HomeController::class,'showDocument'])->name('unidades.practica_preprofesional.informeInvestigacion.showDocument');
+
 
 //Sadhu
 
 Route::get('/unidades/unidad_soporte/index', function () {
     return view('unidades.unidad_soporte.index');
-})->name('unidades.index');
+})->name('unidades.soporte');
 
 ////////////////////////////////////////////////
-Route::get('/documentacion', function () {
+Route::get('/unidades/rsu/documentacion', function () {
     return view('unidades.rsu.documentacion');
-})->name('documentacion');
+})->name('unidades.rsu.documentacion');
 
-Route::get('/index', function () {
+
+Route::get('/unidades/rsu/contacto', function () {
+    return view('unidades.rsu.contacto');
+})->name('unidades.rsu.contacto');
+
+
+Route::get('/unidades/rsu', function () {
     return view('unidades.rsu.index');
-})->name('index');
+})->name('unidades.rsu.index');
 
 Route::post('comentario', [ComentarioController::class, 'store'])->name('comentario.store');
 
