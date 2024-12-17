@@ -27,6 +27,7 @@
       </div>
   </form>
 
+
 </div>
 <h2 class=" text-lg font-semibold mt-5">
   Links de aplicaciones

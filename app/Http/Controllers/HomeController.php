@@ -62,6 +62,7 @@ class HomeController extends Controller
         return view('galeria', compact('galerias'));
     }
 
+
     public function showDocument($id){
         $rutasDocumentos=[
             '1'=>'../../../pdfs/unidades/practicas-preprofesionales/1.Ficha de monitoreo de tutoria.pdf',

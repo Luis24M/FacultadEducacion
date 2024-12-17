@@ -1,6 +1,7 @@
 @extends('layouts.home')
 
 @section('content')
+
 @php
     // Lista de proyectos para mostrar en el informe
     $proyectos2021 = [
@@ -150,6 +151,7 @@
                         </div>
                     @endforeach
                 </div>
+
             </div>
 
             {{-- Año 2022 --}}

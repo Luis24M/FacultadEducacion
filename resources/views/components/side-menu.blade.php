@@ -1,3 +1,4 @@
+
 @if (request()->routeIs('home') ||
         request()->routeIs('institucional') ||
         request()->routeIs('noticias') ||
@@ -22,6 +23,7 @@
         request()->routeIs('pregrado.inicial') ||
         request()->routeIs('pregrado.cdlc') ||
         request()->routeIs('pregrado.primaria'))
+
     <h3 class="text-xl font-semibold">Pregrado</h3>
     <hr>
     <x-side-button icon="book.svg" title="Educación Inicial" route="/pregrado/inicial" :active="request()->routeIs('pregrado.inicial')" />

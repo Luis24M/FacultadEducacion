@@ -7,6 +7,7 @@
 
         <div class="flex flex-col w-full min-h-[calc(100dvh-230px)] space-x-5  justify-center items-center my-5">
             <div class="flex lg:flex-row flex-col justify-center  gap-x-3 flex-wrap w-full min-h-[calc(100dvh-230px)]  ">
+
                 <!-- Botones con documentos PDF -->
                  
                 <a 

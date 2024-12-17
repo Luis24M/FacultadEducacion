@@ -1,6 +1,8 @@
 <x-app-layout>
   <x-slot name="header">
+
       <h2 class="font-semibold text-xl text-white leading-tight">
+
           {{ __('Comentarios') }}
       </h2>
   </x-slot>
@@ -11,6 +13,7 @@
   </h2>
   <form action="{{ route('comentario.store') }}" method="POST" class=" border rounded-md p-3">
       @csrf
+
       <div class="grid grid-cols-1 gap-2 mt-4">
               <label for="nombreComentario" class="block text-sm font-medium text-gray-200">Nombre</label>
               <input type="text" name="nombre" id="nombreComentario" class="mb-1 focus:ring-indigo-500 text-black focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
@@ -22,6 +25,7 @@
               <input type="text" name="mensaje" id="mensajeComentario" class="mb-1 focus:ring-indigo-500 text-black focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
               <label for="escuelaComentario" class="block text-sm font-medium text-gray-200">Escuela</label>
               <input type="text" name="escuela" id="escuelaComentario" class="mb-1 focus:ring-indigo-500 text-black focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+
       </div>
       <div class="mt-4">
           <button type="submit" style="background-color: green" class="items-center px-4 py-2 rounded-md">
@@ -34,17 +38,21 @@
     Tipos de Publicaciones
   </h2>
   {{-- Tabla de tipos de publicación --}}
+
   <div class="grid grid-cols-1 gap-6 mt-2">
+
       <div>
           <table class="min-w-full bg-gray-200 divide-y divide-black">
               <thead>
                   <tr>
+
                       <th class="px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider">ID</th>
                       <th class="px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider">Nombre</th>
                       <th class="px-6 py-3 text-left text-xs hidden md:block font-medium text-black uppercase tracking-wider">Correo</th>
                       <th class="px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider">Mensaje</th>
                       <th class="px-6 py-3 text-left text-xs hidden md:block font-medium text-black uppercase tracking-wider">Programa</th>
                       <th class="px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider">Acciones</th>
+
                   </tr>
               </thead>
               <tbody class="bg-gray-200 divide-y divide-black text-black">

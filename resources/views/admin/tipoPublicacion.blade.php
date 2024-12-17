@@ -1,6 +1,8 @@
 <x-app-layout>
   <x-slot name="header">
+
       <h2 class="font-semibold text-xl text-white leading-tight">
+
           {{ __('Tipo de Publicación') }}
       </h2>
   </x-slot>
@@ -11,9 +13,11 @@
   </h2>
   <form action="{{ route('tipo-publicacion.store') }}" method="POST" class=" border rounded-md p-3">
       @csrf
+
       <div class="grid grid-cols-1 gap-2 mt-4">
               <label for="nombreTipoPublicacion" class="block text-sm font-medium text-gray-200">Nombre del tipo de publicación</label>
               <input type="text" name="nombreTipo" id="nombreTipoPublicacion" class="mb-1 focus:ring-indigo-500 text-black focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+
 
       </div>
       <div class="mt-4">
@@ -26,7 +30,9 @@
     Tipos de Publicaciones
   </h2>
   {{-- Tabla de tipos de publicación --}}
+
   <div class="grid grid-cols-1 gap-6 mt-2">
+
       <div>
           <table class="min-w-full bg-gray-200 divide-y divide-black">
               <thead>
@@ -34,6 +40,7 @@
                       <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Id</th>
                       <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Nombre</th>
                       <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Acciones</th>
+
                   </tr>
               </thead>
               <tbody class="bg-gray-200 divide-y divide-black text-black">
