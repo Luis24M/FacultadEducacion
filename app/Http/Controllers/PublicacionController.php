@@ -1,25 +1,29 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Publicacion;
+use App\Models\Tipopublicacion;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 class PublicacionController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
+
+    public function dashboard()
+    {
+        $publicaciones = Publicacion::all();
+        $tipos = Tipopublicacion::all();
+        return view('dashboard', compact('publicaciones', 'tipos'));
+    }
+    
     public function index()
     {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
+        $tipos = Tipopublicacion::all();
+        return view('admin.publicacion', compact('tipos'));
     }
 
     /**
@@ -27,55 +31,64 @@ class PublicacionController extends Controller
      */
     public function store(Request $request)
     {
-        // store para guardar la publicacion
-        // protected $fillable = [
-        //     'nombrePublicacion',
-        //     'desPublicacion',
-        //     'fechaPublicacion',
-        //     'imgPublicacion',
-        //     'idUsuario',
-        //     'idTipoPublicacion'
-        // ];
-        $publicacion = new Publicacion();
-        $publicacion->nombrePublicacion = $request->nombrePublicacion;
-        $publicacion->desPublicacion = $request->desPublicacion;
-        $publicacion->fechaPublicacion = $request->fechaPublicacion;
-        $publicacion->imgPublicacion = $request->imgPublicacion;
-        $publicacion->idUsuario = $request->idUsuario;
-        $publicacion->idTipoPublicacion = $request->idTipoPublicacion;
-        $publicacion->save();
-        return redirect()->route('admin.publicacion');
+        if (!Auth::check()) {
+            return redirect()->route('login')->with('error', 'Debes iniciar sesión para realizar esta acción.');
+        }
+
+        $data = $request->validate([
+            'nombrePublicacion' => 'required|string|max:255',
+            'desPublicacion' => 'required|string|max:255',
+            'imgPublicacion' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'idTipoPublicacion' => 'required|integer|exists:tipopublicacion,idTipo', // Verifica que el tipo existe
+        ]);
+
+        if ($request->hasFile('imgPublicacion')) {
+            $path = $request->file('imgPublicacion')->store('public'); // Esto lo guarda en storage/app/public/publicaciones
+            $data['imgPublicacion'] = Storage::url($path); // Generar la URL pública del archivo
+        }
+        
+        
+
+        $data['fechaPublicacion'] = now();
+        $data['idUsuario'] = Auth::id();
+
+        Publicacion::create($data);
+
+        return redirect()->route('dashboard')->with('success', 'Publicación creada con éxito.');
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
+    public function edit($id)
     {
-        //
+        return view('admin.publicacionEdit', [
+            'publicacion' => Publicacion::findOrFail($id),
+            'tipos' => Tipopublicacion::all()
+        ]);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
     public function update(Request $request, string $id)
     {
-        //
+        $data = $request->validate([
+            'nombrePublicacion' => 'required|string|max:255',
+            'desPublicacion' => 'required|string|max:255',
+            'imgPublicacion' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'idTipoPublicacion' => 'required|integer|exists:tipopublicacion,idTipo', // Verifica que el tipo existe
+        ]);
+
+        $publicacion = Publicacion::findOrFail($id);
+
+        if ($request->hasFile('imgPublicacion')) {
+            $path = $request->file('imgPublicacion')->store('public'); // Esto lo guarda en storage/app/public/publicaciones
+            $data['imgPublicacion'] = Storage::url($path); // Generar la URL pública del archivo
+        }
+
+        $publicacion->update($data);
+
+        return redirect()->route('dashboard')->with('success', 'Publicación actualizada con éxito.');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
+    public function destroy($id)
     {
-        //
+        Publicacion::destroy($id);
+        return redirect()->route('dashboard')->with('success', 'Publicación eliminada con éxito.');
     }
 }

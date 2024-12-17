@@ -1,4 +1,4 @@
-<nav class="w-full md:w-[35%] max-w-[400px] text-center bg-[#1A3A5A] text-white h-full fixed right-0 px-2 py-9 lg:p-10 flex flex-col">
+<nav class="w-full md:w-[35%] max-w-[400px] text-center bg-[#1A3A5A] text-white h-full fixed top-0 right-0 px-2 py-9 lg:p-10 flex flex-col">
     <a href="/">
         <div class="flex">
             <img class="w-32"

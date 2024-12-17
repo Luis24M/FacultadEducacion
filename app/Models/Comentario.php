@@ -26,30 +26,15 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Comentario extends Model
 {
-	protected $table = 'comentario';
+	protected $table = 'comentarios';
 	public $timestamps = false;
-
-	protected $casts = [
-		'idEscuela' => 'int',
-		'idUsuario' => 'int'
-	];
 
 	protected $fillable = [
 		'nombre',
+		'apellido',
 		'correo',
 		'asunto',
 		'mensaje',
-		'idEscuela',
-		'idUsuario'
+		'escuela',
 	];
-
-	public function tipescuela()
-	{
-		return $this->belongsTo(Tipescuela::class, 'idEscuela');
-	}
-
-	public function usuario()
-	{
-		return $this->belongsTo(Usuario::class, 'idUsuario');
-	}
 }

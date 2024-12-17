@@ -2,14 +2,18 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PublicacionController;
+use App\Http\Controllers\TipopublicacionController;
+use App\Http\Controllers\TipEscuelaController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ComentarioController;
+use App\Http\Controllers\AplicacionesExtController;
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/noticias', function () {
-    return view('noticias');
-})->name('noticias');
+Route::get('/noticias', [HomeController::class, 'noticias'])->name('noticias');
+
+Route::get('/galeria', [HomeController::class, 'galeria'])->name('galeria');
 
 Route::get('/institucional', function () {
     return view('institucional');
@@ -18,11 +22,6 @@ Route::get('/institucional', function () {
 Route::get('/unidades', function () {
     return view('unidades.index');
 })->name('unidades');
-
-Route::get('/galeria', function(){
-    return view('galeria');
-})->name('galeria');
-
 
 // Rutas Pregrado
 Route::get('/pregrado', function () {
@@ -142,28 +141,23 @@ Route::get('/index', function () {
     return view('unidades.rsu.index');
 })->name('index');
 
-
-// admin
-
-Route::resource('publicacion', PublicacionController::class);
-
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
-
-Route::get('/admin/publicacion', function () {
-    return view('admin.publicacion');
-})->name('admin.publicacion');
-
-Route::get('/admin/galeria', function () {
-    return view('admin.galeria');
-})->name('admin.galeria');
+Route::post('comentario', [ComentarioController::class, 'store'])->name('comentario.store');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    
+    Route::resource('publicacion', PublicacionController::class);
+    Route::resource('tipo-publicacion', TipopublicacionController::class);
+    Route::resource('comentario', ComentarioController::class)->only(['index', 'edit', 'update', 'destroy']);
+    Route::resource('aplicacionesExt', AplicacionesExtController::class);
+
+    Route::get('/dashboard', [PublicacionController::class, 'dashboard'])->name('dashboard');
+
+    Route::get('/admin/galeria', function () {
+        return view('admin.galeria');
+    })->name('admin.galeria');
 });
 
 require __DIR__.'/auth.php';

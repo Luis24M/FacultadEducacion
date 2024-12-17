@@ -107,7 +107,7 @@
 
 
         <div id="details" class="hidden mt-8 p-4 rounded-lg">
-            <h3 id="details-title" class="text-xl font-bold mb-4">Cargos Administrativos</h3>
+            <h3 id="details-title" class="text-xl font-bold mb-4">Practica Pre-Profesional II</h3>
             <div id="details-content" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
         </div>
     </div>

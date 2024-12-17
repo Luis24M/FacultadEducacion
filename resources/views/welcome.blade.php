@@ -34,13 +34,15 @@
     <div class="py-10">
         <h2 class="text-5xl text-center my-8 font-bold">Noticias</h2>
         <section class="flex lg:flex-row flex-col p-4 gap-4 justify-around mx-auto max-w-7xl">
-            <x-card-noticias titulo="Título de la noticia" fecha="09 Octubre 2024"
-                imagen="{{ asset('imagenes/index/noticia1.png') }}" descripcion="Descripcion de prueba" />
-            <x-card-noticias titulo="Título de la noticia" fecha="09 Octubre 2024"
-                imagen="{{ asset('imagenes/index/noticia1.png') }}" descripcion="Descripcion de prueba" />
-            <x-card-noticias titulo="Título de la noticia" fecha="09 Octubre 2024"
-                imagen="{{ asset('imagenes/index/noticia1.png') }}" descripcion="Descripcion de prueba" />
-        </section>
+            @if($noticias->isEmpty())
+                <p class="text-gray-500">No hay noticias disponibles.</p>
+            @else
+                @foreach($noticias as $noticia)
+                    <x-card-noticias titulo="{{ $noticia->nombrePublicacion }}" fecha="{{ $noticia->fechaPublicacion }}"
+                        imagen="{{ asset($noticia->imgPublicacion) }}" descripcion="{{ $noticia->desPublicacion }}" />
+                @endforeach
+            @endif
+            </section>
         <div class="w-full text-center py-4">
             <a href="/noticias" id="noticias" class="text-xl md:max-w-[400px] bg-neutral-950 p-3 text-white hover:shadow-2xl">
                 <span class="md:px-6 lg:py-3 lg:text-lg">
@@ -52,11 +54,21 @@
     <hr>
     <div class="py-10 bg-[#fff]">
         <h2 class="text-5xl text-center my-8 font-bold">Eventos</h2>
-        <div class="flex flex-col gap-5 items-center mx-auto lg:flex-row justify-around p-4">
-            <img src="{{ asset('imagenes/index/auditorio.jpg') }}" class="rounded float lg:w-[40%] shadow-lg"
-                alt="...">
-            <img src="{{ asset('imagenes/index/juegos.jpg') }}" class="rounded float lg:w-[30%] shadow-lg" alt="...">
-        </div>
+        <section class="flex lg:flex-row flex-col p-4 gap-4 justify-around mx-auto max-w-7xl">
+            @if($eventos->isEmpty())
+                <p class="text-gray-500">No hay eventos disponibles.</p>
+            @else
+                @foreach($eventos as $evento)
+                    <div class="border shadow rounded-xl">
+                        <img src="{{ asset($evento->imgPublicacion)}}" width="500px" class="rounded-xl" alt="{{$evento->nombrePublicacion}}">
+                        {{-- <div class="flex justify-between px-3">
+                            <h2 class="text-2xl">{{ $evento->nombrePublicacion }}</h2>
+                            <p class="text-gray-600">{{ $evento->fechaPublicacion }}</p>
+                        </div> --}}
+                    </div>
+                @endforeach
+            @endif
+        </section>
     </div>
     <hr>
 
