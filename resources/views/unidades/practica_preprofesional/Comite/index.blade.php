@@ -49,10 +49,12 @@
         <div class="flex justify-center items-center h-auto overflow-hidden mt-3">
             <img src="{{ asset('colaboradores/MUJER DEFAULT.jpg') }}" alt="Téc. Ana Martínez" class="object-cover object-center w-40 h-40">
         </div>
+
         <div class="p-4 flex flex-col items-center">
             <h3 class="text-xl font-bold"><b>MILUSKA PAJUELO ABANTO </b></h3>
             <p class="text-gray-600 mt-2">"Práctica Pre Profesional VI"</p>
             <p class="text-gray-600 mt-2">vorbegoso@unitru.edu.pe</p>
+
         </div>
     </div>
 

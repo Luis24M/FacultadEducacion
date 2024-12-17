@@ -2,11 +2,14 @@
 
 @section('content')
 
+
 <div class="flex items-center justify-center">
   <span class="bg-blue-950 text-yellow-500 text-2xl md:text-5xl font-bold w-full text-center px-4 md:px-8 py-4 rounded">
+
     Proyectos actuales de R.S.U
   </span>
 </div>
+
 
 <!-- Carrusel de tarjetas con navegación -->
 <div class="relative w-full bg-blue-950 py-8">
@@ -21,6 +24,7 @@
   <!-- Contenedor del carrusel -->
   <div
     id="carousel"
+
     class="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory px-4 md:px-8"
   >
     <!-- Tarjeta 1 -->
@@ -57,6 +61,7 @@
       <h2 class="mt-4 font-bold text-lg md:text-xl text-center">2025</h2>
       <p class="text-gray-700 text-sm md:text-base text-center">PRONTO</p>
     </div>
+
   </div>
 
   <!-- Botón Derecho -->
@@ -75,6 +80,7 @@
   const nextButton = document.getElementById("nextButton");
 
   const cardWidth = carousel.querySelector(".w-72").offsetWidth + 16; // Ajustar ancho más margen
+
 
   prevButton.addEventListener("click", () => {
     carousel.scrollBy({ left: -cardWidth, behavior: "smooth" });
