@@ -27,6 +27,7 @@
         const burger = document.querySelector('#burger');
         const x = document.querySelector('#x');
         const body = document.body;
+        window.scrollTo(0, 0);
         menu.classList.toggle('hidden');
         burger.classList.toggle('hidden');
         x.classList.toggle('hidden');

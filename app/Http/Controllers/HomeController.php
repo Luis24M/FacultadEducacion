@@ -41,15 +41,15 @@ class HomeController extends Controller
         $this->tipoEvento();
         $noticia = Tipopublicacion::where('nombreTipo', 'Noticia')->first()->id;
         $evento = Tipopublicacion::where('nombreTipo', 'Evento')->first()->id;
-        $noticias = Publicacion::where('id', $noticia)->orderBy('fechaPublicacion', 'desc')->take(3)->get();
-        $eventos = Publicacion::where('id', $evento)->orderBy('fechaPublicacion', 'desc')->take(2)->get();
+        $noticias = Publicacion::where('idTipoPublicacion', $noticia)->orderBy('fechaPublicacion', 'desc')->take(3)->get();
+        $eventos = Publicacion::where('idTipoPublicacion', $evento)->orderBy('fechaPublicacion', 'desc')->take(2)->get();
         return view('welcome', compact('noticias', 'eventos'));
     }
 
     public function noticias()
     {
         $this->tipoNoticia();
-        $noticia = Tipopublicacion::where('nombreTipo', 'Noticia')->first()->idTipo;
+        $noticia = Tipopublicacion::where('nombreTipo', 'Noticia')->first()->id;
         $noticias = Publicacion::where('idTipoPublicacion', $noticia)->orderBy('fechaPublicacion', 'desc')->get();
         return view('noticias', compact('noticias'));
     }

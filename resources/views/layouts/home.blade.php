@@ -11,10 +11,10 @@
         content="Educación, Universidad, Trujillo, Educación Inicial, Educación Primaria, Educación Secundaria, Educación Física, Educación Artística, Educación Especial">
     <meta name="author" content="FACEDU - UNT">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <script type="module" src="http://192.168.1.100:5173/resources/js/app.js"></script>
+
     <title>FACEDU - UNT</title>
-    <script type="module">
-        import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
-    </script>
+
     <style>
         * {
             font-family: 'Poppins', sans-serif;
@@ -36,16 +36,26 @@
         </div>
     </div>     --}}
 
-    <main class="flex justify-between h-full">
+    <main class="flex justify-between h-full delizar">
         <section class="w-full md:min-w-[calc(100%-400px)] md:w-[65%]">
-            @if (request()->routeIs('home') || request()->routeIs('noticias'))
+            @if (request()->routeIs('home') || request()->routeIs('noticias') || request()->routeIs('galeria'))
                 <div class="md:hidden">
                     @include('components/navbar')
                 </div>
+                <style>
+                    .content {
+                        min-height: calc(100dvh - 144px);
+                    }
+                </style>
             @else
                 @include('components/navbar')
+                <style>
+                    .content {
+                        min-height: calc(100dvh - 230px);
+                    }
+                </style>
             @endif
-            <section class=" min-h-[calc(100dvh-230px)] bg-[#F0F6FE]">
+            <section class="content bg-[#F0F6FE]">
                 @yield('content')
             </section>
             @include('components/footer')
@@ -90,6 +100,12 @@
             /* IE and Edge */
             scrollbar-width: none;
             /* Firefox */
+        }
+    }
+    @media screen and (max-width: 769px) {
+        .delizar{
+            overflow-x: hidden;
+
         }
     }
 
