@@ -9,18 +9,18 @@
 </section>
 
 
-<div class="flex justify-center pt-8">
+<div class="flex justify-center p-8">
     <div class="grid grid-cols-4 gap-4 w-full max-w-6xl bg-gray-100 p-6 rounded-lg shadow-lg">
-        <div class="col-span-1 flex justify-center items-center">
-            <img src="/colaboradores//ICON2.png" alt="Imagen 1" class="w-full h-full object-cover rounded-lg shadow-md">
+        <div class="col-span-1 flex justify-center items-center hidden md:block">
+            <img src="/colaboradores/ICON2.png" alt="Imagen 1" class="w-full h-full object-cover rounded-lg shadow-md">
         </div>
         
-        <div class="col-span-2 flex flex-col justify-center text-center px-4">
+        <div class="col-span-4 md:col-span-2 flex flex-col justify-center text-center px-4">
             <h2 class="text-3xl font-extrabold mb-5">Auditoria Interna</h2>
             <p class="text-gray-700">La auditoría interna en la Facultad de Educación es un proceso sistemático y objetivo diseñado para evaluar y mejorar la eficacia de los procesos de gestión de riesgos, control y gobierno académico. Su objetivo principal es proporcionar una evaluación independiente sobre la adecuación y efectividad de los controles internos y los procesos operativos dentro de la facultad.</p>
         </div>
 
-        <div class="col-span-1 flex justify-center items-center">
+        <div class="col-span-1 flex justify-center items-center hidden md:block">
             <img src="/colaboradores/ICON.png" alt="Imagen 2" class="w-full h-full object-cover rounded-lg shadow-md">
         </div>
     </div>
@@ -30,7 +30,7 @@
     <div class="grid grid-cols-1 gap-4 w-full max-w-6xl p-6">
         <div class="flex flex-col items-center">
             <!-- Inicio de cuadro para Características -->
-            <div class="col-span-1 flex justify-center items-center mb-8">
+            <div class="col-span-1 flex justify-center items-center">
                 <div class="w-80 max-w-2xl bg-white shadow-lg rounded-lg overflow-hidden">
                     <table class="w-full text-left border border-gray-300">
                         
@@ -89,18 +89,18 @@
         </div>
 
         <!-- Agregar botones para cada año con código de acceso -->
-        <div class="year-buttons flex justify-center space-x-6 pb-8">
+        <div class="year-buttons grid grid-cols-2 md:grid-cols-4 p-8 gap-4">
             
-            <button onclick="showAccessCodePrompt('https://drive.google.com/drive/folders/10boks3g14eWqWCrU9Qxs_lSoDDYL0d4z?usp=sharing')" class="year-button bg-blue-500 text-white px-6 py-3 rounded flex items-center text-lg ">
+            <button onclick="showAccessCodePrompt('https://drive.google.com/drive/folders/10boks3g14eWqWCrU9Qxs_lSoDDYL0d4z?usp=sharing')" class="year-button justify-center col-span-1 bg-blue-500 text-white px-6 py-3 rounded flex items-center text-lg ">
                 2021 <img src="{{ asset('icons/download.svg') }}" alt="Icono de Descarga" class="ml-2">
             </button>
-            <button onclick="showAccessCodePrompt('https://drive.google.com/drive/folders/10SxO-7ALy_3bJfzhp-XG19htSV5HIxDp?usp=sharing')" class="year-button bg-blue-500 text-white px-6 py-3 rounded flex items-center text-lg ">
+            <button onclick="showAccessCodePrompt('https://drive.google.com/drive/folders/10SxO-7ALy_3bJfzhp-XG19htSV5HIxDp?usp=sharing')" class="year-button justify-center bg-blue-500 text-white px-6 py-3 rounded flex items-center text-lg ">
                 2022 <img src="{{ asset('icons/download.svg') }}" alt="Icono de Descarga" class="ml-2">
             </button>
-            <button onclick="showAccessCodePrompt('https://drive.google.com/drive/folders/1pHrQWoFZeivU6I_3oOtJvQeo8yQFxt6C?usp=sharing')" class="year-button bg-blue-500 text-white px-6 py-3 rounded flex items-center text-lg">
+            <button onclick="showAccessCodePrompt('https://drive.google.com/drive/folders/1pHrQWoFZeivU6I_3oOtJvQeo8yQFxt6C?usp=sharing')" class="year-button justify-center bg-blue-500 text-white px-6 py-3 rounded flex items-center text-lg">
                 2023 <img src="{{ asset('icons/download.svg') }}" alt="Icono de Descarga" class="ml-2">
             </button>
-            <button onclick="showAccessCodePrompt('https://drive.google.com/drive/folders/1mTXFjaIePQMN_Ajsx9XqDQKKa4rwu5kH?usp=sharing')" class="year-button bg-blue-500 text-white px-6 py-3 rounded flex items-center text-lg">
+            <button onclick="showAccessCodePrompt('https://drive.google.com/drive/folders/1mTXFjaIePQMN_Ajsx9XqDQKKa4rwu5kH?usp=sharing')" class="year-button justify-center bg-blue-500 text-white px-6 py-3 rounded flex items-center text-lg">
                 2024 <img src="{{ asset('icons/download.svg') }}" alt="Icono de Descarga" class="ml-2">
             </button>
         </div>

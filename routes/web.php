@@ -74,21 +74,21 @@ Route::get('/unidades/unidad_calidad', function () {
 
 Route::get('/unidades/unidad_calidad/auditoria_interna', function () {
     return view('unidades.unidad_calidad.auditoria_interna');
-})->name('unidades.auditoria_interna');
+})->name('unidades.unidad_calidad.auditoria_interna');
 
 Route::get('/unidades/unidad_calidad/acreditacion', function () {
     return view('unidades.unidad_calidad.acreditacion');
-})->name('unidades.acreditacion');
+})->name('unidades.unidad_calidad.acreditacion');
 
 Route::get('/unidades/unidad_calidad/licenciamiento', function () {
     return view('unidades.unidad_calidad.licenciamiento');
-})->name('unidades.licenciamiento');
+})->name('unidades.unidad_calidad.licenciamiento');
 
 Route::get('/unidades/unidad_calidad/colaboradores', function () {
     return view('unidades.unidad_calidad.colaboradores');
-})->name('unidades.colaboradores');
+})->name('unidades.unidad_calidad.colaboradores');
 
-Route::get('/unidades/unidad_calidad/repositorio', [AplicacionesExtController::class, 'sineace'])->name('unidades.repositorio');
+Route::get('/unidades/unidad_calidad/repositorio', [AplicacionesExtController::class, 'sineace'])->name('unidades.unidad_calidad.repositorio');
 
 
 

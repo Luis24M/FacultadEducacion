@@ -13,9 +13,9 @@
     </p>
     <br>
     <div class="container mx-auto px-4 lg:px-16 max-w-screen-2xl text-center">
-        <div class="flex items-center justify-center space-x-4">
-            <button id="scroll-left" class="transition p-4 transform hover:scale-110">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-21" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div class="flex items-center justify-center">
+            <button id="scroll-left" class="transition transform hover:scale-110">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 md:w-20 md:h-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M12 4l-8 8 8 8" />
                 </svg>
             </button>
@@ -67,8 +67,8 @@
                 @endforeach
             </div>
 
-            <button id="scroll-right" class="transition p-4 transform hover:scale-110">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-21" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <button id="scroll-right" class="transition transform hover:scale-110">
+                <svg xmlns="http://www.w3.org/2000/svg" class="md:h-20 md:w-21 h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M12 4l8 8-8 8" />
                 </svg>
             </button>
@@ -102,14 +102,14 @@
 </section>
 
  <section id="colaboradores-button" class="bg-gray-100 py-0 flex justify-center">
-    <a href="{{ route('unidades.colaboradores') }}" class="bg-blue-500 text-white px-6 py-3 rounded-lg flex items-center justify-center space-x-2 text-lg font-semibold shadow-lg hover:bg-blue-700 transition duration-300">
-        <i class="fas fa-users"></i>
+    <a href="{{ route('unidades.unidad_calidad.colaboradores') }}" class="bg-blue-500 text-white px-6 py-3 rounded-lg flex items-center justify-center space-x-2 text-lg font-semibold shadow-lg hover:bg-blue-700 transition duration-300">
+        <img src="{{ asset('icons/people.svg') }}" alt="Icono de Colaboradores" class="w-8 h-8">
         <span>Colaboradores</span>
      </a>
 </section>
 
-<section id="escuelas" class="bg-gray-100 py-5 flex justify-center">
-    <div id="school-container" class="relative grid grid-cols-1 gap-4 w-1/3"> <!-- Ampliar el ancho -->
+<section id="escuelas" class="bg-gray-100 py-5">
+    <div id="school-container" class="relative grid grid-cols-1 gap-4 mx-auto px-5 md:w-1/2"> <!-- Ampliar el ancho -->
             @php
                 $schools = [
                     'inicial' => 'Educación Inicial',
@@ -185,16 +185,16 @@
         <!-- Botones de escuelas -->
  
     @foreach ($schools as $key => $school)
-    <div class="school-wrapper flex items-center">
+    <div class="school-wrapper flex flex-col w-full items-center">
         <button class="school-button bg-gradient-to-r from-blue-500 to-teal-500 text-white font-bold py-3 px-6 rounded-lg focus:outline-none shadow-lg hover:shadow-xl transition duration-300 w-full" data-school="{{ $key }}">
             {{ $school }}
         </button>
-        <div class="options-container hidden ml-4 flex gap-4">
+        <div class="options-container hidden w-full mt-4 flex flex-col lg:flex-row gap-4">
             @foreach ($options as $optionKey => $option)
                 <button onclick="showAccessCodePrompt('{{ $pdfLinks[$key][$optionKey] }}')" 
-                    class="option-button bg-gray-200 text-gray-700 font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-gray-300 transition duration-200 flex items-center">
+                    class="option-button bg-gray-200 w-full lg:w-52 text-gray-700 justify-center font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-gray-300 transition duration-200 flex items-center">
                     {{ $option }}
-                    <i class="fas fa-download text-blue-500 ml-2"></i>
+                    <img src="{{ asset('icons/download.svg') }}" alt="Icono de Descarga" class="ml-2">
                 </button>
             @endforeach
         </div>
@@ -285,12 +285,7 @@
     }
 
     /* Estilo para los botones de opciones */
-    .option-button {
-        display: flex;
-        justify-content: space-between;
-        width: 200px; /* Aumentar el largo de los botones */
-        padding: 10px; /* Aumentar padding para alargar */
-    }
+
 
     #accessCodeModal {
         z-index: 1000;
@@ -302,8 +297,4 @@
         box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
     }
 </style>
-
-<!-- Incluir Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
 @endsection

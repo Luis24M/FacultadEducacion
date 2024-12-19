@@ -10,11 +10,11 @@
     <meta name="keywords"
         content="Educación, Universidad, Trujillo, Educación Inicial, Educación Primaria, Educación Secundaria, Educación Física, Educación Artística, Educación Especial">
     <meta name="author" content="FACEDU - UNT">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <script type="module" src="http://192.168.1.100:5173/resources/js/app.js"></script>
+    @vite('resources/css/app.css')
+    <link rel="stylesheet" href="{{ asset('build/assets/app-BA1W8HJV.css') }}">
+    <script src="{{ asset('build/assets/app-MratX3S_.js') }}" defer></script>
 
     <title>FACEDU - UNT</title>
-
     <style>
         * {
             font-family: 'Poppins', sans-serif;
@@ -100,12 +100,38 @@
             /* IE and Edge */
             scrollbar-width: none;
             /* Firefox */
+            /* Safari */
+            overflow-x: hidden;
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
         }
     }
     @media screen and (max-width: 769px) {
         .delizar{
             overflow-x: hidden;
 
+        }
+    }
+    @media(max-width: 1300px) {
+            .datos{
+                grid-template-columns: repeat(1, 1fr);
+                padding: 15px 40px;
+            }
+            #representantes {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        @media(max-width: 1400px) {
+    .personal {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    }
+    @media(max-width: 768px) {
+        .personal {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
         }
     }
 

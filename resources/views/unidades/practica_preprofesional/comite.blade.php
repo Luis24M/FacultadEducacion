@@ -30,7 +30,7 @@
     </div>
 </div>
 
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+<div class="grid personal grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
     <!-- Card 1 -->
     
     <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center mx-3 my-8 ">
@@ -45,7 +45,7 @@
     </div>
 
     <!-- Card 2 -->
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center ml-3 my-8">
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center mx-3 my-8">
         <div class="flex justify-center items-center h-auto overflow-hidden mt-3">
             <img src="{{ asset('colaboradores/MUJER DEFAULT.jpg') }}" alt="Téc. Ana Martínez" class="object-cover object-center w-40 h-40">
         </div>
@@ -59,7 +59,7 @@
     </div>
 
     <!-- Card 3 -->
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center ml-3 my-8">
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center mx-3 my-8">
         <div class="flex justify-center items-center h-auto overflow-hidden mt-3">
             <img src="{{ asset('colaboradores/HOMBRE DEFAULT.jpg') }}" alt="Ing. Miguel Santos" class="object-cover object-center w-40 h-40">
         </div>
@@ -130,7 +130,6 @@
             <p class="text-gray-600 mt-2">"sagarcia@unitru.edu.pe"</p>
         </div>
     </div>
-
-
 </div>
+
 @endsection

@@ -8,15 +8,15 @@
     </div>
 </section>
 
-<div class="container py-12">
-    <div class="bg-white p-4 rounded shadow mx-3">
+<div class="p-10 w-full">
+    <div class="bg-white p-4 rounded shadow mx-auto">
         <h5 class="text-center font-bold">
             <span class="px-3 py-1 bg-light text-primary font-weight-bold border border-primary rounded text-3xl"
-                style="display: inline-block; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                style="box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
                 Nuestros Representantes
             </span>
         </h5>
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 20px;">
+        <div id="representantes" class="grid grid-cols-3 gap-5 mt-5">
 
             <div class="bg-light p-3 text-center rounded" style="background-color: #F0F6FE;">
                 <div class="card shadow-sm text-center">
@@ -109,4 +109,18 @@
         </div>
     </div>  
 </div>
+
+<style>
+    @media(max-width: 1560px) {
+        #representantes {
+            grid-template-columns: repeat(2, 1fr);
+            padding: 15px 40px;
+        }
+    }
+    @media(max-width: 1310px) {
+        #representantes {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+</style>
 @endsection

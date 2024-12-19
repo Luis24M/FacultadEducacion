@@ -231,7 +231,7 @@
                 <x-form-programa color="pink-400" programa="Inicial"/>
         </section>
         
-        <section class="datos order-first p-5 md:px-20 mx-auto my-6 grid grid-cols-1 lg:grid-cols-3 gap-6 text-black-100 ">
+        <section class="datos order-first p-5 mx-auto my-6 grid grid-cols-1 lg:grid-cols-3 gap-6 text-black-100 ">
             <div class="bg-pink-200 p-6 rounded-lg shadow-lg text-center text-black">
                 <div class="text-red-500 text-6xl mb-4">🤝</div> <!-- Icono personalizado -->
                 <h3 class="text-xl font-bold text-black mb-2">Bienvenida</h3>
@@ -257,5 +257,13 @@
         
 
     </section>
+    <style>
+        @media(max-width: 1200px) {
+            .datos{
+                grid-template-columns: repeat(1, 1fr);
+                padding: 15px 40px;
+            }
+        }
+    </style>
     <script src="{{ asset('js/main.js') }}"></script>
 @endsection

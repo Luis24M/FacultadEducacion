@@ -9,10 +9,10 @@
     </div>
 
     <section id="benefits-list" class="bg-blue-950 py-10 relative">
-        <div class="container mx-auto px-4 lg:px-16 max-w-screen-2xl text-center">
-            <div class="flex items-center justify-center space-x-4">
-                <button id="scroll-left" class="transition p-4 transform hover:scale-110">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-21" fill="none" viewBox="0 0 24 24" stroke="yellow">
+        <div class="mx-auto  lg:px-16 max-w-screen-2xl text-center">
+            <div class="flex items-center justify-center">
+                <button id="scroll-left" class="transition transform hover:scale-110">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="arrow" fill="none" viewBox="0 0 24 24" stroke="yellow">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M12 4l-8 8 8 8" />
                     </svg>
                 </button>
@@ -28,7 +28,7 @@
                         ];
                     @endphp
                     @foreach ($estandares as $estandar)
-                        <div class="bg-gray-100 p-6 border border-gray-300 rounded-lg shadow-lg w-[400px] h-[500px] flex-shrink-0 flex flex-col items-center">
+                        <div class="bg-gray-100 p-6 border border-gray-300 rounded-lg shadow-lg max-w-[400px] max-h-[500px] flex-shrink-0 flex flex-col items-center">
                             <h4 class="text-2xl font-semibold mb-2 text-black">{{ $estandar['anio'] }}</h4>
                             <p class="text-wrap mb-6">{{ $estandar['descripcion'] }}</p>
                             <img src="{{ asset($estandar['imagen']) }}" alt="{{ $estandar['descripcion'] }}" class="w-full h-[350px] object-cover rounded-lg cursor-pointer" onclick="openModal('{{ asset($estandar['imagen']) }}')">
@@ -36,8 +36,8 @@
                     @endforeach
                 </div>
 
-                <button id="scroll-right" class="transition p-4 transform hover:scale-110">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-21" fill="none" viewBox="0 0 24 24" stroke="yellow">
+                <button id="scroll-right" class="transition transform hover:scale-110">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="arrow" fill="none" viewBox="0 0 24 24" stroke="yellow">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M12 4l8 8-8 8" />
                     </svg>
                 </button>
@@ -124,6 +124,26 @@
 
 <!-- CSS adicional -->
 <style>
+    .arrow {
+        width: 80px;
+        height: 80px;
+        stroke-width: 4;
+    }
+
+    @media(max-width: 1200px) {
+        .arrow {
+            width: 60px;
+            height: 60px;
+            stroke-width: 3;
+        }
+    }
+    @media(max-width: 768px) {
+        .arrow {
+            width: 30px;
+            height: 30px;
+            stroke-width: 2;
+        }
+    }
     #accessCodeModal {
         z-index: 1000;
     }

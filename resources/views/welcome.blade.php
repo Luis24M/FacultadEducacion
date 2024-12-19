@@ -31,7 +31,7 @@
     </div>
 </div>
 <hr>
-    <div class="py-10">
+    <div class="py-10 bg-[#fff]">
         <h2 class="text-5xl text-center my-8 font-bold">Noticias</h2>
         <section class="flex lg:flex-row flex-col p-4 gap-4 justify-around mx-auto max-w-7xl">
             @if($noticias->isEmpty())
@@ -52,7 +52,7 @@
         </div>
     </div>
     <hr>
-    <div class="py-10 bg-[#fff]">
+    <div class="py-10 ">
         <h2 class="text-5xl text-center my-8 font-bold">Eventos</h2>
         <section class="flex lg:flex-row flex-col p-4 gap-4 justify-around mx-auto max-w-7xl">
             @if($eventos->isEmpty())
@@ -72,7 +72,7 @@
     </div>
     <hr>
 
-    <section class="py-8 px-4">
+    <section class="py-8 px-4 bg-[#fff]">
         <div class="container mx-auto text-center">
             <h2  class="text-3xl font-bold text-gray-800 mb-8">
             Nuestra Historia
@@ -86,7 +86,7 @@
         </p>
         </div>
     </section>
-    <section class="timeline text-white leading-relaxed mb-8 text-base">
+    <section class="timeline bg-[#fff] text-white leading-relaxed pb-8 text-base">
         <ul class="overfow-x-hidden">
             <li></li>
             <li>
@@ -184,9 +184,9 @@
         </ul>
     </section>
     
-    <div class="py-10 bg-white">
+    <div class="py-10 w-full ">
         <h2 class="text-5xl text-center my-8 font-bold">Nuestras Escuelas Profesionales</h2>
-        <section class="p-4 flex lg:flex-row flex-col flex-wrap justify-around gap-4 lg:gap-1">
+        <section class="p-4 grid md:grid-cols-2 justify-center mx-auto gap-4 lg:gap-10">
             <x-card-escuelas name="Educación Inicial" url="/pregrado/inicial"
                 img="{{ asset('imagenes/index/inicial.jpg') }}" />
             <x-card-escuelas name="Educación Primaria" url="/pregrado/primaria"
@@ -197,10 +197,6 @@
                 img="{{ asset('imagenes/index/ciencias.jpg') }}" />
         </section>
     </div>
-
-
-
-
   
     <script type="text/javascript">
         function showSection(sectionId) {

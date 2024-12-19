@@ -9,7 +9,7 @@
     <!-- Ajuste de columnas usando proporciones 1/4 y 3/4 -->
     <div class="grid grid-cols-4 gap-6">
         <!-- Columna izquierda ocupando 1/4 del espacio total - Esta se mantiene fija -->
-        <div class="col-span-1 sticky top-0">
+        <div class="col-span-4 lg:col-span-1 lg:sticky top-0">
             <!-- Botón de Educación Inicial con círculo interactivo -->
             <div class="flex flex-col gap-4 bg-blue-200 p-4 rounded-lg shadow-lg mb-6">
                 <!-- Botón Educación Inicial -->
@@ -89,7 +89,7 @@
         </div>
 
         <!-- Columna derecha ocupando 3/4 del espacio total - Esta tendrá scroll -->
-        <div class="col-span-3 h-[calc(100vh-200px)] overflow-y-auto">
+        <div class="col-span-4 lg:col-span-3 h-[calc(100vh-200px)] overflow-y-auto mx-auto">
             <!-- Contenedor para todas las tarjetas -->
             <div class="grid grid-cols-1 gap-6">
                 <!-- Tarjetas de Colaboradores de educación inicial -->

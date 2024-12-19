@@ -3,11 +3,11 @@
 @section('content')
     <h1 class="text-center text-xl md:text-4xl font-bold bg-white py-5">Noticias</h1>
     <hr>
-    <section class="w-full flex flex-col gap-4 py-5">
+    <section class="w-full flex flex-col gap-4 p-5">
         @foreach ($noticias as $noticia)
-            <section class="bg-white noticia mx-auto border flex flex-col md:flex-row rounded-xl p-4 shadow-md">
+            <section class="bg-white noticia mx-auto border flex flex-col md:flex-row items-center rounded-xl p-4 shadow-md">
                 <div class="w-[350px]">
-                    <img src="{{ asset($noticia->imgPublicacion) }}" width="300" class="imagen drop-shadow-lg justify-center  rounded-lg" alt="">
+                    <img src="{{ asset($noticia->imgPublicacion) }}" width="300" class="imagen mx-auto drop-shadow-lg justify-center  rounded-lg" alt="">
                 </div>
                 <div class="text-wrap p-4 w-full">
                     <div class="flex justify-between">

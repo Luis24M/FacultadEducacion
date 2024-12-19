@@ -19,7 +19,6 @@
                 </div>
                 <div class="text-center">
                     <iframe src="{{ asset('/licenciamiento/RESOLUCION DEL CONSEJO DIRECTIVO 127-2018 ANEXO RESUELVE APROBAR EL LICENCIAMIENTO INSTITUCIONAL DE LA UNT-TRUJILLO.pdf') }}" width="100%" height="600px"></iframe>
-
                 </div>
             </div>
 

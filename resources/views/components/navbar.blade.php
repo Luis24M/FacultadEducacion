@@ -18,30 +18,31 @@
 @php
     function isActive($route)
     {
-        return request()->routeIs($route) ? 'font-bold bg-[#FFD54F]' : '';
+        return request()->routeIs($route) ? 'font-bold bg-[#FFD54F] border border-colapse border-neutral-300' : '';
     }
 @endphp
 
 <ul id="mobile-menu"
-    class="flex flex-col bg-[#eee] text-black h-[calc(100dvh-80px)] [&>li]:flex hidden w-full justify-around p-6 overflow-scroll scroll-nav no-scrollbar">
+    class="flex flex-col bg-[#eee] text-black h-[calc(100dvh-80px)] [&>li]:flex hidden w-full justify-around p-6 overflow-scroll scroll-nav overflow-scroll no-scrollbar">
     <li class="p-2 hover:font-bold transition-all duration-300 {{ isActive('institucional') }} rounded-lg"><a class=""
             href="{{ route('institucional') }}">Institucional</a></li>
-    <li class="p-2 rounded-lg {{ isActive('pregrado') }} {{ isActive('pregrado.*') }} hover:font-bold flex justify-between items-center">
-        <a href="{{ route('pregrado') }}" class="">Pregrado</a>
-        <button class="ml-2 focus:outline-none" onclick="toggleDropdown('pregrado-dropdown')">
+    <li id="pregrado-dropdown-li" class=" rounded-lg  {{ isActive('pregrado.*') }} hover:font-bold flex justify-between items-center">
+        <a href="{{ route('pregrado') }}" class="rounded-lg w-full p-2 border {{ isActive('pregrado') }} border-neutral-300">Pregrado</a>
+        <button class="ml-2 p-2 focus:outline-none border border-neutral-300 rounded-lg" onclick="toggleDropdown('pregrado-dropdown')">
             <svg id="pregrado-dropdown-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M6 9l6 6 6-6" />
             </svg>
         </button>
     </li>
-    <ul id="pregrado-dropdown" class="hidden flex  flex-col pl-4">
+    <ul id="pregrado-dropdown" class="hidden flex border-l-2 flex-col pl-4">
+        
         <li class="p-2 rounded-lg {{ isActive('pregrado.inicial') }}"><a href="{{ route('pregrado.inicial') }}">Educación Incial</a></li>
         <li class="p-2 rounded-lg {{ isActive('pregrado.primaria') }}"><a href="{{ route('pregrado.primaria') }}">Educación Primaria</a></li>
         <li class="p-2 rounded-lg {{ isActive('pregrado.cdlc') }}"><a href="{{ route('pregrado.cdlc') }}">Ciencias de la Comunicación</a></li>
-        <li class=" flex justify-between items-center"><a class="p-2 rounded-lg bg-gray-200 {{ isActive('pregrado.secundaria') }} hover:font-bold grow" href="{{ route('pregrado.secundaria') }}">Educación
+        <li id="secundaria-dropdown-li" class=" flex justify-between items-center rounded-lg {{  isActive('pregrado.secundaria.*') }}"><a class="w-full p-2 border border-neutral-300 rounded-lg {{ isActive('pregrado.secundaria') }} hover:font-bold grow" href="{{ route('pregrado.secundaria') }}">Educación
                 Secundaria</a>
-            <button class=" bg-gray-300 h-full items-center rounded-lg ml-2 focus:outline-none flex"
+            <button class="ml-2 p-2 focus:outline-none border border-neutral-300 rounded-lg"
                 onclick="toggleDropdown('secundaria-dropdown')">
                 <svg id="secundaria-dropdown-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -49,7 +50,8 @@
                 </svg>
             </button>
         </li>
-        <ul id="secundaria-dropdown" class="hidden flex  flex-col pl-4">
+        <ul id="secundaria-dropdown" class="hidden flex border-l-2 flex-col gap-2 pl-4">
+        
             <li class="p-2 rounded-lg {{ isActive('pregrado.secundaria.filosofia') }}"><a href="{{ route('pregrado.secundaria.filosofia') }}">Filosofía, Psicología y CCSS</a></li>
             <li class="p-2 rounded-lg {{ isActive('pregrado.secundaria.historia') }}"><a href="{{ route('pregrado.secundaria.historia') }}">Historia y Geografia</a></li>
             <li class="p-2 rounded-lg {{ isActive('pregrado.secundaria.matematicas') }}"><a href="{{ route('pregrado.secundaria.matematicas') }}">Ciencias Matematicas</a></li>
@@ -70,42 +72,45 @@
         </svg>
     </li>
 
-    <button class="focus:outline-none p-2 rounded-lg {{ isActive('unidades.*') }} flex justify-between w-full" onclick="toggleDropdown('unidades-dropdown')">
-            <li class=" hover:font-bold flex justify-between">Unidades</li>
+    <button class="focus:outline-none p-2 rounded-lg {{ isActive('unidades.*') }} flex justify-between items-center w-full" onclick="toggleDropdown('unidades-dropdown')">
+            <li id="unidades-dropdown-li" class=" hover:font-boldflex justify-between">Unidades</li>
             <svg id="unidades-dropdown-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M6 9l6 6 6-6" />
             </svg>
         </button>
     
-    <ul id="unidades-dropdown" class="hidden flex-col pl-4">
-        <button class="focus:outline-none flex justify-between w-full" onclick="toggleDropdown('calidad-dropdown')">
-                <li class="p-2 rounded-lg {{ isActive('') }} hover:font-bold flex justify-between">Calidad</li>
+    <ul id="unidades-dropdown" class="hidden border-l-2 flex-col pl-4">
+    
+        <button class="focus:outline-none flex p-2 rounded-lg justify-between items-center {{ isActive('unidades.unidad_calidad.*') }} w-full" onclick="toggleDropdown('calidad-dropdown')">
+                <li id="calidad-dropdown-li" class="rounded-lg hover:font-bold flex justify-between">Calidad</li>
                 <svg id="calidad-dropdown-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M6 9l6 6 6-6" />
                 </svg>
             </button>
-        <ul id="calidad-dropdown" class="hidden flex-col pl-4">
-            <li class="p-2 rounded-lg {{ isActive('unidades.auditoria_interna') }}"><a href="{{ route('unidades.auditoria_interna') }}">Auditoria interna</a></li>
-            <li class="p-2 rounded-lg {{ isActive('unidades.acreditacion') }}"><a href="{{ route('unidades.acreditacion') }}">Acreditación</a></li>
-            <li class="p-2 rounded-lg {{ isActive('unidades.repositorio') }}"><a href="{{ route('unidades.repositorio') }}">Repositorio</a></li>
-            <li class="p-2 rounded-lg {{ isActive('unidades.licenciamiento') }}"><a href="{{ route('unidades.licenciamiento') }}">Licenciamiento</a></li>
+        <ul id="calidad-dropdown" class="hidden border-l-2 flex-col pl-4">
+        
+            <li class="p-2 rounded-lg {{ isActive('unidades.unidad_calidad.auditoria_interna') }}"><a href="{{ route('unidades.unidad_calidad.auditoria_interna') }}">Auditoria interna</a></li>
+            <li class="p-2 rounded-lg {{ isActive('unidades.unidad_calidad.acreditacion') }}"><a href="{{ route('unidades.unidad_calidad.acreditacion') }}">Acreditación</a></li>
+            <li class="p-2 rounded-lg {{ isActive('unidades.unidad_calidad.repositorio') }}"><a href="{{ route('unidades.unidad_calidad.repositorio') }}">Repositorio</a></li>
+            <li class="p-2 rounded-lg {{ isActive('unidades.unidad_calidad.licenciamiento') }}"><a href="{{ route('unidades.unidad_calidad.licenciamiento') }}">Licenciamiento</a></li>
         </ul>
-        <button class="focus:outline-none flex justify-between w-full" onclick="toggleDropdown('practicas-dropdown')">
-                <li class="p-2 rounded-lg {{ isActive('unidades.practica_preprofesional.*') }} hover:font-bold flex justify-between">Practica Preprofesional </li>
+        <button class="focus:outline-none p-2 rounded-lg flex justify-between {{ isActive('unidades.practica_preprofesional.*') }}  w-full" onclick="toggleDropdown('practicas-dropdown')">
+                <li id="practicas-dropdown-li" class="rounded-lg hover:font-bold flex justify-between">Practica Preprofesional </li>
                 <svg id="practicas-dropdown-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round">
                     <path d="M6 9l6 6 6-6" />
                 </svg>
             </button>
-        <ul id="practicas-dropdown" class="hidden flex-col pl-4">
+        <ul id="practicas-dropdown" class="hidden border-l-2 flex-col pl-4">
+        
             <li class="p-2 rounded-lg {{ isActive('unidades.practica_preprofesional.informeInvestigacion') }}"><a href="{{ route('unidades.practica_preprofesional.informeInvestigacion') }}">Repositorio</a></li>
             <li class="p-2 rounded-lg {{ isActive('unidades.practica_preprofesional.comiteInvestigacion') }}"><a href="{{ route('unidades.practica_preprofesional.comiteInvestigacion') }}">Comite</a></li>
         </ul>
-        <button class="focus:outline-none flex justify-between w-full" onclick="toggleDropdown('responsabilidad-dropdown')">
-                <li class="p-2 rounded-lg {{ isActive('unidades.rsu')}} {{isActive('unidades.rsu.*') }} hover:font-bold flex justify-between">Responsabilidad Social Universitaria</li>
+        <button class="focus:outline-none p-2 rounded-lg {{ isActive('unidades.rsu')}} {{isActive('unidades.rsu.*') }} flex justify-between items-center w-full" onclick="toggleDropdown('responsabilidad-dropdown')">
+                <li id="responsabilidad-dropdown-li" class="hover:font-bold text-left">Responsabilidad Social Universitaria</li>
                 <svg id="responsabilidad-dropdown-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round">
@@ -113,22 +118,24 @@
                 </svg>
             </button>
         
-        <ul id="responsabilidad-dropdown" class="hidden flex-col pl-4">
+        <ul id="responsabilidad-dropdown" class="hidden border-l-2 flex-col pl-4">
+        
             <li class="p-2 rounded-lg {{ isActive('unidades.rsu') }}"><a href="{{ route('unidades.rsu') }}">Repositorio Documental</a></li>
             <li class="p-2 rounded-lg {{ isActive('unidades.rsu.documentacion') }}"><a href="{{ route('unidades.rsu.documentacion') }}">Informes</a></li>
             <li class="p-2 rounded-lg {{ isActive('unidades.rsu.contacto') }}"><a href="{{ route('unidades.rsu.contacto') }}">Proyectos actuales</a></li>
         </ul>
-        <button class="focus:outline-non flex justify-between w-full" onclick="toggleDropdown('investigacion-dropdown')">
-            <li class="p-2 rounded-lg {{ isActive('unidades.unidadInvestigacion.*') }} hover:font-bold flex justify-between">Investigación</li>
+        <button class="focus:outline-non p-2 rounded-lg {{ isActive('unidades.unidadInvestigacion.*') }} flex justify-between w-full" onclick="toggleDropdown('investigacion-dropdown')">
+            <li id="investigacion-dropdown-li" class=" hover:font-bold flex justify-between">Investigación</li>
             <svg id="investigacion-dropdown-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round">
                 <path d="M6 9l6 6 6-6" />
             </svg>
         </button>
-        <ul id="investigacion-dropdown" class="hidden flex-col pl-4">
+        <ul id="investigacion-dropdown" class="hidden border-l-2 flex-col pl-4">
+        
             <li class="p-2 rounded-lg {{ isActive('unidades.unidadInvestigacion.informeInvestigacion') }}"><a href="{{ route('unidades.unidadInvestigacion.informeInvestigacion') }}">Repositorio</a></li>
-            <li class="p-2 rounded-lg {{ isActive('unidades.unidadInvestigacion.comiteInvestigacion') }}"><a href="{{ route('unidades.unidadInvestigacion.comiteInvestigacion') }}"></a>Comite</li>
+            <li class="p-2 rounded-lg {{ isActive('unidades.unidadInvestigacion.comiteInvestigacion') }}"><a href="{{ route('unidades.unidadInvestigacion.comiteInvestigacion') }}">Comite</a></li>
         </ul>
         <li class="p-2 rounded-lg {{ isActive('unidades.soporte') }}"><a href="{{ route('unidades.soporte') }}">Soporte</a></li>
 
@@ -182,12 +189,15 @@
     function toggleDropdown(id) {
         const dropdown = document.getElementById(id);
         const svg = document.getElementById(`${id}-svg`);
+        const li = document.getElementById(`${id}-li`);
         if (dropdown.classList.contains('hidden')) {
             dropdown.classList.remove('hidden');
             svg.style.transform = 'rotate(180deg)';
+            li.style.fontWeight = 'bold';
         } else {
             dropdown.classList.add('hidden');
             svg.style.transform = 'rotate(0deg)';
+            li.style.fontWeight = 'normal';
         }
     }
 </script> 
