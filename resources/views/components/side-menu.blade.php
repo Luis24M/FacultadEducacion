@@ -1,3 +1,4 @@
+
 @if (request()->routeIs('home') ||
         request()->routeIs('institucional') ||
         request()->routeIs('noticias') ||
@@ -12,16 +13,15 @@
     <x-side-button icon="language.svg" title="Cidunt" route="https://cidunt.edu.pe/web2/" :link='true' />
     <x-side-button icon="school.svg" title="R.N.C" route="https://www.rnc.edu.pe/" :link='true' />
     <x-side-button icon="book.svg" title="Galería" route="/galeria" :active="request()->routeIs('galeria')" />
-    <x-side-button icon="login.svg" title="Iniciar Sesion" route="/login" :active="request()->routeIs('login')" />
-    <x-side-button icon="aula.svg" title="Aula Virtual"
-        route="javascript:window.open('https://aulavirtual2.unitru.edu.pe/login/index.php', '_blank');"
-        :link='true' />
+    <x-side-button icon="login.svg" title="Iniciar Sesión" route="/login" :active="request()->routeIs('login')" />
+    <x-side-button icon="aula.svg" title="Aula Virtual" route="https://aulavirtual2.unitru.edu.pe/login/index.php" :link='true' />
 
     {{-- PREGRADO --}}
 @elseif(request()->routeIs('pregrado') ||
         request()->routeIs('pregrado.inicial') ||
         request()->routeIs('pregrado.cdlc') ||
         request()->routeIs('pregrado.primaria'))
+
     <h3 class="text-xl font-semibold">Pregrado</h3>
     <hr>
     <x-side-button icon="book.svg" title="Educación Inicial" route="/pregrado/inicial" :active="request()->routeIs('pregrado.inicial')" />
@@ -43,8 +43,6 @@
         :active="request()->routeIs('pregrado.secundaria.literatura')" />
     <x-side-button icon="book.svg" title="Idiomas" route="/pregrado/secundaria/idiomas" :active="request()->routeIs('pregrado.secundaria.idiomas')" />
 
-    {{-- POSGRADO --}}
-@elseif(request()->routeIs('posgrado'))
     {{-- UNIDADES --}}
 @elseif(request()->routeIs('unidades') || request()->routeIs('unidades.*'))
     <h3 class="text-xl font-semibold">Unidades</h3>
@@ -72,7 +70,7 @@
         ['name' => 'Comite de Investigacion', 'url' => '/unidades/unidadInvestigacion/ComiteInvestigacion'],
     ]" />
 
-    <x-side-button icon="" title="Unidad de Soporte" route="/unidades/unidad_soporte/index" :active="request()->routeIs('unidades.soporte')" />
+    <x-side-button icon="" title="Unidad de Soporte" route="/unidades/unidad_soporte" :active="request()->routeIs('unidades.soporte')" />
 @endif
 
 <script>

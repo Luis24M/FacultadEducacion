@@ -1,6 +1,6 @@
 @extends('layouts.home')
 @section('content')
-<div class="p-10" >
+<div class="p-4 md:p-10" >
     <div class="flex flex-col lg:flex-row my-10 border-2" id="bienvenida">
         <img class="min-w-[50%] object-cover" src="{{ asset('imagenes/index/decana.png') }}"
             alt="decana Elizabeth Aurea Rafael Sánchez">
@@ -59,7 +59,7 @@
                 <p class="text-gray-500">No hay eventos disponibles.</p>
             @else
                 @foreach($eventos as $evento)
-                    <div class="border shadow rounded-xl">
+                    <div class="border shadow rounded-xl mx-auto">
                         <img src="{{ asset($evento->imgPublicacion)}}" width="500px" class="rounded-xl" alt="{{$evento->nombrePublicacion}}">
                         {{-- <div class="flex justify-between px-3">
                             <h2 class="text-2xl">{{ $evento->nombrePublicacion }}</h2>
@@ -87,7 +87,7 @@
         </div>
     </section>
     <section class="timeline text-white leading-relaxed mb-8 text-base">
-        <ul>
+        <ul class="overfow-x-hidden">
             <li></li>
             <li>
                 <div>
@@ -354,7 +354,7 @@
             visibility: visible;
             opacity: 1;
         }
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: 1300px) {
             .timeline ul li div {
                 width: 250px;
             }
@@ -362,13 +362,13 @@
                 left: -289px; /*250+45-6*/
             }
         }
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 900px) {
             .timeline ul li {
                 margin-left: 20px;
             }
             
             .timeline ul li div {
-                width: calc(100vw - 91px);
+                width: calc(100vw - 400px);
             }
             
             .timeline ul li:nth-child(even) div {
@@ -381,6 +381,10 @@
                 border-color: transparent #6A00FF transparent transparent;
             }
         }
+        @media screen and (max-width: 769px) {
+            .timeline ul li div {
+                width: calc(100vw - 91px);
+            }
 
         #noticias {
             position: relative;

@@ -6,8 +6,10 @@
     <div class="bg-gray-300 h-2/5 w-full" id="Header">
         <h2 class="pl-5 my-3 text-xl"><b>MISION</b></h2>            
     </div>
+
     <div class="mision flex md:flex-row flex-col min-h-[calc(100dvh-230px)] justify-center items-center gap-5 md:mx-5 mx-0 m-5" id="Body">
         <div class="border-solid border-2 border-sky-500 md:w-1/2 sm:w-1/2 w-3/4 py-3 min-h-[300px] flex flex-col justify-center items-center px-5 shadow-xl m-">
+
             <h1 class="text-center lg:text-xl text-sm mb-2"><b>Mision</b></h1>
             
                 <p class="c">Formar  profesionales  en  ciencias  de  la  educación  y  comunicación  social

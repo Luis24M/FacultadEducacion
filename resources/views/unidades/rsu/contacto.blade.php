@@ -5,6 +5,7 @@
     <div class="flex flex-col text-center items-center justify-center py-5 bg-blue-950">
         <h1 class="text-4xl font-bold text-center mb-5 text-yellow-500">PROYECTOS ACTUALES DE R.S.U</h1>
         <div class="mx-auto h-1 w-24 bg-[#ffd54f]"></div>
+
     </div>
 
     <section id="benefits-list" class="bg-blue-950 py-10 relative">
@@ -51,9 +52,11 @@
         <img id="modalImage" src="" alt="Imagen ampliada" class="w-full h-auto">
         <button onclick="closeModal()" class="absolute top-5 right-5 text-white text-3xl">&times;</button>
     </div>
+
 </div>
 
 <script>
+
     // Función para abrir el modal con la imagen más grande
     function openModal(imageSrc) {
         const modal = document.getElementById('imageModal');
@@ -101,6 +104,22 @@
             behavior: "smooth"
         });
     });
+
+  const carousel = document.getElementById("carousel");
+  const prevButton = document.getElementById("prevButton");
+  const nextButton = document.getElementById("nextButton");
+
+  const cardWidth = carousel.querySelector(".w-72").offsetWidth + 16; // Ajustar ancho más margen
+
+
+  prevButton.addEventListener("click", () => {
+    carousel.scrollBy({ left: -cardWidth, behavior: "smooth" });
+  });
+
+  nextButton.addEventListener("click", () => {
+    carousel.scrollBy({ left: cardWidth, behavior: "smooth" });
+  });
+
 </script>
 
 <!-- CSS adicional -->

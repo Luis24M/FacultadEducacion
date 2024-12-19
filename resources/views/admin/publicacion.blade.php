@@ -34,7 +34,8 @@
         <label for="idTipoPublicacion" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Tipo de publicación</label>
         <select id="idTipoPublicacion" name="idTipoPublicacion" class="mt-1 text-black block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
           @foreach ($tipos as $tipo)
-            <option value="{{ $tipo->idTipo }}">{{ $tipo->nombreTipo }}</option>
+           {{ $tipo }}
+            <option value="{{ $tipo->id }}">{{ $tipo->nombreTipo }}</option>
           @endforeach
         </select>
       </div>

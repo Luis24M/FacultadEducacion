@@ -35,7 +35,7 @@ Route::get('/pregrado', function () {
 
     // Educacion Primaria
     Route::get('/pregrado/primaria', function () {
-        return view('pregrado.educacion_primaria.index');
+        return view('pregrado.primaria');
     })->name('pregrado.primaria');
 
     // Educacion Secundaria
@@ -76,10 +76,6 @@ Route::get('/unidades/unidad_calidad/auditoria_interna', function () {
     return view('unidades.unidad_calidad.auditoria_interna');
 })->name('unidades.auditoria_interna');
 
-Route::get('/unidades/unidad_calidad/iso_9001', function () {
-    return view('unidades.unidad_calidad.iso_9001');
-})->name('unidades.iso_9001');
-
 Route::get('/unidades/unidad_calidad/acreditacion', function () {
     return view('unidades.unidad_calidad.acreditacion');
 })->name('unidades.acreditacion');
@@ -98,47 +94,44 @@ Route::get('/unidades/unidad_calidad/repositorio', [AplicacionesExtController::c
 
 
 Route::get('/unidades/unidadInvestigacion/InformeInvestigacion', function (){
-    return view('unidades.unidadInvestigacion.InformeInvestigacion.index');
+    return view('unidades.unidadInvestigacion.informeInvestigacion');
 })->name('unidades.unidadInvestigacion.informeInvestigacion');
 
 Route::get('/unidades/unidadInvestigacion/ComiteInvestigacion', function (){
-    return view('unidades.unidadInvestigacion.ComiteInvestigacion.index');
+    return view('unidades.unidadInvestigacion.comiteInvestigacion');
 })->name('unidades.unidadInvestigacion.comiteInvestigacion');
 
 
 
 //Morales - Unidad de Practicas Preprofesionales
 Route::get('/unidades/practica_preprofesional/Repositorio', function (){
-    return view('unidades.practica_preprofesional.RepositorioDocumental.index');
+    return view('unidades.practica_preprofesional.repositorio');
 })->name('unidades.practica_preprofesional.informeInvestigacion');
 
 Route::get('/unidades/practica_preprofesional/Comite', function (){
-    return view('unidades.practica_preprofesional.Comite.index');
+    return view('unidades.practica_preprofesional.comite');
 })->name('unidades.practica_preprofesional.comiteInvestigacion');
 
 Route::get('/unidades/practica_preprofesional/Repositorio/{id}',[HomeController::class,'showDocument'])->name('unidades.practica_preprofesional.informeInvestigacion.showDocument');
 
 
-//Sadhu
-
-Route::get('/unidades/unidad_soporte/index', function () {
-    return view('unidades.unidad_soporte.index');
+Route::get('/unidades/unidad_soporte', function () {
+    return view('unidades.soporte');
 })->name('unidades.soporte');
 
-////////////////////////////////////////////////
 Route::get('/unidades/rsu/documentacion', function () {
     return view('unidades.rsu.documentacion');
 })->name('unidades.rsu.documentacion');
-
 
 Route::get('/unidades/rsu/contacto', function () {
     return view('unidades.rsu.contacto');
 })->name('unidades.rsu.contacto');
 
-
 Route::get('/unidades/rsu', function () {
     return view('unidades.rsu.index');
-})->name('unidades.rsu.index');
+})->name('unidades.rsu');
+
+// =============================================================
 
 Route::post('comentario', [ComentarioController::class, 'store'])->name('comentario.store');
 

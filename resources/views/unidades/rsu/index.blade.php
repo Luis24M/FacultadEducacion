@@ -1,6 +1,7 @@
 @extends('layouts.home')
 
 @section('content')
+
     <div class="flex flex-col w-full min-h-[calc(100dvh-230px)] bg-blue-950 text-white shadow-xl p-5">
         
         <div class="flex flex-col text-center items-center justify-center py-5">
@@ -27,6 +28,7 @@
                 <a href="#" class="bg-yellow-400 text-black font-semibold px-5 py-2 rounded-lg hover:bg-yellow-500">Ver Documento</a>
             </div>
           </div>
+
 
     </div>
 @endsection

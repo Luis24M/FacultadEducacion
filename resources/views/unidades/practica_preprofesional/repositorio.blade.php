@@ -10,15 +10,15 @@
                 <!-- Botones con documentos PDF -->
                 <a href="{{ route('unidades.practica_preprofesional.informeInvestigacion.showDocument','1') }}"
                     onclick="handlePDFClick('{{ asset('pdfs/directiva_evaluacion.pdf') }}')" 
-                    class="flex flex-col justify-center items-center self-center px-5 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg text-center h-[100px] shadow-lg my-3 lg:w-1/4 w-3/4" target="_blank">
+                    class="flex flex-col justify-center items-center self-center px-5 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg text-center h-[100px] shadow-lg my-3 lg:w-1/4 w-3/4">
                     Ficha de monitoreo de Tutoria
                 </a>
                 <a href="{{ route('unidades.practica_preprofesional.informeInvestigacion.showDocument','2') }}" 
-                    class="flex flex-col justify-center items-center self-center px-5 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-center h-[100px] rounded-lg shadow-lg my-3 lg:w-1/4 w-3/4" target="_blank">
+                    class="flex flex-col justify-center items-center self-center px-5 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-center h-[100px] rounded-lg shadow-lg my-3 lg:w-1/4 w-3/4">
                     Ficha para Evaluar la Sesioón de Aprendizaje
                 </a>
                 <a href="{{ route('unidades.practica_preprofesional.informeInvestigacion.showDocument','3') }}" 
-                    class="flex flex-col justify-center items-center self-center px-5 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-center h-[100px] rounded-lg shadow-lg my-3 lg:w-1/4 w-3/4" target="_blank">
+                    class="flex flex-col justify-center items-center self-center px-5 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-center h-[100px] rounded-lg shadow-lg my-3 lg:w-1/4 w-3/4">
                     Registro de Asistencia
                 </a>                
             </div>

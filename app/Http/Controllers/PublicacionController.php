@@ -34,12 +34,11 @@ class PublicacionController extends Controller
         if (!Auth::check()) {
             return redirect()->route('login')->with('error', 'Debes iniciar sesión para realizar esta acción.');
         }
-
         $data = $request->validate([
             'nombrePublicacion' => 'required|string|max:255',
             'desPublicacion' => 'required|string|max:255',
             'imgPublicacion' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'idTipoPublicacion' => 'required|integer|exists:tipopublicacion,idTipo', // Verifica que el tipo existe
+            'idTipoPublicacion' => 'required|integer|exists:tipo_publicacion,id', // Verifica que el tipo existe
         ]);
 
         if ($request->hasFile('imgPublicacion')) {
@@ -71,7 +70,7 @@ class PublicacionController extends Controller
             'nombrePublicacion' => 'required|string|max:255',
             'desPublicacion' => 'required|string|max:255',
             'imgPublicacion' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'idTipoPublicacion' => 'required|integer|exists:tipopublicacion,idTipo', // Verifica que el tipo existe
+            'idTipoPublicacion' => 'required|integer|exists:tipo_publicacion,id', // Verifica que el tipo existe
         ]);
 
         $publicacion = Publicacion::findOrFail($id);

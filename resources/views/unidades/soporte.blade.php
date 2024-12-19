@@ -30,11 +30,11 @@
     </div>
 </div>
 
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
     <!-- Card 1 -->
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center ml-3 my-8">
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center ml-8 my-8">
         <div class="flex justify-center items-center h-auto overflow-hidden mt-3">
-            <img src="{{ asset('colaboradores/unidades/Julio Hernán Luna Victoria Valdivia.jpg') }}" alt="Ing. Julio Hernán Luna Victoria Valdivia" class="object-cover object-center w-40 h-40" style="object-position: center 0%;">
+            <img src="{{ asset('colaboradores/unidades/HERNAN.png') }}" alt="Ing. Julio Hernán Luna Victoria Valdivia" class="object-cover object-center w-80 h-80" style="object-position: center 0%;">
         </div>
         <div class="p-4 flex flex-col items-center">
             <h3 class="text-xl font-bold">Ing. Julio Hernán Luna Victoria Valdivia</h3>
@@ -42,21 +42,11 @@
         </div>
     </div>
 
-    <!-- Card 2 -->
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center ml-3 my-8">
-        <div class="flex justify-center items-center h-auto overflow-hidden mt-3">
-            <img src="{{ asset('colaboradores/HOMBRE DEFAULT.jpg') }}" alt="Téc. Ana Martínez" class="object-cover object-center w-40 h-40">
-        </div>
-        <div class="p-4 flex flex-col items-center">
-            <h3 class="text-xl font-bold">Ing. Victor Alberto Fernandez Paredes</h3>
-            <p class="text-gray-600 mt-2">"Mantenimiento preventivo, éxito educativo"</p>
-        </div>
-    </div>
 
     <!-- Card 3 -->
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center ml-3 my-8">
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center ml-8 my-8">
         <div class="flex justify-center items-center h-auto overflow-hidden mt-3">
-            <img src="{{ asset('colaboradores/HOMBRE DEFAULT.jpg') }}" alt="Ing. Miguel Santos" class="object-cover object-center w-40 h-40">
+            <img src="{{ asset('colaboradores/unidades/JOEL.png') }}" alt="Ing. Miguel Santos" class="object-cover object-center w-80 h-80">
         </div>
         <div class="p-4 flex flex-col items-center">
             <h3 class="text-xl font-bold">Tec. Joel cruz plasencia</h3>
@@ -65,9 +55,9 @@
     </div>
 
     <!-- Card 4 -->
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center mx-3 my-8 ">
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden text-center mx-8 my-8 ">
         <div class="flex justify-center items-center h-auto overflow-hidden mt-3">
-            <img src="{{ asset('colaboradores/HOMBRE DEFAULT.jpg') }}" alt="Téc. Laura Vega" class="object-cover object-center w-40 h-40">
+            <img src="{{ asset('colaboradores/unidades/RONNY.png') }}" alt="Téc. Laura Vega" class="object-cover object-center w-80 h-80">
         </div>
         <div class="p-4 flex flex-col items-center">
             <h3 class="text-xl font-bold">Ing. Ronny Nelson Guzmán Bermúdez</h3>
