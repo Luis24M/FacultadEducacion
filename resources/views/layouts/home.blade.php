@@ -10,9 +10,7 @@
     <meta name="keywords"
         content="Educación, Universidad, Trujillo, Educación Inicial, Educación Primaria, Educación Secundaria, Educación Física, Educación Artística, Educación Especial">
     <meta name="author" content="FACEDU - UNT">
-    @vite('resources/css/app.css')
-    <link rel="stylesheet" href="{{ asset('build/assets/app-BA1W8HJV.css') }}">
-    <script src="{{ asset('build/assets/app-MratX3S_.js') }}" defer></script>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <title>FACEDU - UNT</title>
     <style>

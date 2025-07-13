@@ -14,13 +14,8 @@ export default defineConfig({
         cors: true,
     },
     build: {
+        manifest: 'manifest.json', // Esto pone el manifest en /public/build/manifest.json
         outDir: 'public/build',
         emptyOutDir: true,
-        manifest: true,
-        rollupOptions: {
-            output: {
-                manualChunks: undefined,
-            },
-        },
     },
 });
