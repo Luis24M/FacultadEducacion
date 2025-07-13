@@ -13,5 +13,14 @@ export default defineConfig({
         port: 5173,
         cors: true,
     },
+    build: {
+        outDir: 'public/build',
+        emptyOutDir: true,
+        manifest: true,
+        rollupOptions: {
+            output: {
+                manualChunks: undefined,
+            },
+        },
+    },
 });
-
