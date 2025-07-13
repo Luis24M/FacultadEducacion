@@ -1,4 +1,4 @@
-@props(['route', 'title', 'active', 'link'])
+@props(['route', 'title', 'active', 'link', 'icon'])
 
 @php
     $classes = $active ?? false ? 'invert border-white hover:invert-0' : '';
